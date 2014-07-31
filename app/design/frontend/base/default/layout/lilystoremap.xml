@@ -1,0 +1,15 @@
+<?xml version="1.0"?>   
+<layout version="0.1.0">   
+  <lilystoremap_index_index>   
+	<reference name="head">
+		 <action method="addJs"><script>jquery/jquery-1.10.2.min.js</script></action>
+	</reference>
+    <reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>   
+    </reference>   
+    <reference name="content">   
+      <block type="lilystoremap/index" name="lilystoremap_index" template="lilystoremap/index.phtml"/>   
+    </reference>   
+  </lilystoremap_index_index>   
+</layout>   
+	

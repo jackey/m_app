@@ -1,0 +1,30 @@
+<!-- Get Current Url -->
+<?php $current_url = Mage::helper('core/url')->getCurrentUrl() ?>
+<!-- End -->
+<?php $_product = $this->getProduct(); ?>
+<?php $_helper = Mage::helper('catalog/output'); ?>
+
+
+<?php $video_path = $_product->getVideoPath(); ?>
+<div class="grid-12 street-style">
+	<div id="video" class="left">
+		<video  id="lily-category-video"   autoplay="autoplay" controls="controls" width="960" height="540">
+			
+			<!--<source src="<?php Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>media/video/<?php echo $video_path; ?>" type="video/webm" /> -->
+			<source src="<?php Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>media/video/LILY_MAKING_OF_MASTER.webmhd.webm" type="video/webm; codecs=vp8,vorbis" />
+			<source src="<?php Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>media/video/LILY MAKING OF MASTER.webmhd.mp4" />
+			<object type="application/x-shockwave-flash" data="http://flashfox.googlecode.com/svn/trunk/flashfox.swf" width="960" height="540">
+				<param name="movie" value="http://flashfox.googlecode.com/svn/trunk/flashfox.swf" />
+				<param name="allowFullScreen" value="true" />
+				<param name="wmode" value="transparent" />
+				<param name="flashVars" value="controls=true&amp;src=http%3A%2F%2Fstageweb.mec365demo.com%2Fproject%2Flili_function%2Fmedia%2Fvideo%2FFF_LILY_20130815_VIDEO_LAMP_V1.mp4" />
+			</object>
+		</video>
+	</div>
+	<div class="grid-video">
+		<div class="video-short-description">
+			<?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?>
+		</div>
+	</div>
+	
+</div>

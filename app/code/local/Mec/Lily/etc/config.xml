@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Mec_Lily>
+      <version>0.1.0</version>
+    </Mec_Lily>
+  </modules>
+  <frontend>
+    <routers>
+      <lily>
+        <use>standard</use>
+          <args>
+            <module>Mec_Lily</module>
+            <frontName>lily</frontName>
+          </args>
+      </lily>
+    </routers>
+		<layout>
+		  <updates>
+			<lily>
+			  <file>lily.xml</file>
+			</lily>
+		  </updates>
+		</layout>
+  </frontend>
+  <global>
+		<rewrite>        
+            <mec_lily_customer_accountcontroller>
+                <from><![CDATA[#^/customer/account/#]]></from> <!-- Mage_Customer_AccountController  -->
+                <to>/lily/customer_account/</to> <!-- Mec_Lily_Customer_AccountController  -->
+            </mec_lily_customer_accountcontroller>
+		
+		</rewrite>
+    <helpers>
+      <lily>
+        <class>Mec_Lily_Helper</class>
+      </lily>
+    </helpers>
+	<blocks>
+	  <lily>
+		<class>Mec_Lily_Block</class>
+	  </lily>
+	</blocks>
+	<models>
+	  <lily>
+		<class>Mec_Lily_Model</class>
+		<resourceModel>lily_mysql4</resourceModel>
+	  </lily>
+	
+	
+	</models>
+	<events>
+      <customer_register_success>
+        <observers>
+          <lily_vip_card_bind>
+            <type>singleton</type>
+            <class>Mec_Lily_Model_Observer</class>
+            <method>cardBind</method>
+          </lily_vip_card_bind>
+        </observers>
+      </customer_register_success>     
+    </events>
+	
+
+  </global>
+  	<adminhtml>
+		<events>
+			 <core_block_abstract_prepare_layout_before>
+				<observers>
+                    <addMassaction>
+                        <type>model</type>
+                        <class>Mec_Lily_Model_Observer</class>
+                        <method>addMassaction</method>
+                    </addMassaction>
+                </observers>
+			 </core_block_abstract_prepare_layout_before>
+		</events>
+	</adminhtml>
+  <admin>
+	<routers>
+	  <lily>
+	    <use>admin</use>
+		<args>
+		  <module>Mec_Lily</module>
+		  <frontName>lilyadmin</frontName>
+		</args>
+	  </lily>
+	</routers>
+  </admin>    
+    <crontab>
+        <jobs>            
+			<lily_test>
+                <schedule><cron_expr>*/5 * * * *</cron_expr></schedule>
+                <run><model>lily/cron::erptomagento</model></run>
+            </lily_test>
+        </jobs>
+    </crontab>
+</config> 

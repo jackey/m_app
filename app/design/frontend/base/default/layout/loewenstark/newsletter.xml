@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+  * Loewenstark_Newsletter
+  *
+  * @category  Loewenstark
+  * @package   Loewenstark_Newsletter
+  * @author    Mathis Klooss <m.klooss@loewenstark.de>
+  * @copyright 2013 Loewenstark Web-Solution GmbH (http://www.loewenstark.de). All rights served.
+  * @license     https://github.com/mklooss/Loewenstark_Newsletter/blob/master/README.md
+  */
+//-->
+<layout version="0.2.0">
+
+    <default>
+        <reference name="left">
+          <!--  <block type="newsletter/unsubscriber" name="newsletter.unsubscriber" as="newsletter_unsubscriber" after="newsletter" template="newsletter/unsubscribe.phtml" translate="label"/>
+        -->
+		</reference>
+    </default>
+
+    <!-- add resend link -->
+    <newsletter_manage_index>
+        <reference name="customer_newsletter">
+            <!-- Missing core/text_list in Magento Default //-->
+            <block type="core/text_list" name="customer.form.newsletter.extra" translate="label">
+                <block type="lws_newsletter/resendrequest" name="resend.newsletter" template="newsletter/manage/resend.phtml" />
+            </block>
+        </reference>
+    </newsletter_manage_index>
+
+</layout>

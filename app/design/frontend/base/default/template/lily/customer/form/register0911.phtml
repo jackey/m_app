@@ -1,0 +1,332 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Create account form template
+ *
+ * @var $this Mage_Customer_Block_Form_Register
+ */
+?>
+<div class="account-create">
+    <div class="page-title">
+        <h1><?php echo $this->__('Lily Club member') ?></h1>
+    </div>
+	<div class="sub-title">
+		欢迎您注册成为 Lily 粉丝，注册即送200积分，累计线下消费（只限北京、上海、武汉、深圳、广州）
+	</div>
+	<div class="club-rule-wrapper">
+		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('club-rule')->toHtml(); ?>
+		
+	</div>
+		<button id="register-button" class="button" title="我要注册" type="button"><span><span>我要注册</span></span></button>
+	<div class="club-rule-content hide">
+    <?php echo $this->getChildHtml('form_fields_before')?>
+    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+    <?php /* Extensions placeholder */ ?>
+    <?php echo $this->getChildHtml('customer.form.register.extra')?>
+    <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="form-validate">
+		<div class="fieldset">
+			<h2 class="legend"><?php echo $this->__('1. Verify') ?></h2>
+			<ul class="form-list">
+				<li>
+                    <label for="telephone" class="required"><em>*</em><?php echo $this->__('Cell Phone') ?></label>
+                    <div class="input-box">
+                        <input type="text" name="telephone" id="telephone" value="<?php echo $this->escapeHtml($this->getFormData()->getTelephone()) ?>" title="<?php echo $this->__('Cell Phone') ?>" class="input-text required-entry" />
+                    
+						
+					</div>
+					<!--<span>直接用手机号码登录</span>-->
+                </li>
+				<li>
+				<div class="input-box">
+						 <button type="button" title="<?php //echo $this->__('Get Code') ?>获取手机验证码" class="button" id="get_code"><span><span><?php //echo $this->__('Get Code') ?>获取手机验证码</span></span></button>
+					</div>
+				</li>
+				<li>
+                    <label for="verify_code" class="required"><em>*</em><?php echo $this->__('Verify Code') ?></label>
+                    <div class="input-box">
+                        <input type="text" id="verify_code" name="verify_code"  title="<?php echo $this->__('Verify Code') ?>" class="input-text required-entry" />
+						
+                    </div>
+					
+                </li>
+				<li>
+					
+					<div class="input-box">
+						 <button type="button" title="<?php echo $this->__('Verify Code') ?>" class="button" id="verfir"><span><span><?php echo $this->__('Verify Code') ?></span></span></button>
+					</div>
+				</li>
+				
+				
+			</ul>
+		</div>
+		
+        <div class="fieldset step-2 disable">
+            <input type="hidden" name="success_url" value="<?php echo $this->getSuccessUrl() ?>" />
+            <input type="hidden" name="error_url" value="<?php echo $this->getErrorUrl() ?>" />
+			
+            <h2 class="legend"><?php echo $this->__('2. Fill in Personal Information') ?></h2>
+            <ul class="form-list">
+
+                <li>
+                    <label for="email_address" class="required"><em>*</em><?php echo $this->__('Email Address') ?></label>
+                    <div class="input-box">
+                        <input type="text" name="email" id="email_address" value="<?php echo $this->escapeHtml($this->getFormData()->getEmail()) ?>" title="<?php echo $this->__('Email Address') ?>" class="input-text validate-email required-entry" />
+						
+					</div>
+					<span>电子邮件是联系您的重要途径，请正确填写</span>
+                </li>
+				<li class="fields">
+                    <div class="field">
+                        <label for="password" class="required"><em>*</em><?php echo $this->__('Password') ?></label>
+                        <div class="input-box">
+                            <input type="password" name="password" id="password" title="<?php echo $this->__('Password') ?>" class="input-text required-entry validate-password" />
+							
+							
+                        </div>
+						<span>密码由6-16个字符组成</span>
+                    </div>
+                    <div class="field">
+                        <label for="confirmation" class="required"><em>*</em><?php echo $this->__('Confirm Password') ?></label>
+                        <div class="input-box">
+                            <input type="password" name="confirmation" title="<?php echo $this->__('Confirm Password') ?>" id="confirmation" class="input-text required-entry validate-cpassword" />
+							
+                        </div>
+						<span>请再输入一遍上面输入的密码</span>
+                    </div>
+                </li>
+                <?php echo $this->getChildHtml('form.additional.info'); ?>
+				
+				
+				<li class="fields customer-name">
+                    <?php echo $this->getLayout()->createBlock('customer/widget_name')->setObject($this->getFormData())->setForceUseCustomerAttributes(true)->toHtml() ?>
+					
+                </li>
+								
+			<?php $_gender = $this->getLayout()->createBlock('customer/widget_gender') ?>
+            <?php if ($_gender->isEnabled()): ?>
+                <li class="fields customer-gender"><?php echo $_gender->setGender($this->getFormData()->getGender())->toHtml() ?>
+				<span>请输入正确的姓名信息，以便获得福利</span>
+				
+				</li>
+            <?php endif ?>
+				
+
+				            <?php $_dob = $this->getLayout()->createBlock('customer/widget_dob') ?>
+            <?php if ($_dob->isEnabled()): ?>
+				<li>
+					<label for="birth"><?php echo $this->__('Birth') ?></label>
+					<div class="input-box">
+						<input type="text" id="birth" value="" title="<?php echo $this->__('Birth') ?>" class="input-text Wdate" />
+					</div>
+					<span>请正确填写，以便获取生日福利</span>
+				</li>
+                <li style="display:none"><?php echo $_dob->setDate($this->getFormData()->getDob())->toHtml() ?></li>
+            <?php endif ?>
+				 <li>
+                    <label for="customer_address" class="required"><em>*</em><?php echo $this->__('Address') ?></label>
+                    <div class="input-box">
+                        <input type="text" name="customer_address" id="customer_address" value="<?php echo $this->escapeHtml($this->getFormData()->getCustomerAddress()) ?>" title="<?php echo $this->__('Address') ?>" class="input-text required-entry" />
+                    </div>
+					<span>请正确填写，以便获取福利</span>
+                </li>
+				 <li>
+                    <label for="customer_zip" class="required"><em>*</em><?php echo $this->__('ZIP/Post Code') ?></label>
+                    <div class="input-box">
+                        <input type="text" name="customer_zip" id="customer_zip" value="<?php echo $this->escapeHtml($this->getFormData()->getCustomerZip()) ?>" title="<?php echo $this->__('Zip') ?>" class="input-text required-entry" />
+                    </div>
+                </li>
+                <?php if ($this->isNewsletterEnabled()): ?>
+                <li class="control">
+                    <div class="input-box">
+                        <input type="checkbox" name="is_subscribed" title="<?php echo $this->__('Sign Up for Newsletter') ?>" value="1" id="is_subscribed"<?php if($this->getFormData()->getIsSubscribed()): ?> checked="checked"<?php endif; ?> class="checkbox" />
+                    </div>
+                    <label for="is_subscribed"><?php echo $this->__('Sign Up for Newsletter') ?></label>
+                    <?php /* Extensions placeholder */ ?>
+                    <?php echo $this->getChildHtml('customer.form.register.newsletter')?>
+                </li>
+                <?php endif ?>
+
+            <?php $_taxvat = $this->getLayout()->createBlock('customer/widget_taxvat') ?>
+            <?php if ($_taxvat->isEnabled()): ?>
+                <li><?php echo $_taxvat->setTaxvat($this->getFormData()->getTaxvat())->toHtml() ?></li>
+            <?php endif ?>
+
+            </ul>
+        </div>
+   
+        
+        <div class="buttons-set">
+            <p class="required"><?php echo $this->__('* Required Fields') ?></p>
+            <p class="back-link"><a href="<?php echo $this->escapeUrl($this->getBackUrl()) ?>" class="back-link"><small>&laquo; </small><?php echo $this->__('Back') ?></a></p>
+            <button type="submit" title="<?php echo $this->__('Submit') ?>" class="button"><span><span><?php echo $this->__('Submit') ?></span></span></button>
+        </div>
+    </form>
+
+	</div>
+    <script type="text/javascript">
+    //<![CDATA[
+        var dataForm = new VarienForm('form-validate', true);
+        <?php if($this->getShowAddressFields()): ?>
+        new RegionUpdater('country', 'region', 'region_id', <?php echo $this->helper('directory')->getRegionJson() ?>, undefined, 'zip');
+        <?php endif; ?>
+    //]]>
+	
+	jQuery.noConflict();
+    </script>
+	<script type="text/javascript">
+		var countdown = 60;
+		jQuery(document).ready(function($){
+			
+			$(".fieldset input[type='text']").each(function(){
+				if($(this).attr('id') != "telephone" && $(this).attr('id') != "verify_code"){
+					$(this).attr('disabled', 'disabled');
+				}
+			});
+			$(".fieldset input[type='password']").each(function(){
+				$(this).attr('disabled', 'disabled');
+			});
+			
+			$(".fieldset select").each(function(){
+				$(this).attr('disabled', 'disabled');
+			});
+			
+			
+			$('#verfir').click(function(){
+				var _code = $('#verify_code').val();
+				if(_code == ""){
+					$('#verify_code').addClass('validation-failed');
+					return;
+				}else{
+					
+					$('#verify_code').removeClass('validation-failed');
+					$.ajax({
+						url:'<?php echo $this->getUrl('lily/index/verifyCode'); ?>',
+						data:{    
+							code : _code, 								
+						},    
+						type:'post',    
+						cache:false,    
+						dataType:'json',  
+						success:function(data) {    
+							if(data.success == false){
+								alert('<?php echo $this->__('Verify Code Wrong.'); ?>');
+							}else{
+								$('.step-2').removeClass('disable');
+								$(".fieldset input[type='password']").each(function(){
+									$(this).removeAttr('disabled');
+								});
+								
+								$(".fieldset input[type='text']").each(function(){
+									$(this).removeAttr('disabled');
+									if($(this).attr('id') == 'birth'){
+										$(this).attr('onclick', "WdatePicker({onpicked:pickedFunc, maxDate:'<?php echo date('Y-m');?>'})");
+									}
+								});
+								
+								$(".fieldset select").each(function(){
+									$(this).removeAttr('disabled');
+								});
+							}
+							
+						 },    
+						 error : function() {    
+							 alert('<?php echo $this->__('Some Error'); ?>');
+						 }    
+					
+					});    
+				}
+			});
+			
+			$('#get_code').click(function(){
+				var tel = $('#telephone').val();
+				if(tel == ""){
+					$('#telephone').addClass('validation-failed');
+					return;
+				}else{
+					$('#telephone').removeClass('validation-failed');
+					
+					$.ajax({
+						url:'<?php echo $this->getUrl('lily/index/sendVerifyfCode'); ?>',
+						data:{    
+							tel : tel, 	
+							url : '<?php echo $this->getUrl('lily/index/sendVerifyfCode'); ?>',
+						},    
+						type:'post',    
+						cache:false,    
+						dataType:'json',  
+						success:function(data) {    
+							if(data.success == false){
+								alert('<?php echo $this->__('Verify Code Send Fail.'); ?>');
+							}
+							
+						 },    
+						 error : function() {    
+							 alert('<?php echo $this->__('Some Error'); ?>');
+						 }    
+					
+					});    
+						countdown = 60
+						settime();
+						
+						
+					
+				}
+			});	
+			
+		});
+		
+		function settime() { 
+			if (countdown == 0) { 
+				jQuery("#get_code").removeAttr("disabled"); 		
+				jQuery("#get_code span span").html('Get');
+				// countdown = 60; 
+				clearInterval(countdown); 
+				clearTimeout(settime);
+			} else { 
+				jQuery("#get_code").attr("disabled", true);
+				jQuery("#get_code span span").html(countdown);
+				countdown--; 
+				setTimeout(function(){settime()},1000);
+			} 
+		}
+		
+		function pickedFunc(){
+			jQuery('#year').val($dp.cal.getP('y'));
+			jQuery('#month').val($dp.cal.getP('M'));
+			jQuery('#day').val($dp.cal.getP('d'));
+		
+		}
+		
+		jQuery('#register-button').click(function(){
+			jQuery('.club-rule-content').removeClass('hide');
+			jQuery('.club-rule-wrapper').hide();
+			jQuery(this).hide();
+		})
+		
+	</script>
+</div>

@@ -1,0 +1,20 @@
+<?php $error_message = str_replace('行 1:', '', Mage::getSingleton('core/session')->getPointsFail()); ?>
+	<div class="form-before">
+		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('checkout_progress')->toHtml(); ?>
+		<div class="clear"></div>
+	</div>
+<div class="ponts_checkout_fail">
+	<?php echo $this->__('Sorry, %s',$error_message); ?>
+	
+<br/>
+<br/>
+	<button onclick="setLocation('<?php echo $this->getUrl('giftproducts.html')?>')" class="button btn-continue" title="继续兑换" type="button"><span><span>积分兑换首页</span></span></button>
+</div>
+
+
+<?php Mage::getSingleton('core/session')->unsPointsFail(); ?>
+
+	<div class="instruction">
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('instruction')->toHtml(); ?>
+	
+	</div>

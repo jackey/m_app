@@ -1,0 +1,101 @@
+<div id="navi">
+
+				<?php if ($this->getIsHomePage()):?>
+				<ul>
+					<li><a href="#top" id="nav-video"><span><?php echo $this->__('HOME')?> 首页</span></a></li>
+					<li><a href="#brand" id="nav-brand"><span><?php echo $this->__('BRAND')?> 品牌故事</span></a></li>
+					<li class="nav-parent"><a href="#vision" id="nav-vision"><span><?php echo $this->__('VISION')?> 视觉</span></a>
+						<ul style="display:none;" class="child-nav">
+							<li><a href="<?php echo $this->getUrl('campaign2014spring.html') ?>" target="_blank"><?php echo $this->__('Look Book')?></a></li>
+							<li><a href="<?php echo $this->getUrl('street-look-book2014spring.html') ?>" target="_blank"><?php echo $this->__('Street Snaps')?></a></li>
+						</ul>
+					</li>
+					<li class="nav-parent"><a href="#new" id="nav-new"><span><?php echo $this->__('NEW')?> 新品</span></a>
+						<ul style="display:none;" class="child-nav">
+							<li><a href="<?php echo $this->getUrl('trend2014spring.html') ?>" target="_blank"><?php echo $this->__('Trend Forecast')?></a></li>
+							<li><a href="<?php echo $this->getUrl('collection/jianianhua.html') ?>" target="_blank"><?php echo $this->__('Collection')?></a></li>
+						</ul>
+					</li>
+					<li class="nav-parent"><a href="#shop-online" id="nav-shop-online"><span><?php echo $this->__('SHOP ONLINE')?> 线上购物</span></a>
+						<ul style="display:none;" class="child-nav">
+							<li><a href="http://lilyfs.tmall.com/shop/view_shop.htm?spm=a1z10.3.w3-18294325231.3.lIUoip&scene=taobao_shop" target="_blank"><?php echo $this->__('TMALL')?></a></li>
+							<li><a href="http://mall.jd.com/index-37792.html" target="_blank"><?php echo $this->__('JD.com')?></a></li>
+							<li><a href="http://qijian.yintai.com/lily/index.shtml" target="_blank"><?php echo $this->__('yintai')?></a></li>
+							<li><a href="http://www.amazon.cn/s/ref=amb_link_29972252_1?ie=UTF8&bbn=2016156051&page=1&rh=n%3A2016156051%2Cp_4%3ALily%2Cp_6%3AA1AJ19PSB66TGU&pf_rd_m=A1AJ19PSB66TGU&pf_rd_s=left-7&pf_rd_r=00V891APNX8EYE00HZSJ&pf_rd_t=101&pf_rd_p=82503972&pf_rd_i=2016156051" target="_blank"><?php echo $this->__('amazon')?></a></li>
+							<li><a href="http://shop.dangdang.com/store_clothes.php?sid=10832" target="_blank"><?php echo $this->__('dangdang')?></a></li>
+							<li><a href="http://lilyjp.tmall.com/shop/view_shop.htm?spm=a220m.1000862.1000730.3.99BfLx&user_number_id=843934673&rn=4417981e53b14401d7487273df683dee" target="_blank"><?php echo $this->__('lilyjp')?></a></li>
+							
+							
+						</ul>
+					</li>
+					<li class="nav-parent"><a href="<?php echo $this->getUrl('giftproducts.html') ?>" id="nav-club"><span><?php echo $this->__('CLUB')?> 会员</span></a>
+						<ul style="display:none;" class="child-nav">
+							<?php if(!$this->helper('customer')->isLoggedIn()):?>
+								<li><a href="<?php echo $this->getUrl('customer/account/login/') ?>"><?php echo $this->__('Register/Login')?></a></li>
+								<li><a href="<?php echo $this->getUrl('customer/account/create/') ?>" ><?php echo $this->__('Terms of Club')?></a></li>
+							<?php endif?>
+								<li><a href="<?php echo $this->getUrl('giftproducts.html') ?>"><?php echo $this->__('Gift Exchange')?></a></li>
+
+						</ul>
+					
+					</li>
+					<li><a href="#store" id="nav-store"><span><?php echo $this->__('STORE')?> 门店</span></a></li>
+				</ul>
+				<?php else:?>
+
+				<ul>
+					<li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>#video" id="nav-video"><span><?php echo $this->__('HOME')?> 首页</span></a></li>
+					<li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>#brand" id="nav-brand"><span><?php echo $this->__('BRAND')?> 品牌故事</span></a></li>
+					<li class="nav-parent"><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>#vision" id="nav-vision"><span><?php echo $this->__('VISION')?> 视觉</span></a>
+						<ul style="display:none;" class="child-nav">
+							<li><a href="<?php echo $this->getUrl('campaign2014spring.html') ?>" target="_blank"><?php echo $this->__('Look Book')?></a></li>
+							<li><a href="<?php echo $this->getUrl('street-look-book2014spring.html') ?>" target="_blank"><?php echo $this->__('Street Snaps')?></a></li>
+						</ul>
+					</li>
+					<li class="nav-parent"><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>#new" id="nav-new"><span><?php echo $this->__('NEW')?> 新品</span></a>
+						<ul style="display:none;" class="child-nav">
+							<li><a href="<?php echo $this->getUrl('trend2014spring.html') ?>" target="_blank"><?php echo $this->__('Trend Forecast')?></a></li>
+							<li><a href="<?php echo $this->getUrl('collection/jianianhua.html') ?>" target="_blank"><?php echo $this->__('Collection')?></a></li>
+						</ul>
+					</li>
+					<li class="nav-parent"><a href="#shop-online" id="nav-shop-online"><span><?php echo $this->__('SHOP ONLINE')?> 线上购物</span></a>
+						<ul style="display:none;" class="child-nav">
+							<li><a href="http://lilyfs.tmall.com/shop/view_shop.htm?spm=a1z10.3.w3-18294325231.3.lIUoip&scene=taobao_shop" target="_blank"><?php echo $this->__('TMALL')?></a></li>
+							<li><a href="http://mall.jd.com/index-37792.html" target="_blank"><?php echo $this->__('JD.com')?></a></li>
+							<li><a href="http://qijian.yintai.com/lily/index.shtml" target="_blank"><?php echo $this->__('yintai')?></a></li>
+							<li><a href="http://www.amazon.cn/s/ref=amb_link_29972252_1?ie=UTF8&bbn=2016156051&page=1&rh=n%3A2016156051%2Cp_4%3ALily%2Cp_6%3AA1AJ19PSB66TGU&pf_rd_m=A1AJ19PSB66TGU&pf_rd_s=left-7&pf_rd_r=00V891APNX8EYE00HZSJ&pf_rd_t=101&pf_rd_p=82503972&pf_rd_i=2016156051" target="_blank"><?php echo $this->__('amazon')?></a></li>
+							<li><a href="http://shop.dangdang.com/store_clothes.php?sid=10832" target="_blank"><?php echo $this->__('dangdang')?></a></li>
+<li><a href="http://lilyjp.tmall.com/shop/view_shop.htm?spm=a220m.1000862.1000730.3.99BfLx&user_number_id=843934673&rn=4417981e53b14401d7487273df683dee" target="_blank"><?php echo $this->__('lilyjp')?></a></li>
+						</ul>
+					</li>
+					<li class="nav-parent"><a href="<?php echo $this->getUrl('giftproducts.html') ?>" id="nav-club"><span><?php echo $this->__('CLUB')?> 会员</span></a>
+					
+						<ul style="display:none;" class="child-nav">
+						 
+							<?php if(!$this->helper('customer')->isLoggedIn()):?>
+							<li><a href="<?php echo $this->getUrl('customer/account/login/') ?>"><?php echo $this->__('Register/Login')?></a></li>
+							<li><a href="<?php echo $this->getUrl('customer/account/create/') ?>" ><?php echo $this->__('Terms of Club')?></a></li>
+							<?php endif;?>
+							<li><a href="<?php echo $this->getUrl('giftproducts.html') ?>" ><?php echo $this->__('Gift Exchange')?></a></li>
+
+						</ul>
+					</li>
+					<li class="nav-parent"><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>#store" id="nav-store"><span><?php echo $this->__('STORE')?> 门店</span></a>
+					<ul style="display:none;" class="child-nav">
+					<li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>storemap" target="_blank"><?php echo $this->__('Find Stores')?></a></li>
+					<li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB);?>star_shop_list" target="_blank"><?php echo $this->__('Star Stores')?></a></li>
+					</ul>
+					</li>
+				</ul>
+				
+				<?php endif;?>
+				
+				<div id="close-nav" style="display:none;">[x] close</div>
+				
+			</div>
+			
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+		$('.child-nav li:last-child').addClass('last');
+	});
+</script>

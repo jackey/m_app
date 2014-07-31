@@ -1,0 +1,150 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Customer login form template
+ *
+ * @see app/design/frontend/base/default/template/customer/form/login.phtml
+ */
+/** @var $this Mage_Customer_Block_Form_Login */
+?>
+
+<div class="account-login">
+
+    <div class="block-mini-login">
+	
+		<strong class="login-title"><?php //echo $this->__('LILY CLUB') ?>请登录</strong>
+        <div class="block-slider">
+            <ul class="slides">
+                <li id="slides-1">
+                    
+					
+                   
+                    <div class="block-content">
+                        <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+                        <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="login-form">
+							<span>输入您的手机号和密码</span>
+                            <ul class="form-list">
+                                <li>
+									<label for="telphone" class="required"><em>*</em><?php //echo $this->__('Telphone') ?>手机</label>
+									<div class="input-box">
+										<input type="text" name="login[telphone]" value="<?php echo $this->htmlEscape($this->getUsername()) ?>" id="telphone" class="input-text required-entry" title="<?php //echo $this->__('Telphone') ?>手机" />
+									</div>
+								</li>
+                                <li>
+                                    <label for="pass" class="required"><?php echo $this->__('Password') ?></label>
+                                    <div class="input-box">
+                                        <input type="password" name="login[password]" class="input-text required-entry validate-password" id="pass" title="<?php echo $this->__('Password') ?>" />
+                                    </div><a href="javascript:void(0)" class="forgot-password" id="forgot-password"><?php //echo $this->__('Forgot Your Password?') ?>忘记密码</a>
+                                </li>
+                                <?php echo $this->getChildHtml('form.additional.info'); ?>
+                                <?php echo $this->getChildHtml('persistent.remember.me'); ?>
+                            </ul>
+                            <?php echo $this->getChildHtml('persistent.remember.me.tooltip'); ?>
+                            <button type="submit" class="button" title="<?php //echo $this->__('Login') ?>立即登录" name="send" id="send2"><span><span><?php //echo $this->__('Login') ?>立即登录</span></span></button>
+                            
+							<br />
+							<a href="<?php echo $this->getUrl('lily/index/getactivate'); ?>" class="getactivate"  style="font-weight:bold">线下会员获取首次登录密码</a>
+							
+                            <?php if (Mage::helper('checkout')->isContextCheckout()): ?>
+                            <input name="context" type="hidden" value="checkout" />
+                            <?php endif; ?>
+                        </form>
+                    </div>
+                </li>
+                <li  id="slides-2" style="display:none;">
+                    <div class="block-title">
+                        <strong><span><?php //echo $this->__('Forgot Your Password?') ?>忘记密码</span></strong>
+                    </div>
+                    <div class="block-content">
+                        <form action="<?php echo $this->getUrl('lily/index/forgotpassword') ?>" method="post" id="form-validate">
+                            <ul class="form-list">
+                                <li>
+                                    <label for="telephone" class="required">手机</label>
+                                    <div class="input-box">
+                                        <input type="text" name="telephone" alt="telephone" id="telephone" class="input-text required-entry" value="<?php echo $this->htmlEscape($this->getEmailValue()) ?>" />
+                                    </div>
+                                </li>
+                                <?php echo $this->getChildHtml('form.additional.info'); ?>
+                            </ul>
+                            <button type="submit" class="button" title="<?php echo $this->__('Submit') ?>"><span><span><?php echo $this->__('Submit') ?></span></span></button>
+                            <a href="<?php echo $this->getForgotPasswordUrl() ?>" class="forgot-password" id="back-login"><?php //echo $this->__('Back to Login?'); ?>返回登录？</a>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="new-users">
+			<p>
+			
+			<span class="big">如果您还不是Lily的会员，</span><br/>
+			<span class="big">可以单击“立即注册”成为我们的粉丝。</span><br/>
+			
+			Free，注册即送200积分，累计线下消费。<br/>
+			<a href="<?php echo Mage::helper('persistent')->getCreateAccountUrl($this->getCreateAccountUrl()) ?>" target="_blank" style="font-weight:bold">Lily会员卡章程</a><br/>	
+			</p>
+		
+            <button type="button" title="注册成为Lily粉丝" class="button invert" onclick="window.location='<?php echo Mage::helper('persistent')->getCreateAccountUrl($this->getCreateAccountUrl()) ?>';"><span><span>立即注册</span></span></button>
+        </div>
+			<div class="clear"></div>
+		<div class="contact-info"><span class="tel">4008-91-9135    周一至周五10:00-18:00</span> </div>
+    </div>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var dataForm = new VarienForm('login-form', false);
+        var dataForgetForm = new VarienForm('form-validate', false);
+		// jQuery(document).ready(function($){
+			// $('#login-form button').click(function(check){
+				// dataForm.validator.validate();
+				// check.preventDefault();
+				// if(dataForm.validator.validate()){
+					// $.ajax({
+						// url: '<?php echo $this->getUrl('customer/account/ajaxloginPost'); ?>',
+						// data:{ login : $('#login-form').serialize()},
+						// type:'post',    
+						// cache:false,    
+						// dataType:'json', 
+						// success:function(data) {    
+							
+						// },
+						 // error : function() {    
+							 // alert('Some Error');
+						 // }   
+				
+					// })
+				
+				// }
+				
+				
+			// });
+		// });
+        // ]]>
+    </script>
+
+	
+</div>

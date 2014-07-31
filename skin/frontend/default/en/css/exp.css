@@ -1,0 +1,106 @@
+#navi ul a{font-size:12px;
+    font-weight: normal;
+    text-transform: uppercase;}
+
+#movetxt p{font-size:13px;}
+
+.post-wrapper p,.post-wrapper h3,.post-aug.post-wrapper h2,.post-wrapper h2{font-family:georgia;}
+.post-aug.post-wrapper h2,.post-wrapper h3,.post-wrapper h2{text-transform:uppercase;}
+.post-wrapper h2 .bigger{font-size:46px;}
+
+button.button span{font:17px/34px Helvetica,黑体,sans-serif}
+
+.category-fashion-video .short-description .sd-inner h2{   font-family: 'Futura LT Condensed',helvetica,arial,黑体;
+    font-size: 28px;
+    font-weight: normal;
+    text-transform: uppercase;}
+
+.customer-account-edit .form-list label{width:116px; font-size:12px;line-height:32px}
+
+.data-table tbody th, .data-table tbody td{font-size:12px;}
+
+.block-account .block-content{height:40px;overflow:hidden;}
+
+.store-links span,.about-links span{font-size:11px; width:140px;}
+.media-center .main-container{font-family:georgia}
+.media-center .page-title{text-transform:uppercase}
+
+.media-center-nav li li a{font-size: 12px;}
+
+
+.copy a.link1{background:url("../../default/images/homesub_title.png") repeat scroll 0 -1500px transparent}	
+.copy a.link1:hover{background:url("../../default/images/homesub_title.png") repeat scroll 0 -1546px transparent}	
+
+
+.copy a.link2{background:url("../../default/images/homesub_title.png") repeat scroll 0 -1600px transparent;width:180px;}	
+.copy a.link2:hover{background:url("../../default/images/homesub_title.png") repeat scroll 0 -1650px transparent}	
+
+.copy a.link3.link1{background:url("../../default/images/homesub_title.png") repeat scroll 0 -1690px transparent;width:220px;height:48px;}	
+.copy a.link3.link1:hover{background:url("../../default/images/homesub_title.png") repeat scroll 0 -1740px transparent}	
+
+.copy a.link4{background:url("../../default/images/homesub_title.png") repeat scroll 0 -1800px transparent;width:160px;}	
+.copy a.link4:hover{background:url("../../default/images/homesub_title.png") repeat scroll 0 -1850px transparent}	
+
+
+
+#newsletter-validate-detail button.button span{padding:0 15px 0 13px}
+#newsletter-unsubscribe-validate-detail button.button span{padding:0 7px 0 9px;}
+#newsletter-unsubscribe-validate-detail button.button span span{padding:0 11px 0 12px;}
+
+
+
+#footer-weibo{
+background:url("../../default/images/footer-icons.gif") repeat scroll 0 -200px transparent
+}
+#footer-tencent
+{background:url("../../default/images/footer-icons.gif") repeat scroll -99px  -200px  transparent}
+
+#weixin{
+
+background:url("../../default/images/footer-icons.gif") repeat scroll -198px -200px  transparent
+}
+
+#newsletter{
+
+background:url("../../default/images/footer-icons.gif") repeat scroll -297px -200px  transparent
+}
+
+.account-info .new-users{width:540px;}
+#login-form a, #back-login, .new-users a{font-size:10px;}
+
+
+.breadcrumbs select, #search{font-size:12px; font-family:helvetica;}
+
+
+.attribute-title{width:150px;}
+
+button.btn-checkout span{height:34px;}
+button.btn-checkout span span{padding:0}
+
+#store-activity{background:url("../../default/images/in-store_activity_all_en.jpg") no-repeat scroll center top transparent}
+#store-activity:hover{background:url("../../default/images/in-store_activity_all_en.jpg") no-repeat scroll center bottom transparent}
+
+#movetxt p{font-size:13px;} 
+
+.category-fashion-video .street-style5 .short-description .sd-inner h2{background:url("../../default/images/homesub_title.png") repeat scroll 0 -1900px rgba(0, 0, 0, 0)}
+.category-fashion-video .street-style5 .short-description .sd-inner h3{background:url("../../default/images/homesub_title.png") repeat scroll 0 -1938px rgba(0, 0, 0, 0)}
+
+
+a#byz:hover,.category-byzantine h2.active{background:url("../../default/images/homesub_title.png") no-repeat scroll left -2238px rgba(0, 0, 0, 0)}
+#byz{background:url("../../default/images/homesub_title.png") no-repeat scroll left -2046px rgba(0, 0, 0, 0)}
+
+#city-fairy{background:url("../../default/images/homesub_title.png") no-repeat scroll left -2104px rgba(0, 0, 0, 0)}
+a#city-fairy:hover,.category-urban-fairy .short-description .sd-inner h2.active{background:url("../../default/images/homesub_title.png") no-repeat scroll left -2296px rgba(0, 0, 0, 0)}
+
+#winter-garden{background:url("../../default/images/homesub_title.png") no-repeat scroll left -2162px rgba(0, 0, 0, 0)}
+a#winter-garden:hover,.category-winter-garden .short-description .sd-inner h2.active{background:url("../../default/images/homesub_title.png") no-repeat scroll left -2354px rgba(0, 0, 0, 0)}
+
+.store-links span, .about-links span{width:160px;}
+
+@media only screen and (max-width: 1279px) {
+
+.store-links li,
+.about-links li{width:33%}
+.about-links{clear:both;}
+
+}

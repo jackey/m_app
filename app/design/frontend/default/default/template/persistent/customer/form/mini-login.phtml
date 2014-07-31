@@ -1,0 +1,119 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Customer login form template
+ *
+ * @see app/design/frontend/base/default/template/customer/form/login.phtml
+ */
+/** @var $this Mage_Customer_Block_Form_Login */
+?>
+
+<?php if (! $this->helper('customer')->isLoggedIn() ):?>
+        <div class="page page_club">
+            <div class="club_login">
+                <div class="club_tit  club_login_tit">
+                    <h2>
+                        <?php echo $this->__("lily club")?>
+                    </h2>
+                </div>
+                <div class="club_login_txt">
+                    <?php echo $this->__("<p>Welcome to be a member of Lily club! </p>If you are not a lily club member, you can click the “Register Now” button to be our member. Free 200 points upon registration, countable with off-line purchases. ")?>
+                </div>
+
+                <a href="<?php echo Mage::helper('persistent')->getCreateAccountUrl($this->getCreateAccountUrl());?>" class="club_login_regbtn"><?php echo $this->__("Register Now")?> </a>
+                <p class="club_login_regtxt"><a href="<?php echo Mage::helper('persistent')->getCreateAccountUrl($this->getCreateAccountUrl());?>"><?php echo $this->__("Terms of lily membership")?> </a></p>
+                <div class="club_login_form cs-clear">
+                    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+                    <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="login-form">
+                        <div class="cs-clear">
+                            <input class="club_login_ipt" type="text" value="<?php echo $this->htmlEscape($this->getUsername()) ?>" name="login[telphone]" placeholder="<?php echo $this->__("Cell phone")?>" />
+                            <input class="club_login_ipt" type="password" name="login[password]" id="pass" placeholder="<?php echo $this->__("Password")?>" />
+                            <input class="club_login_sub" type="submit" value="<?php echo $this->__("Login")?>" />
+                        </div>
+                        <div class="cs-clear">
+                            <div class="club_login_formlink"><input type="checkbox" /> <?php echo $this->__("Remember me")?></div>
+                            <div class="club_login_formlink">
+                                <a href="javascript:void(0)" class="forgot-password" id="forgot-password-home"><?php echo $this->__("Forget your Password")?> ? </a></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript">
+        //<![CDATA[
+        var dataForm = new VarienForm('login-form', false);
+        var dataForgetForm = new VarienForm('form-validate', false);
+		jQuery(document).ready(function($){
+			$('#forgot-password').click(function(){
+				$('#slides-1').hide();
+				$('#slides-2').show();
+				return false;
+			});
+			
+			$('#forgot-password-home').click(function(){
+				$('#slides-1-home').hide();
+				$('#slides-2-home').show();
+				return false;				
+			});
+			
+			$('#back-login').click(function(){								
+				$('#slides-2').hide();
+				$('#slides-1').show();
+				return false;				
+			});
+			
+			$('#back-login-home').click(function(){								
+				$('#slides-2-home').hide();
+				$('#slides-1-home').show();
+				return false;				
+			});
+		});
+        //]]>
+    </script>
+</div>
+<?php else:?>
+<div class="account-login logged">
+
+    <div class="block-mini-login">
+	
+		<strong class="login-title"><?php echo $this->__('LILY CLUB') ?></strong>
+        <div class="block-slider">
+            <p><?php echo $this->__('Dear club member,')?><br/>
+			<?php echo $this->__('Welcome to Lily office-chic official website.')?></p>
+
+<a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>customer/account/edit/" target="_blank"><?php echo $this->__('Click to enter the exclusive club member page')?></a>
+
+
+<button type="submit" class="button" title="<?php echo $this->__('Log out') ?>" onclick="setLocation('<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>customer/account/logout/')"><span><span><?php echo $this->__('Log out') ?></span></span></button>
+        </div>
+
+    </div>
+
+</div>
+
+<?php endif;?>

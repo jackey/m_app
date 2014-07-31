@@ -1,0 +1,126 @@
+<?xml version="1.0"?>   
+<layout version="0.2.0">   
+  <points_index_index>   
+    <reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>   
+    </reference>   
+    <reference name="content">   
+      <block type="points/index" name="points_index" template="points/index.phtml"/>   
+    </reference>   
+  </points_index_index>   
+  
+  <points_checkout_pfailure>
+	<reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>   
+    </reference>
+	<reference name="content">
+
+		
+		
+      <block type="points/index" name="points_fail" template="points/checkout/fail.phtml"/>   
+    </reference>	
+  </points_checkout_pfailure>
+  
+  
+	
+  <points_checkout_psucceed>
+	
+	<reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>   
+    </reference>
+	<reference name="content">   
+
+		
+      <block type="points/index" name="points_success" template="points/checkout/success.phtml"/>   
+    </reference>
+  
+  </points_checkout_psucceed>
+  
+  <points_checkout_index>
+	<reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>   
+    </reference> 
+   <reference name="content">   
+      <block type="points/checkout" name="points_index" template="points/checkout.phtml">
+		 <block type="points/shipping" name="points_shipping" as="points_shipping" template="points/shipping.phtml" />
+		 <block type="points/review" name="points_review" as="points_review" template="points/checkout_review.phtml" />
+	  </block>
+    </reference> 
+  </points_checkout_index>
+  
+ 
+  <sales_order_view>
+	<reference name="my.account.wrapper">
+		<reference name="sales.order.view">
+			<reference name="order_items">
+				 <action method="setTemplate"><template>points/order/items.phtml</template></action>  
+			</reference>
+		</reference>
+	</reference>
+  </sales_order_view>
+  
+  <wishlist_index_index>
+	<reference name="my.account.wrapper">
+		<reference name="customer.wishlist">
+			<reference name="customer.wishlist.items">
+				<reference name="customer.wishlist.item.image">
+					<action method="setTemplate"><template>points/wishlist/item/column/image.phtml</template></action> 
+					<action method="setTitle" translate="title">
+						<title>Gift Detail</title>
+					</action>					 
+				</reference>
+				<reference name="customer.wishlist.item.info" >
+					<action method="setTemplate"><template>points/wishlist/item/column/info.phtml</template></action> 
+					<action method="setTitle" translate="title">
+                            <title>Gift Points</title>
+					</action>
+				</reference>
+				<reference name="customer.wishlist.item.cart">
+					<action method="setTemplate"><template>points/wishlist/item/column/cart.phtml</template></action> 
+					<action method="setTitle" translate="title">
+                            <title>Wishlist Add Date</title>
+					</action>
+				</reference>
+				<reference name="customer.wishlist.item.remove">
+					<action method="setTemplate"><template>points/wishlist/item/column/remove.phtml</template></action> 
+				</reference>			
+			</reference>
+		</reference>
+	</reference>
+  </wishlist_index_index>
+  
+  <PRODUCT_TYPE_configurable>
+	<reference name="product.info.options.wrapper">
+		<reference name="product.info.options.configurable">
+			<action method="setTemplate"><template>points/catalog/product/view/type/options/configurable.phtml</template></action> 
+		</reference>
+	</reference>
+  </PRODUCT_TYPE_configurable>
+
+  
+	<default>
+		<reference name="breadcrumbs">
+			<block type="core/template" name="points.search" as="pointsSearch" template="points/catalogsearch/form.mini.phtml"/>
+			<block type="core/template" name="points.type.search" as="points_type_search" template="points/catalogsearch/points.form.mini.phtml"/>	
+		</reference>
+		
+		<reference name="header">
+			<block type="customer/form_login" name="customer_form_login_mini_header" template="points/persistent/customer/form/mini-login_header.phtml" >
+				<block type="persistent/form_remember" name="persistent.remember.me" template="persistent/remember_me.phtml" />
+				<block type="core/template" name="persistent.remember.me.tooltip" template="persistent/remember_me_tooltip.phtml" />
+			</block>
+		</reference>
+	</default>
+  
+  <catalog_product_view translate="label">
+	<reference name="content">
+		<reference name="product.info">
+			<reference name="product.info.addto">
+				<action method="setTemplate"><template>points/catalog/product/view/addto.phtml</template></action> 
+			</reference>
+		</reference>
+	</reference>
+  </catalog_product_view>
+  
+</layout>   
+	

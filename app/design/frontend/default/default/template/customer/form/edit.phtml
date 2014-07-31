@@ -1,0 +1,117 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<div class="page page_club">
+    <!--  -->
+    <div class="club_login">
+        <div class="club_tit ">
+            <h2><?php echo $this->__("member<br />INFORMATION")?></h2>
+        </div>
+        <!-- <p class="club_ecoupon_txt">For system reason,  E coupon information will be synchronized after 24 hours later. </p> -->
+        <div class="club_ecoupon_center cs-clear">
+            <div class="club_ecoupon_nav">
+                <div class="club_welcome">
+                    <?php echo $this->__("Hi")?> <?php echo $this->getCustomer()->getFirstname();?> ! <?php echo $this->__("Welcome to Lily Club")?> <br /> <?php echo $this->__("Your remaining points")?> <br /><?php echo $this->__("are %s point(s)", $this->getCustomer()->getUsePoints())  ?>  
+                </div>
+                <a class="club_logout" href="club_login.html"><?php echo $this->__("LOGOUT")?></a>
+                <div class="club_navlist">
+                    <a href="<?php echo $this->getUrl("customer/account/edit/")?>"><?php echo $this->__("Account informations")?></a>
+                    <a href="<?php echo $this->getUrl("sales/order/history/")?>"><?php echo $this->__("Gift history")?></a>
+                    <a href="<?php echo $this->getUrl("wishlist")?>"><?php echo $this->__("My wishlist")?></a>
+                    <a href="<?php echo $this->getUrl("customer/account/point/")?>"><?php echo $this->__("Point informations")?></a>
+                    <a href="<?php echo $this->getUrl("customer/account/ecoupon/")?>" class=""><?php echo $this->__("E-coupon")?></a>
+                </div>
+            </div>
+
+            <div class="club_ecoupon_com club_meminfo">
+                <div class="club_meminfolist cs-clear" >
+                    <ul class="club_meminfolist1">
+                        <li><span><?php echo $this->__("Name")?></span><strong><?php echo $this->getCustomer()->getFirstname(); ?></strong></li>
+                        <li><span><?php echo $this->__("E-mail")?></span><strong><?php echo $this->htmlEscape($this->getCustomer()->getEmail()) ?></strong></li>
+                        <li><span><?php echo $this->__("Birthday")?></span><strong><?php echo date('Y/m/d', strtotime($this->getCustomer()->getDob())); ?></strong></li>
+
+                        <?php $_gender = $this->getLayout()->createBlock('customer/widget_gender') ?>
+                        <li><span><?php echo $this->__("Gender")?></span><strong><?php echo $_gender->setGender($this->getCustomer()->getGender())->toHtml() ?></strong></li>
+                        <li><span><?php echo $this->__("Address")?></span><strong><?php echo $this->htmlEscape($this->getCustomer()->getCustomerAddress()) ?></strong></li>
+                        <li><span><?php echo $this->__("Zip/Post code")?></span><strong><?php echo $this->htmlEscape($this->getCustomer()->getCustomerZip()) ?></strong></li>
+                    </ul>
+                    <ul class="club_meminfolist2">
+                        <li><span><?php echo $this->__("VIP Ctard")?></span><strong><?php echo $this->htmlEscape($this->getCustomer()->getVipCard()) ?></strong></li>
+                        <li><span><?php echo $this->__("VIP level")?></span><strong><?php echo $this->htmlEscape($this->getCustomer()->getVipLevel()) ?></strong></li>
+                        <li><span><?php echo $this->__("Join date")?></span><strong><?php echo $this->htmlEscape(date('Y-m-d', strtotime($this->getCustomer()->getCardValidity()))) ?></strong></li>
+                        <li><span><?php echo $this->__("Points")?></span><strong><?php echo $this->htmlEscape($this->getCustomer()->getUsePoints()) ?></strong></li>
+                        <li><span><?php echo $this->__("E coupon")?></span><strong><?php echo $this->htmlEscape($this->getCustomer()->getEcoupon()) ?></strong></li>
+                    </ul>
+                </div>
+                <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+                <div class="club_meminpw">
+                    <p><?php echo $this->__("Change password")?></p>
+                    <div class="club_meminpwform">
+                        <form action="<?php echo $this->getUrl('customer/account/editPost') ?>" method="post" id="form-validate">
+                            <div class="cs-clear">
+                                <input type="password" name="current_password" id="current_password"  placeholder="Current password*" />
+                                <input type="password" name="password" id="password" placeholder="New password*" />
+                                <input type="password" name="confirmation" id="confirmation"  placeholder="Confirm new password*" />
+                            </div>
+                            <input type="submit" value="Save" class="club_meminpwsub" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+    var dataForm = new VarienForm('form-validate', true);
+    function setPasswordForm(arg){
+        if(arg){
+            $('current_password').up(3).show();
+            $('current_password').addClassName('required-entry');
+            $('password').addClassName('required-entry');
+            $('confirmation').addClassName('required-entry');
+
+        }else{
+            $('current_password').up(3).hide();
+            $('current_password').removeClassName('required-entry');
+            $('password').removeClassName('required-entry');
+            $('confirmation').removeClassName('required-entry');
+        }
+    }
+    <?php if($this->getCustomer()->getChangePassword()): ?>
+        setPasswordForm(true);
+    <?php endif; ?>
+	
+	function pickedFunc(){
+			jQuery('#year').val($dp.cal.getP('y'));
+			jQuery('#month').val($dp.cal.getP('M'));
+			jQuery('#day').val($dp.cal.getP('d'));
+			jQuery('#dob').val($dp.cal.getP('y') + '-' + $dp.cal.getP('M') + '-' + $dp.cal.getP('d'));
+		}
+	
+//]]>
+</script>

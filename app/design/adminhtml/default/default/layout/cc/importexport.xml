@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout>
+    <importexport_admin_adminhtml_import_index>
+        <reference name="content">
+            <!--<block type="adminhtml/template" template="cc/importexport/import/form/before.phtml" name="import.form.before" alias="form_before"/>-->
+            <block type="ccimportexport/adminhtml_import_edit" name="ccimport.form.container"/>
+            <block type="adminhtml/template" template="importexport/import/form/after.phtml" name="import.form.after" alias="form_after"/>
+        </reference>
+    </importexport_admin_adminhtml_import_index>
+    
+    <importexport_admin_adminhtml_export_index>
+        <reference name="content">
+            <!--<block type="adminhtml/template" template="importexport/export/form/before.phtml" name="export.form.before" alias="form_before"/>-->
+            <block type="ccimportexport/adminhtml_export_edit" name="ccexport.form.container"/>
+            <block type="adminhtml/template" template="importexport/export/form/after.phtml" name="export.form.after" alias="form_after"/>
+        </reference>
+    </importexport_admin_adminhtml_export_index>
+</layout>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <lilysmslog_adminhtml_lilysmslogbackend_index>
+	<reference name="content">
+	  <block type="lilysmslog/adminhtml_lilysmslogbackend" name="lilysmslogbackend" template="lilysmslog/lilysmslogbackend.phtml"/>
+	</reference>
+  </lilysmslog_adminhtml_lilysmslogbackend_index>
+  <lilysmslog_adminhtml_lilysmslog_index>
+	<reference name="content">
+	  <block type="lilysmslog/adminhtml_lilysmslog" name="lilysmslog" />
+	</reference>
+  </lilysmslog_adminhtml_lilysmslog_index>
+</layout>

@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Mec_Lilysmslog>
+      <version>0.2.0</version>
+    </Mec_Lilysmslog>
+  </modules>
+  <global>
+    <helpers>
+      <lilysmslog>
+        <class>Mec_Lilysmslog_Helper</class>
+      </lilysmslog>
+    </helpers>
+	<blocks>
+	  <lilysmslog>
+		<class>Mec_Lilysmslog_Block</class>
+	  </lilysmslog>
+	</blocks>
+	<models>
+	  <lilysmslog>
+		<class>Mec_Lilysmslog_Model</class>
+		<resourceModel>lilysmslog_mysql4</resourceModel>
+	  </lilysmslog>
+	  <lilysmslog_mysql4>
+		<class>Mec_Lilysmslog_Model_Mysql4</class>
+		<entities>		  
+			  <lilysmslog>
+				<table>lily_sms_log</table>
+			  </lilysmslog>
+        </entities>
+	  </lilysmslog_mysql4>
+	</models>
+	<resources>
+	  <lilysmslog_setup>
+		<setup>
+		  <module>Mec_Lilysmslog</module>
+		</setup>
+		<connection>
+		  <use>core_setup</use>
+		</connection>
+	  </lilysmslog_setup>
+	  <lilysmslog_write>
+		<connection>
+		  <use>core_write</use>
+		</connection>
+	  </lilysmslog_write>
+	  <lilysmslog_read>
+		<connection>
+		  <use>core_read</use>
+		</connection>
+	  </lilysmslog_read>
+	</resources>
+  </global>
+  <admin>
+	<routers>
+	  <lilysmslog>
+	    <use>admin</use>
+		<args>
+		  <module>Mec_Lilysmslog</module>
+		  <frontName>lilysmslog</frontName>
+		</args>
+	  </lilysmslog>
+	</routers>
+  </admin>
+  <adminhtml>
+	<menu>
+	  <lilysmslog module="lilysmslog">
+		<title>SMS</title>
+		<sort_order>100</sort_order>
+		<children>
+		  <lilysmslog module="lilysmslog">
+		    <title>SMS Log</title>
+			<sort_order>0</sort_order>
+			<action>lilysmslog/adminhtml_lilysmslog</action>
+		  </lilysmslog>
+		</children>
+	  </lilysmslog>
+	</menu>
+	<acl>
+	  <resources>
+		<all>
+		  <title>Allow Everything</title>
+		</all>
+		<admin>
+		  <children>
+			<lilysmslog translate="title" module="lilysmslog">
+			  <title>SMS Log</title>
+			  <sort_order>1000</sort_order>
+			  <children>
+		 
+		  <lilysmslog translate="title">
+			<title>Manage Lilysmslog</title>
+			<sort_order>0</sort_order>
+		  </lilysmslog>
+			  </children>
+			</lilysmslog>
+		  </children>
+		</admin>
+	  </resources>
+	</acl>
+	<layout>
+	  <updates>
+		<lilysmslog>
+		  <file>lilysmslog.xml</file>
+		</lilysmslog>
+	  </updates>
+	</layout>
+  </adminhtml>
+</config> 

@@ -1,0 +1,92 @@
+.nicescroll-rails{display:none!important;}
+
+ .container {
+	/* defaults for resposive height container */
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	overflow: visible;
+}
+
+.iosSlider {
+	width: 100%;
+	height: 960px !important;
+}
+
+.iosSlider .slider {
+	width: 100%;
+	height: 100%;
+}
+
+.iosSlider .slider .item {
+	float: left;
+	/*width: 50%;*/
+	
+	width:25%;
+}
+
+.iosSlider .slider .item.hover{width:380px; z-index:9}
+.iosSlider .slider .item img {
+	width: auto;
+	height: 960px;
+}
+.iosSlider .slider .item.fourth{overflow:hidden;}
+.iosSlider .slider .item.fourth img{margin-left:-60px;}
+.iosSlider .slider .item.fourth.hover{overflow:visible;}
+.iosSlider .slider .item.fourth.hover span{margin-left:-60px;}
+.item.hover span {width:350px;background:#829ec9;color:#fff;}
+.item span {
+	background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+    font-family: 'microsoft yahei';
+    font-size: 21px;
+    padding: 15px 0 15px 30px;
+    position: absolute;
+    top: 608px;
+    width: 290px;
+	}
+.item span strong{width:100%;display:block;}
+.container .prev {
+background: url("../images/star-store/shop-list-arrow.png") no-repeat scroll 0 0 transparent;
+    height: 60px;
+    position: absolute;
+    top: 34%;
+    width: 40px;
+    z-index: 10;
+}
+
+.container .next {
+	position: absolute;
+	top: 34%;
+	right: 0;
+	width: 40px;
+	height: 60px;
+	background: url("../images/star-store/shop-list-arrow.png") no-repeat scroll right 0 transparent;
+	z-index: 10;
+}
+
+.container .unselectable {
+	opacity: 0.2;
+}
+
+.cms-page-view .col1-layout .col-main{height:960px;margin:0;overflow:visible!important;padding-top:0;}
+.page-title{display:none;}
+
+.more-store {
+    bottom: 40px;
+    left: 50%;
+    margin-left: -120px;
+    position: relative;
+    width: 240px;
+    z-index: 9;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {			
+
+	.item span{width:70px;padding:15px 0 15px 10px;font-size:12px;}
+	.doubleSlider-2{display:none;}
+}

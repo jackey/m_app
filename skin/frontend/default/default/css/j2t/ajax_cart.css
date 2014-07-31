@@ -1,0 +1,167 @@
+div.j2tajax-confirm div.j2tajax-checkout-img{
+    float:left; margin-right:20px;
+}
+
+div.j2tajax-confirm .success-msg {
+    background:none;
+    color:#2280DA;
+    padding: 8px !important;
+    text-align:left;
+    border:none !important;
+}
+
+div.j2t-cart-bts {    bottom: 0;
+    clear: both;
+    height: 45px;
+    margin-top: 20px;
+/*    position: absolute;*/
+    width: 100%;}
+
+
+div.j2tajax-confirm, div.j2tajax-progress{
+	z-index: 199;
+    text-align:center;box-shadow:0 0 4px #2280DA
+}
+div.j2tajax-confirm{padding:20px 20px 90px}
+div.j2tajax-progress{padding:100px 30px; z-index: 199;}
+
+div#j2t_ajax_confirm_wrapper div.add-to-cart {margin-top:20px; text-align: center;}
+div#j2t_ajax_confirm_wrapper .add-to-cart label, div#j2t_ajax_confirm_wrapper .add-to-cart .qty, div#j2t_ajax_confirm_wrapper .add-to-cart button.button {float:none;}
+	.j2t-ajax-child{padding-top:0!important;}
+div.j2t-overlay{
+    width: 100%;
+    height: 100%;
+	background:#fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 198;
+}
+
+a.j2t-checkout-link{
+
+	background: #6dcdd9; /* Old browsers */
+background: -moz-linear-gradient(left,  #6dcdd9 0%, #91b5ef 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6dcdd9), color-stop(100%,#91b5ef)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #6dcdd9 0%,#91b5ef 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #6dcdd9 0%,#91b5ef 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #6dcdd9 0%,#91b5ef 100%); /* IE10+ */
+background: linear-gradient(to right,  #6dcdd9 0%,#91b5ef 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6dcdd9', endColorstr='#91b5ef',GradientType=1 ); /* IE6-9 */
+
+    display: block;
+    float: right;
+    font-size:12px;
+    line-height: 34px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+    height: 34px; /* Height of button background height */
+    padding-left: 11px; /* Width of left menu image */
+    text-decoration: none;
+    margin-right:10px;
+}
+
+a:link.j2t-checkout-link, a:visited.j2t-checkout-link, a:active.j2t-checkout-link{
+    color: #fff; /*button text color*/
+}
+
+a.j2t-checkout-link span{
+    display: block;
+    padding:0 12px 0 0; /*Set 11px below to match value of 'padding-left' value above*/
+	font-size:17px;
+}
+
+a.j2t-checkout-link:hover{ /* Hover state CSS */
+
+}
+
+a.j2t-checkout-link:hover span{ /* Hover state CSS */
+    background-position: bottom right;
+    color: #2280DA;
+}
+
+
+
+span.j2t-or{
+    display:none;
+}
+a.j2t-continue-link{
+    display: block;
+    float: left;
+
+    font-size:12px;
+    line-height: 34px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+    height: 34px; /* Height of button background height */
+    padding-left: 11px; /* Width of left menu image */
+    text-decoration: none;
+    margin-left:10px;
+	
+	background: #6dcdd9; /* Old browsers */
+background: -moz-linear-gradient(left,  #6dcdd9 0%, #91b5ef 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6dcdd9), color-stop(100%,#91b5ef)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #6dcdd9 0%,#91b5ef 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #6dcdd9 0%,#91b5ef 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #6dcdd9 0%,#91b5ef 100%); /* IE10+ */
+background: linear-gradient(to right,  #6dcdd9 0%,#91b5ef 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6dcdd9', endColorstr='#91b5ef',GradientType=1 ); /* IE6-9 */
+
+}
+.j2tajax-checkout-txt{    background: url("images/add_success.gif") no-repeat scroll 60px top rgba(0, 0, 0, 0);
+    font-size: 14px;
+    height: 58px;
+    padding-left: 130px;
+    padding-top: 10px;}
+a:link.j2t-continue-link, a:visited.j2t-continue-link, a:active.j2t-continue-link{
+    color: #fff; /*button text color*/
+}
+
+a.j2t-continue-link span{
+	font-size:17px;
+    display: block;
+    padding: 0 12px 0 0; /*Set 11px below to match value of 'padding-left' value above*/
+}
+
+a.j2t-continue-link:hover{ /* Hover state CSS */
+    background-position: bottom left;
+}
+
+a.j2t-continue-link:hover span{ /* Hover state CSS */
+    background-position: bottom right;
+    color: #2280DA;
+}
+
+span.j2t-upsells-list-wrapper {display:block; text-align:left;height:100px;}
+
+table.j2t-upsell-product-table {clear:both;}
+table td.j2t-upsells-list-item h5.j2t-product-lnk {
+padding: 0 4px;
+margin: 5px 0;
+}
+table td.j2t-upsells-list-item h5.j2t-product-lnk a {font-size: 12px; font-weight: normal;}
+h4.j2t-upsells-title {    clear: both;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 20px 0;
+    padding-left: 10px;
+    padding-top: 0;}
+
+div.j2tajax-confirm {min-height:190px !important;}
+	.j2tajax-sucess-add {
+    color: #000000;
+    font-size: 14px;
+    font-weight: normal;
+}
+div.j2tajax-progress, div.j2tajax-confirm {background:url("images/gardient_bg.gif") no-repeat scroll 0 0 #fff;width:500px!important;}
+div.j2t-closing-button { text-align:right;
+    cursor: pointer;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+    height: 36px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;}
+	#j2t-closing-button span{margin:10px; font-size: 30px;}
+#j2t_ajax_confirm_wrapper{padding:36px 0 0;}	
+
+#j2t-upsell-product-table tbody tr td{width:24%;text-align: center;}

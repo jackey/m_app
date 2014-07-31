@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+	  <sections>
+		<points  translate="label" module="pointsadd">            
+					<groups>
+				      <shipping translate="label"> 
+					  <label>Shipping States</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>10</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>0</show_in_store>
+				       <fields>
+                          <shipping_import translate="label">
+                            <label>Import Csv</label>
+							<frontend_type>import</frontend_type>
+							<backend_model>pointsadd/import</backend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+							
+                          </shipping_import>
+					   </fields>
+					   </shipping>
+					</groups>
+		</points>
+	  </sections>
+</config>

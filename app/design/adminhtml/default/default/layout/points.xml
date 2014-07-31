@@ -1,0 +1,16 @@
+<?xml version="1.0"?>   
+<layout version="0.2.0">  
+	<adminhtml_sales_order_view>
+		<reference name="left">
+			<reference name="sales_order_tabs">
+				<reference name="order_tab_info">
+					<reference name="order_info">
+						<action method="setTemplate"><template>points/info.phtml</template></action>   
+					</reference>
+				</reference>
+			</reference>
+		</reference>
+	</adminhtml_sales_order_view>
+
+
+</layout>

@@ -1,0 +1,110 @@
+<div class="points_checkout product-essential">
+
+    
+	<div class="form-before">
+		<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('checkout_progress')->toHtml(); ?>
+		<div class="clear"></div>
+	</div>
+	
+	<form id="points_checkout_form" method="post" action="">
+		<div class="content-wrapper">
+		<div class="content">
+			<h2><?php echo $this->__('Confirm Member Info') ?></h2>
+			 <ul class="form-list">
+                        <li>
+                            <label for="order_place_name" class="required"><em>*</em><?php echo $this->__('Real Name') ?></label>
+                            <div class="input-box">
+                                <input type="text" name="order_place_name" value="" id="order_place_name" class="input-text required-entry" title="<?php echo $this->__('Real Name') ?>" />
+                            </div>
+                        </li>
+                        <li>
+                            <label for="order_place_idcard" class="required"><em>*</em><?php echo $this->__('ID Card') ?></label>
+                            <div class="input-box">
+                                <input type="text" name="order_place_idcard" class="input-text required-entry" value="" id="order_place_idcard" title="<?php echo $this->__('ID Card') ?>" />
+                            </div>
+                        </li>
+						<li>
+                            <label for="order_place_tel" class="required"><em>*</em><?php echo $this->__('Cell phone') ?></label>
+                            <div class="input-box">
+                                <input type="text" name="order_place_tel" class="input-text required-entry" value="" id="order_place_tel" title="<?php echo $this->__('Telpone') ?>" />
+                            </div>
+                        </li>
+				</ul>
+		</div>
+		</div>	
+		
+		<?php echo $this->getChildHtml('points_shipping'); ?>		
+		
+		
+		
+		
+		<div class="content-wrapper exchange-list">
+		<div class="content">
+		<h2><?php echo $this->__('Exchanged gift list detail') ?></h2>
+		
+		<?php echo $this->getChildHtml('points_review'); ?>
+		<div class="button-set back-to-cart">
+			<button class="button" onclick="setLocation('<?php echo $this->getUrl('checkout/cart')?>')" ><span><span><?php echo $this->__('Back to the gift cart'); ?></span></span></button>
+		</div>
+		
+		<div class="button-set">
+			<button class="button btn-proceed-checkout btn-checkout" type="submit"><span><span><?php echo $this->__('Place Order'); ?></span></span></button>
+			<span class="please-wait" id="review-please-wait" style="display:none;">
+				<img src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif') ?>" alt="<?php echo $this->__('Submitting order information...') ?>" title="<?php echo $this->__('Submitting order information...') ?>" class="v-middle" /> <?php echo $this->__('Submitting order information...') ?>
+			</span>
+		</div>
+		</div>
+		</div>
+	</form>
+	<script type="text/javascript">
+		 var pointsForm = new VarienForm('points_checkout_form');
+		 
+		 jQuery(document).ready(function($){
+			$('.button-set button.btn-checkout').click(function(check){
+				 pointsForm.validator.validate();
+				 check.preventDefault();
+				 if($('input[type="radio"][name="shipping_method"]:checked').length == 0){
+					alert('<?php echo $this->__("请选择一种配送方式"); ?>');
+					return;
+				 }
+			     if(pointsForm.validator.validate()){
+					$.ajax({
+						url: '<?php echo $this->getUrl('points/checkout/PlaceOrder'); ?>',
+						data:{ datas : $('#points_checkout_form').serialize()},
+						type:'post',    
+						cache:false,    
+						dataType:'json',
+						beforeSend: function(){
+							$(this).hide();
+							$('#review-please-wait').show();
+						},						
+						success:function(data) {    
+							if(data.return_url != ""){
+								setLocation(data.return_url);
+							}
+						},
+						 error : function() {    
+							 alert('Some Error');
+						 }   
+				
+					})
+					
+					
+					
+				 }
+				
+				 
+			
+			});
+		 
+		 });
+		 
+		 
+	</script>
+
+</div>
+
+	<div class="instruction">
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('instruction')->toHtml(); ?>
+	
+	</div>

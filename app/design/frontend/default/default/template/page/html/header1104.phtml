@@ -1,0 +1,88 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<div class="header-container">
+    <div class="header">
+        <?php if ($this->getIsHomePage()):?>
+        <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="#top" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+        <?php else:?>
+        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+        <?php endif?>
+        <div class="quick-access show">
+			<?php //echo $this->getChildHtml('topMenu') ?>
+			
+			
+			<div id="navi">
+
+				<?php if ($this->getIsHomePage()):?>
+				<ul>
+					<li><a href="#top" id="nav-video"><span><?php echo $this->__('HOME')?> 首页</span></a></li>
+					<li><a href="#brand" id="nav-brand"><span><?php echo $this->__('BRAND')?> 品牌故事</span></a></li>
+					<li><a href="#vision" id="nav-vision"><span><?php echo $this->__('VISION')?> 视觉</span></a></li>
+					<li><a href="#new" id="nav-new"><span><?php echo $this->__('NEW')?> 新品</span></a></li>
+					<li><a href="#shop-online" id="nav-shop-online"><span><?php echo $this->__('SHOP ONLINE')?> 线上购物</span></a></li>
+					<li><a href="#club" id="nav-club"><span><?php echo $this->__('CLUB')?> 会员</span></a></li>
+					<li><a href="#store" id="nav-store"><span><?php echo $this->__('STORE')?> 门店</span></a></li>
+				</ul>
+				<?php else:?>
+				<ul>
+					<li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>#video" id="nav-video"><span><?php echo $this->__('HOME')?> 首页</span></a></li>
+					<li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>#brand" id="nav-brand"><span><?php echo $this->__('BRAND')?> 品牌故事</span></a></li>
+					<li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>#vision" id="nav-vision"><span><?php echo $this->__('VISION')?> 视觉</span></a></li>
+					<li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>#new" id="nav-new"><span><?php echo $this->__('NEW')?> 新品</span></a></li>
+					<li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>#shop-online" id="nav-shop-online"><span><?php echo $this->__('SHOP ONLINE')?> 线上购物</span></a></li>
+					<li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>#club" id="nav-club"><span><?php echo $this->__('CLUB')?> 会员</span></a></li>
+					<li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>#store" id="nav-store"><span><?php echo $this->__('STORE')?> 门店</span></a></li>
+				</ul>
+				<?php endif;?>
+				
+				<div id="close-nav" style="display:none;">[x] close</div>
+				
+			</div>
+			
+			<?php //echo $this->getChildHtml('store_language') ?>
+			<div class="store-language">
+				
+				<span id="weibo-icon"><a href="http://e.weibo.com/lilyofficial" target="_blank"><img src="<?php echo $this->getSkinUrl('images/weibo-icon.png') ?>"/></a></span>
+				
+				<span id="en-store">EN</span>
+				<span>中</span>
+				
+			</div>
+			<div id="navi-switch" style="display:none;">&nbsp;</div>
+        </div>
+		<div id="back-button">
+			<a href="#">
+				<img src="<?php echo $this->getSkinUrl('images/backicon.png') ?>"/>
+			</a>
+		</div>
+		
+    </div>
+	<div class="clear"></div>
+</div>

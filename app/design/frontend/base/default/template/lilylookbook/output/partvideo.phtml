@@ -1,0 +1,30 @@
+<!-- Get Current Url -->
+<?php $current_url = Mage::helper('core/url')->getCurrentUrl() ?>
+<!-- End -->
+<?php $_product = $this->getProduct(); ?>
+<?php $_helper = Mage::helper('catalog/output'); ?>
+
+
+<?php $video_path = $_product->getVideoPath(); ?>
+<div class="grid-12 street-style">
+	<div id="video" class="left">
+
+		<video   id="lily-category-video"   controls="controls" poster="http://www.lily-collection.com/skin/frontend/default/default/images/fashion-video-shade.jpg" width="960" height="540">
+			<source src="http://www.lily-collection.com/media/video/LILY_MAKING_OF_MASTER.webmhd.mp4" type="video/mp4" />
+			<source src="http://www.lily-collection.com/media/video/LILY_MAKING_OF_MASTER.webmhd.webm" type="video/webm" />
+			<object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="960" height="540">
+				<param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+				<param name="allowFullScreen" value="true" />
+				<param name="wmode" value="transparent" />
+				<param name="flashVars" value="config={'playlist':['http%3A%2F%2Fwww.lily-collection.com%2Fskin%2Ffrontend%2Fdefault%2Fdefault%2Fimages%2Ffashion-video-shade.jpg',{'url':'http%3A%2F%2Fwww.lily-collection.com%2Fmedia%2Fvideo%2FLILY_MAKING_OF_MASTER.webmhd.mp4','autoPlay':false}]}" />
+				<img alt="Lily F/W 2013 »¨Ðõ" src="http://www.lily-collection.com/skin/frontend/default/default/images/fashion-video-shade.jpg" width="960" height="540" title="No video playback capabilities, please download the video below" />
+			</object>
+		</video>
+	</div>
+	<div class="grid-video">
+		<div class="video-short-description">
+			<?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?>
+		</div>
+	</div>
+	
+</div>

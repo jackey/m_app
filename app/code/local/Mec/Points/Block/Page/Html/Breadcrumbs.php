@@ -1,0 +1,1 @@
+<?phpclass Mec_Points_Block_Page_Html_Breadcrumbs extends Mage_Page_Block_Html_Breadcrumbs{		 function __construct()    {        parent::__construct();        $this->setTemplate('points/page/html/breadcrumbs.phtml');    }}

@@ -1,0 +1,143 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Shopping cart template
+ *
+ * @see Mage_Checkout_Block_Cart
+ */
+?>
+<div class="cart product-essential">
+
+    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+    
+	<div class="form-before">
+		<?php echo $this->getChildHtml('form_before') ?>
+		<div class="clear"></div>
+	</div>
+	
+	
+	
+    <form action="<?php echo $this->getUrl('checkout/cart/updatePost') ?>" method="post">
+        <fieldset>
+            <table id="shopping-cart-table" class="data-table cart-table">
+            
+                <col />
+                
+
+              
+                <col width="170px" />
+                <col width="160px" />
+                <col width="1" />
+
+            <?php $mergedCells = ($this->helper('tax')->displayCartBothPrices() ? 2 : 1); ?>
+                <thead>
+                    <tr>
+                        <th rowspan="<?php echo $mergedCells; ?>"><span class="nobr"><?php echo $this->__('Gift') ?></span></th>
+                       
+
+                        <th class="a-center" colspan="<?php echo $mergedCells; ?>"><span class="nobr"><?php echo $this->__('Unit Points') ?></span></th>
+                        <th rowspan="<?php echo $mergedCells; ?>" class="a-center"><?php echo $this->__('Exchange qty') ?></th>
+                        
+                        <th rowspan="<?php echo $mergedCells; ?>" class="a-center">&nbsp;</th>
+                    </tr>
+                    <?php if ($this->helper('tax')->displayCartBothPrices()): ?>
+                    <tr>
+                        <th class="a-right"><?php echo $this->helper('tax')->getIncExcTaxLabel(false) ?></th>
+                        <th><?php echo $this->helper('tax')->getIncExcTaxLabel(true) ?></th>
+                        <th class="a-right"><?php echo $this->helper('tax')->getIncExcTaxLabel(false) ?></th>
+                        <th><?php echo $this->helper('tax')->getIncExcTaxLabel(true) ?></th>
+                    </tr>
+                    <?php endif; ?>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="50" class="a-right">
+                            <?php if($this->getContinueShoppingUrl()): ?>
+                                <button type="button" title="<?php echo $this->__('Continue Exchange') ?>" class="button btn-continue" onclick="setLocation('<?php echo $this->getContinueShoppingUrl() ?>')"><span><span><?php echo $this->__('Continue Exchange') ?></span></span></button>
+                            <?php endif; ?>
+                          <div class="totals">
+            <?php //echo $this->getChildHtml('totals'); ?>
+			
+				合计：<?php echo Mage::helper('points')->getTotalPoints(); ?>分
+            <?php if(!$this->hasError()): ?>
+            <ul class="checkout-types">
+            <?php foreach ($this->getMethods('methods') as $method): ?>
+                <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
+                <li><?php echo $methodHtml; ?></li>
+                <?php endif; ?>
+            <?php endforeach; ?>
+            </ul>
+            <?php endif; ?>
+        </div>
+                        </td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                <?php foreach($this->getItems() as $_item): ?>
+                    <?php echo $this->getItemHtml($_item) ?>
+                <?php endforeach ?>
+                </tbody>
+            </table>
+            <script type="text/javascript">decorateTable('shopping-cart-table')</script>
+        </fieldset>
+		<script type="text/javascript"> <?php /* +,- Script Action */ ?>
+		function Update(id, method, original_qty){
+			var _qty = 0;
+			/*if(method == 'add'){
+				_qty = original_qty + 1;
+				jQuery('#qty'+id).val(_qty);
+			}else if(method == 'clip'){
+				_qty = original_qty - 1;
+				jQuery('#qty'+id).val(_qty);
+			}
+			update by xavi
+			*/
+			
+			if(method == 'add'){
+				_qty = original_qty + 1;
+				jQuery('#shopping-cart-table #qty'+id).val(_qty);
+				jQuery('.shopping-cart-table-mobile #qty'+id).val(_qty);
+			}else if(method == 'clip'){
+				_qty = original_qty - 1;
+				jQuery('#shopping-cart-table #qty'+id).val(_qty);
+				jQuery('.shopping-cart-table-mobile #qty'+id).val(_qty);
+                                
+			}
+			
+		}
+	
+	</script>
+    </form>
+    <div class="cart-collaterals">
+        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('warm-tip')->toHtml(); ?>
+    </div>
+</div>
+	<div class="instruction">
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('instruction')->toHtml(); ?>
+	
+	</div>

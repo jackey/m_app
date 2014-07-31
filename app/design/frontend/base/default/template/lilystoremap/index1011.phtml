@@ -1,0 +1,344 @@
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.4&services=true"></script>
+<?php $_province = Mage::getSingleton('core/session')->getSprovince(); ?>
+<?php if($_province != ""):?>
+<?php $citys = $this->getAllCityByProvince($_province); ?>
+<?php endif; ?>
+<?php $provinces = $this->getAllProvince(); ?>
+<div class="store-search">
+
+
+
+	<div class="by-detail">
+	
+		<h1><span>Store</span>店铺</h1>
+		
+		<div class="width-input-div">
+			<div class="input-box widther">
+				<label><?php echo $this->__('Country'); ?></label>
+				<div class="input-box">
+					<select class="selected search-city">
+						<option value=""><?php echo $this->__('中国'); ?></option>
+					</select>
+				</div>
+			</div>
+			
+			<div class="input-box widther">
+				<label><?php echo $this->__('Province'); ?></label>
+				<div class="input-box">
+					<select class="selected search-city" id="province">
+						<?php foreach($provinces as $province): ?>
+							<option value="<?php echo $province; ?>" <?php if($_province == $province) echo "selected = 'select'"; ?>><?php echo $province; ?></option>
+						<?php endforeach; ?>
+					</select>
+				</div>
+			</div>
+		</div>
+		
+		<div class="width-input-div">
+			<div class="input-box widther">
+				<label><?php echo $this->__('City'); ?></label>
+				<div class="input-box">
+					<select class="selected search-city" id="city">
+						<?php if($_province != ""):?>
+							<?php foreach($citys as $city): ?>
+								<option value="<?php echo $city; ?>"><?php echo $city; ?></option>
+							<?php endforeach; ?>
+						<?php else: ?>
+							<option value=""><?php echo $this->__('Please Select Province'); ?></option>
+						<?php endif; ?>
+					</select>
+				</div>
+			</div>
+			
+			<div class="input-box widther search-area-div" >
+				<label><?php echo $this->__('Area'); ?></label>
+				<div class="input-box">
+					<select class="selected search-area" id="city-area">
+					
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="action">
+			<button class="button" title="Submit" type="button"><span><span><?php echo $this->__('Go'); ?></span></span></button>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<!--<div class="by-store">
+		<label>您也可以搜索店铺名</label>
+		<br />
+		<div class="input-box widther">
+			<label><?php //echo $this->__('City'); ?></label>
+			<div class="input-box">
+				<input type="text" id="storename" />
+			</div>
+		</div>
+		<div class="action">
+			<button class="button" title="Submit" type="button"><span><span><?php echo $this->__('Go'); ?></span></span></button>
+		</div>
+	</div>-->
+	
+	
+<div id="search-city-result">
+	<?php if(Mage::getSingleton('core/session')->getScity()): ?>
+		<?php $stores = Mage::helper('lilystoremap')->getInfoByCity(Mage::getSingleton('core/session')->getScity());?>
+		<ul>
+		<?php foreach($stores as $store):?>	
+			<li onclick="getMap(<?php echo $store['id']?>)" class="result-city">
+				<div class="title"><?php echo $store['store_name']; ?></div>
+				<div class="address"><?php echo $store['store_address']; ?></div>
+				<div class="tel"><?php echo $store['store_tel']; ?></div>
+			</li>
+		<?php endforeach;?>
+		</ul>
+	<?php endif; ?>
+	
+	<?php if(Mage::getSingleton('core/session')->getScity() == "" && Mage::getSingleton('core/session')->getSprovince() != ""):?>
+		<?php $stores = Mage::helper('lilystoremap')->getInfoByProvince(Mage::getSingleton('core/session')->getSprovince());?>
+		<ul>
+		<?php foreach($stores as $store):?>
+			<li onclick="getMap(<?php echo $store['id']?>)" class="result-city">
+				<div class="title"><?php echo $store['store_name']; ?></div>
+				<div class="address"><?php echo $store['store_address']; ?></div>
+				<div class="tel"><?php echo $store['store_tel']; ?></div>
+			</li>
+		<?php endforeach;?>
+		</ul>
+	<?php endif;?>
+	
+	
+</div>
+
+<div class="clear"></div>
+
+</div>
+
+
+
+
+
+<div class="wrapper" id="wrapper" style="height:600px; width:100%;">
+  <div style="width:100%;height:100%;" id="dituContent"></div>
+</div>
+
+
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(<?php echo $this->getPoints(); ?>);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+                //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"<?php echo $this->getName(); ?>",content:"<?php echo $this->getName(); ?>",point:"<?php echo str_replace(',' , '|', $this->getPoints()); ?>",isOpen:0,icon:{w:114,h:102,l:0,t:0,x:6,lb:5}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("<?php echo $this->getSkinUrl('images/biaozhi.png') ?> ", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+		// var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+	jQuery.noConflict();
+</script>
+
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+		
+		$('#province').change(function(){
+			$.ajax({
+				url:'<?php echo $this->getUrl('storemap/index/getCitysByProvince')?>',
+				data:{    
+					province : $('#province').val(),
+				},
+				type:'post',    
+				cache:false,    
+				dataType:'json',  
+				success:function(data) {    
+					if(data.success){
+						$('#city').html(data.return_html);
+						// $('#search-city-result').html(data.return_html);
+					}
+				 },    
+				 error : function() {    
+					 alert('<?php echo $this->__('Some Error'); ?>');
+				 }    
+			});
+			
+		});
+	
+		
+		$('#city').change(function(){
+			$.ajax({
+				url:'<?php echo $this->getUrl('storemap/index/getRangeByCity')?>',
+				data:{
+					city : $('#city').val(),
+				},
+				type:'post',    
+				cache:false,    
+				dataType:'json',    
+				success:function(data) {    
+					if(data.success){
+						if(data.has_range){
+							$('.search-area-div').show();
+							$('#city-area').html(data.return_html);
+						}else if(data.has_range == false){
+							$('.search-area-div').hide();
+							$('#city-area').html('');
+						}
+					}
+				 },    
+				 error : function() {    
+					 alert('<?php echo $this->__('Some Error'); ?>');
+				 }    
+			});
+		
+		});
+		
+		
+		// $('.by-store .action button').click(function(){
+			// $.ajax({
+				// url:'<?php echo $this->getUrl('storemap/index/getResultByStorename'); ?>',
+				// data:{    
+					// store_name : $('#storename').val(),
+					
+				// },
+				// type:'post',    
+				// cache:false,    
+				// dataType:'json',    
+				// success:function(data) {    
+					// if(data.success){
+						// $('#search-city-result').html(data.return_html);
+					// }
+				 // },    
+				 // error : function() {    
+					 // alert('<?php echo $this->__('Some Error'); ?>');
+				 // }    
+			// });
+		// });
+		
+	
+		$('.store-search .action button').click(function(){
+			
+			$.ajax({
+				url:'<?php echo $this->getUrl('storemap/index/getResultByCity'); ?>',
+				data:{    
+					province : $('#province').val(),
+					city : $('#city').val(),
+					city_area : $('#city-area').val(),
+				},
+				type:'post',    
+				cache:false,    
+				dataType:'json',    
+				success:function(data) {    
+					if(data.success){
+						$('#search-city-result').html(data.return_html);
+					}
+				 },    
+				 error : function() {    
+					 alert('<?php echo $this->__('Some Error'); ?>');
+				 }    
+			});
+		});
+		
+	
+	
+	});
+	function getMap(pid){
+		jQuery.ajax({
+				url:'<?php echo $this->getUrl('storemap/index/setMapInfo'); ?>',
+				data:{    
+					id : pid,
+				},
+				type:'post',    
+				cache:false,    
+				dataType:'json',    
+				success:function(data) {    
+					if(data.success){
+						setLocation(data.return_url);
+					}
+				 },    
+				 error : function() {    
+					 alert('<?php echo $this->__('Some Error'); ?>');
+				 }    
+			});
+	
+	}
+</script>

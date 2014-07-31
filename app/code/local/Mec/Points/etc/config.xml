@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Mec_Points>
+      <version>0.2.0</version>
+    </Mec_Points>
+  </modules>
+  <frontend>
+    <routers>
+      <points>
+        <use>standard</use>
+          <args>
+            <module>Mec_Points</module>
+            <frontName>points</frontName>
+          </args>
+      </points>
+    </routers>
+		<layout>
+		  <updates>
+			<points>
+			  <file>points.xml</file>
+			</points>
+		  </updates>
+		</layout>
+  </frontend>
+  <adminhtml>
+	 <layout>
+		<updates>
+			<points>
+				<file>points.xml</file>
+			</points>
+		</updates>
+	</layout>
+  </adminhtml>
+  <global>
+    <helpers>
+      <points>
+        <class>Mec_Points_Helper</class>
+      </points>
+    </helpers>
+	<blocks>
+	  <points>
+		<class>Mec_Points_Block</class>
+	  </points>
+			<checkout>
+				<rewrite>
+					<onepage_link>Mec_Points_Block_Checkout_Onepage_Link</onepage_link>
+				</rewrite>
+			</checkout>
+			<sales>
+				<rewrite>
+					<order_history>Mec_Points_Block_Sales_Order_History</order_history>
+					<order_info>Mec_Points_Block_Sales_Order_Info</order_info>
+					<order_items>Mec_Points_Block_Sales_Order_Items</order_items>
+				</rewrite>
+			</sales>
+			<page>
+				<rewrite>
+					<html_breadcrumbs>Mec_Points_Block_Page_Html_Breadcrumbs</html_breadcrumbs>
+				</rewrite>
+			</page>
+	</blocks>
+	<models>
+	  <points>
+		<class>Mec_Points_Model</class>
+		<resourceModel>points_mysql4</resourceModel>
+	  </points>
+	</models>
+	<resources>
+	  <customerattribute1383547667_setup>
+		<setup>
+		  <module>Mec_Points</module>
+		  <class>Mage_Customer_Model_Entity_Setup</class>
+		</setup>
+		<connection>
+		  <use>core_setup</use>
+		</connection>
+	  </customerattribute1383547667_setup>
+	  <customerattribute1383547667_write>
+		<connection>
+		  <use>core_write</use>
+		</connection>
+	  </customerattribute1383547667_write>
+	  <customerattribute1383547667_read>
+		<connection>
+		  <use>core_read</use>
+		</connection>
+	  </customerattribute1383547667_read>
+	</resources>
+    <events>
+	  <checkout_type_onepage_save_order_after> <!-- identifier of the event we want to catch -->
+        <observers>
+          <checkout_type_onepage_save_order_after_handler> <!-- identifier of the event handler -->
+            <type>model</type> <!-- class method call type; valid are model, object and singleton -->
+            <class>points/observer</class> <!-- observers class alias -->
+            <method>CreateGiftExchange</method>  <!-- observer's method to be called -->
+            <args></args> <!-- additional arguments passed to observer -->
+          </checkout_type_onepage_save_order_after_handler>
+        </observers>
+      </checkout_type_onepage_save_order_after>
+    </events>
+	<rewrite>        
+		<mec_points_checkout_onepagecontroller>
+			<from><![CDATA[#^/checkout/onepage/#]]></from> <!-- Mage_Checkout_OnepageController  -->
+			<to>/points/checkout_onepage/</to> 
+		</mec_points_checkout_onepagecontroller>
+		
+		<mec_points_wishlist_indexcontroller>
+			<from><![CDATA[#^/wishlist/index/#]]></from>
+			<to>/points/wishlist_index/</to> 
+		</mec_points_wishlist_indexcontroller>
+		
+		<mec_points_sales_ordercontroller>
+			<from><![CDATA[#^/sales/order/#]]></from>
+			<to>/points/sales_order/</to>
+		</mec_points_sales_ordercontroller>
+		
+		<mec_points_checkout_cartcontroller>
+			<from><![CDATA[#^/checkout/cart/#]]></from>
+			<to>/points/checkout_cart/</to> 
+		</mec_points_checkout_cartcontroller>
+	</rewrite>
+  </global>
+</config> 
