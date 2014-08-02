@@ -73,6 +73,9 @@ Wishlist pages
         <label>Customer My Account My Wishlist</label>
         <!-- Mage_Wishlist -->
         <update handle="customer_account" />
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column2.phtml</template></action>
+        </reference>
         <reference name="my.account.wrapper">
             <block type="wishlist/customer_wishlist" name="customer.wishlist" template="wishlist/view.phtml">
                 <action method="setTitle" translate="title">

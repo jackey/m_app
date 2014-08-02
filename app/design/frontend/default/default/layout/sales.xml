@@ -49,6 +49,9 @@ Customer account pages, rendered for all tabs in dashboard
 
     <customer_account>
         <!-- Mage_Sales -->
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column2.phtml</template></action>
+        </reference>
         <reference name="customer_account_navigation">
             <action method="addLink" translate="label" module="sales"><name>orders</name><path>sales/order/history/</path><label>Gift history</label></action>
         </reference>

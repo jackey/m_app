@@ -82,6 +82,7 @@
   <customer_account_point translate="label">
         <update handle="customer_account"/>
         <reference name="root">
+            <action method="setTemplate"><template>page/1column2.phtml</template></action>
             <action method="setHeaderTitle" translate="title" module="customer"><title>Point Information</title></action>
         </reference>
         <reference name="my.account.wrapper">
@@ -97,6 +98,7 @@
         <update handle="customer_account"/>
         <reference name="root">
             <action method="setHeaderTitle" translate="title" module="customer"><title>Ecoupon Information</title></action>
+            <action method="setTemplate"><template>page/1column2.phtml</template></action>
         </reference>
         <reference name="my.account.wrapper">
             <block type="lily/ecoupon" name="ecoupon_info" template="lily/customer/ecoupon.phtml"/>
