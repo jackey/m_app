@@ -44,6 +44,7 @@
 .no-margin    { margin:0 !important; }
 .no-padding   { padding:0 !important; }
 .no-bg        { background:none !important; }
+fieldset {border:none;}
 /* ======================================================================================= */
 
 
@@ -117,19 +118,9 @@ input.qty { width:2.5em !important; }
 button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
 button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
 button.button { overflow:visible; width:auto; border:0; padding:0; margin:0; background:transparent; cursor:pointer; }
-button.button span { display:block; height:34px;
-
-	background: #6dcdd9; /* Old browsers */
-background: -moz-linear-gradient(left,  #6dcdd9 0%, #91b5ef 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6dcdd9), color-stop(100%,#91b5ef)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  #6dcdd9 0%,#91b5ef 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  #6dcdd9 0%,#91b5ef 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  #6dcdd9 0%,#91b5ef 100%); /* IE10+ */
-background: linear-gradient(to right,  #6dcdd9 0%,#91b5ef 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6dcdd9', endColorstr='#91b5ef',GradientType=1 ); /* IE6-9 */
-
-padding:0 8px; font:normal 17px/34px '方正兰亭超细黑简体','黑体',Arial,Helvetica,sans-serif; text-align:center; white-space:nowrap; color:#fff }
+button.button span { display:block; padding:12px 20px;text-align:center; white-space:nowrap; color:#000;font-size:14px;border:1px solid #000;}
 button.button span span { border:0; padding:0; }
+button.button:hover {opacity:0.7;}
 button.disabled span { border-color:#bbb !important; background:#bbb !important; }
 
 button.btn-checkout span {      height: 26px;
@@ -308,7 +299,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 .note-msg,
 .notice-msg { border-style:solid !important; border-width:1px !important; background-position:10px 9px !important; background-repeat:no-repeat !important; min-height:24px !important; padding:8px 8px 8px 32px !important; font-size:11px !important; font-weight:bold !important; }
 .error-msg { background-color:#fff; background-image:url(../images/i_msg-error.gif); color:#5F92DB }
-.success-msg { border-color:#2280DA; background-color:#fff; background-image:url(../images/i_msg-success.gif); color:#2280DA; }
+.success-msg { border-color:#000;color:#000; }
 .note-msg,
 .notice-msg { border-color:#2280DA; background-color:#fafaec; background-image:url(../images/i_msg-note.gif); color:#2280DA; }
 
@@ -389,12 +380,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91b5ef', end
 /* Data Table */
 .data-table { width:100%; border:1px solid #bebcb7; }
 span.title{display:none;}
-#shopping-cart-table.data-table tr.odd td{background:#F1F1F1}
-#shopping-cart-table.data-table tr.even td{background:#fff}
-#shopping-cart-table.data-table thead th{border-right:0;padding:24px 8px 15px;color:#555555;}
+#shopping-cart-table.data-table tr.odd td{border-bottom:1px solid #000;}
+#shopping-cart-table.data-table tr.even td{border-bottom:1px solid #000;}
+#shopping-cart-table.data-table thead th{border-right:0;padding:24px 8px 15px;color:#000;}
 #shopping-cart-table.data-table{border:none; font-size: 17px;}
-#shopping-cart-table.data-table tbody td{border:none; vertical-align: middle;border-right:2px solid #d3d3d3}
-
+#shopping-cart-table.data-table tbody td{border:1px solid #000; vertical-align: middle;border-right:1px solid #000}
+#shopping-cart-table.data-table tfoot {border:1px solid #000; }
 #shopping-cart-table .product-image{float:left;margin-right:10px;}
 
 #shopping-cart-table  tbody  button{    background: none repeat scroll 0 0 #9B9A98;
@@ -402,10 +393,10 @@ span.title{display:none;}
 	cursor:pointer;
     color: #FFFFFF;
     font-family: 'Lucida Grande';
-    font-size: 20px;
+    font-size: 12px;
     font-weight: bold;
     height: 20px;
-    line-height: 20px;
+    line-height: 16px;
     width: 20px;
 	-webkit-border-radius: 100%;
 -moz-border-radius: 100%;
@@ -611,7 +602,7 @@ body.checkout-cart-index
 .category-giftproducts .product-essential,
 .cart.product-essential,
 .points_checkout.product-essential
-{background:url("../images/gardient_bg.gif") no-repeat scroll 0 0 #fff}
+{}
 .catalog-product-view .product-essential{padding-top:90px ;}
 .points-checkout-psucceed .header .logo,
 .points-checkout-pfailure .header .logo,
@@ -707,7 +698,7 @@ padding-top:0;
 .header .form-search label { float:left; width:24px; height:21px; text-align:left; text-indent:-999em; overflow:hidden; }
 .header .form-search input.input-text { float:left; border-color:#5c7989; width:209px; margin-right:4px; }
 .header .form-search button.button { float:left; }
-.header .form-search button.button span { border:0; height:21px; background:url(../images/btn_search.gif) 0 0 no-repeat; padding:0 0 0 3px; font:bold 11px/21px Tahoma, Verdana, Arial, sans-serif; }
+.header .form-search button.button span {height:21px; padding:0 0 0 3px; font-size:14px;border:1px solid #000;}
 .header .form-search button.button span span { background-position:100% 0; padding:0 6px 0 3px; }
 .header .form-search .search-autocomplete { z-index:999; left:40px !important; top:22px !important; }
 .header .form-search .search-autocomplete ul { border:1px solid #5c7989; background-color:#f9f5f0; }
@@ -1748,7 +1739,7 @@ border-radius: 2px;
     position: absolute;
     top: -63px;
 }
-.product-essential { padding:70px 25px 25px;margin:25px 25px 0; background:#fff;}
+.product-essential { padding:70px 25px 25px;margin:25px 25px 0; }
 .product-essential h2 { }
 
 .product-collateral { background:#faf7ee url(../images/bkg_product_collateral.gif) 0 0 repeat-x; padding:25px; }
@@ -1994,7 +1985,7 @@ border-radius: 2px;
 .cart .totals .checkout-types .paypal-or { clear:both; display:block; padding:8px 55px 0 0; line-height:1.0; font-size:11px; }
 
 
-.form-before {border-bottom:1px solid #d2d2d2;}
+.form-before {border-bottom:1px solid #000;padding:0 0 15px 0;}
 .form-before li {
     float: left;
 	color:#444;
@@ -2019,14 +2010,7 @@ border-radius: 2px;
 .points-checkout-pfailure  .form-before .step4 span ,
 .checkout-cart-index .form-before .step2 span ,
 .points-checkout-index .form-before .step3 span {
-	background: #6dcdd9; /* Old browsers */
-background: -moz-linear-gradient(left,  #6dcdd9 0%, #91b5ef 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6dcdd9), color-stop(100%,#91b5ef)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  #6dcdd9 0%,#91b5ef 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  #6dcdd9 0%,#91b5ef 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  #6dcdd9 0%,#91b5ef 100%); /* IE10+ */
-background: linear-gradient(to right,  #6dcdd9 0%,#91b5ef 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6dcdd9', endColorstr='#91b5ef',GradientType=1 ); /* IE6-9 */
+	background: #000; /* Old browsers */
 }
 
 .form-before span {
@@ -2054,11 +2038,11 @@ color:#fff;
 #points_checkout_form .shipping-method .form-list .input-box{width:260px}
 #points_checkout_form .form-list li .input-box{clear:none; float:left;}
 #points_checkout_form .form-list label.required em{right:12px;}
-.content-wrapper{border-bottom:1px solid #d2d2d2}
+.content-wrapper{border-bottom:1px solid #000}
 .content-wrapper.exchange-list{margin-bottom:100px;position:relative;z-index:1}
 
 
-#checkout-points-review tr.odd{background:#F1F1F1}
+#checkout-points-review tr.odd{}
 #checkout-points-review.data-table{padding:5px;}
 #checkout-points-review.data-table tbody th,#checkout-points-review.data-table tbody td{border-top:none;}
 /* Shopping Cart Table */
@@ -2086,7 +2070,7 @@ color:#fff;
 .button-set.back-to-cart{float:right;margin-top:20px;}	
 
 /* Shopping Cart Collateral boxes */
-.cart .cart-collaterals { padding:25px 0 0;border-top:1px solid #D2D2D2;margin-top:10px }
+.cart .cart-collaterals { padding:25px 0 0;margin-top:10px }
 .cart .cart-collaterals .col2-set { float:left; width:605px; }
 .cart .cart-collaterals .col2-set .col-2 { width:294px; }
 
