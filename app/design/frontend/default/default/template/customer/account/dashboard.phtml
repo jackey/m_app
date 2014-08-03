@@ -1,0 +1,73 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<div class="page page_club">
+    <!--  -->
+    <div class="club_login">
+        <div class="club_tit ">
+            <h2><?php echo $this->__("member<br />INFORMATION")?></h2>
+        </div>
+        <!-- <p class="club_ecoupon_txt">For system reason,  E coupon information will be synchronized after 24 hours later. </p> -->
+        <div class="club_ecoupon_center cs-clear">
+            <div class="club_ecoupon_nav">
+                <div class="club_welcome">
+                    <?php echo $this->__("Hi")?> <?php echo $this->getCustomer()->getFirstname();?> ! <?php echo $this->__("Welcome to Lily Club")?> <br /> <?php echo $this->__("Your remaining points")?> <br /><?php echo $this->__("are %s point(s)", $this->getCustomer()->getUsePoints())  ?>  
+                </div>
+                <a class="club_logout" href="club_login.html"><?php echo $this->__("LOGOUT")?></a>
+                <div class="club_navlist">
+                    <a href="<?php echo $this->getUrl("customer/account/edit/")?>"><?php echo $this->__("Account informations")?></a>
+                    <a href="<?php echo $this->getUrl("sales/order/history/")?>"><?php echo $this->__("Gift history")?></a>
+                    <a href="<?php echo $this->getUrl("wishlist")?>"><?php echo $this->__("My wishlist")?></a>
+                    <a href="<?php echo $this->getUrl("customer/account/point/")?>"><?php echo $this->__("Point informations")?></a>
+                    <a href="<?php echo $this->getUrl("customer/account/ecoupon/")?>" class=""><?php echo $this->__("E-coupon")?></a>
+                </div>
+            </div>
+
+            <div class="club_ecoupon_com club_meminfo">
+                <div class="club_meminfolist cs-clear" >
+                    <div class="page-title">
+                        <h1><?php echo $this->__('My Dashboard') ?></h1>
+                    </div>
+                    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+                    <?php echo $this->getChildHtml('hello') ?>
+                    <?php echo $this->getChildHtml('top') ?>
+                    <div class="box-account box-info">
+                        <div class="box-head">
+                            <h2><?php echo $this->__('Account Information') ?></h2>
+                        </div>
+                        <?php /* Extensions placeholder */ ?>
+                        <?php echo $this->getChildHtml('customer.account.dashboard.extra') ?>
+                        <?php echo $this->getChildHtml('info') ?>
+                        <?php echo $this->getChildHtml('address') ?>
+                    </div>
+                    <?php echo $this->getChildHtml('info1') ?>
+                    <?php echo $this->getChildHtml('info2') ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
