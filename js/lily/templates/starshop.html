@@ -1,0 +1,17 @@
+{{#each data}}
+<div class="limit cs-clear">
+    <div class="desc {{#if_even @index}}left{{else}}right{{/if_even}}">
+        <h2>{{title}}</h2>
+        <p>{{city}}</p>
+        <p>{{name}}</p>
+        <p>{{address}}</p>
+        <p>{{phone}}</p>
+        <a href="javascript:;" class="store_view fadeout" data-lat="{{lat}}" data-lng="{{lng}}">View map</a>
+    </div>
+    <!--<img class='{{imageClass}}' alt="" src="{{image}}">-->
+    <div class="starshop_map starshop_img_{{#if_even @index}}right{{else}}left{{/if_even}}">
+        <img class='{{imageClass}}' alt="" src="images/starshop1.jpg">
+    </div>
+    <div class="clear"></div>
+</div>
+{{/each}}

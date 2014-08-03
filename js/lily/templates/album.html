@@ -1,0 +1,28 @@
+<div class="jcarousel">
+    <ul class='content'>
+        {{#each data}}
+        <li>
+            <img src="{{url}}" />
+        </li>
+        {{/each}}
+    </ul>
+</div>
+<ul class='actions'>
+    <li>
+        <a class="jcarousel-control-prev">
+            <img src="images/modalpre.png">
+            <span></span>
+        </a>
+    </li>
+    <li>
+        {{#with data.[0]}}
+        <span class="desc">{{title}}</span>
+        {{/with}}
+    </li>
+    <li>
+        <a class="jcarousel-control-next">
+            <img src="images/modalnext.png">
+            <span></span>
+        </a>
+    </li>
+</ul>

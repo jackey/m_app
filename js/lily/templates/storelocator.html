@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<div class="cs-clear">
+    {{#each data}}
+    <div class="store_additem">
+        <p>{{title}}</p>
+        <p>{{address}}</p>
+        <p>{{phone}}</p>
+        <a href="javascript:;" class="store_view btnlink fadeout" data-lat="{{lat}}" data-lng="{{lng}}"><span>{{../_eView}}</span><span>{{../_eView}}</span></a>
+    </div>
+    {{/each}}
+</div>
