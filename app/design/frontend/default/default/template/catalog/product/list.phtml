@@ -32,7 +32,11 @@
  */
 ?>
 <?php
-    $_productCollection=$this->getLoadedProductCollection();
+    $_productCollection = clone $this->getLoadedProductCollection();
+    $_productCollection
+        ->clear()
+        ->setPageSize(30)
+        ->load();
     $_helper = $this->helper('catalog/output');
 ?>
 
