@@ -4,7 +4,7 @@
 
 /**/
 .club{background: #f3dedd;}
-.page_club{padding: 120px 0}
+.page_club{padding: 120px 0;background: #f3dedd;}
 .club_tit{font-size: 80px;line-height:88px;text-transform:uppercase;text-align: center;padding:0 0 50px;font-family:arial;}
 .club_login{}
 .club_login_tit{}
@@ -48,7 +48,7 @@
 /**/
 
 .club_ecoupon_txt{text-align: center;}
-.club_ecoupon_center{padding: 0 0 0 150px;}
+.club_ecoupon_center{padding: 10px 0 0 150px;}
 .club_ecoupon_nav{width:240px;float: left;}
 .club_welcome{font-weight: bold;}
 .club_logout{width: 122px;height: 48px;border:#000 solid 1px;display: block;line-height: 48px;text-align: center;font-weight: bold;margin: 14px 0 50px}

@@ -24,63 +24,84 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
-<?php $_orders = $this->getOrders(); ?>
-<div class="welcome"><?php echo $this->__('Hi,')?><span class="welcome-customer"><?php echo Mage::getSingleton('customer/session')->getCustomer()->getFirstname(); ?></span><?php echo $this->__('.Welcome to Lily Official.')?>
-<a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>customer/account/logout/" id="logout_link"><?php echo $this->__('Log Out')?></a>
-</div><div class="clear"></div>
-<br/>
-<?php //echo $this->getPagerHtml(); ?>
-<?php if($_orders->getSize()): ?>
-<table class="data-table" id="my-orders-table">
-    <col width="1" />
-    <col width="1" />
-    <col width="1" />
-	<col />
-    <col width="1" />
-    <col width="1" />
-    <thead>
-        <tr>
-            <th><?php echo $this->__('Order Type') ?></th>
-            <th><?php echo $this->__('Order Num') ?></th>
-            <th><?php echo $this->__('Order Date') ?></th>
-            <th><span class="nobr"><?php echo $this->__('Gift Of Order') ?></span></th>
-            <th><span class="nobr"><?php echo $this->__('Order Status') ?></span></th>
-            <th><?php echo $this->__('Operation') ?></th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php $_odd = ''; ?>
-        <?php foreach ($_orders as $_order): ?>
-        <tr>
-			<td><span class="title"><?php echo $this->__('Order Type') ?></span><?php echo $this->__('Exchange From Webstore'); ?></td>
-            <td><span class="title"><?php echo $this->__('Order Num') ?></span><?php echo $_order->getRealOrderId() ?></td>
-            <td><span class="title"><?php echo $this->__('Order Date') ?></span><span class="nobr"><?php echo $this->formatDate($_order->getCreatedAtStoreDate()) ?></span></td>
-			<td><span class="title"><?php echo $this->__('Gift Of Order') ?></span><?php echo $this->getOrderItemsImg($_order); ?></td>
-            <td>
-				<span class="title"><?php echo $this->__('Order Status') ?></span>
-				<em>
-					<?php if($_order->getErpStatus() != ""): ?>
-						<?php echo $this->__($_order->getErpStatus()); ?>
-					<?php else: ?>
-						<?php echo $this->__('兑换成功'); ?>
-					<?php endif; ?>
-				</em>
-			</td>
-            <td class="a-center"><span class="title"><?php echo $this->__('Operation') ?></span>
-                <span class="nobr"><a href="<?php echo $this->getViewUrl($_order) ?>"><?php echo $this->__('View Order') ?></a>
-                    <?php /*<span class="separator">|</span><a href="<?php echo $this->getTrackUrl($_order) ?>"><?php echo $this->__('Track Order') ?></a>&nbsp;*/ ?>
-                    <?php if ($this->helper('sales/reorder')->canReorder($_order)) : ?>
-                    <span class="separator">|</span> <a href="<?php echo $this->getReorderUrl($_order) ?>" class="link-reorder"><?php echo $this->__('Reorder') ?></a>
-                <?php endif ?>
-                </span>
-            </td>
-        </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
-<script type="text/javascript">decorateTable('my-orders-table');</script>
-<?php echo $this->getPagerHtml(); ?>
-<?php else: ?>
-    <p><?php echo $this->__('You have placed no orders.'); ?></p>
-<?php endif ?>
+
+<div class="page page_club">
+    <div class="club_tit ">
+        <h2><?php echo $this->__("point<br />history")?></h2>
+    </div>
+    <div class="club_ecoupon_center cs-clear">
+        <div class="club_ecoupon_nav">
+            <div class="club_welcome">
+                <?php echo $this->__("Hi")?> <?php echo Mage::getSingleton('customer/session')->getCustomer()->getFirstname();?> ! <?php echo $this->__("Welcome to Lily Club")?> <br /> <?php echo $this->__("Your remaining points")?> <br /><?php echo $this->__("are %s point(s)", Mage::getSingleton('customer/session')->getCustomer()->getUsePoints())  ?>
+            </div>
+            <a class="club_logout" href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>customer/account/logout/"><?php echo $this->__("LOGOUT")?></a>
+            <div class="club_navlist">
+                <a href="<?php echo $this->getUrl("customer/account/edit/")?>"><?php echo $this->__("My Account")?></a>
+                <a href="<?php echo $this->getUrl("wishlist")?>"><?php echo $this->__("My wishlist")?></a>
+                <a href="<?php echo $this->getUrl("giftproducts.html")?>"><?php echo $this->__("Giftcard")?></a>
+            </div>
+        </div>
+        <div class="club_ecoupon_com club_point">
+            <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+            <?php $_orders = $this->getOrders(); ?>
+            <div class="welcome"><?php echo $this->__('Hi,')?><span class="welcome-customer"><?php echo Mage::getSingleton('customer/session')->getCustomer()->getFirstname(); ?></span><?php echo $this->__('.Welcome to Lily Official.')?>
+            <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>customer/account/logout/" id="logout_link"><?php echo $this->__('Log Out')?></a>
+            </div><div class="clear"></div>
+            <br/>
+            <?php //echo $this->getPagerHtml(); ?>
+            <?php if($_orders->getSize()): ?>
+            <table class="data-table" id="my-orders-table">
+                <col width="1" />
+                <col width="1" />
+                <col width="1" />
+                <col />
+                <col width="1" />
+                <col width="1" />
+                <thead>
+                    <tr>
+                        <th><?php echo $this->__('Order Type') ?></th>
+                        <th><?php echo $this->__('Order Num') ?></th>
+                        <th><?php echo $this->__('Order Date') ?></th>
+                        <th><span class="nobr"><?php echo $this->__('Gift Of Order') ?></span></th>
+                        <th><span class="nobr"><?php echo $this->__('Order Status') ?></span></th>
+                        <th><?php echo $this->__('Operation') ?></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php $_odd = ''; ?>
+                    <?php foreach ($_orders as $_order): ?>
+                    <tr>
+                        <td><span class="title"><?php echo $this->__('Order Type') ?></span><?php echo $this->__('Exchange From Webstore'); ?></td>
+                        <td><span class="title"><?php echo $this->__('Order Num') ?></span><?php echo $_order->getRealOrderId() ?></td>
+                        <td><span class="title"><?php echo $this->__('Order Date') ?></span><span class="nobr"><?php echo $this->formatDate($_order->getCreatedAtStoreDate()) ?></span></td>
+                        <td><span class="title"><?php echo $this->__('Gift Of Order') ?></span><?php echo $this->getOrderItemsImg($_order); ?></td>
+                        <td>
+                            <span class="title"><?php echo $this->__('Order Status') ?></span>
+                            <em>
+                                <?php if($_order->getErpStatus() != ""): ?>
+                                    <?php echo $this->__($_order->getErpStatus()); ?>
+                                <?php else: ?>
+                                    <?php echo $this->__('兑换成功'); ?>
+                                <?php endif; ?>
+                            </em>
+                        </td>
+                        <td class="a-center"><span class="title"><?php echo $this->__('Operation') ?></span>
+                            <span class="nobr"><a href="<?php echo $this->getViewUrl($_order) ?>"><?php echo $this->__('View Order') ?></a>
+                                <?php /*<span class="separator">|</span><a href="<?php echo $this->getTrackUrl($_order) ?>"><?php echo $this->__('Track Order') ?></a>&nbsp;*/ ?>
+                                <?php if ($this->helper('sales/reorder')->canReorder($_order)) : ?>
+                                <span class="separator">|</span> <a href="<?php echo $this->getReorderUrl($_order) ?>" class="link-reorder"><?php echo $this->__('Reorder') ?></a>
+                            <?php endif ?>
+                            </span>
+                        </td>
+                    </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+            <script type="text/javascript">decorateTable('my-orders-table');</script>
+            <?php echo $this->getPagerHtml(); ?>
+            <?php else: ?>
+                <p><?php echo $this->__('You have placed no orders.'); ?></p>
+            <?php endif ?>
+        </div>
+    </div>
+</div>
