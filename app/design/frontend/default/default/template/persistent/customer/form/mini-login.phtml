@@ -38,11 +38,11 @@
             <div class="club_login">
                 <div class="club_tit  club_login_tit">
                     <h2>
-                        <?php echo $this->__("lily club")?>
+                        <?php echo $this->__("LILY CLUB")?>
                     </h2>
                 </div>
                 <div class="club_login_txt">
-                    <?php echo $this->__("<p>Welcome to be a member of Lily club! </p>If you are not a lily club member, you can click the “Register Now” button to be our member. Free 200 points upon registration, countable with off-line purchases. ")?>
+                    <?php echo $this->__("<p>Welcome to be a member of Lily club! </p>If you are not a lily club member, you can click the “Register Now” button to be our member. Free 200 points upon registration, countable with off-line purchases.")?>
                 </div>
 
                 <a href="<?php echo Mage::helper('persistent')->getCreateAccountUrl($this->getCreateAccountUrl());?>" class="club_login_regbtn"><?php echo $this->__("Register Now")?> </a>
@@ -58,7 +58,7 @@
                         <div class="cs-clear">
                             <div class="club_login_formlink"><input type="checkbox" /> <?php echo $this->__("Remember me")?></div>
                             <div class="club_login_formlink">
-                                <a href="javascript:void(0)" class="forgot-password" id="forgot-password-home"><?php echo $this->__("Forget your Password")?> ? </a></div>
+                                <a href="<?php echo $this->getForgotPasswordUrl() ?>" class="forgot-password"><?php echo $this->__("Forget your Password")?> ? </a></div>
                         </div>
                     </form>
                 </div>

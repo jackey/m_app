@@ -711,6 +711,33 @@ if ((typeof Range != "undefined") && !Range.prototype.createContextualFragment)
         }, function(){
             $(this).find('ol').stop(true,true).fadeOut();
         });
+
+        var dLeft = $('.loading.left'),
+        dBottom = $('.loading.bottom'),
+        dRight = $('.loading.right'),
+        dTop = $('.loading.top');
+
+        var _dHeight = $(window).height() - 90*2;
+        var _dWidth = $(window).width();
+        dRight.animate({
+            height: _dHeight
+        } , 200);
+        dBottom
+            .delay(200)
+            .animate({
+                'width':'90%'
+            } , 200);
+
+        dLeft.delay(400)
+            .animate({
+                'height':_dHeight
+            } , 200);
+
+
+        dTop.delay(600)
+            .animate({
+                'width': '90%'
+            }, 200);
     });
 })(jQuery);
 

@@ -264,7 +264,7 @@ input.input-text:focus,select:focus,textarea:focus { background-color:#fff; bord
 .form-list .customer-dob .dob-year { width:140px; }
 .form-list .customer-dob .dob-year input.input-text { width:134px; }*/
 
-.buttons-set { clear:both; margin:4em 0 1em; padding:8px 0 0; border-top:1px solid #e4e4e4; text-align:right; }
+.buttons-set { clear:both;  padding:8px 0 0; border-top:1px solid #e4e4e4; text-align:right; }
 .buttons-set p.required { margin:0 0 10px; }
 .buttons-set .back-link { float:left; margin:0; }
 .buttons-set button.button { float:right; margin-left:5px; }
@@ -606,7 +606,7 @@ body.checkout-cart-index
 .checkout-cart-index .header .logo,
 .customer-account-create .header .logo,
 .customer .header .logo
-{ background:url("../images/logo_account.png") no-repeat scroll 12px bottom transparent}
+{ }
 .customer-account-create #navi{background:#CCF3E0}
 
 .customer-account-create .page-title{}
@@ -615,7 +615,6 @@ body.customer-account-create .header .quick-access{background:url("../images/nav
 
 .customer-account-create .account-create {
     margin: 0 auto;
-    width: 666px;
 }
 
 .points-checkout-psucceed .page-title,
@@ -769,13 +768,6 @@ left:50%; margin-left:-58px;
     float: left;
     margin-left: -10000px;
 	}
-.store-language  span ,#select-language a {
-    color: #FFFFFF;
-    float: right;
-    font-size: 22px;
-    width: 32px;
-	margin-left: 10px;
-}
 #weibo-icon {
     margin-left: 30px;
 }
@@ -3506,10 +3498,6 @@ background:#E5E5E5;border:1px solid #E5E5E5}
 
 .lily-index-getactivate .account-create{width: 280px;margin:0 auto;}
 
-#register-button {
-    float: right;
-    margin: 20px 0;
-}
 
 .customer-account-login .account-login{
     margin: 0 auto;

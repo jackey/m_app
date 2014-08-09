@@ -28,49 +28,52 @@
  */
 ?>
 <div class="header-container">
-    <div class="header">
-	    <ul id='nav'>
-		    <li class='item'>
-			    <h2><span class="club">VIP CLUB</span></h2>
-			    <ol>
-				    <li><a href='./club_memberinfo.html' index='9'>LILY CLUB</a></li>
-				    <li><a href='./club_memberrules.html' index='10'>TERMS</a></li>
-				    <li><a href='./club_pointinfo.html' index='11'>POINT CHECKING</a></li>
-				    <li><a href='./club_exchange.html' index='12'>REDEMPTION</a></li>
-			    </ol>
-		    </li>
-		    <li class='item'>
-			    <h2><a href='./index' title='index' index='1'>Home</a></h2>
-		    </li>
-		    <li class='item'>
-			    <h2>BRAND</h2>
-			    <ol>
-				    <li><a href='./index?hash=brand_story' class="on" title='index' index='1'>BRAND STORY</a></li>
-				    <li><a href='./history' title='history' index='2'>HISTORY</a></li>
-				    <li><a href='./events' title='events' index='3'>EVENTS</a></li>
-			    </ol>
-		    </li>
-		    <li class='item'>
-			    <h2>PRODUCT</h2>
-			    <ol>
-				    <li><a href='./campaign' title='campaign' index='4'>CAMPAIGN</a></li>
-				    <li><a href='./lookbook' title="lookbook" index='5'>LOOK BOOK</a></li>
-				    <li><a href='./streetsnap' title="streetsnap" index='6'>STREET SNAP</a></li>
-			    </ol>
-		    </li>
-		    <li class='item'>
-			    <h2>STORE</h2>
-			    <ol>
-				    <li><a href='./flagshipstore' title="flagshipstore" index='7'>FLAGSHIP STORE</a></li>
-				    <li><a href='./storelocator' title="storelocator" index='8'>STORE LOCATOR</a></li>
-			    </ol>
-		    </li>
-	    </ul>
+    <div class="header" data-0="height:100px;" data-100="height:70px;">
+        <ul id='nav'>
+            <li class='item logo' data-0="line-height:50px;" data-100="line-height:27px;">
+                <img src="/images/hd_logo.png">
+            </li>
+            <li class='item'>
+                <h2 data-title="LILY-CLUB"><span class="club"><?php echo $this->__("VIP CLUB")?></span></h2>
+                <ol>
+                    <li><a data-title="LILY-CLUB" href='./club_memberinfo.html' index='9'><?php echo $this->__("LILY CLUB")?></a></li>
+                    <li><a data-title="TERMS" href='./club_memberrules.html' index='10'><?php echo $this->__("TERMS")?></a></li>
+                    <li><a data-title="POINT CHECKING" href='./club_pointinfo.html' index='11'><?php echo $this->__("POINT CHECKING")?></a></li>
+                    <li><a data-title="REDEMPTION" href='./club_gifthis.html' index='12'><?php echo $this->__("REDEMPTION")?></a></li>
+                </ol>
+            </li>
+            <li class='item'>
+                <h2 data-0="padding-top:41px;" data-100="padding-top:27px;"><a class="" data-title="Home" href='http://www.lily-collection.com/index' title='index' index='1'><?php echo $this->__("Home")?></a></h2>
+            </li>
+            <li class='item'>
+                <h2 data-0="padding-top:41px;" data-100="padding-top:27px;" data-title="BRAND"><?php echo $this->__("BRAND")?></h2>
+                <ol>
+                    <li><a data-title="HISTORY" href='http://www.lily-collection.com/history' title='history' index='2'><?php echo $this->__("HISTORY")?></a></li>
+                    <li><a data-title="EVENTS" href='http://www.lily-collection.com/events' title='events' index='3'><?php echo $this->__("EVENTS")?></a></li>
+                </ol>
+            </li>
+            <li class='item'>
+                <h2 data-0="padding-top:41px;" data-100="padding-top:27px;" data-title="PRODUCT"><?php echo $this->__("PRODUCT")?></h2>
+                <ol>
+                    <li><a data-title="CAMPAIGN" href='http://www.lily-collection.com/campaign' title='campaign' index='4'><?php echo $this->__("CAMPAIGN")?></a></li>
+                    <li><a data-title="LOOKBOOK" href='http://www.lily-collection.com/lookbook' title="lookbook" index='5'><?php echo $this->__("LOOK BOOK")?></a></li>
+                    <li><a data-title="STREET-SNAP" href='http://www.lily-collection.com/streetsnap' title="streetsnap" index='6'><?php echo $this->__("STREET SNAP")?></a></li>
+                </ol>
+            </li>
+            <li class='item'>
+                <h2 data-0="padding-top:41px;" data-100="padding-top:27px;" data-title="STORE"><?php echo $this->__("STORE")?></h2>
+                <ol>
+                    <li><a data-title="STAR-STORE" href='http://www.lily-collection.com/starstore' title="starstore" index='7'><?php echo $this->__("STAR STORE")?></a></li>
+                    <li><a data-title="STORE-LOCATOR" href='http://www.lily-collection.com/storelocator' title="storelocator" index='8'><?php echo $this->__("STORE LOCATOR")?></a></li>
+                </ol>
+            </li>
+        </ul>
+
         <a class='menu'></a>
-        <div class="language">
+        <div class="language" data-0="top:42px;" data-100="top:28px;">
             <?php echo $this->getChildHtml("store_language")?>
         </div>
-        <div class="search"></div>
+        <a href="javascript:void(0);" class="search btn" data-0="top:43px;" data-100="top:30px;"></a>
     </div>
 	<div class="clear"></div>
 </div>

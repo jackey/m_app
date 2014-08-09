@@ -84,7 +84,7 @@ a:hover {opacity:0.8;}
 .ft_copy{text-align:center;padding: 36px 0;font-size: 0.9em;}
 /* PAGE Used
 ================================================================================================= */
-.page {position: relative;z-index:2;margin-bottom: 542px;padding-top:80px;}
+.page {position: relative;z-index:2;margin-bottom: 542px;padding-top:120px;}
 .ipad .page {margin-bottom:50px;}
 .page_event{padding:170px 0}
 .page_contact{background:url('../images/contact_bg.jpg') no-repeat center top;padding:290px 0}
