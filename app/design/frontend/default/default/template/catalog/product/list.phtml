@@ -32,11 +32,7 @@
  */
 ?>
 <?php
-    $_productCollection = clone $this->getLoadedProductCollection();
-    $_productCollection
-        ->clear()
-        ->setPageSize(30)
-        ->load();
+    $_productCollection = $this->getLoadedProductCollection();
     $_helper = $this->helper('catalog/output');
 ?>
 
@@ -80,7 +76,6 @@
                                 </select>
                                 <script type="text/javascript">
                                     jQuery(document).ready(function($){
-                                        console.log($('#points_level').size());
                                         $('#points_level').change(function(){
                                             if($(this).val() != ""){
                                                 setLocation('<?php echo $this->getUrl('catalogsearch/result'); ?>' + '?q=lily&vip_navigation_points=' + $(this).val());
@@ -90,8 +85,34 @@
                                 </script>
                             </p>
                             <p class="club_pointexselbox">
-                                <span><?php echo $this->__("Type")?></span>
-                                <select><option>11111</option><option>222</option></select>
+                                <span><?php echo $this->__("Type"); ?></span>
+                                <?php 
+                                    $layer = Mage::getModel("catalog/layer");
+                                    $category = Mage::getModel("catalog/category")->load(43);
+                                    $layer->setCurrentCategory($category);
+                                    $attributes = $layer->getFilterableAttributes();
+                                    foreach ($attributes as $attribute):
+                                        $name = $attribute->getName();
+                                        if ($name == "product_type"):
+                                            $options = $attribute->getSource()->getAllOptions(false);
+                                            break;
+                                        endif;
+                                    endforeach;
+                                ?>
+                                <select name="product_type">
+                                    <?php foreach ($options as $option): ?>
+                                        <option value="<?php echo $option["value"]?>"><?php echo $option["label"]?></option>
+                                    <?php endforeach;?>
+                                </select>
+                                <script type="text/javascript">
+                                    jQuery(document).ready(function($){
+                                        $('select[name="product_type"]').change(function(){
+                                            if($(this).val() != ""){
+                                                setLocation('<?php echo $this->getUrl('catalogsearch/result'); ?>' + '?q=lily&product_type=' + $(this).val());
+                                            }
+                                        });
+                                    });
+                                </script>
                             </p>
                         </div>
                     </div>

@@ -705,7 +705,6 @@ final class Mage
                 self::printException($ne, $e->getMessage());
             }
         }
-
     }
 
     /**
