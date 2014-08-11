@@ -23,7 +23,6 @@ get.php
 htaccess
 import_create_customer.php
 includes/
-index.php
 index.php.sample
 info.php
 install.php
