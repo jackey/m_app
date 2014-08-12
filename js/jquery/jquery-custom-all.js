@@ -14,21 +14,21 @@ function(){
 
 );
 
-var nice = $("html").niceScroll(
-{
-//mousescrollstep:150,scrollspeed:150
-
-}
-);
-var nice3 = $("#search-city-result").niceScroll(
-{mousescrollstep:50,touchbehavior:true,scrollspeed:150}
-);
+//var nice = $("html").niceScroll(
+//{
+////mousescrollstep:150,scrollspeed:150
+//
+//}
+//);
+//var nice3 = $("#search-city-result").niceScroll(
+//{mousescrollstep:50,touchbehavior:true,scrollspeed:150}
+//);
 // var nice4 = $(".media-center .col-main").niceScroll(
 // {mousescrollstep:50,touchbehavior:true,scrollspeed:150}
 // );
-var nice5 = $(".club-rule-wrapper").niceScroll(
-{mousescrollstep:50,touchbehavior:true,scrollspeed:150}
-);
+//var nice5 = $(".club-rule-wrapper").niceScroll(
+//{mousescrollstep:50,touchbehavior:true,scrollspeed:150}
+//);
 // var nice2 = $(".cms-page-view .col1-layout .col-main").niceScroll(
 // {mousescrollstep:150,touchbehavior:true,scrollspeed:150}
 

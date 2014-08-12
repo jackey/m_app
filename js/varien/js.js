@@ -731,6 +731,7 @@ if ((typeof Range != "undefined") && !Range.prototype.createContextualFragment)
 
         var _dHeight = $(window).height() - 90*2;
         var _dWidth = $(window).width();
+        $('.page_club>div').css({opacity:0});
         dRight.animate({
             height: _dHeight
         } , 200);
@@ -749,7 +750,9 @@ if ((typeof Range != "undefined") && !Range.prototype.createContextualFragment)
         dTop.delay(600)
             .animate({
                 'width': '90%'
-            }, 200);
+            }, 200, function(){
+                $('.page_club>div').animate({opacity:1});
+            });
     });
 })(jQuery);
 
