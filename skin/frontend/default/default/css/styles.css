@@ -546,7 +546,6 @@ tr.summary-details-excluded { font-style:italic; }
     position: fixed;
     top: 0;
 	z-index:10}
-.header { width:1280px; margin:0 auto; padding:0; text-align:right; position:relative; z-index:10;left:0 }
 #weibo{margin-right:10px;}
 body.points-checkout-psucceed,
 body.points-checkout-pfailure,

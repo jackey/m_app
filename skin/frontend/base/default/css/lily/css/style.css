@@ -5,7 +5,7 @@
 /* Reset
 ================================================================================================= */
 html{}
-body{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;color:#000;font-size:14px;line-height:1.666em;background:#fff;overflow-x:hidden;}
+body{font-family:"Microsoft Yahei",arial,SimHei,sans-serif;color:#000;line-height:1.666em;background:#fff;overflow-x:hidden;}
 h1,
 h2,
 h3{font-size:100%;}
@@ -24,6 +24,7 @@ i{font-style:normal;text-decoration:none}
 ul{list-style:none;}
 table{border-collapse:collapse;border-spacing:0;}
 * {outline: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+input, textarea {-webkit-user-select: all;-khtml-user-select: all;-moz-user-select: all;-ms-user-select: all;user-select: all;}
 /* Commonly Used
 ================================================================================================= */
 a{text-decoration:none;color:#000;outline:none;}
@@ -52,7 +53,7 @@ a:hover {opacity:0.8;}
 #nav .logo img{height: 75%;margin-top: 6%;width:auto;}
 
 #nav{height: 100%; line-height: 23px;}
-#nav li.item {float:left;text-transform: uppercase;width:200px;cursor:pointer;}
+#nav li.item {float:left;text-transform: uppercase;width:180px;cursor:pointer;}
 #nav li.item:hover {}
 #nav li.item h2 {padding:41px 0 0 0;margin:0 0 0 30px;display:inline-block;}
 #nav li.item h2 a {-webkit-transition: none;-moz-transition: none;-o-transition: none;-ms-transition: none;transition: none;}
