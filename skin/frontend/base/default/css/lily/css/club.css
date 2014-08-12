@@ -58,7 +58,7 @@
 .club_ecoupon_center{padding: 10px 0 0 150px;}
 .club_ecoupon_nav{width:240px;float: left;}
 .club_welcome{font-weight: bold;}
-.club_logout{width: 122px;height: 48px;border:#000 solid 1px;display: block;line-height: 48px;text-align: center;font-weight: bold;margin: 14px 0 50px}
+.club_logout{width: 122px;height: 48px;border:#000 solid 1px;display: block;line-height: 48px;text-align: center;font-weight: bold;margin: 30px 0;}
 .club_navlist a{height: 35px;display: block;}
 .club_navlist .on{text-decoration: underline;}
 .club_ecoupon_com{float: left;width: 800px;}
@@ -126,6 +126,7 @@
 .club_img2 img{width:446px;height: 319px }
 .club_img2 .club_imgtxt{display: none}
 
+.page-logout {text-align: center;padding:100px 0 100px 0;}
 
 
 /* Mobile Used

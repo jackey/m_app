@@ -332,7 +332,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 .sub-title { clear:both; padding:15px 0 10px; font-size:13px; font-weight:bold; margin:0 0 6px; background:url("../images/title_divider.png") repeat-x scroll 0 bottom transparent }
 
 /* Pager */
-.pager { font-size:11px; padding:4px 8px;text-align:center; }
+.pager { padding:4px 0px;text-align:center; }
 .pager .amount { float:left; margin:0; }
 .pager .limiter { float:right; }
 .pager .limiter label { vertical-align:middle; }
