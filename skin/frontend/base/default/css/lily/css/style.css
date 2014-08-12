@@ -63,7 +63,7 @@ a:hover {opacity:0.8;}
 #nav .club {background: #000;color:#fff;padding:3px 10px;}
 /* footer Used
 ================================================================================================= */
-.footer{bottom:0;width:100%;background:#c7deeb;line-height:30px;font-size:16px;text-transform:uppercase;color:#77858d}
+.footer{position:fixed;bottom:0;width:100%;background:#c7deeb;line-height:30px;font-size:16px;text-transform:uppercase;color:#77858d}
 .ipad .footer {position: relative;}
 .ft_logo{background:url('../images/ft_logo.png') no-repeat center;width:132px;height:86px;margin:0 auto;padding:5%;}
 .ft_com{margin:0 auto;width:950px;;font-size:12px;}

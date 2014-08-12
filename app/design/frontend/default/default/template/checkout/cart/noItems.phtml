@@ -25,15 +25,10 @@
  */
 ?>
 <div class="cart-empty">
-    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
-    <?php //echo $this->getChildHtml('checkout_cart_empty_widget'); ?>
-    <p><?php //echo $this->__('You have no items in your shopping cart.') ?>
-	
-礼品车内暂时没有礼品，您可以放入喜欢的礼品
-	</p>
-    <p><?php //echo $this->__('Click <a href="%s">here</a> to continue shopping.', $this->getContinueShoppingUrl()) ?>
+    <p><?php echo $this->__('You have no items in your shopping cart.') ?></p>
+    <p>
 
-	<button onclick="setLocation('<?php echo $this->getUrl('giftproducts.html')?>')" class="button btn-continue" title="继续兑换" type="button"><span><span>积分兑换首页</span></span></button>
+	<button onclick="setLocation('<?php echo $this->getUrl('giftproducts.html')?>')" class="button btn-continue" title="继续兑换" type="button"><span><span><?php echo $this->__("Return to gift page")?></span></span></button>
 	</p>
-    <?php //echo $this->getChildHtml('shopping.cart.table.after'); ?>
+
 </div>
