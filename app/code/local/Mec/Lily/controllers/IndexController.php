@@ -207,7 +207,8 @@ class Mec_Lily_IndexController extends Mage_Core_Controller_Front_Action{
 		
 		if(strlen(trim($telphone)) != 11){
 			$this->_getSession()->addError($this->__('Your Telephone Is Wrong.'));
-			$this->_redirectReferer();
+			$this->getResponse()->setHeader("Content-Type", "application/json");
+			$this->getResponse()->setBody(json_encode(array("redirect" => "")));
 			return;
 		}
 		
@@ -237,8 +238,8 @@ class Mec_Lily_IndexController extends Mage_Core_Controller_Front_Action{
 			
 			if($actived == 1){
 				$this->_getSession()->addError($this->__('You Are Online '));
-				$url = Mage::getBaseUrl() . '#club';
-				$this->_redirectUrl($url);
+				$this->getResponse()->setHeader("Content-Type", "application/json");
+				$this->getResponse()->setBody(json_encode(array("redirect" => Mage::getUrl("customer/account/edit"))));
 				return;
 			}else{
 				$cutomer_obj->setActivated(1);
@@ -284,14 +285,15 @@ class Mec_Lily_IndexController extends Mage_Core_Controller_Front_Action{
 					
 					$this->_getSession()->addSuccess($this->__('The %s has been Activated.', $_customer->getEmail()));
 					// $this->_redirectSuccess('*');
-					$url = Mage::getBaseUrl() . '#club';
-					$this->_redirectUrl($url);
+
+					$this->getResponse()->setHeader("Content-Type", "application/json");
+					$this->getResponse()->setBody(json_encode(array("redirect" => Mage::getUrl("customer/account/login"))));
 					return;
 				}else{
 					// Mage::getSingleton('adminhtml/session')->addError(Mage::helper('adminhtml')->__('The %s has Send Sms Fail.', $_customer->getEmail()));
 					$this->_getSession()->addError($this->__('The %s has Send Sms Fail.', $_customer->getEmail()));
-					$url = Mage::getBaseUrl() . '#club';
-					$this->_redirectUrl($url);
+					$this->getResponse()->setHeader("Content-Type", "application/json");
+					$this->getResponse()->setBody(json_encode(array("redirect" => "")));
 					return;
 					
 				}	
@@ -479,14 +481,15 @@ class Mec_Lily_IndexController extends Mage_Core_Controller_Front_Action{
 				
 			}else{
 				$this->_getSession()->addError($this->__('Your Telephone Is Wrong.'));
-				$this->_redirectReferer();
+				$this->getResponse()->setHeader("Content-Type", "application/json");
+				$this->getResponse()->setBody(json_encode(array("redirect" => "")));
 				return;
 			}
 			
 		}else{
 			$this->_getSession()->addError('Post Erp Is Fail');
-			$url = Mage::getBaseUrl() . '#club';
-			$this->_redirectUrl($url);
+			$this->getResponse()->setHeader("Content-Type", "application/json");
+			$this->getResponse()->setBody(json_encode(array("redirect" => "")));
 			return;
 		}
 		
