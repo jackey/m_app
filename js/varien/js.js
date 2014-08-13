@@ -760,6 +760,8 @@ if ((typeof Range != "undefined") && !Range.prototype.createContextualFragment)
 /**
  * @author jackey <jziwenchen@gmail.com>
  */
+ 
+// 线下新用户找回登录密码
 (function ($) {
     $(function () {
         var timer;
@@ -792,18 +794,65 @@ if ((typeof Range != "undefined") && !Range.prototype.createContextualFragment)
                     }, 1000 * 1);
                 },
                 complete: function (data) {
-                    console.log(data);
+                    data = $.parseJSON(data["responseText"]);
                     if (data["redirect"] == "") {
                         window.location.reload();
                     }
                     else {
                         window.location.href = data["redirect"];
                     }
-                },
+                }
             });
             return false;
         });
-    })
+    });
+})(jQuery);
+
+// 找回密码
+(function ($) {
+    $(function () {
+        var timer;
+        $(".forgetpasswordform button[type='submit']").click(function  (event) {
+            var form = $(this).parents("form");
+            event.preventDefault();
+            var telephone = $("input[name='telephone']", form);
+            if (telephone.val() == "") {
+                telephone.focus()
+                return;
+            }
+            // 正在运行
+            if (timer) {
+                return;
+            }
+
+            form.ajaxSubmit({
+                beforeSubmit: function () {
+                    timer = setInterval(function () {
+                        var second = parseInt($(".second", form).text());
+                        if (second == 0) {
+                            clearInterval(timer);
+                            timer = null;
+                            $(".second", form).text(60);
+                        }
+                        else {
+                            second -= 1;
+                            $(".second", form).html(second);
+                        }
+                    }, 1000 * 1);
+                },
+                complete: function (data) {
+                    data = $.parseJSON(data["responseText"]);
+                    if (data["redirect"] == "") {
+                        window.location.reload();
+                    }
+                    else {
+                        window.location.href = data["redirect"];
+                    }
+                }
+            });
+            return false;
+        });
+    });
 })(jQuery);
 
 

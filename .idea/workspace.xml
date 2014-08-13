@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="900c1c39-134c-4714-b1f5-f4718f57967c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/default/default/css/next-horizontal.png" afterPath="$PROJECT_DIR$/skin/frontend/default/default/css/next-horizontal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/default/default/css/prev-horizontal.png" afterPath="$PROJECT_DIR$/skin/frontend/default/default/css/prev-horizontal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/catalog/product/view/addtocart.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/catalog/product/view/addtocart.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view/addtocart.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view/addtocart.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/catalog/product/view/description.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/catalog/product/view/description.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view/description.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view/description.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/core/Mage/Customer/controllers/AccountController.php" afterPath="$PROJECT_DIR$/app/code/core/Mage/Customer/controllers/AccountController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/core/Mage/Catalog/controllers/CategoryController.php" afterPath="$PROJECT_DIR$/app/code/core/Mage/Catalog/controllers/CategoryController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/code/local/Mec/Lily/controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/code/local/Mec/Lily/controllers/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Sales.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Sales.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/default/default/css/gift-styles.css" afterPath="$PROJECT_DIR$/skin/frontend/default/default/css/gift-styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/default/default/css/styles.css" afterPath="$PROJECT_DIR$/skin/frontend/default/default/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/checkout/cart/item/configure/updatecart.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/checkout/cart/item/configure/updatecart.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/customer/form/forgotpassword.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/customer/form/forgotpassword.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/varien/js.js" afterPath="$PROJECT_DIR$/js/varien/js.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart/noItems.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart/noItems.phtml" />
     </list>
     <ignored path="m_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +32,8 @@
     <file path="/addtocart.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407915320697" ignored="false" />
     <file path="/styles.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407915471836" ignored="false" />
     <file path="/page-jyl-gallery.tpl.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407913081729" ignored="false" />
-    <file path="$PROJECT_DIR$/../ave_1000/yii/protected/views/record/myinfo.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407921281179" ignored="false" />
+    <file path="$PROJECT_DIR$/../ave_1000/yii/protected/views/record/myinfo.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407921480994" ignored="false" />
+    <file path="/myinfo.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407921480994" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +53,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="view.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="35" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.27669904">
+            <state line="36" column="35" selection-start="1238" selection-end="1238" vertical-scroll-proportion="-6.107143">
               <folding>
                 <element signature="e#6#968#0" expanded="true" />
               </folding>
@@ -67,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="edit.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="16" selection-start="1406" selection-end="1817" vertical-scroll-proportion="-8.142858">
+            <state line="66" column="166" selection-start="4816" selection-end="4816" vertical-scroll-proportion="0.15372169">
               <folding />
             </state>
           </provider>
@@ -98,7 +95,35 @@
         <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="38" column="9" selection-start="1187" selection-end="1187" vertical-scroll-proportion="-0.6785714">
-              <folding />
+              <folding>
+                <marker date="1407762648000" expanded="true" signature="1215:8296" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="1258:8274" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="1290:1372" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="1423:8263" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="1466:2503" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="1509:1890" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="2109:2484" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="2557:8248" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="2597:8229" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="2656:6775" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="2810:6748" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="2968:4691" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="3278:4035" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="4099:4658" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="4171:4615" placeholder="{...}" />
+                <marker date="1407762648000" expanded="true" signature="4249:4575" placeholder="{...}" />
+                <marker date="1407762648000" expanded="true" signature="4318:4533" placeholder="{...}" />
+                <marker date="1407762648000" expanded="true" signature="4750:6717" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="5757:6056" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="6120:6684" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="6192:6641" placeholder="{...}" />
+                <marker date="1407762648000" expanded="true" signature="6284:6601" placeholder="{...}" />
+                <marker date="1407762648000" expanded="true" signature="6353:6559" placeholder="{...}" />
+                <marker date="1407762648000" expanded="true" signature="7055:8033" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="7205:7906" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="7431:7868" placeholder="..." />
+                <marker date="1407762648000" expanded="true" signature="8117:8206" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,7 +132,9 @@
         <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view/description.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="31" column="2" selection-start="1067" selection-end="1067" vertical-scroll-proportion="-5.428571">
-              <folding />
+              <folding>
+                <marker date="1407925963000" expanded="true" signature="1181:1315" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,7 +198,6 @@
         <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" />
         <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/customer/logout.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml" />
         <option value="$PROJECT_DIR$/skin/frontend/default/default/css/gift-styles.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/catalog/product/view/description.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view/description.phtml" />
@@ -182,6 +208,7 @@
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view/addtocart.phtml" />
         <option value="$PROJECT_DIR$/skin/frontend/default/default/css/styles.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml" />
       </list>
     </option>
   </component>
@@ -698,14 +725,44 @@
     <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="9" selection-start="1187" selection-end="1187" vertical-scroll-proportion="-0.6785714">
-          <folding />
+          <folding>
+            <marker date="1407762648000" expanded="true" signature="1215:8296" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="1258:8274" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="1290:1372" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="1423:8263" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="1466:2503" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="1509:1890" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="2109:2484" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="2557:8248" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="2597:8229" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="2656:6775" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="2810:6748" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="2968:4691" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="3278:4035" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="4099:4658" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="4171:4615" placeholder="{...}" />
+            <marker date="1407762648000" expanded="true" signature="4249:4575" placeholder="{...}" />
+            <marker date="1407762648000" expanded="true" signature="4318:4533" placeholder="{...}" />
+            <marker date="1407762648000" expanded="true" signature="4750:6717" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="5757:6056" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="6120:6684" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="6192:6641" placeholder="{...}" />
+            <marker date="1407762648000" expanded="true" signature="6284:6601" placeholder="{...}" />
+            <marker date="1407762648000" expanded="true" signature="6353:6559" placeholder="{...}" />
+            <marker date="1407762648000" expanded="true" signature="7055:8033" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="7205:7906" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="7431:7868" placeholder="..." />
+            <marker date="1407762648000" expanded="true" signature="8117:8206" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view/description.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="2" selection-start="1067" selection-end="1067" vertical-scroll-proportion="-5.428571">
-          <folding />
+          <folding>
+            <marker date="1407925963000" expanded="true" signature="1181:1315" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -730,19 +787,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="16" selection-start="1406" selection-end="1817" vertical-scroll-proportion="-8.142858">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="35" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.27669904">
+        <state line="36" column="35" selection-start="1238" selection-end="1238" vertical-scroll-proportion="-6.107143">
           <folding>
             <element signature="e#6#968#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="166" selection-start="4816" selection-end="4816" vertical-scroll-proportion="0.15372169">
+          <folding />
         </state>
       </provider>
     </entry>

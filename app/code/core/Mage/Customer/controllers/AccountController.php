@@ -735,6 +735,25 @@ class Mage_Customer_AccountController extends Mage_Core_Controller_Front_Action
         $this->renderLayout();
     }
 
+    public function editajaxPostAction() {
+        if (!$this->getRequest()->isPost()) {
+            $this->getResponse()->setHeader("Content-Type", "application/json");
+            $this->getResponse()->setBody(json_encode(array("error" => "post only")));
+        }
+
+        $customer = Mage::getSingleton('customer/session')->getCustomer();
+
+        $name = $_POST["name"];
+        $method = "set". ucfirst($name);
+        $customer->{$method}($_POST["value"]);
+        $customer->save();
+
+        $this->getResponse()->setHeader("Content-Type", "application/json");
+        $this->getResponse()->setBody(json_encode(array("success" => true)));
+
+
+    }
+
     /**
      * Change customer password action
      */

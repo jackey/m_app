@@ -111,10 +111,10 @@ class Mage_Catalog_CategoryController extends Mage_Core_Controller_Front_Action
      */
     public function viewAction()
     {
-        $customer = Mage::getSingleton("customer/session");
-        if (!$customer->isLoggedIn()) {
-            return $this->_redirect("customer/account/login");
-        }
+        // $customer = Mage::getSingleton("customer/session");
+        // if (!$customer->isLoggedIn()) {
+        //     return $this->_redirect("customer/account/login");
+        // }
         if ($category = $this->_initCatagory()) {
             $design = Mage::getSingleton('catalog/design');
             $settings = $design->getDesignSettings($category);
