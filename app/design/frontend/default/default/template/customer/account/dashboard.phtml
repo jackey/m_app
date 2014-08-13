@@ -24,6 +24,11 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
+<?php 
+    if (!Mage::getSingleTon("customer/session")->isLoggedIn()) {
+        Mage::app()->getFrontController()->getResponse()->setRedirect(Mage::getUrl("customer/account/login"));
+    }
+?>
 <div class="page page_club">
     <!--  -->
     <div class="club_login">
