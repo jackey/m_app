@@ -29,12 +29,19 @@
 <?php if($_product->isSaleable()): ?>
     <div class="add-to-cart">
         <?php if(!$_product->isGrouped()): ?>
-        <label for="qty"><?php echo $this->__('Qty:') ?></label>
-		<div class="qty-wrapper">
-			<span id="view-minus">-</span>
-			<input type="text" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Qty') ?>" class="input-text qty" />
-			<span id="view-add">+</span>
-		</div>
+            <div class="product-attr">
+
+                <div class="product-attr-name"><?php echo $this->__('Qty:') ?></div>
+                <div class="product-attr-val">
+                    <div class="qty-wrapper">
+                        <span id="view-minus">-</span>
+                        <input type="text" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Qty') ?>" class="input-text qty" />
+                        <span id="view-add">+</span>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
         <?php endif; ?>
         <button type="button" title="<?php echo $this->__('Exchange Now')?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><span><?php //echo $buttonTitle ?>
 		<?php echo $this->__('Exchange Now')?>
