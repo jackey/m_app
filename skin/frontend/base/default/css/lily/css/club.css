@@ -127,7 +127,8 @@
 .club_img2 .club_imgtxt{display: none}
 
 .page-logout {text-align: center;padding:100px 0 100px 0;}
-
+.product-shop .product-attr-name,.product-shop .attribute-title {float:left;width:140px;}
+.product-shop .product-attr-val {font-weight: bold;}
 
 /* Mobile Used
 ================================================================================================= */
