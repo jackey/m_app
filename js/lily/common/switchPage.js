@@ -237,7 +237,7 @@ define([
                 pageSwitchAnimate( dHtml.find('#wrap').html() );
             }
         })
-    }
+    };
 
     // for enable links catch and modal etc.
     var init = function () {

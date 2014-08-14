@@ -198,6 +198,10 @@
     .search_popup .search_input {width:350px;}
     .footer {line-height: 20px;position: relative;}
     .cs-height-footer {height:0;display: none;}
+
+    .messages {
+        width: 80%;
+    }
 }
 /* mobile menu part */
 body.mobile,
@@ -221,3 +225,5 @@ body.mobile.open .header .language,
 body.mobile.open .header .search{display:none;}
 body.mobile .mbmenu{display:block;text-transform: uppercase;}
 body.mobile.open .mbmenu{left:0px;}
+
+

@@ -817,7 +817,7 @@ if ((typeof Range != "undefined") && !Range.prototype.createContextualFragment)
             event.preventDefault();
             var telephone = $("input[name='telephone']", form);
             if (telephone.val() == "") {
-                telephone.focus()
+                telephone.focus();
                 return;
             }
             // 正在运行
@@ -827,6 +827,8 @@ if ((typeof Range != "undefined") && !Range.prototype.createContextualFragment)
 
             form.ajaxSubmit({
                 beforeSubmit: function () {
+                	$(".second", form).show();
+                	$(".submit-text").hide();
                     timer = setInterval(function () {
                         var second = parseInt($(".second", form).text());
                         if (second == 0) {

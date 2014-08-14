@@ -407,7 +407,7 @@ body.club,body.club .page{background-color:#fff1f4;}
 .loading.top{top:100px;left:5%;}
 .loading.bottom{right:5%;bottom:70px;}
 .loading.right{right:5%;top:100px;}
-.loading.left{bottom:70px;left:5%;}
+.loading.left{bottom:70px;left:5%;top:100px;}
 /* map */
 #map{width:100%;}
 .index #map{height:410px;}
@@ -824,5 +824,26 @@ div:selected {
     z-index: 1;
 }
 
+.club_memberreg_fi input[name="telephone"] {
+    width:100%;
+}
+
+.hideme {
+    display: none;
+}
+
+.messages {
+    width: 50%;
+    overflow: hidden;
+    margin: 0 auto !important;
+}
+
+.error-msg {
+    background-color: inherit;
+}
+
+.page-head-alt {
+    text-align: center;
+}
 
 
