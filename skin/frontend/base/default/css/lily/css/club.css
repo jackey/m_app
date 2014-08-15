@@ -68,7 +68,7 @@
 /**/
 .club_giftcards{padding:150px 0 0 55px;text-align: center;width: 600px}
 .club_giftcardsbtn{margin: 50px auto;display: block;color:#fff;background: #000;width: 308px;height: 48px;line-height: 48px}
-.club_giftcard{width: 860px;padding: 60px 0 0}
+.club_giftcard{width: 860px;padding:0}
 .club_giftcardtable{width: 100%;}
 .club_giftcardtable th{border-bottom: #000 solid 1px;padding: 0 20px 20px;font-weight: normal;text-transform:uppercase;}
 .club_giftcardtable td{text-align: center;padding: 20px 20px 0}
@@ -92,7 +92,8 @@
 .club_meminpwform input{background:none;width: 200px;padding: 0 15px;border:#000 solid 1px;line-height: 48px;height: 48px;float: left;display: inline;margin-right:30px; }
 .club_meminpwform .club_meminpwsub{width: 134px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;display: block;margin: 30px 0;cursor: pointer;font-size: 14px}
 /**/
-.club_navlist_gogift{width: 185px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;display: block;margin: 50px 0;position: absolute;left:150px;top:700px;}
+.club_navlist_gogift{width: 185px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;display: block;margin: 20px 0;}
+.club_opening_time {margin-top:40px;}
 /**/
 .club_point{width: 860px;}
 .club_pointexnav{border-bottom: #000 solid 1px;padding:12px 10px 12px 28px;}
@@ -103,7 +104,8 @@
 .club_pointexselbox span{background: url('../images/club_memberreg_sel.png') no-repeat 80% 50%;display: block;width: 100px;padding:0 0 0 10px;}
 .club_pointexselbox select{width: 100px;position: absolute;top: 0;left:24px;opacity: 0;filter:alpha(opacity=0);cursor: pointer;}
 .club_pointimglist{padding-left:4px;}
-.club_pointimglist li{float: left;display:inline;margin: 18px 0 0 24px}
+.club_pointimglist li{float: left;display:inline;margin: 18px 0 0 24px;height:150px;}
+.club_pointimglist .product-name {position: absolute;top:114px;font-size:1em;line-height: 100%;}
 .club_club_pointproimg{float: left;width: 540px;}
 .club_club_pointproinfo{float: left;width: 320px}
 .club_club_pointprolist{padding:20px 0 0;}

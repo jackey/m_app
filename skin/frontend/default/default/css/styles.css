@@ -555,7 +555,7 @@ body.category-giftproducts,
 body.points-checkout-index,
 body.customer,
 body.checkout-cart-index
-{background:#CBF3DF}
+{}
 .catalogsearch-result-index .breadcrumbs,
 .category-giftproducts .breadcrumbs{    display: block;
     position: absolute;
@@ -573,7 +573,7 @@ body.checkout-cart-index
     font-size: 25px;
     margin: 25px;}
 	.catalogsearch-result-index .product-essential,
-	.category-giftproducts .product-essential{padding-top:100px;}
+	.category-giftproducts .product-essential{padding-top:0px;}
 .catalog-product-view.catalog-product-view .breadcrumbs ul,
 .category-giftproducts.catalog-product-view .breadcrumbs ul
 {display:block;float:left;}
@@ -1544,18 +1544,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6dcdd9', end
 
 /*attribute*/
 .attributes_choose ul{float:left;margin-bottom:10px;}
-.attributes_choose ul li.active {border:1px solid #fff; 
-background: #a5a7d7; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #a5a7d7 0%, #c6b9d3 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#a5a7d7), color-stop(100%,#c6b9d3)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg,  #a5a7d7 0%,#c6b9d3 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg,  #a5a7d7 0%,#c6b9d3 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg,  #a5a7d7 0%,#c6b9d3 100%); /* IE10+ */
-background: linear-gradient(135deg,  #a5a7d7 0%,#c6b9d3 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5a7d7', endColorstr='#c6b9d3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
-border-radius: 2px;
+.attributes_choose ul li.active {border:1px solid #000;
+background: #000; /* Old browsers */
+color:#fff;
 }
 .attributes_choose ul li {	
 	border: 1px solid #000000;
@@ -1688,10 +1679,11 @@ border-radius: 2px;
 .qty-wrapper span{ display: block;
     float: right;cursor:pointer;
     margin: 3px 4px;}
-.add-to-cart button.button {margin-top:20px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;display: block;cursor: pointer;font-size: 14px}
+.add-to-cart button.button {margin-top:20px;height: 48px;background: #000;color:#fff;text-align: center;display: block;cursor: pointer;font-size: 14px}
 .add-to-cart button.button span {color:#fff;}
+.button.btn-cart {background:#000;color:#fff;padding:10px;border:none;margin-right:10px;}
 #wishlist-table .button.btn-cart span{}
-	.button.btn-cart span{ padding: 0 25px;}
+	.button.btn-cart span{ padding:0;color:#fff;}
 	#wishlist-table .remove-text{color: #2280DA;}
 .add-to-cart .paypal-logo { clear:left; margin:0; text-align:right; }
 .add-to-cart .paypal-logo .paypal-or { clear:both; display:block; margin:5px 60px 5px 0; }
@@ -1892,11 +1884,7 @@ border-radius: 2px;
 
 
 /* Content Styles ================================================================= */
-.product-name { margin:0; font-size:1.2em; font-weight:bold; position: absolute;
-top: 10%;
-font-size: 0.9em;
-width: 100%;
-text-align: center;}
+.product-name { margin:0 0 10px 0; font-size:1.2em; font-weight:bold;}
 
 .product-name a {  }
 
@@ -1948,12 +1936,12 @@ text-align: center;}
 .cart .page-title h1 { margin:10px 0 0; }
 
 .cart-empty {
-    background: none repeat scroll 0 0 #FFFFFF;
     margin: 25px;
     padding: 25px;
 	text-align:center;
 	font-size:21px;
 }
+.cart-empty p {margin:0 0 15px 0;}
 /* Checkout Types */
 .cart .page-title .checkout-types li { margin:0 0 5px; }
 .cart .title-buttons .checkout-types { float:right; }
@@ -2436,7 +2424,7 @@ body.customer-account-index{background:#CBF3DF}
 .space a{color:#FFFFFF!important;}
 .customer-account-edit .form-list .field{width:auto;line-height: 44px;}
 .customer-account-edit .form-list label{width:90px}
-.box-account .box-head { border-bottom:1px solid #d9dde3; margin:0 0 10px; text-align:right; }
+.box-account .box-head {  margin:0 0 10px; text-align:right; }
 .box-account .box-head h2 { float:left; font-size:24px; text-transform:uppercase; }
 
 .dashboard .box .box-title { background:url(../images/bkg_divider1.gif) 0 100% repeat-x; padding:0 0 2px; margin:0 0 8px; text-align:right; }

@@ -31,6 +31,7 @@
  * @see Mage_Checkout_Block_Cart
  */
 ?>
+<div class="page page_club">
 <?php $customer = Mage::getSingleton("customer/session"); ?>
 <?php if (!$customer->isLoggedIn()) : ?>
     <script type="text/javascript">
@@ -160,3 +161,4 @@
 <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('instruction')->toHtml(); ?>
 	
 	</div>
+    </div>
