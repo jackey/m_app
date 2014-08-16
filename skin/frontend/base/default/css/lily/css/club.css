@@ -7,7 +7,7 @@
 .page_club{padding: 120px 0;background: #f3dedd;font-size:14px;}
 .page_club>div {opacity:0;}
 .page_club a:hover {text-decoration: underline;}
-.club_tit{font-size: 80px;line-height:88px;text-transform:uppercase;text-align: center;padding:0 0 50px;font-family:arial;}
+.club_tit,.page-title h1{font-size: 80px;line-height:88px;text-transform:uppercase;text-align: center;padding:0 0 50px;font-family:arial;}
 .club_login{}
 .club_login_tit{}
 .club_login_txt{margin: 0 auto;width: 685px;text-align: center;}
@@ -135,6 +135,8 @@
 .page-logout {text-align: center;padding:100px 0 100px 0;}
 .product-shop .product-attr-name,.product-shop .attribute-title {float:left;width:140px;}
 .product-shop .product-attr-val {font-weight: bold;}
+
+.club_article_center {width:1000px;margin:0 auto;}
 
 /* Mobile Used
 ================================================================================================= */
