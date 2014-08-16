@@ -32,23 +32,8 @@
         </div>
         <!-- <p class="club_ecoupon_txt">For system reason,  E coupon information will be synchronized after 24 hours later. </p> -->
         <div class="club_ecoupon_center cs-clear">
-            <div class="club_ecoupon_nav">
-                <div class="club_welcome">
-                    <?php echo $this->__("Hi")?> <?php echo Mage::getSingleton('customer/session')->getCustomer()->getFirstname();?>,<br/> <?php echo $this->__("Welcome to Lily Club")?> <br /> <?php echo $this->__("Your remaining points")?> <br /><?php echo $this->__("are %s point(s)", Mage::getSingleton('customer/session')->getCustomer()->getUsePoints())  ?>
-                </div>
-                <a class="club_logout" href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>customer/account/logout/"><?php echo $this->__("LOGOUT")?></a>
-                <div class="club_navlist">
-                    <a href="<?php echo $this->getUrl("customer/account/edit/")?>"><?php echo $this->__("Account informations")?></a>
-                    <a href="<?php echo $this->getUrl("sales/order/history/")?>"><?php echo $this->__("Gift history")?></a>
-                    <a href="<?php echo $this->getUrl("wishlist")?>"><?php echo $this->__("My wishlist")?></a>
-                    <a href="<?php echo $this->getUrl("customer/account/point/")?>"><?php echo $this->__("Point informations")?></a>
-                    <a href="<?php echo $this->getUrl("customer/account/ecoupon/")?>" class=""><?php echo $this->__("E-coupon")?></a>
-                </div>
-                <div class="cs-clear">
-                    <!-- <a href="#" class="club_giftcardcheckout">CHECK OUT</a> -->
-                    <a href="<?php echo $this->getUrl("giftproducts.html")?>" class="club_navlist_gogift"><?php echo $this->__("Go to Gift Exchange")?></a>
-                </div>
-            </div>
+
+            <?php echo $this->getChildHtml("lily_customer_nav")?>
 
             <div class="club_ecoupon_com club_meminfo">
                 <div class="club_meminfolist cs-clear" >

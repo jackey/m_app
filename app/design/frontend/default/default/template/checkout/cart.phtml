@@ -36,23 +36,13 @@
 <?php if (!$customer->isLoggedIn()) : ?>
     <script type="text/javascript">
         jQuery(document).ready(function () {
-            var second = parseInt(jQuery(".time-counter .second").text());
-            setInterval(function () {
-                if (second < 0 ) {
-                    window.location.href="<?php echo $this->getUrl("customer/account/login")?>";
-                }
-                else {
-                    second -= 1;
-                    jQuery(".time-counter .second").html(second);
-                }
-            }, 1000);
+            window.location.href="<?php echo $this->getUrl("customer/account/login")?>";
         });
     </script>
 <?php endif; ?>
 
 
 <div class="cart product-essential">
-    <div class="time-counter"><?php echo $this->__("please login in club for checkout")?><span class="second">5</span>s</div>
     <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
     
 	<div class="form-before">
@@ -157,8 +147,4 @@
         <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('warm-tip')->toHtml(); ?>
     </div>
 </div>
-	<div class="instruction">
-<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('instruction')->toHtml(); ?>
-	
-	</div>
-    </div>
+</div>

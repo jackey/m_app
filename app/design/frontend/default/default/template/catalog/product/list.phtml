@@ -44,22 +44,7 @@
             <h2><?php echo $this->__("Point<br />Exchange")?></h2>
         </div>
         <div class="club_ecoupon_center cs-clear">
-            <div class="club_ecoupon_nav">
-                <div class="club_welcome">
-                    <?php echo $this->__("Hi")?> <?php echo Mage::getSingleton('customer/session')->getCustomer()->getFirstname();?>,<br/> <?php echo $this->__("Welcome to Lily Club")?> <br /> <?php echo $this->__("Your remaining points")?> <br /><?php echo $this->__("are %s point(s)", Mage::getSingleton('customer/session')->getCustomer()->getUsePoints())  ?>
-                </div>
-                <a class="club_logout" href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>customer/account/logout/"><?php echo $this->__("LOGOUT")?></a>
-                <div class="club_navlist">
-                    <a href="<?php echo $this->getUrl("customer/account/edit/")?>"><?php echo $this->__("My Account")?></a>
-                    <a href="<?php echo $this->getUrl("wishlist")?>"><?php echo $this->__("My wishlist")?></a>
-                    <a href="<?php echo $this->getUrl("giftproducts.html")?>"><?php echo $this->__("Gift Exchange")?></a>
-                    <a href="<?php echo $this->getUrl("checkout/cart")?>"><?php echo $this->__("Giftcard")?></a>
-                </div>
-                <div class="club_opening_time">
-                    会员热线：4008-91-9135<br />
-                    工作日：10:00-18:00
-                </div>
-            </div>
+            <?php echo $this->getChildHtml("lily_product_nav")?>
             <div class="club_ecoupon_com club_point">
                 <div class="cs-clear ">
                     <div class="club_pointexnav cs-clear">

@@ -86,7 +86,9 @@
             <action method="setHeaderTitle" translate="title" module="customer"><title>Point Information</title></action>
         </reference>
         <reference name="my.account.wrapper">
-            <block type="lily/point" name="point_info" template="lily/customer/point.phtml"/>
+            <block type="lily/point" name="point_info" template="lily/customer/point.phtml">
+                <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml" />
+            </block>
         </reference>
 
         <reference name="left">
@@ -101,7 +103,9 @@
             <action method="setTemplate"><template>page/1column2.phtml</template></action>
         </reference>
         <reference name="my.account.wrapper">
-            <block type="lily/ecoupon" name="ecoupon_info" template="lily/customer/ecoupon.phtml"/>
+            <block type="lily/ecoupon" name="ecoupon_info" template="lily/customer/ecoupon.phtml">
+              <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml" />
+            </block>
         </reference>
 
         <reference name="left">

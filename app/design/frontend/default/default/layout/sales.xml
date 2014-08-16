@@ -83,8 +83,11 @@ Customer account home dashboard layout
                 <block type="core/text_list" name="sales.order.history.info" as="info" translate="label">
                     <label>Order History Info</label>
                 </block>
+                
+                <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml" />
             </block>
-            <block type="customer/account_dashboard" name="customer.account.link.back" template="customer/account/link/back.phtml"/>
+            <block type="customer/account_dashboard" name="customer.account.link.back" template="customer/account/link/back.phtml">
+            </block>
         </reference>
     </sales_order_history>
 

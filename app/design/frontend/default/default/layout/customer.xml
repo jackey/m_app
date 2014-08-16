@@ -93,15 +93,16 @@ Layout for customer login page
         <reference name="root">
             <action method="setTemplate"><template>page/1column.phtml</template></action>
         </reference>
+
         <reference name="content">
-            <!--<block type="customer/form_login" name="customer_form_login" template="customer/form/login.phtml" />-->
-			
 						
 			<block type="customer/form_login" name="customer_form_login_mini" template="persistent/customer/form/mini-login.phtml" >
 				<block type="persistent/form_remember" name="persistent.remember.me" template="persistent/remember_me.phtml" />
 				<block type="core/template" name="persistent.remember.me.tooltip" template="persistent/remember_me_tooltip.phtml" />
 			</block>
+
         </reference>
+
     </customer_account_login>
 
 <!--
@@ -210,9 +211,15 @@ New customer registration
         <reference name="root">
             <action method="setHeaderTitle" translate="title" module="customer"><title>Edit Account Info</title></action>
             <action method="setTemplate"><template>page/1column2.phtml</template></action>
+
         </reference>
+
         <reference name="my.account.wrapper">
-            <block type="customer/form_edit" name="customer_edit" template="customer/form/edit.phtml"/>
+            <block type="customer/form_edit" name="customer_edit" template="customer/form/edit.phtml">
+                <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml">
+                    
+                </block>
+            </block>
         </reference>
 
         <reference name="left">

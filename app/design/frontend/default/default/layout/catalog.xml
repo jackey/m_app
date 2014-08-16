@@ -115,6 +115,7 @@ Category layered navigation layout
         </reference> -->
         <reference name="content">
             <block type="catalog/product_list" name="product_list" template="catalog/product/list.phtml">
+                <block type="core/template" name="lily_customer_nav_block" as="lily_product_nav" template="page/html/lily_product_nav.phtml"></block>
                 <!-- <action method="addReviewSummaryTemplate"><type>default</type><template>review/helper/su.phtml</template></action> -->
                 <block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
                     <block type="page/html_pager" name="product_list_toolbar_pager"/>
@@ -198,6 +199,8 @@ Product view
                 <block type="core/text_list" name="alert.urls" as="alert_urls" translate="label">
                     <label>Alert Urls</label>
                 </block>
+
+                <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml"></block>
 
                 <action method="setTierPriceTemplate"><template>catalog/product/view/tierprices.phtml</template></action>
 

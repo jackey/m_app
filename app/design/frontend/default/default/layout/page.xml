@@ -76,6 +76,11 @@ Default layout, loads most of the pages
                 <label>Page Top</label>
             </block>
 
+
+            <block type="core/template" name="customer_term_block" as="content_bottom" template="page/html/term.phtml"></block>
+    
+            <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml"></block>
+
             <block type="page/html_notices" name="global_notices" as="global_notices" template="page/html/notices.phtml" />
 
             <block type="page/html_header" name="header" as="header">
@@ -135,6 +140,8 @@ Default layout, loads most of the pages
             </block>
 			
 			<block type="core/template" name="pageloading" as="pageloading" template="page/html/loading.phtml"/>
+
+
 				
         </block>
 
