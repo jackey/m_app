@@ -38,30 +38,44 @@
             <div class="club_login">
                 <div class="club_tit  club_login_tit">
                     <h2>
+                        <span class="small"><?php echo $this->__("Welcome to")?></span><br/>
                         <?php echo $this->__("LILY CLUB")?>
                     </h2>
                 </div>
-                <div class="club_login_txt">
-                    <?php echo $this->__("<p>Welcome to be a member of Lily club! </p>If you are not a lily club member, you can click the “Register Now” button to be our member. Free 200 points upon registration, countable with off-line purchases.")?>
+
+                <div class="club_login_wrap">
+                    <div class="club_login_left">
+                        <div class="club_login_form cs-clear">
+                            <div class="club_login_title"><?php echo $this->__("User login")?></div>
+                            <div><a href="<?php echo $this->getUrl("lilyadmin/index/getactivate/")?>"><?php echo $this->__("Offline user get the first password")?></a></div>
+                            <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+                            <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="login-form">
+                                <div class="cs-clear">
+                                    <input class="club_login_ipt" type="text" value="<?php echo $this->htmlEscape($this->getUsername()) ?>" name="login[telphone]" placeholder="<?php echo $this->__("Cell phone")?>" />
+                                    <input class="club_login_ipt" type="password" name="login[password]" id="pass" placeholder="<?php echo $this->__("Password")?>" />
+                                    <input class="club_login_sub" type="submit" value="<?php echo $this->__("Login")?>" />
+                                </div>
+                                <div class="cs-clear">
+                                    <div class="club_login_formlink"><input type="checkbox" /> <?php echo $this->__("Remember me")?></div>
+                                    <div class="club_login_formlink">
+                                        <a href="<?php echo $this->getForgotPasswordUrl() ?>" class="forgot-password"><?php echo $this->__("Forget your Password")?> ? </a></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="club_login_right">
+                        <div class="club_login_txt">
+                            <?php echo $this->__("If you are not a lily club member, you can click the “Register Now” button to be our member. Free 200 points upon registration, countable with off-line purchases.")?>
+                        </div>
+                        <a href="<?php echo Mage::helper('persistent')->getCreateAccountUrl($this->getCreateAccountUrl());?>" class="club_login_regbtn"><?php echo $this->__("Register Now")?> </a>
+                        <p class="club_login_regtxt"><a href="<?php echo Mage::helper('persistent')->getCreateAccountUrl($this->getCreateAccountUrl());?>"><?php echo $this->__("Terms of lily membership")?> </a></p>
+
+                    </div>
                 </div>
 
-                <a href="<?php echo Mage::helper('persistent')->getCreateAccountUrl($this->getCreateAccountUrl());?>" class="club_login_regbtn"><?php echo $this->__("Register Now")?> </a>
-                <p class="club_login_regtxt"><a href="<?php echo Mage::helper('persistent')->getCreateAccountUrl($this->getCreateAccountUrl());?>"><?php echo $this->__("Terms of lily membership")?> </a></p>
-                <div class="club_login_form cs-clear">
-                    <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
-                    <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="login-form">
-                        <div class="cs-clear">
-                            <input class="club_login_ipt" type="text" value="<?php echo $this->htmlEscape($this->getUsername()) ?>" name="login[telphone]" placeholder="<?php echo $this->__("Cell phone")?>" />
-                            <input class="club_login_ipt" type="password" name="login[password]" id="pass" placeholder="<?php echo $this->__("Password")?>" />
-                            <input class="club_login_sub" type="submit" value="<?php echo $this->__("Login")?>" />
-                        </div>
-                        <div class="cs-clear">
-                            <div class="club_login_formlink"><input type="checkbox" /> <?php echo $this->__("Remember me")?></div>
-                            <div class="club_login_formlink">
-                                <a href="<?php echo $this->getForgotPasswordUrl() ?>" class="forgot-password"><?php echo $this->__("Forget your Password")?> ? </a></div>
-                        </div>
-                    </form>
-                </div>
+
+
+
             </div>
         </div>
     <script type="text/javascript">
