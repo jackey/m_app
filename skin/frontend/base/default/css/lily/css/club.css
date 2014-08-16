@@ -11,14 +11,19 @@
 .club_tit .small {font-size:40px;}
 .club_login{}
 .club_login_tit{}
-.club_login_txt{margin: 0 auto;width: 685px;text-align: center;}
+.club_login_txt{}
 .club_login_txt p{font-size: 24px;text-transform:uppercase;line-height: 50px}
 .club_login_regbtn{display: block;background: #000;color:#fff;width: 194px;height: 48px;line-height: 48px;margin:30px auto 20px;text-align: center;}
 .club_login_regtxt{text-align: center;}
-.club_login_form{width:640px;margin: 80px auto}
-.club_login_ipt{float: left;width: 200px;height: 46px;border:#000 solid 1px;padding:0 16px;display: inline;margin: 0 0 0 12px;font-size: 14px;color:#000;font-family:arial;background: #f3dedd}
-.club_login_sub{float: left;width: 86px;height: 48px;border:#000 solid 1px;color:#fff;background: #000;display: inline;margin: 0 0 0 44px}
+.club_login_form{}
+.club_login_ipt{float: left;width: 150px;height: 40px;border:#000 solid 1px;padding:0 16px;display: inline;margin: 0 20px 0 0;font-size: 14px;color:#000;font-family:arial;background: #f3dedd}
+.club_login_sub{width: 130px;height: 48px;border:#000 solid 1px;color:#fff;background: #000;display: block;margin: 20px 0 0 120px;font-size: 14px;}
 .club_login_formlink{width: 236px;float: left;display: inline;margin: 10px 0 0 12px}
+.club_login_wrap {width:1000px;margin:0 auto;}
+.club_login_title {font-size:24px;font-weight:bold;margin-bottom:15px;}
+.club_login_offline {margin:0 0 15px 0;}
+.club_login_left {float:left;}
+.club_login_right {float:right;width:370px;}
 /**/
 .club_delivery_txt{width: 800px;margin: 0 auto;text-align: center;line-height: 30px}
 /**/
@@ -138,6 +143,15 @@
 .product-shop .product-attr-val {font-weight: bold;}
 
 .club_article_center {width:1000px;margin:0 auto;}
+
+.club_getactivate {width:350px;margin:0 auto;text-align: center;}
+.club_getactivate_title {font-size:24px;font-weight:bold;margin:75px 0;}
+.club_getactivate .form-list label {float:left;width:80px;}
+.club_getactivate .form-list .input-box {float:left;clear:none;text-align:left;}
+.club_getactivate .form-list .input-box input {border:1px solid #000;background:none;width:150px;}
+.club_getactivate .fieldset {padding:0;margin:0;}
+.club_getactivate .buttons-set button.button {float:left;background:#000;color:#fff;padding:10px 25px;font-size:14px;}
+.club_getactivate .countdown {float:left;margin:0 0 0 10px;}
 
 /* Mobile Used
 ================================================================================================= */
