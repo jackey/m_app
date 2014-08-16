@@ -18,12 +18,15 @@
 .club_login_form{}
 .club_login_ipt{float: left;width: 150px;height: 40px;border:#000 solid 1px;padding:0 16px;display: inline;margin: 0 20px 0 0;font-size: 14px;color:#000;font-family:arial;background: #f3dedd}
 .club_login_sub{width: 130px;height: 48px;border:#000 solid 1px;color:#fff;background: #000;display: block;margin: 20px 0 0 120px;font-size: 14px;}
-.club_login_formlink{width: 236px;float: left;display: inline;margin: 10px 0 0 12px}
+.club_login_formlink{width: 148px;float: left;display: inline;margin: 10px 0 0 42px}
 .club_login_wrap {width:1000px;margin:0 auto;}
 .club_login_title {font-size:24px;font-weight:bold;margin-bottom:15px;}
 .club_login_offline {margin:0 0 15px 0;}
 .club_login_left {float:left;}
 .club_login_right {float:right;width:370px;}
+
+.page_club .cart,.page_club .points_checkout {width:1000px;margin:0 auto;}
+
 /**/
 .club_delivery_txt{width: 800px;margin: 0 auto;text-align: center;line-height: 30px}
 /**/
@@ -147,12 +150,14 @@
 .club_getactivate {width:350px;margin:0 auto;text-align: center;}
 .club_getactivate_title {font-size:24px;font-weight:bold;margin:75px 0;}
 .club_getactivate .form-list label {float:left;width:80px;}
-.club_getactivate .form-list .input-box {float:left;clear:none;text-align:left;}
+.club_getactivate .form-list .input-box {float:left;clear:none;text-align:left;width:auto;}
 .club_getactivate .form-list .input-box input {border:1px solid #000;background:none;width:150px;}
 .club_getactivate .fieldset {padding:0;margin:0;}
+.club_getactivate .buttons-set {margin:0 0 0 78px;}
 .club_getactivate .buttons-set button.button {float:left;background:#000;color:#fff;padding:10px 25px;font-size:14px;}
-.club_getactivate .countdown {float:left;margin:0 0 0 10px;}
-
+.club_getactivate .countdown {float:left;margin:5px 0 0 10px;}
+.club_getactivate .getactivate-form {margin:0 0 0 45px;}
+.club_getactivate .buttons-set p.required {display:none;text-align:left;}
 /* Mobile Used
 ================================================================================================= */
 .dis_mobile { display: none }
