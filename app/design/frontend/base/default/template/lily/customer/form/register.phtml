@@ -99,10 +99,9 @@
                         <span class="club_memberreg_tips"><?php echo $this->__('Please input correctly to get benefits')?></span>
                     </div>
 
-
                     <div class="club_memberreg_fi cs-clear">
                         <select name="gender" id="gender" placeholder="<?php echo $this->__('Gender') ?>*" class="club_login_ipt required-entry">
-                            <option value="1"><?php echo $this->__("male")?></option>
+                            <option value="1"><?php echo $this->__("Male")?></option>
                             <option value="2"><?php echo $this->__("Female")?></option>
                         </select>
 
@@ -139,6 +138,30 @@
         jQuery.noConflict();
         </script>
         <script type="text/javascript">
+            // 地址更新
+            (function ($) {
+                $(function () {
+                    var address = $("input[name='address']");
+                    var province = $("input[name='province']");
+                    var city = $("input[name='city']");
+                    var district = $("input[name='district']");
+                    var extra = $("input[name='extra']");
+                    function resetAddress() {
+                        var newAddr = province.val() + city.val() + district.val() + extra.val();
+                        address.val(newAddr);
+                    }
+                    province.on("input",function () {
+                        resetAddress();
+                    });
+                    city.on("input", function () {
+                        resetAddress();
+                    });
+                    district.on("input", function () {
+                        resetAddress();
+                    });
+                    extra.on("input", resetAddress);
+                });
+            })(jQuery);
             var countdown = 60;
             jQuery(document).ready(function($){
 
@@ -151,15 +174,15 @@
 
                 $(".fieldset input[type='text']").each(function(){
                     if($(this).attr('id') != "telephone" && $(this).attr('id') != "verify_code"){
-                        $(this).attr('disabled', 'disabled');
+                        //$(this).attr('disabled', 'disabled');
                     }
                 });
                 $(".fieldset input[type='password']").each(function(){
-                    $(this).attr('disabled', 'disabled');
+                    //$(this).attr('disabled', 'disabled');
                 });
 
                 $(".fieldset select").each(function(){
-                    $(this).attr('disabled', 'disabled');
+                    //$(this).attr('disabled', 'disabled');
                 });
 
 
