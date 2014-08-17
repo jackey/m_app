@@ -90,8 +90,23 @@
                     </div>
 
                     <div class="club_memberreg_fi cs-clear">
-                        <input type="text" name="address" id="address" placeholder="<?php echo $this->__('Address') ?>*" value="" title="<?php echo $this->__('Address') ?>" class="club_login_ipt required-entry" />
+                        <input type="hidden" name="address" id="address" placeholder="<?php echo $this->__('Address') ?>*" value="" title="<?php echo $this->__('Address') ?>" class="club_login_ipt required-entry" />
+                        <input type="text" name="province" placeholder="<?php echo $this->__("Province")?>" class="club_login_ipt required-entry" />
+                        <input type="text" name="city" placeholder="<?php echo $this->__("City")?>" class="club_login_ipt required-entry" />
+                        <input type="text" name="district" placeholder="<?php echo $this->__("District")?>" class="club_login_ipt required-entry" />
+                        <input type="text" name="extra" placeholder="<?php echo $this->__("Address")?>" class="club_login_ipt required-entry" />
+
                         <span class="club_memberreg_tips"><?php echo $this->__('Please input correctly to get benefits')?></span>
+                    </div>
+
+
+                    <div class="club_memberreg_fi cs-clear">
+                        <select name="gender" id="gender" placeholder="<?php echo $this->__('Gender') ?>*" class="club_login_ipt required-entry">
+                            <option value="1"><?php echo $this->__("male")?></option>
+                            <option value="2"><?php echo $this->__("Female")?></option>
+                        </select>
+
+                        <span class="club_memberreg_tips"><?php echo $this->__('Please select  gender')?></span>
                     </div>
 
                     <div class="club_memberreg_fi cs-clear">
