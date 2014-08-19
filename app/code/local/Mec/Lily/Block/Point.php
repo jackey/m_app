@@ -17,6 +17,7 @@ class Mec_Lily_Block_Point extends Mage_Core_Block_Template{
 			$id_result = Mage::helper('lily')->QueryIdByVipCard($card);
 			if($id_result != "") {
 				$id_result = json_decode($id_result);
+
 				
 				if($id_result[0]->code == 0) {
 					$v_id = $id_result[0]->rows;

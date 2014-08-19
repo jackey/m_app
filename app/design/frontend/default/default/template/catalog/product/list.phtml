@@ -114,6 +114,17 @@
                                     <a class="club_img" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
                                         <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(280,370); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
                                         <p class="product-name"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></p>
+                                        <?php if(Mage::getSingleton('customer/session')->isLoggedIn()):?>
+                                        <div class="product-attr">
+                                            <span class="product-attr-name"><?php echo $this->__('Required Points:') ?></span>
+                                            <span class="product-attr-val"><?php echo Mage::helper('points')->getProductPoints($_product); ?><?php echo $this->__('Points')?></span>
+                                        </div>
+                                        <?php else:?>
+                                        <div class="product-attr">
+                                            <span class="product-attr-name"><?php echo $this->__('Required Points:') ?></span>
+                                            <span class="product-attr-val"><?php echo $this->__('Login to get the required points')?></span>
+                                        </div>
+                                        <?php endif?>
                                     </a>
                                 </li>
                             <?php $i += 1;?>

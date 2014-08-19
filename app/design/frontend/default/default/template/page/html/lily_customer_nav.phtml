@@ -1,3 +1,9 @@
+
+<?php 
+    $session = Mage::getSingleton("customer/session"); 
+?>
+
+<?php  if ($session->isLoggedIn()): ?>
 <div class="club_ecoupon_nav from-block">
     <div class="club_welcome">
         <?php echo $this->__("Hi")?> <?php echo Mage::getSingleton('customer/session')->getCustomer()->getFirstname();?>,<br/> <?php echo $this->__("Welcome to Lily Club")?> <br /> <?php echo $this->__("Your remaining points")?> <br /><?php echo $this->__("are %s point(s)", Mage::getSingleton('customer/session')->getCustomer()->getUsePoints())  ?>
@@ -15,3 +21,14 @@
         <a href="<?php echo $this->getUrl("giftproducts.html")?>" class="club_navlist_gogift"><?php echo $this->__("Go to Gift Exchange")?></a>
     </div>
 </div>
+
+<?php else: ?>
+    <div class="club_ecoupon_nav from-block">
+        <div class="club_welcome">
+            <p><?php echo $this->__("Welcome to lily club")?> <br> <?php echo $this->__("You are not login")?></p>
+        </div>
+        <div class="club_navlist">
+            <a href="<?php echo $this->getUrl("checkout/cart/index")?>"><?php echo $this->__("Gift cart")?></a>
+        </div>
+    </div>
+<?php  endif;?>
