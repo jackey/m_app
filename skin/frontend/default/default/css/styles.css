@@ -1739,7 +1739,7 @@ color:#fff;
 .product-view .product-img-box .more-views h2 { font-size:11px; border-bottom:1px solid #ccc; margin:0 0 8px; text-transform:uppercase; }
 .product-view .product-img-box .more-views ul { margin-left:-9px;width:500px; }
 .product-view .product-img-box .more-views li { float:left; margin:0 0 8px 9px; }
-.product-view .product-img-box .more-views li a { float:left;  border:1px solid #000; overflow:hidden; }
+.product-view .product-img-box .more-views li a { float:left;  border:none; overflow:hidden; }
 .catalog-product-view .main-container{position:relative;z-index:2}
 
 
