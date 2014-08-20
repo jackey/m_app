@@ -29,13 +29,17 @@
 <?php $_wishlistSubmitUrl = $this->helper('wishlist')->getAddUrl($_product); ?>
 
 <ul class="add-to-links">
-<?php if ($this->helper('wishlist')->isAllow()) : ?>
-    <li><a href="<?php echo $_wishlistSubmitUrl ?>" onclick="productAddToCartForm.submitLight(this, this.href); return false;" class="link-wishlist"><?php echo $this->__('Add to Wishlist') ?></a></li>
-<?php endif; ?>
+
 
 <?php if(Mage::helper('points')->productInWishlist($_product->getId())):?>
+	<li><a href="javascript:void(0)" class="link-wishlist"><?php echo $this->__('Added to Wishlist') ?></a></li>
 	<li class="has_in_wishlit">
-		<span><?php echo $this->__('Added already,please don`t add again.'); ?></span>
+		<span>/<?php echo $this->__('Added already,please don`t add again.'); ?></span>
 	</li>
+
+<?php else: ?>
+	<?php if ($this->helper('wishlist')->isAllow()) : ?>
+	    <li><a href="<?php echo $_wishlistSubmitUrl ?>" onclick="productAddToCartForm.submitLight(this, this.href); return false;" class="link-wishlist"><?php echo $this->__('Add to Wishlist') ?></a></li>
+	<?php endif; ?>
 <?php endif; ?>
 </ul>

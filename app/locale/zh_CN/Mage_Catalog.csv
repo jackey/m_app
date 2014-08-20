@@ -679,4 +679,5 @@ Retrieve categories tree"""
 "Clear All","清空所有"
 "Confirm","确认"
 "You Have Not Enough Points To Exchange This Product","抱歉，您的积分余额不足，请重新选择"
-"%s was successfully added to your gift cart.","成功将%s加入礼品车"
+"%s was successfully added to your gift cart.","成功将%s加入礼品车",
+"Added to Wishlist": "已加入收藏"
