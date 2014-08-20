@@ -31,7 +31,6 @@
  * @see Mage_Checkout_Block_Cart
  */
 ?>
-<div class="page page_club">
 <?php $customer = Mage::getSingleton("customer/session"); ?>
 <?php if (!$customer->isLoggedIn()) : ?>
     <script type="text/javascript">
@@ -41,7 +40,7 @@
     </script>
 <?php endif; ?>
 
-
+<div class="club_ecoupon_center cs-clear">
 <?php echo $this->getChildHtml("lily_customer_nav")?>
     
 <div class="cart product-essential">

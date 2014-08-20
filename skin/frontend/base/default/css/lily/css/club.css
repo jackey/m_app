@@ -4,12 +4,12 @@
 
 /**/
 .club{background: #f3dedd;}
-.page_club{padding: 120px 0;background: #f3dedd;font-size:14px;}
+.page_club{padding: 120px 0 50px 0;background: #f3dedd;font-size:14px;}
 .page_club>div {opacity:0;}
 .page_club a:hover {text-decoration: underline;}
 .club_tit,.page-title h1{font-size: 80px;line-height:88px;text-transform:uppercase;text-align: center;padding:0 0 50px;font-family:arial;}
 .club_tit .small {font-size:40px;}
-.club_bottom_nav {text-align: center;}
+.club_bottom_nav {text-align: center;margin-top:50px;}
 .club_bottom_nav li {display: inline-block;margin:0 10px;}
 .club_login{}
 .club_login_tit{}
@@ -26,8 +26,9 @@
 .club_login_offline {margin:0 0 15px 0;}
 .club_login_left {float:left;}
 .club_login_right {float:right;width:370px;}
+.product-essential {padding:0!important;}
 
-.page_club .cart,.page_club .points_checkout {width:1000px;margin:0 auto;}
+.page_club .cart,.page_club .points_checkout {float:left;width:861px;}
 
 /**/
 .club_delivery_txt{width: 800px;margin: 0 auto;text-align: center;line-height: 30px}

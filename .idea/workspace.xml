@@ -2,16 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="900c1c39-134c-4714-b1f5-f4718f57967c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/2columns-left_jobs-center.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/2columns-left_jobs-center.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/default/default/css/styles.css" afterPath="$PROJECT_DIR$/skin/frontend/default/default/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/account/dashboard.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/account/dashboard.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/ecoupon.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/ecoupon.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/customer/form/forgotpassword.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/customer/form/forgotpassword.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/getactivate.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/getactivate.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/sales/order/history.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/sales/order/history.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/customer/logout.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/customer/logout.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/persistent/customer/form/mini-login.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/persistent/customer/form/mini-login.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart/noItems.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart/noItems.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/point.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/point.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/catalog/product/view.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/catalog/product/view.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/wishlist/view.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/wishlist/view.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m_app.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408069971805" ignored="false" />
+    <file path="/Dummy.txt" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408547370761" ignored="false" />
     <file path="/js.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407848073851" ignored="false" />
-    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408152433335" ignored="false" />
-    <file path="/a.dummy" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408104977926" ignored="false" />
+    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408548077657" ignored="false" />
+    <file path="/a.dummy" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408547933012" ignored="false" />
     <file path="/style.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408091700929" ignored="false" />
     <file path="/Mage_Cms.csv" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408082234439" ignored="false" />
     <file path="/view.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407916263314" ignored="false" />
@@ -37,7 +53,7 @@
     <file path="/noItems.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408078665370" ignored="false" />
     <file path="/list.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408079404117" ignored="false" />
     <file path="$PROJECT_DIR$/../rungiswines/wp-includes/nav-menu-template.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408079268188" ignored="false" />
-    <file path="/cart.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408084255844" ignored="false" />
+    <file path="/cart.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408548010161" ignored="false" />
     <file path="$PROJECT_DIR$/../rungiswines/wp-content/themes/wine/inc/sig_product.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408091645788" ignored="false" />
     <file path="/sig_product.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408091647483" ignored="false" />
     <file path="/2columns-left_jobs-center.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408152257799" ignored="false" />
@@ -60,28 +76,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="1column.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/1column.phtml">
+      <file leaf-file-name="history.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="6" selection-start="0" selection-end="1770" vertical-scroll-proportion="-11.535714">
+            <state line="92" column="10" selection-start="4836" selection-end="4836" vertical-scroll-proportion="-9.642858">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customer.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/layout/customer.xml">
+      <file leaf-file-name="register.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="20" selection-start="4297" selection-end="4297" vertical-scroll-proportion="0.0">
+            <state line="33" column="12" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-4.071429">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2columns-left_jobs-center.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/2columns-left_jobs-center.phtml">
+      <file leaf-file-name="getactivate.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/getactivate.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="39" selection-start="1584" selection-end="1603" vertical-scroll-proportion="-11.535714">
+            <state line="31" column="0" selection-start="1701" selection-end="1701" vertical-scroll-proportion="-8.964286">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ecoupon.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/ecoupon.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="14" selection-start="145" selection-end="196" vertical-scroll-proportion="-4.071429">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="point.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/point.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="50" selection-start="312" selection-end="354" vertical-scroll-proportion="-4.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forgotpassword.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/customer/form/forgotpassword.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="10" selection-start="2454" selection-end="2454" vertical-scroll-proportion="-9.642858">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/customer/logout.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="19" selection-start="1303" selection-end="1303" vertical-scroll-proportion="-6.107143">
               <folding />
             </state>
           </provider>
@@ -90,34 +144,27 @@
       <file leaf-file-name="club.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="24" selection-start="252" selection-end="252" vertical-scroll-proportion="0.2647059">
+            <state line="30" column="68" selection-start="1631" selection-end="1631" vertical-scroll-proportion="0.59951454">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css">
+      <file leaf-file-name="cart.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/checkout/cart.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="6" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="54" column="70" selection-start="2006" selection-end="2006" vertical-scroll-proportion="-18.321428">
+              <folding>
+                <marker date="1408531993000" expanded="true" signature="5950:5981" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/default/default/css/styles.css">
+      <file leaf-file-name="cart.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="317" column="26" selection-start="14679" selection-end="14679" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="2" selection-start="1087" selection-end="1163" vertical-scroll-proportion="-6.107143">
+            <state line="150" column="6" selection-start="5812" selection-end="5812" vertical-scroll-proportion="-83.46429">
               <folding />
             </state>
           </provider>
@@ -141,27 +188,26 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view/addtocart.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/point.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/ecoupon.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart/noItems.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/catalog/product/view.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/customer/account/dashboard/hello.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/persistent/customer/form/mini-login.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/account/dashboard.phtml" />
-        <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" />
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/checkout/cart.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart/noItems.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/sales/order/history.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/getactivate.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/ecoupon.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/point.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/customer/form/forgotpassword.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/customer/logout.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/page/2columns-left_jobs-center.phtml" />
-        <option value="$PROJECT_DIR$/skin/frontend/default/default/css/styles.css" />
         <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-15" />
     <option name="y" value="22" />
     <option name="width" value="1420" />
     <option name="height" value="830" />
@@ -810,15 +856,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-15" y="22" width="1420" height="830" extended-state="0" />
+    <frame x="0" y="22" width="1420" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32957748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33842796" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34352255" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -893,119 +939,118 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/layout/cms.xml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="202" column="10" selection-start="9850" selection-end="9850" vertical-scroll-proportion="-9.714286">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="25" selection-start="5643" selection-end="5643" vertical-scroll-proportion="0.13915858">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/checkout/cart.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="43" selection-start="7530" selection-end="7530" vertical-scroll-proportion="3.3511326">
-          <folding>
-            <marker date="1408084129000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="9" selection-start="1187" selection-end="1216" vertical-scroll-proportion="0.3381877">
+        <state line="139" column="13" selection-start="8166" selection-end="8166" vertical-scroll-proportion="-9.714286">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/persistent/customer/form/mini-login.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="14" selection-start="3139" selection-end="3139" vertical-scroll-proportion="0.6009693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/customer/account/dashboard/hello.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="29" selection-start="1149" selection-end="1337" vertical-scroll-proportion="0.14820592">
+        <state line="110" column="13" selection-start="4979" selection-end="4979" vertical-scroll-proportion="-10.321428">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/customer/account/dashboard.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="77" selection-start="3402" selection-end="3402" vertical-scroll-proportion="0.4602184">
+        <state line="75" column="10" selection-start="4163" selection-end="4163" vertical-scroll-proportion="-8.285714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart/noItems.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="10" selection-start="1348" selection-end="1348" vertical-scroll-proportion="-5.428571">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/sales/order/history.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="13" selection-start="4665" selection-end="4665" vertical-scroll-proportion="-7.607143">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="972" selection-end="1001" vertical-scroll-proportion="0.08892356">
+        <state line="92" column="10" selection-start="4836" selection-end="4836" vertical-scroll-proportion="-9.642858">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/layout/page.xml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.5844544">
+        <state line="33" column="12" selection-start="1084" selection-end="1084" vertical-scroll-proportion="-4.071429">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/layout/customer.xml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/getactivate.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="20" selection-start="4297" selection-end="4297" vertical-scroll-proportion="0.0">
+        <state line="31" column="0" selection-start="1701" selection-end="1701" vertical-scroll-proportion="-8.964286">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/1column.phtml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/customer/form/forgotpassword.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="6" selection-start="0" selection-end="1770" vertical-scroll-proportion="-11.535714">
+        <state line="52" column="10" selection-start="2454" selection-end="2454" vertical-scroll-proportion="-9.642858">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/customer/logout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="19" selection-start="1303" selection-end="1303" vertical-scroll-proportion="-6.107143">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view.phtml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/point.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="2" selection-start="1087" selection-end="1163" vertical-scroll-proportion="-6.107143">
+        <state line="7" column="50" selection-start="312" selection-end="354" vertical-scroll-proportion="-4.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/2columns-left_jobs-center.phtml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/checkout/cart.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="39" selection-start="1584" selection-end="1603" vertical-scroll-proportion="-11.535714">
+        <state line="54" column="70" selection-start="2006" selection-end="2006" vertical-scroll-proportion="-18.321428">
+          <folding>
+            <marker date="1408531993000" expanded="true" signature="5950:5981" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/ecoupon.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="14" selection-start="145" selection-end="196" vertical-scroll-proportion="-4.071429">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/default/default/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="317" column="26" selection-start="14679" selection-end="14679" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+        <state line="150" column="6" selection-start="5812" selection-end="5812" vertical-scroll-proportion="-83.46429">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="252" selection-end="252" vertical-scroll-proportion="0.2647059">
+        <state line="30" column="68" selection-start="1631" selection-end="1631" vertical-scroll-proportion="0.59951454">
           <folding />
         </state>
       </provider>
