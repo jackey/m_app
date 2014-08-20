@@ -79,6 +79,8 @@ Default layout, loads most of the pages
                     <label>Shopping Cart Form Before</label>
                 </block>
 
+
+
                 <block type="core/text_list" name="checkout.cart.methods" as="methods" translate="label">
                     <label>Payment Methods After Checkout Button</label>
                     <block type="checkout/onepage_link" name="checkout.cart.methods.onepage" template="checkout/onepage/link.phtml"/>
