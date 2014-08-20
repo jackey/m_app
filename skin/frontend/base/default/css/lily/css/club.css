@@ -15,7 +15,7 @@
 .club_login_tit{}
 .club_login_txt{}
 .club_login_txt p{font-size: 24px;text-transform:uppercase;line-height: 50px}
-.club_login_regbtn{display: block;background: #000;color:#fff;width: 194px;height: 48px;line-height: 48px;margin:30px auto 20px;text-align: center;}
+.club_login_regbtn{display: block;background: #000;color:#fff;width: 194px;height: 48px;line-height: 48px;margin:60px auto 20px;text-align: center;}
 .club_login_regtxt{text-align: center;}
 .club_login_form{}
 .club_login_ipt{float: left;width: 150px;height: 40px;border:#000 solid 1px;padding:0 16px;display: inline;margin: 0 20px 0 0;font-size: 14px;color:#000;font-family:arial;background: #f3dedd}
@@ -50,6 +50,7 @@
 .club_memberreg_sel{position: absolute;width: 232px;height: 46px;display: block;top: 1px;left:38px;opacity: 0;filter:alpha(opacity=0);cursor: pointer;}
 .club_member_forget{width: 308px;margin: 0 auto 0 auto;text-align:center;}
 .club_member_forget .club_memberreg_fi {margin-top:20px;}
+.club_member_forget .fieldset {margin:0;padding:0;}
 /**/
 .club_member_rule{text-align: center;margin: 0 auto;width: 860px}
 .club_member_rule h4{text-transform:uppercase;margin: 80px 0 40px}
@@ -116,14 +117,15 @@
 .club_pointexselbox select{width: 100px;position: absolute;top: 0;left:24px;opacity: 0;filter:alpha(opacity=0);cursor: pointer;}
 .club_pointimglist{padding-left:4px;}
 .club_pointimglist li{float: left;display:inline;margin: 18px 0 0 24px;height:150px;}
-.club_pointimglist .product-name {position: absolute;top:114px;font-size:1em;line-height: 100%;}
+.club_pointimglist .product-name {font-size:0.9em;line-height: 100%;margin:5px 0 0;}
+.club_pointimglist .product-attr {font-size:0.9em;}
 .club_club_pointproimg{float: left;width: 540px;}
 .club_club_pointproinfo{float: left;width: 320px}
 .club_club_pointprolist{padding:20px 0 0;}
 .club_club_pointprolist .club_img{float: left;display: inline;margin: 0 20px 0 0}
 .club_img img {
-	width:100%;
-	height: 100%;
+	width:109px;
+	height:109px;
 }
 .club_club_pointproinfo{}
 .club_club_pointproinfo li{width: 320px;float: left;padding:0 0 30px;}
@@ -137,7 +139,7 @@
 .club_pointintro h3{font-size: 18px;padding:50px 0 0;height: 42px;text-transform:uppercase;}
 
 
-.club_img{display: block;background: url('../images/club_phobg.gif') no-repeat;width: 140px;height: 106px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
+.club_img{display: block;background: url('../images/club_phobg.gif') no-repeat;width: 140px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
 .club_imgtxt{text-align: center;;width: 140px;top:30px;left:0;position: absolute;}
 .club_img2{display: block;background: url('../images/club_phobg2.gif') no-repeat;width: 469px;height: 340px;padding:3px 0 0 3px;position: relative;margin: 0}
 .club_img2 img{width:446px;height: 319px }
@@ -160,6 +162,8 @@
 .club_getactivate .countdown {float:left;margin:5px 0 0 10px;}
 .club_getactivate .getactivate-form {margin:0 0 0 45px;}
 .club_getactivate .buttons-set p.required {display:none;text-align:left;}
+
+.product-image #wrap {display:block;width:400px;height:400px;}
 /* Mobile Used
 ================================================================================================= */
 .dis_mobile { display: none }

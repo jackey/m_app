@@ -41,7 +41,9 @@
 <div class="wrap">
 	<div class="page page_club">
 	    <?php echo $this->getChildHtml('content') ?>
-	    <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('instruction')->toHtml(); ?>
+        <div class="club_bottom_nav">
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('instruction')->toHtml(); ?>
+        </div>
 	</div>
 </div>
 

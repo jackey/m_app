@@ -827,6 +827,8 @@ div:selected {
 
 .club_memberreg_fi input[name="telephone"] {
     width:100%;
+    background:none;
+    border:1px solid #000;
 }
 
 .hideme {
@@ -834,8 +836,7 @@ div:selected {
 }
 
 .messages {
-    width: 50%;
-    overflow: hidden;
+
     margin: 0 auto !important;
 }
 

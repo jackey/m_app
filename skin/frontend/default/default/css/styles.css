@@ -298,7 +298,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 .success-msg,
 .note-msg,
 .notice-msg { border-style:solid !important; border-width:1px !important; background-position:10px 9px !important; background-repeat:no-repeat !important; min-height:24px !important; padding:8px 8px 8px 32px !important; font-size:11px !important; font-weight:bold !important; }
-.error-msg { background-color:#fff; background-image:url(../images/i_msg-error.gif); color:#5F92DB }
+.error-msg { background:none; color:#000 }
 .success-msg { border-color:#000;color:#000; }
 .note-msg,
 .notice-msg { border-color:#2280DA; background-color:#fafaec; background-image:url(../images/i_msg-note.gif); color:#2280DA; }

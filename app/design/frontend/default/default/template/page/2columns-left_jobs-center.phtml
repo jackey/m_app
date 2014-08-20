@@ -42,7 +42,9 @@
     <div class="page page_club">
         <div class="club_article_center cs-clear">
             <?php echo $this->getChildHtml('content') ?>
-            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('instruction')->toHtml(); ?>
+            <div class="club_bottom_nav">
+                <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('instruction')->toHtml(); ?>
+            </div>
         </div>
     </div>
 </div>
