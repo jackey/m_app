@@ -845,10 +845,17 @@ if ((typeof Range != "undefined") && !Range.prototype.createContextualFragment)
                 complete: function (data) {
                     data = $.parseJSON(data["responseText"]);
                     if (data["redirect"] == "") {
-                        window.location.reload();
+                    	var message = data["message"];
+                    	$(".error-message").css("display", "block").html(message);
+                            clearInterval(timer);
+                            timer = null;
+                            $(".second", form).hide().text(60);
+                            $(".submit-text").show();
                     }
                     else {
-                        window.location.href = data["redirect"];
+                    	setTimeout(function () {
+                        	window.location.href = data["redirect"];
+                    	}, 1000);
                     }
                 }
             });

@@ -184,7 +184,7 @@ class Mec_Lily_IndexController extends Mage_Core_Controller_Front_Action{
 					// Mage::getSingleton('adminhtml/session')->addError(Mage::helper('adminhtml')->__('The %s has Send Sms Fail.', $_customer->getEmail()));
 					$this->_getSession()->addError($this->__('The %s has Send Sms Fail.', $_customer->getEmail()));
 					$this->getResponse()->setHeader("Content-Type", "application/json");
-					$this->getResponse()->setBody(json_encode(array("redirect" =>"")));
+					$this->getResponse()->setBody(json_encode(array("redirect" =>"", "message" => $this->__('The %s has Send Sms Fail.', $_customer->getEmail()))));
 					return;
 					
 				}	
@@ -193,7 +193,7 @@ class Mec_Lily_IndexController extends Mage_Core_Controller_Front_Action{
 		}else{
 			$this->_getSession()->addError($this->__('You Have No Account In System.'));
 			$this->getResponse()->setHeader("Content-Type", "application/json");
-			$this->getResponse()->setBody(json_encode(array("redirect" =>"")));
+			$this->getResponse()->setBody(json_encode(array("redirect" =>"", "message" => $this->__('You Have No Account In System.'))));
 			return;
 		}
 	}
