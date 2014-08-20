@@ -846,7 +846,7 @@ if ((typeof Range != "undefined") && !Range.prototype.createContextualFragment)
                     data = $.parseJSON(data["responseText"]);
                     if (data["redirect"] == "") {
                     	var message = data["message"];
-                    	$(".error-message").css("display", "block").html(message);
+                    	$(".error-msg").css("display", "block").html(message);
                             clearInterval(timer);
                             timer = null;
                             $(".second", form).hide().text(60);
