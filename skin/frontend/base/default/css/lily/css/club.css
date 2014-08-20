@@ -9,6 +9,8 @@
 .page_club a:hover {text-decoration: underline;}
 .club_tit,.page-title h1{font-size: 80px;line-height:88px;text-transform:uppercase;text-align: center;padding:0 0 50px;font-family:arial;}
 .club_tit .small {font-size:40px;}
+.club_bottom_nav {text-align: center;}
+.club_bottom_nav li {display: inline-block;margin:0 10px;}
 .club_login{}
 .club_login_tit{}
 .club_login_txt{}
