@@ -24,13 +24,11 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<div class="order-view-main">
-    <div class="left">
-        <?php echo $this->getChildHtml("lily_customer_nav")?>
-    </div>
+<div class="club_ecoupon_center cs-clear">
+    <?php echo $this->getChildHtml("lily_customer_nav")?>
 
-    <div class="content">
-        <div class="order-info"><?php echo $this->getChildHtml("info")?></div>
+    <div class="club_ecoupon_com">
+        <div class="orderinfo"><?php echo $this->getChildHtml("info")?></div>
         <div class="order-items order-details">
             <?php if ($this->helper('giftmessage/message')->getIsMessagesAvailable('items', $this->getOrder())): ?>
             <script type="text/javascript">

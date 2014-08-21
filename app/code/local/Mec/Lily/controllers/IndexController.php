@@ -62,7 +62,7 @@ class Mec_Lily_IndexController extends Mage_Core_Controller_Front_Action{
 		$time = date('Y-m-d H:i:s').'.000';
 		$sercert = md5($erp_user.$time.md5($erp_password));
 		
-		$sign_verify_code = '亲爱的用户，您的手机验证码为：'. $verify_code . '，请把该验证码填入注册页面，以便成功注册，请注意大小写和空格，期待您的加入！【Lily商务时装】';
+		$sign_verify_code = '【Lily商务时装】亲爱的用户，您的手机验证码为：'. $verify_code . '，请把验证码填入注册页面，以便成功注册，期待您的加入！';
 		
 		$post_data = "sip_appkey={$erp_user}&sip_timestamp={$time}&sip_sign={$sercert}";
 		
@@ -139,7 +139,7 @@ class Mec_Lily_IndexController extends Mage_Core_Controller_Front_Action{
 				break;
 			}
 			
-			$pass_word_sign = '亲爱的会员，您的登录密码为：' . $password . '，输入时请注意大小写和空格，欢迎登录Lily网上会员俱乐部！【Lily商务时装】';
+			$pass_word_sign = '【Lily商务时装】亲爱的会员，您的登录密码为：' . $password . '，请凭此密码登录Lily网上会员俱乐部，登录后请到账号中心修改密码。';
 			
 			$erp_user = Mage::helper('lily')->erpUser();
 			$erp_password = Mage::helper('lily')->erpPassword();
@@ -247,7 +247,7 @@ class Mec_Lily_IndexController extends Mage_Core_Controller_Front_Action{
 				$cutomer_obj->save();
 			}
 			
-			$pass_word_sign = '亲爱的会员，您的登录密码为：' . $password . '，输入时请注意大小写和空格，欢迎登录Lily网上会员俱乐部！【Lily商务时装】';
+			$pass_word_sign = '【Lily商务时装】亲爱的会员，您的登录密码为：' . $password . '，请凭此密码登录Lily网上会员俱乐部，登录后请到账号中心修改密码。';
 			
 			$erp_user = Mage::helper('lily')->erpUser();
 			$erp_password = Mage::helper('lily')->erpPassword();
@@ -442,7 +442,7 @@ class Mec_Lily_IndexController extends Mage_Core_Controller_Front_Action{
 				}
 				
 				$customer_id = $customer_obj->getId();
-				$pass_word_sign = '亲爱的会员，您的登录密码为：' . $pass_word . '，输入时请注意大小写和空格，欢迎登录Lily网上会员俱乐部！【Lily商务时装】';
+				$pass_word_sign = '【Lily商务时装】亲爱的会员，您的登录密码为：' . $pass_word . '，请凭此密码登录Lily网上会员俱乐部，登录后请到账号中心修改密码。';
 				$query_params = array(
 					'id' => 1,
 					'command' => 'nds.monitor.ext.SendSMS',

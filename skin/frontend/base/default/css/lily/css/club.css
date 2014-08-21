@@ -41,10 +41,11 @@
 .club_member_form .validation-advice {display: none;}
 .club_member_sub{cursor:pointer;width: 308px;height: 48px;border:#000 solid 1px;color:#fff;background: #000;display: inline;margin: 30px auto;display: block;}
 .club_member_sub:hover {opacity:0.8}
-.club_memberreg{width: 308px;margin: 100px auto 0 auto}
+.club_memberreg{width: 608px;margin: 100px auto 0 auto}
 .club_memberreg_fi{margin: 0 0 10px }
+.club_memberreg_fi label {float:left;width:120px;margin:0 10px 0 0;color:#000;text-align:right;}
 .club_memberreg_edm {padding:0 0 0 35px;}
-.club_memberreg_fi .club_login_ipt{margin:0 auto;float: none;display: block;}
+.club_memberreg_fi .club_login_ipt{margin:0 auto;display: block;}
 .club_memberreg_fi{position: relative;}
 .club_memberreg_tips{position: absolute;left:310px;line-height: 48px;top:0;width:300px}
 .club_memberreg_seltxt{width: 200px;height: 46px;border:#000 solid 1px;padding:0 16px;margin: 0 auto;color:#000;font-family:arial;background: #f3dedd;line-height: 46px;background: url('../images/club_memberreg_sel.png') no-repeat 94% 50%;}
@@ -151,6 +152,9 @@
 .page-logout {text-align: center;padding:100px 0 100px 0;}
 .product-shop .product-attr-name,.product-shop .attribute-title {float:left;width:140px;}
 .product-shop .product-attr-val {font-weight: bold;}
+
+#query_status {background:#000;}
+#query_status span {color:#fff;padding:0;font-size:14px;line-height:100%;margin:0 0 0 10px;padding:5px 10px;}
 
 .club_article_center {width:1000px;margin:0 auto;}
 

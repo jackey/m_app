@@ -51,8 +51,8 @@ class Mec_Lilysms_Helper_Data extends Mage_Core_Helper_Abstract
 		$proxypassword = false;
 		
 		
-		$_content = '亲爱的会员，您领礼品的验证码为：';
-		$content = $_content . $content . '请接店铺通知后凭验证码到店领礼品，验证码是您领礼品的唯一凭证，请勿泄露【Lily商务时装】';
+		$_content = '【Lily商务时装】亲爱的会员，您领礼品的验证码为：';
+		$content = $_content . $content . '，请接店铺通知后凭验证码到店领取，验证码是您领礼品的唯一凭证，请勿泄露';
 	
 		$client = new Client($Message_api,$Message_username,$Message_password,$Message_password,$proxyhost,$proxyport,$proxyusername,$proxypassword,$connectTimeOut,$readTimeOut);
 		// $statusCode_login = $client->login();
