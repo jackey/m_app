@@ -67,10 +67,13 @@
                     <action method="addColumnCountLayoutDepend"><layout>three_columns</layout><count>3</count></action>
                     <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
                 </block>
+
+                <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml" />
                 <action method="setListOrders"/>
                 <action method="setListModes"/>
                 <action method="setListCollection"/>
             </block>
+
         </reference>
     </catalogsearch_result_index>
 
