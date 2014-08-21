@@ -31,11 +31,21 @@
  * @var $this Mage_Customer_Block_Form_Register
  */
 ?>
+
+<?php 
+    $session = Mage::getSingleton('customer/session');
+    $type = Mage_Core_Model_Message::ERROR;
+
+    $messageBlock = $this->getMessagesBlock();
+    $items = $messageBlock->getMessages();
+
+?>
 <div class="page page_club">
     <div class="club_member_formte">
             <div class="club_tit  club_login_tit">
                 <h2><?php echo $this->__('MEMBER<br>REGISTRATION') ?></h2>
             </div>
+            <?php if (!count($items)): ?>
             <div class="club_member_rule">
                 <div class="club_login_txt">
                     <?php echo $this->__('Welcome to be a member of Lily club! Free 200 points upon registration, countable with off-line purchases. (Limited to Beijing,Shanghai,Wuhan,Shenzhen and Guangzhou.) ')?>
@@ -43,10 +53,11 @@
                 <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('club-rule')->toHtml(); ?>
                 <button id="register-button" class="club_member_rulelink" title="<?php echo $this->__('Agree to the terms and sign up')?>" type="button"><span><span><?php echo $this->__('Agree to the terms and sign up.')?></span></span></button>
             </div>
+            <?php endif;?>
 
-            <div class="club-rule-content hide">
+            <div class="club-rule-content <?php if (!count($items)) echo 'hide'?>">
             <?php echo $this->getChildHtml('form_fields_before')?>
-            <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+            <?php echo $messageBlock->getGroupedHtml() ?>
             <?php /* Extensions placeholder */ ?>
             <?php echo $this->getChildHtml('customer.form.register.extra')?>
             <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="form-validate">

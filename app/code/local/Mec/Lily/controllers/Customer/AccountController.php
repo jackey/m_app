@@ -93,8 +93,6 @@ class Mec_Lily_Customer_AccountController extends Mage_Customer_AccountControlle
 					
 				}
 				
-				
-				
 				$_tel_result = Mage::helper('lily')->ErpHasTelephone($this->getRequest()->getPost('telephone'));
 				$_tel_result = json_decode($_tel_result);
 				$_tel_result = $_tel_result[0];
@@ -107,12 +105,6 @@ class Mec_Lily_Customer_AccountController extends Mage_Customer_AccountControlle
 						return;
 					}
 				}
-				
-				
-				
-				
-				
-				
 				
                 $customerErrors = $customerForm->validateData($customerData);
                 if ($customerErrors !== true) {
