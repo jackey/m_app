@@ -313,7 +313,9 @@ Customer account address edit page
         <!-- Mage_Customer -->
         <update handle="customer_account"/>
         <reference name="my.account.wrapper">
-            <block type="customer/address_edit" name="customer_address_edit" template="customer/address/edit.phtml"/>
+            <block type="customer/address_edit" name="customer_address_edit" template="customer/address/edit.phtml">
+                <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml" />
+            </block>
         </reference>
     </customer_address_form>
 
