@@ -62,6 +62,7 @@ Customer account pages, rendered for all tabs in dashboard
                     <label>Newsletter Subscription Form Before</label>
                     <action method="setMayBeInvisible"><value>1</value></action>
                 </block>
+                <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml" />
             </block>
         </reference>
     </newsletter_manage_index>
