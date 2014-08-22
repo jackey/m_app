@@ -38,99 +38,103 @@
 
 <!--  -->
     <!--  -->
-
-        <div class="club_ecoupon_com club_point">
-            <div class="club_tit ">
-                <h2><?php echo $this->__("Point<br />Exchange")?></h2>
-            </div>
-            <div class="cs-clear ">
-                <div class="club_pointexnav cs-clear">
-                    <div class="club_pointexfilter">
-                        <p class="club_pointexfiltertit"><?php echo $this->__("FILTER")?>:</p>
-                        <p class="club_pointexselbox">
-                            <span><?php echo $this->__("Point")?></span>
-                            <?php $attributeModel = Mage::getModel('eav/entity_attribute')->loadByCode('catalog_product', 'vip_navigation_points');?>
-                            <select name="points_level" id="points_level">
-                                <?php
-                                    foreach ( $attributeModel->getSource()->getAllOptions(true, true) as $option):?>
-                                        <?php if($option['value'] != ""): ?>
-                                            <option value="<?php echo $option['value']; ?>"><?php echo $option['label']; ?></option>
+    <div class="club_login">
+        <div class="club_tit ">
+            <h2><?php echo $this->__("Point<br />Exchange")?></h2>
+        </div>
+        <div class="club_ecoupon_center cs-clear">
+            <?php echo $this->getChildHtml("lily_product_nav")?>
+            <div class="club_ecoupon_com club_point">
+                <div class="cs-clear ">
+                    <div class="club_pointexnav cs-clear">
+                        <div class="club_pointexfilter">
+                            <p class="club_pointexfiltertit"><?php echo $this->__("FILTER")?>:</p>
+                            <p class="club_pointexselbox">
+                                <span><?php echo $this->__("Point")?></span>
+                                <?php $attributeModel = Mage::getModel('eav/entity_attribute')->loadByCode('catalog_product', 'vip_navigation_points');?>
+                                <select name="points_level" id="points_level">
+                                    <?php
+                                        foreach ( $attributeModel->getSource()->getAllOptions(true, true) as $option):?>
+                                            <?php if($option['value'] != ""): ?>
+                                                <option value="<?php echo $option['value']; ?>"><?php echo $option['label']; ?></option>
+                                            <?php else:?>
+                                                <option value="<?php echo $option['value']; ?>"><?php echo $this->__('Please Select Point Level'); ?></option>
+                                            <?php endif; ?>
+                                    <?php endforeach; ?>
+                                </select>
+                                <script type="text/javascript">
+                                    jQuery(document).ready(function($){
+                                        $('#points_level').change(function(){
+                                            if($(this).val() != ""){
+                                                setLocation('<?php echo $this->getUrl('catalogsearch/result'); ?>' + '?q=lily&vip_navigation_points=' + $(this).val());
+                                            }
+                                        });
+                                    });
+                                </script>
+                            </p>
+                            <p class="club_pointexselbox">
+                                <span><?php echo $this->__("Type"); ?></span>
+                                <?php 
+                                    $layer = Mage::getModel("catalog/layer");
+                                    $category = Mage::getModel("catalog/category")->load(43);
+                                    $layer->setCurrentCategory($category);
+                                    $attributes = $layer->getFilterableAttributes();
+                                    foreach ($attributes as $attribute):
+                                        $name = $attribute->getName();
+                                        if ($name == "product_type"):
+                                            $options = $attribute->getSource()->getAllOptions(false);
+                                            break;
+                                        endif;
+                                    endforeach;
+                                ?>
+                                <select name="product_type">
+                                    <?php foreach ($options as $option): ?>
+                                        <option value="<?php echo $option["value"]?>"><?php echo $option["label"]?></option>
+                                    <?php endforeach;?>
+                                </select>
+                                <script type="text/javascript">
+                                    jQuery(document).ready(function($){
+                                        $('select[name="product_type"]').change(function(){
+                                            if($(this).val() != ""){
+                                                setLocation('<?php echo $this->getUrl('catalogsearch/result'); ?>' + '?q=lily&product_type=' + $(this).val());
+                                            }
+                                        });
+                                    });
+                                </script>
+                            </p>
+                        </div>
+                    </div>
+                    <?php if(!$_productCollection->count()): ?>
+                    <p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
+                    <?php else: ?>
+                        <ul class="club_pointimglist cs-clear">
+                        <?php $i=1; foreach ($_productCollection as $_product): ?>
+                                <li class="item-<?php  echo $i?>">
+                                    <a class="club_img" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+                                        <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(280,370); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
+                                        <p class="product-name"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></p>
+                                        <?php if(Mage::getSingleton('customer/session')->isLoggedIn()):?>
+                                        <div class="product-attr">
+                                            <span class="product-attr-name"><?php echo $this->__('Required Points:') ?></span>
+                                            <span class="product-attr-val"><?php echo Mage::helper('points')->getProductPoints($_product); ?><?php echo $this->__('Points')?></span>
+                                        </div>
                                         <?php else:?>
-                                            <option value="<?php echo $option['value']; ?>"><?php echo $this->__('Please Select Point Level'); ?></option>
-                                        <?php endif; ?>
-                                <?php endforeach; ?>
-                            </select>
-                            <script type="text/javascript">
-                                jQuery(document).ready(function($){
-                                    $('#points_level').change(function(){
-                                        if($(this).val() != ""){
-                                            setLocation('<?php echo $this->getUrl('catalogsearch/result'); ?>' + '?q=lily&vip_navigation_points=' + $(this).val());
-                                        }
-                                    });
-                                });
-                            </script>
-                        </p>
-                        <p class="club_pointexselbox">
-                            <span><?php echo $this->__("Type"); ?></span>
-                            <?php 
-                                $layer = Mage::getModel("catalog/layer");
-                                $category = Mage::getModel("catalog/category")->load(43);
-                                $layer->setCurrentCategory($category);
-                                $attributes = $layer->getFilterableAttributes();
-                                foreach ($attributes as $attribute):
-                                    $name = $attribute->getName();
-                                    if ($name == "product_type"):
-                                        $options = $attribute->getSource()->getAllOptions(false);
-                                        break;
-                                    endif;
-                                endforeach;
-                            ?>
-                            <select name="product_type">
-                                <?php foreach ($options as $option): ?>
-                                    <option value="<?php echo $option["value"]?>"><?php echo $option["label"]?></option>
-                                <?php endforeach;?>
-                            </select>
-                            <script type="text/javascript">
-                                jQuery(document).ready(function($){
-                                    $('select[name="product_type"]').change(function(){
-                                        if($(this).val() != ""){
-                                            setLocation('<?php echo $this->getUrl('catalogsearch/result'); ?>' + '?q=lily&product_type=' + $(this).val());
-                                        }
-                                    });
-                                });
-                            </script>
-                        </p>
+                                        <div class="product-attr">
+                                            <span class="product-attr-name"><?php echo $this->__('Required Points:') ?></span>
+                                            <span class="product-attr-val"><?php echo $this->__('Login to get the required points')?></span>
+                                        </div>
+                                        <?php endif?>
+                                    </a>
+                                </li>
+                            <?php $i += 1;?>
+                            <?php endforeach;?>
+                            </ul>
+                    <?php endif;?>
+                    <div class="toolbar-bottom">
+                        <?php echo $this->getToolbarHtml() ?>
                     </div>
                 </div>
-                <?php if(!$_productCollection->count()): ?>
-                <p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
-                <?php else: ?>
-                    <ul class="club_pointimglist cs-clear">
-                    <?php $i=1; foreach ($_productCollection as $_product): ?>
-                            <li class="item-<?php  echo $i?>">
-                                <a class="club_img" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
-                                    <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(280,370); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
-                                    <p class="product-name"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></p>
-                                    <?php if(Mage::getSingleton('customer/session')->isLoggedIn()):?>
-                                    <div class="product-attr">
-                                        <span class="product-attr-name"><?php echo $this->__('Required Points:') ?></span>
-                                        <span class="product-attr-val"><?php echo Mage::helper('points')->getProductPoints($_product); ?><?php echo $this->__('Points')?></span>
-                                    </div>
-                                    <?php else:?>
-                                    <div class="product-attr">
-                                        <span class="product-attr-name"><?php echo $this->__('Required Points:') ?></span>
-                                        <span class="product-attr-val"><?php echo $this->__('Login to get the required points')?></span>
-                                    </div>
-                                    <?php endif?>
-                                </a>
-                            </li>
-                        <?php $i += 1;?>
-                        <?php endforeach;?>
-                        </ul>
-                <?php endif;?>
-                <div class="toolbar-bottom">
-                    <?php echo $this->getToolbarHtml() ?>
-                </div>
             </div>
-        </div> 
+        </div>
+    </div>
     <!--  -->
