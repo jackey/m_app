@@ -91,7 +91,6 @@ class Mec_Lily_IndexController extends Mage_Core_Controller_Front_Action{
 			}
 		}
 		
-		
 		$this->getResponse()->setBody(Zend_Json::encode($response));
 	}
 	

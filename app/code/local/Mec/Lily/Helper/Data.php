@@ -319,7 +319,7 @@ class Mec_Lily_Helper_Data extends Mage_Core_Helper_Abstract
                  ->addAttributeToSelect('*')
 				 ->addAttributeToFilter('telephone', array('eq'=> $tel));
 	
-		if($collection->getSize() == 0){
+		if($collection->getSize() == 0) {
 			return true;
 		
 		}else{

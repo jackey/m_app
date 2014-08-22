@@ -28,10 +28,12 @@
 	<reference name="root">   
       <action method="setTemplate"><template>page/1column.phtml</template></action>   
     </reference>
-	<reference name="content">   
-
+	<reference name="content">
 		
-      <block type="points/index" name="points_success" template="points/checkout/success.phtml"/>   
+      <block type="points/index" name="points_success" template="points/checkout/success.phtml">
+	        <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml" />
+      </block>
+
     </reference>
   
   </points_checkout_psucceed>
@@ -44,6 +46,7 @@
       <block type="points/checkout" name="points_index" template="points/checkout.phtml">
 		 <block type="points/shipping" name="points_shipping" as="points_shipping" template="points/shipping.phtml" />
 		 <block type="points/review" name="points_review" as="points_review" template="points/checkout_review.phtml" />
+		 <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml" />
 	  </block>
     </reference> 
   </points_checkout_index>
