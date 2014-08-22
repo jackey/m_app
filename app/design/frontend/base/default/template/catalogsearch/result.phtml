@@ -32,7 +32,7 @@
     <?php endif; ?>
     <h1><?php echo ($this->getHeaderText() || $this->getHeaderText() === false) ? $this->getHeaderText() : $this->__("Search results for '%s'", $this->helper('catalogsearch')->getEscapedQueryText()) ?></h1>
 </div>
-<?php echo $this->getChildHtml("lily_customer_nav")?>
+
     <?php if ($messages = $this->getNoteMessages()):?>
     <p class="note-msg">
         <?php foreach ($messages as $message):?>
@@ -40,7 +40,12 @@
         <?php endforeach;?>
     </p>
     <?php endif; ?>
-    <?php echo $this->getProductListHtml() ?>
+
+    <div class="club_ecoupon_center cs-clear">
+            <?php echo $this->getChildHtml("lily_customer_nav")?>
+            <?php echo $this->getProductListHtml() ?>
+    </div>
+
 <?php else: ?>
 <div class="page-title">
     <h1><?php echo ($this->getHeaderText() || $this->getHeaderText() === false) ? $this->getHeaderText() : $this->__("Search results for '%s'", $this->helper('catalogsearch')->getEscapedQueryText()) ?></h1>
