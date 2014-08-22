@@ -375,7 +375,7 @@
     padding-right: 22px;}
 
 }
-/***** iPad Smaller than 959px ipadÊúÆÁ*****/
+/***** iPad Smaller than 959px ipadï¿½ï¿½ï¿½ï¿½*****/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
 
@@ -449,6 +449,7 @@ width: 40px;
     .data-table table, .data-table thead, .data-table tbody, tablr.data-table th, table.data-table td, .data-table tr { display: block; border: 0;  text-align: left !important;}
 	
 	table span.title{float:left;display:block;font-weight: bold;width:100px;}
+
     .data-table tfoot td { text-align:right !important;width:98%;}
 	table.data-table  thead{display:none;}
 	.data-table tr{border-bottom:1px solid #c2c2c2}

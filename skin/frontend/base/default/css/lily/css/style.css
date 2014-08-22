@@ -825,11 +825,6 @@ div:selected {
     z-index: 1;
 }
 
-.club_memberreg_fi input[name="telephone"] {
-    width:100%;
-    background:none;
-    border:1px solid #000;
-}
 
 .hideme {
     display: none;

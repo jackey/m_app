@@ -53,14 +53,14 @@
 					    <li data-title="STORE-LOCATOR"><a href='http://www.lily-collection.com/storelocator'><?php echo $this->__(  "STORE LOCATOR")?></a></li>
 				    </ol>
 			    </div>
-			    <div class="ft_list" style="display:none;">
-				    <h2 data-title="CLUB" ><?php echo $this->__(  "CLUB")?></h2>
-				    <ol>
-					    <li><a data-title="LILY-CLUB" href='./club_memberinfo.html' index='9'><?php echo $this->__(  "LILY CLUB")?></a></li>
-					    <li><a data-title="TERMS" href='./club_memberrules.html' index='10'><?php echo $this->__(  "TERMS")?></a></li>
-					    <li><a data-title="POINT-CHECKING" href='./club_pointinfo.html' index='11'><?php echo $this->__(  "POINT CHECKING")?></a></li>
-					    <li><a data-title="REDEMPTION" href='./club_gifthis.html' index='12'><?php echo $this->__(  "REDEMPTION")?></a></li>
-				    </ol>
+			    <div class="ft_list">
+				    <h2 data-title="CLUB" ><?php echo $this->__(  "VIP CLUB")?></h2>
+                    <ol>
+                        <li><a data-title="LILY-CLUB" href='<?php echo getClubSiteURL("customer/account")?>' index='9'><?php echo $this->__("LILY CLUB")?></a></li>
+                        <li><a data-title="TERMS" href='<?php echo getOfficeSiteURL("club_memberrules.html")?>' index='10'><?php echo $this->__("TERMS")?></a></li>
+                        <li><a data-title="POINT CHECKING" href='<?php echo getOfficeSiteURL("club_pointinfo.html")?>' index='11'><?php echo $this->__("POINT CHECKING")?></a></li>
+                        <li><a data-title="REDEMPTION" href='<?php echo getClubSiteURL("club_gifthis.html")?>' index='12'><?php echo $this->__("REDEMPTION")?></a></li>
+                    </ol>
 			    </div>
 			    <div class="cs-clear cs-height-footer"></div>
 <!--			    <div class="ft_links">

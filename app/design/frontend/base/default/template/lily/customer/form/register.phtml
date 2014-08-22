@@ -45,23 +45,31 @@
             </div>
 
             <div class="club-rule-content hide">
+                <div class="club_login_txt">
+                    <?php echo $this->__('Welcome to be a member of Lily club! Free 200 points upon registration, countable with off-line purchases. (Limited to Beijing,Shanghai,Wuhan,Shenzhen and Guangzhou.) ')?>
+                </div>
             <?php echo $this->getChildHtml('form_fields_before')?>
             <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
             <?php /* Extensions placeholder */ ?>
             <?php echo $this->getChildHtml('customer.form.register.extra')?>
             <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="form-validate">
-                <div class="club_member_form cs-clear step-1">
-                    <div class="cs-clear">
-                        <input class="club_login_ipt required-entry" name="telephone" id="telephone" value="<?php echo $this->escapeHtml($this->getFormData()->getTelephone()) ?>" title="<?php echo $this->__('Cell Phone') ?>"  placeholder="<?php echo $this->__('Cell Phone') ?>*" />
-                        <input class="club_login_ipt required-entry" id="verify_code" name="verify_code"  title="<?php echo $this->__('Verifying Code') ?>"  placeholder="<?php echo $this->__('Verifying Code') ?>* " />
-                    </div>
-                    <button type="button" title="<?php //echo $this->__('Get Code') ?><?php echo $this->__('Get a verifying code') ?>" class="club_member_sub" id="get_code"><span><span><?php //echo $this->__('Get Code') ?><?php echo $this->__('Get a verifying code') ?></span></span></button>
-                    <button type="button" title="<?php echo $this->__('Verify Code') ?>" class="club_member_sub" id="verfir"><span><span><?php echo $this->__('Verify Code') ?></span></span></button>
-                </div>
+
 
                 <div class="club_memberreg cs-clear fieldset step-2 disable">
                     <input type="hidden" name="success_url" value="<?php echo $this->getSuccessUrl() ?>" />
                     <input type="hidden" name="error_url" value="<?php echo $this->getErrorUrl() ?>" />
+
+                        <div class="club_memberreg_fi cs-clear">
+                            <label><?php echo $this->__('Cell Phone') ?></label>
+                            <input class="club_login_ipt required-entry" required-entry" name="telephone" id="telephone" value="<?php echo $this->escapeHtml($this->getFormData()->getTelephone()) ?>" title="<?php echo $this->__('Cell Phone') ?>"  placeholder="<?php echo $this->__('Cell Phone') ?>*" />
+                            <span class="club_memberreg_tips"><button type="button" title="<?php //echo $this->__('Get Code') ?><?php echo $this->__('Get a verifying code') ?>" class="club_member_sub club_member_sub2" id="get_code"><span><span><?php //echo $this->__('Get Code') ?><?php echo $this->__('Get a verifying code') ?></span></span></button></span>
+                        </div>
+
+                        <div class="club_memberreg_fi cs-clear">
+                            <label><?php echo $this->__('Verifying Code') ?></label>
+                            <input class="club_login_ipt required-entry" id="verify_code" name="verify_code"  title="<?php echo $this->__('Verifying Code') ?>"  placeholder="<?php echo $this->__('Verifying Code') ?>* " />
+                            <span class="club_memberreg_tips"><button type="button" title="<?php echo $this->__('Verify Code') ?>" class="club_member_sub club_member_sub2" id="verfir"><span><span><?php echo $this->__('Verify Code') ?></span></span></button></span>
+                        </div>
 
 
                         <div class="club_memberreg_fi cs-clear">
@@ -98,12 +106,11 @@
                         <div class="club_memberreg_fi cs-clear">
                             <label><?php echo $this->__('Address') ?></label>
                             <input type="hidden" name="address" id="address" placeholder="<?php echo $this->__('Address') ?>*" value="" title="<?php echo $this->__('Address') ?>" class="club_login_ipt required-entry" />
-                            <input type="text" name="province" placeholder="<?php echo $this->__("Province")?>" class="club_login_ipt required-entry" /> 省
-                            <input type="text" name="city" placeholder="<?php echo $this->__("City")?>" class="club_login_ipt required-entry" /> 市
-                            <input type="text" name="district" placeholder="<?php echo $this->__("District")?>" class="club_login_ipt required-entry" /> 区
+                            <input type="text" name="province" placeholder="<?php echo $this->__("Province")?>" class="club_login_ipt club_login_ipt_short required-entry" /> 省
+                            <input type="text" name="city" placeholder="<?php echo $this->__("City")?>" class="club_login_ipt club_login_ipt_short required-entry" /> 市
+                            <input type="text" name="district" placeholder="<?php echo $this->__("District")?>" class="club_login_ipt club_login_ipt_short required-entry" /> 区
                             <input type="text" name="extra" placeholder="<?php echo $this->__("Address")?>" class="club_login_ipt required-entry" />
 
-                            <span class="club_memberreg_tips"><?php echo $this->__('Please input correctly to get benefits')?></span>
                         </div>
 
                         <div class="club_memberreg_fi cs-clear">
@@ -113,7 +120,7 @@
                                 <option value="2"><?php echo $this->__("Female")?></option>
                             </select>
 
-                            <span class="club_memberreg_tips"><?php echo $this->__('Please select  gender')?></span>
+                            <span class="club_memberreg_tips"><?php echo $this->__('Please select gender')?></span>
                         </div>
 
                         <div class="club_memberreg_fi cs-clear">
