@@ -84,7 +84,7 @@
                         <!-- End -->
                         <?php echo $this->getChildHtml('extrahint') ?>
 
-                        <?php if (!$this->hasOptions()):?>
+                        <?php if (!$this->hasOptions() && FALSE):?>
                             <div class="add-to-box">
                                 <?php if($_product->isSaleable()): ?>
                                     <?php echo $this->getChildHtml('addtocart') ?>
