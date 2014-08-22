@@ -102,15 +102,13 @@
 
 
                         <?php if ($_product->isSaleable() && $this->hasOptions()):?>
-                            <?php echo $this->getChildChildHtml('container1', '', true, true) ?>
+                            <?php //echo $this->getChildChildHtml('container1', '', true, true) ?>
                         <?php elseif ($_product->isSaleable() && $this->hasOptions()):?>
-                            <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
+                            <?php //echo $this->getChildChildHtml('container2', '', true, true) ?>
                         <?php endif;?>
+                        <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
                     </div>
                     <div class="product-intro">
-
-
-
 
                         <?php foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html):?>
                             <div class="box-collateral <?php echo "box-{$alias}"?>">
