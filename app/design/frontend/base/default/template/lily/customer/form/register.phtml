@@ -89,7 +89,7 @@
 
                         <div class="club_memberreg_fi cs-clear">
                             <label><?php echo $this->__('Confirm Password') ?></label>
-                            <input type="password" name="password" id="confirmation" placeholder="<?php echo $this->__('Confirm Password') ?>*" title="<?php echo $this->__('Confirm Password') ?>" class="club_login_ipt required-entry validate-cpassword" />
+                            <input type="password" name="confirmation" id="confirmation" placeholder="<?php echo $this->__('Confirm Password') ?>*" title="<?php echo $this->__('Confirm Password') ?>" class="club_login_ipt required-entry validate-cpassword" />
                             <span class="club_memberreg_tips"><?php echo $this->__('Please input again')?></span>
                         </div>
 
@@ -108,7 +108,7 @@
 
                         <div class="club_memberreg_fi cs-clear">
                             <label><?php echo $this->__('Address') ?></label>
-                            <input type="hidden" name="address" id="address" placeholder="<?php echo $this->__('Address') ?>*" value="" title="<?php echo $this->__('Address') ?>" class="club_login_ipt required-entry" />
+                            <input type="hidden" name="customer_address" id="address" placeholder="<?php echo $this->__('Address') ?>*" value="" title="<?php echo $this->__('Address') ?>" class="club_login_ipt required-entry" />
                             <input type="text" name="province" placeholder="<?php echo $this->__("Province")?>" class="club_login_ipt required-entry" /> 省
                             <input type="text" name="city" placeholder="<?php echo $this->__("City")?>" class="club_login_ipt required-entry" /> 市
                             <input type="text" name="district" placeholder="<?php echo $this->__("District")?>" class="club_login_ipt required-entry" /> 区
@@ -161,7 +161,7 @@
                 // 地址更新
                 (function ($) {
                     $(function () {
-                        var address = $("input[name='address']");
+                        var address = $("input[name='customer_address']");
                         var province = $("input[name='province']");
                         var city = $("input[name='city']");
                         var district = $("input[name='district']");
