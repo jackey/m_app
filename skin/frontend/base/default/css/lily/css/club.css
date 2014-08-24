@@ -6,6 +6,7 @@
 * {max-height: 5000em;}
 .club{background: #f3dedd;}
 .page_club{padding: 120px 0 50px 0;background: #f3dedd;font-size:14px;}
+.page_club input {background:none;border:1px solid #000;}
 .page_club>div {opacity:0;}
 .page_club a:hover {text-decoration: underline;}
 .club_tit,.page-title h1{font-size: 80px;line-height:88px;text-transform:uppercase;text-align: center;padding:0 0 50px;font-family:arial;}
@@ -20,7 +21,7 @@
 .club_login_regtxt{text-align: center;}
 .club_login_form{}
 .club_login_ipt{float: left;width: 150px;height: 40px;border:#000 solid 1px;padding:0 16px;display: inline;margin: 0 20px 0 0;font-size: 14px;color:#000;font-family:arial;background: #f3dedd}
-.club_login_sub{width: 130px;height: 48px;border:#000 solid 1px;color:#fff;background: #000;display: block;margin: 20px 0 0 120px;font-size: 14px;}
+.club_login_sub{width: 130px;height: 48px;border:#000 solid 1px;color:#fff;background: #000!important;display: block;margin: 20px 0 0 120px;font-size: 14px;}
 .club_login_formlink{width: 148px;float: left;display: inline;margin: 10px 0 0 42px}
 .club_login_wrap {width:1000px;margin:0 auto;}
 .club_login_title {font-size:24px;font-weight:bold;margin-bottom:15px;}
