@@ -1673,7 +1673,7 @@ color:#fff;
 
 /* Add to Cart */
 .add-to-cart label { float:left; font-size:17px;margin-right:0; font-weight:bold; width:100px}
-.add-to-cart .qty { background:none;float:left; margin-right:5px; border:none;box-shadow:none; }
+.add-to-cart .qty { background:none;float:left; margin:5px; border:none;box-shadow:none; }
 .qty-wrapper{    border: 1px solid;width:80px;
     float: left;}
 .qty-wrapper span{ display: block;
