@@ -97,7 +97,7 @@ class Mec_Lily_Customer_AccountController extends Mage_Customer_AccountControlle
 				$_tel_result = json_decode($_tel_result);
 				$_tel_result = $_tel_result[0];
 				if($_tel_result->code == 0){
-					if($_tel_result->rows != ""){
+					if(count($_tel_result->rows) == 0){
 						Mage::helper('lily')->AddCustomerFromErp($_tel_result->rows, $this->getRequest()->getPost('telephone'));
 						$session->addError($this->__('Telphone Has Already In System.'));
 						$session->setCustomerFormData($this->getRequest()->getPost());
