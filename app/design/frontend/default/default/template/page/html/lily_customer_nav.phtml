@@ -22,6 +22,21 @@
     </div>
 </div>
 
+<div class="club_ecoupon_nav_m">
+    <div class="club_welcome_m">
+        <?php echo Mage::getSingleton('customer/session')->getCustomer()->getFirstname();?> - <?php echo Mage::getSingleton('customer/session')->getCustomer()->getUsePoints();?> <?php echo $this->__("point(s)")?>
+    </div>
+    <div class="club_navlist_m">
+        <a href="<?php echo $this->getUrl("customer/account/edit/")?>"><?php echo $this->__("Account informations")?></a>
+        <a href="<?php echo $this->getUrl("sales/order/history/")?>"><?php echo $this->__("Gift history")?></a>
+        <a href="<?php echo $this->getUrl("wishlist")?>"><?php echo $this->__("My wishlist")?></a>
+        <a href="<?php echo $this->getUrl("customer/account/point/")?>"><?php echo $this->__("Point informations")?></a>
+        <a href="<?php echo $this->getUrl("customer/account/ecoupon/")?>" class=""><?php echo $this->__("E-coupon")?></a>
+        <a href="<?php echo $this->getUrl("giftproducts.html")?>"><?php echo $this->__("Go to Gift Exchange")?></a>
+        <a class="club_logout_m" href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>customer/account/logout/"><?php echo $this->__("LOGOUT")?></a>
+    </div>
+</div>
+
 <?php else: ?>
     <div class="club_ecoupon_nav from-block">
         <div class="club_welcome">
@@ -32,6 +47,12 @@
         </div>
         <div class="club_navlist">
             <a href="<?php echo $this->getUrl("checkout/cart/index")?>"><?php echo $this->__("Gift cart")?></a>
+        </div>
+    </div>
+
+    <div class="club_ecoupon_nav_m">
+        <div class="club_welcome_m">
+            <a href="<?php echo $this->getUrl("customer/account/login")?>"><?php echo $this->__("Login Now")?></a>
         </div>
     </div>
 <?php  endif;?>

@@ -59,13 +59,13 @@
                     <input type="hidden" name="success_url" value="<?php echo $this->getSuccessUrl() ?>" />
                     <input type="hidden" name="error_url" value="<?php echo $this->getErrorUrl() ?>" />
 
-                        <div class="club_memberreg_fi cs-clear">
+                        <div class="club_memberreg_fi club_memberreg_fi_code cs-clear">
                             <label><?php echo $this->__('Cell Phone') ?></label>
                             <input class="club_login_ipt required-entry" required-entry" name="telephone" id="telephone" value="<?php echo $this->escapeHtml($this->getFormData()->getTelephone()) ?>" title="<?php echo $this->__('Cell Phone') ?>"  placeholder="<?php echo $this->__('Cell Phone') ?>*" />
                             <span class="club_memberreg_tips"><button type="button" title="<?php //echo $this->__('Get Code') ?><?php echo $this->__('Get a verifying code') ?>" class="club_member_sub club_member_sub2" id="get_code"><span><span><?php //echo $this->__('Get Code') ?><?php echo $this->__('Get a verifying code') ?></span></span></button></span>
                         </div>
 
-                        <div class="club_memberreg_fi cs-clear">
+                        <div class="club_memberreg_fi club_memberreg_fi_code cs-clear">
                             <label><?php echo $this->__('Verifying Code') ?></label>
                             <input class="club_login_ipt required-entry" id="verify_code" name="verify_code"  title="<?php echo $this->__('Verifying Code') ?>"  placeholder="<?php echo $this->__('Verifying Code') ?>* " />
                             <span class="club_memberreg_tips"><button type="button" title="<?php echo $this->__('Verify Code') ?>" class="club_member_sub club_member_sub2" id="verfir"><span><span><?php echo $this->__('Verify Code') ?></span></span></button></span>
@@ -109,7 +109,7 @@
                             <input type="text" name="province" placeholder="<?php echo $this->__("Province")?>" class="club_login_ipt club_login_ipt_short required-entry" /> 省
                             <input type="text" name="city" placeholder="<?php echo $this->__("City")?>" class="club_login_ipt club_login_ipt_short required-entry" /> 市
                             <input type="text" name="district" placeholder="<?php echo $this->__("District")?>" class="club_login_ipt club_login_ipt_short required-entry" /> 区
-                            <input type="text" name="extra" placeholder="<?php echo $this->__("Address")?>" class="club_login_ipt required-entry" />
+                            <input type="text" name="extra" placeholder="<?php echo $this->__("Address")?>" class="club_login_ipt club_login_ipt_address required-entry" />
 
                         </div>
 
