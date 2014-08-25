@@ -116,33 +116,32 @@
             <li class='item'>
                 <h2 data-title="BRAND"><?php echo $this->__(  "BRAND")?></h2>
                 <ol>
-                    <li><a href='./index?hash=brand_story' data-title="BRAND STORY"><?php echo $this->__(  "BRAND STORY")?></a></li>
-                    <li><a href='./history' data-title="HISTORY"><?php echo $this->__(  "HISTORY")?></a></li>
-                    <li><a href='./events' data-title="EVENTS"><?php echo $this->__(  "EVENTS")?></a></li>
+                    <li><a data-title="HISTORY" href='<?php echo getOfficeSiteURL("history")?>' title='history' index='2'><?php echo $this->__("HISTORY")?></a></li>
+                    <li><a data-title="EVENTS" href='<?php echo getOfficeSiteURL("events")?>' title='events' index='3'><?php echo $this->__("EVENTS")?></a></li>
                 </ol>
             </li>
             <li class='item'>
                 <h2 data-title="PRODUCT"><?php echo $this->__(  "PRODUCT")?></h2>
                 <ol>
-                    <li><a href='./campaign' data-title="CAMPAIGN"><?php echo $this->__(  "CAMPAIGN")?></a></li>
-                    <li><a href='./lookbook' data-title="LOOKBOOK"><?php echo $this->__(  "LOOK BOOK")?></a></li>
-                    <li><a href='./streetsnap' data-title="STREET-SNAP"><?php echo $this->__(  "STREET SNAP")?></a></li>
+                    <li><a data-title="CAMPAIGN" href='<?php echo getOfficeSiteURL("campaign")?>' title='campaign' index='4'><?php echo $this->__("CAMPAIGN")?></a></li>
+                    <li><a data-title="LOOKBOOK" href='<?php echo getOfficeSiteURL("lookbook")?>' title="lookbook" index='5'><?php echo $this->__("LOOK BOOK")?></a></li>
+                    <li><a data-title="STREET-SNAP" href='<?php echo getOfficeSiteURL("streetsnap")?>' title="streetsnap" index='6'><?php echo $this->__("STREET SNAP")?></a></li>
+                </ol>
+            </li>
+            <li class='item active'>
+                <h2 data-title="LILY-CLUB"><?php echo $this->__("VIP CLUB")?></h2>
+                <ol>
+                    <li><a data-title="LILY-CLUB" href='<?php echo getClubSiteURL("customer/account")?>' index='9'><?php echo $this->__("LILY CLUB")?></a></li>
+                    <li><a data-title="TERMS" href='<?php echo getOfficeSiteURL("club_memberrules.html")?>' index='10'><?php echo $this->__("TERMS")?></a></li>
+                    <li><a data-title="POINT CHECKING" href='<?php echo getOfficeSiteURL("club_pointinfo.html")?>' index='11'><?php echo $this->__("POINT CHECKING")?></a></li>
+                    <li><a data-title="REDEMPTION" href='<?php echo getClubSiteURL("club_gifthis.html")?>' index='12'><?php echo $this->__("REDEMPTION")?></a></li>
                 </ol>
             </li>
             <li class='item'>
                 <h2 data-title="STORE"><?php echo $this->__(  "STORE")?></h2>
                 <ol>
-                    <li><a href='./starstore' data-title="STAR-STORE"><?php echo $this->__(  "STAR STORE")?></a></li>
-                    <li><a href='./storelocator' data-title="STORE-LOCATOR"><?php echo $this->__(  "STORE LOCATOR")?></a></li>
-                </ol>
-            </li>
-            <li class='item' style="display: none;">
-                <h2 data-title="CLUB"><?php echo $this->__(  "CLUB")?></h2>
-                <ol>
-	                <li><a href='./club_memberinfo.html' index='9' data-title="LILY-CLUB"><?php echo $this->__(  "LILY CLUB")?></a></li>
-	                <li><a href='./club_memberrules.html' index='10' data-title="TERMS"><?php echo $this->__(  "TERMS")?></a></li>
-	                <li><a href='./club_pointinfo.html' index='11' data-title="POINT-CHECKING"><?php echo $this->__(  "POINT CHECKING")?></a></li>
-	                <li><a href='./club_gifthis.html' index='12' data-title="REDEMPTION"><?php echo $this->__(  "REDEMPTION")?></a></li>
+                    <li><a data-title="STAR-STORE" href='<?php echo getOfficeSiteURL("starstore")?>' title="starstore" index='7'><?php echo $this->__("STAR STORE")?></a></li>
+                    <li><a data-title="STORE-LOCATOR" href='<?php echo getOfficeSiteURL("storelocator")?>' title="storelocator" index='8'><?php echo $this->__("STORE LOCATOR")?></a></li>
                 </ol>
             </li>
         </ul>

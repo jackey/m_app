@@ -1,6 +1,25 @@
 jQuery.noConflict();
 jQuery(document).ready(function($){
 
+    if($(window).width() <= 640) {
+        $('body').addClass('mobile');
+    }
+    $('.header .menu').click(function(){
+
+        $('.mbmenu').toggleClass('open');
+        $('body').toggleClass('open');
+    });
+
+    $('.mbmenu .item').click(function(){
+        $('.mbmenu').find('ol').css({height:0});
+        $(this).find('ol').css({height:'auto'});
+    });
+
+    $('.club_welcome_m').click(function(){
+        console.log(1);
+        $('.club_navlist_m').toggleClass('open');
+    });
+
 // $('.open-share').click(function(){
 	// $(this).parent().toggleClass('active')
 // });
