@@ -3,17 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="900c1c39-134c-4714-b1f5-f4718f57967c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/default/default/css/styles.css" afterPath="$PROJECT_DIR$/skin/frontend/default/default/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout/success.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout/success.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/header.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/header.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/newsletter/subscribe.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/newsletter/subscribe.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m_app.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408799326988" ignored="false" />
+    <file path="/Dummy.txt" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408974967508" ignored="false" />
     <file path="/js.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407848073851" ignored="false" />
     <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408882351199" ignored="false" />
-    <file path="/a.dummy" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408883639922" ignored="false" />
-    <file path="/style.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408597500674" ignored="false" />
-    <file path="/Mage_Cms.csv" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408883055228" ignored="false" />
+    <file path="/a.dummy" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409027398737" ignored="false" />
+    <file path="/style.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409042191621" ignored="false" />
+    <file path="/Mage_Cms.csv" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409012689464" ignored="false" />
     <file path="/view.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407916263314" ignored="false" />
     <file path="/logout.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407853585371" ignored="false" />
     <file path="$PROJECT_DIR$/../ave_1000/yii/protected/views/site/index.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407895612954" ignored="false" />
@@ -29,7 +31,7 @@
     <file path="$PROJECT_DIR$/../ave_1000/yii/protected/views/record/myinfo.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407921480994" ignored="false" />
     <file path="/myinfo.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407921480994" ignored="false" />
     <file path="$PROJECT_DIR$/../rungiswines/wp-content/themes/wine/index.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408070553731" ignored="false" />
-    <file path="$PROJECT_DIR$/../rungiswines/wp-content/themes/wine/style.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408597502753" ignored="false" />
+    <file path="$PROJECT_DIR$/../rungiswines/wp-content/themes/wine/style.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409042193001" ignored="false" />
     <file path="/edit.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408076692455" ignored="false" />
     <file path="/point.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408077266567" ignored="false" />
     <file path="/ecoupon.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408077824464" ignored="false" />
@@ -44,14 +46,17 @@
     <file path="$PROJECT_DIR$/../rungiswines/wp-content/themes/wine/page.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408597270895" ignored="false" />
     <file path="/page.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408597270176" ignored="false" />
     <file path="/register.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408600184580" ignored="false" />
-    <file path="$PROJECT_DIR$/../upstudios/index_en.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408800689187" ignored="false" />
-    <file path="/index_en.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408800689187" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/index_en.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408977809244" ignored="false" />
+    <file path="/index_en.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408977658702" ignored="false" />
     <file path="$PROJECT_DIR$/../upstudios/css/global.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408800739978" ignored="false" />
-    <file path="$PROJECT_DIR$/../upstudios/index.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408800706861" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/index.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408977850902" ignored="false" />
     <file path="/global.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408800738139" ignored="false" />
     <file path="$PROJECT_DIR$/../upstudios/js/global.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408801571832" ignored="false" />
     <file path="/global.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408801528375" ignored="false" />
     <file path="/success.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408884533313" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/detail.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408977920226" ignored="false" />
+    <file path="$PROJECT_DIR$/../upstudios/detail_en.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408977941228" ignored="false" />
+    <file path="$PROJECT_DIR$/../rungiswines/wp-content/plugins/alipay/includes/tpl.cart.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409026503677" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,83 +76,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ecoupon.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/ecoupon.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="14" selection-start="145" selection-end="196" vertical-scroll-proportion="-4.071429">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="address.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/customer/form/address.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1385605936000" expanded="true" signature="1111:1284" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="1413:8832" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="1440:2397" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="1749:2386" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="1781:1913" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="1930:2372" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="2050:2354" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="2424:8387" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="2522:8376" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="2669:3105" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="2824:3087" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="3354:3701" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="3394:3683" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="3758:5454" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="3794:4263" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="3943:4240" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="4299:5436" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="4463:5413" placeholder="..." />
-                <marker date="1385605936000" expanded="false" signature="4610:4623" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="4624:4779" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="4835:5061" placeholder="..." />
-                <marker date="1385605936000" expanded="false" signature="5370:5383" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="5486:6565" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="5522:6050" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="5681:6027" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="6086:6547" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="6241:6524" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="6372:6497" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="6597:7626" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="6633:7137" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="6792:7114" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="7173:7608" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="7293:7585" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="7701:8334" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="8417:8824" placeholder="..." />
-                <marker date="1385605936000" expanded="true" signature="8864:9158" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="19" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Data.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/Mec/Lilysms/Helper/Data.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="36" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cart.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/checkout/cart.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="70" selection-start="2006" selection-end="2006" vertical-scroll-proportion="-18.321428">
+            <state line="54" column="70" selection-start="2006" selection-end="2006" vertical-scroll-proportion="0.0">
               <folding>
                 <marker date="1408531993000" expanded="true" signature="5950:5981" placeholder="..." />
               </folding>
@@ -155,51 +87,95 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/sales/order/view.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="25" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/default/default/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="293" column="24" selection-start="13592" selection-end="13592" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="success.phtml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout/success.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="42" selection-start="0" selection-end="42" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="club.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="101" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Mage_Cms.csv" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="27" selection-start="3611" selection-end="3611" vertical-scroll-proportion="-15.888889">
+            <state line="145" column="22" selection-start="4143" selection-end="4143" vertical-scroll-proportion="-20.11111">
               <folding />
             </state>
           </provider>
           <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkout.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="53" selection-start="95" selection-end="112" vertical-scroll-proportion="-1.3571428">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lily_2column.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/lily_2column.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="24" selection-start="810" selection-end="810" vertical-scroll-proportion="-4.892857">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lily_customer_nav.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_customer_nav.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="12" selection-start="119" selection-end="119" vertical-scroll-proportion="16.607143">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="subscribe.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/newsletter/subscribe.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="1269" selection-end="1269" vertical-scroll-proportion="-8.142858">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="success.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout/success.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="42" selection-start="0" selection-end="42" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/header.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="102" selection-start="3274" selection-end="3274" vertical-scroll-proportion="-14.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observer.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/code/local/Mec/Lily/Model/Observer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="12" selection-start="2250" selection-end="2874" vertical-scroll-proportion="0.43042073">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="23" selection-start="1659" selection-end="1673" vertical-scroll-proportion="-14.928572">
+              <folding>
+                <marker date="1408069753000" expanded="false" signature="1073:1119" placeholder="..." />
+                <marker date="1408069753000" expanded="true" signature="1120:1543" placeholder="..." />
+                <marker date="1408069753000" expanded="false" signature="1134:1182" placeholder="..." />
+                <marker date="1408069753000" expanded="true" signature="1183:1362" placeholder="..." />
+                <marker date="1408069753000" expanded="false" signature="1196:1295" placeholder="..." />
+                <marker date="1408069753000" expanded="true" signature="1296:1356" placeholder="..." />
+                <marker date="1408069753000" expanded="true" signature="1365:1537" placeholder="..." />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -221,9 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/getactivate.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/ecoupon.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/point.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/customer/form/forgotpassword.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/customer/logout.phtml" />
@@ -234,9 +207,12 @@
         <option value="$PROJECT_DIR$/app/code/local/Mec/Lilysms/Helper/Data.php" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml" />
         <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
-        <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" />
         <option value="$PROJECT_DIR$/skin/frontend/default/default/css/styles.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout/success.phtml" />
+        <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/newsletter/subscribe.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/header.phtml" />
       </list>
     </option>
   </component>
@@ -538,7 +514,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="locale" />
+              <option name="myItemId" value="design" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -556,11 +532,181 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="locale" />
+              <option name="myItemId" value="design" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zh_CN" />
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -587,6 +733,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Mec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -749,7 +929,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22416303" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15647744" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -824,47 +1004,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/customer/form/forgotpassword.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="10" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.89158577" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/checkout/cart.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="36" selection-start="1504" selection-end="1504" vertical-scroll-proportion="-11.535714" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/point.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Mec/Lily/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="442" column="54" selection-start="14155" selection-end="14155" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/Mec/Lilysms/Helper/Data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="36" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/sales/order/view.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="25" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="0" selection-start="10203" selection-end="10203" vertical-scroll-proportion="0.30744338" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/info.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.21521036" />
@@ -874,42 +1013,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1385605936000" expanded="true" signature="1111:1284" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="1413:8832" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="1440:2397" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="1749:2386" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="1781:1913" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="1930:2372" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="2050:2354" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="2424:8387" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="2522:8376" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="2669:3105" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="2824:3087" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="3354:3701" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="3394:3683" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="3758:5454" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="3794:4263" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="3943:4240" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="4299:5436" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="4463:5413" placeholder="..." />
-            <marker date="1385605936000" expanded="false" signature="4610:4623" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="4624:4779" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="4835:5061" placeholder="..." />
-            <marker date="1385605936000" expanded="false" signature="5370:5383" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="5486:6565" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="5522:6050" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="5681:6027" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="6086:6547" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="6241:6524" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="6372:6497" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="6597:7626" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="6633:7137" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="6792:7114" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="7173:7608" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="7293:7585" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="7701:8334" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="8417:8824" placeholder="..." />
-            <marker date="1385605936000" expanded="true" signature="8864:9158" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385605936000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -928,16 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="27" selection-start="3611" selection-end="3611" vertical-scroll-proportion="-15.888889">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skin/frontend/default/default/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="293" column="24" selection-start="13592" selection-end="13592" vertical-scroll-proportion="0.0">
@@ -947,14 +1076,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/ecoupon.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="14" selection-start="145" selection-end="196" vertical-scroll-proportion="-4.071429">
+        <state line="6" column="14" selection-start="145" selection-end="196" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/checkout/cart.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="70" selection-start="2006" selection-end="2006" vertical-scroll-proportion="-18.321428">
+        <state line="54" column="70" selection-start="2006" selection-end="2006" vertical-scroll-proportion="0.0">
           <folding>
             <marker date="1408531993000" expanded="true" signature="5950:5981" placeholder="..." />
           </folding>
@@ -964,6 +1093,73 @@
     <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout/success.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="42" selection-start="0" selection-end="42" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="22" selection-start="4143" selection-end="4143" vertical-scroll-proportion="-20.11111">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="53" selection-start="95" selection-end="112" vertical-scroll-proportion="-1.3571428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/lily_2column.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="24" selection-start="810" selection-end="810" vertical-scroll-proportion="-4.892857">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_customer_nav.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="12" selection-start="119" selection-end="119" vertical-scroll-proportion="16.607143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/newsletter/subscribe.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1269" selection-end="1269" vertical-scroll-proportion="-8.142858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="23" selection-start="1659" selection-end="1673" vertical-scroll-proportion="-14.928572">
+          <folding>
+            <marker date="1408069753000" expanded="false" signature="1073:1119" placeholder="..." />
+            <marker date="1408069753000" expanded="true" signature="1120:1543" placeholder="..." />
+            <marker date="1408069753000" expanded="false" signature="1134:1182" placeholder="..." />
+            <marker date="1408069753000" expanded="true" signature="1183:1362" placeholder="..." />
+            <marker date="1408069753000" expanded="false" signature="1196:1295" placeholder="..." />
+            <marker date="1408069753000" expanded="true" signature="1296:1356" placeholder="..." />
+            <marker date="1408069753000" expanded="true" signature="1365:1537" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/header.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="102" selection-start="3274" selection-end="3274" vertical-scroll-proportion="-14.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/Mec/Lily/Model/Observer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="12" selection-start="2250" selection-end="2874" vertical-scroll-proportion="0.43042073">
           <folding />
         </state>
       </provider>
