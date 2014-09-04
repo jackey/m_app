@@ -24,7 +24,6 @@ class Mec_Lily_Model_Observer{
 			$customer_gender = '女';
 		}
 		
-		
 		Mage::log('cardBind');
 		Mage::log($customer_birth);
 		Mage::log($customer_gender);
@@ -33,6 +32,7 @@ class Mec_Lily_Model_Observer{
 		$customer->setActivated(1)->save();
 		
 		$lily_vip_card = $readConnection->fetchOne("SELECT `vip_card` FROM `lily_vip_card` WHERE `customer_id` =0 LIMIT 0 , 1");
+		Mage::log("Lily VIP CARD: ".$lily_vip_card);
 		if($lily_vip_card != ""){
 			$erp_user = Mage::helper('lily')->erpUser();
 			$erp_password = Mage::helper('lily')->erpPassword();
@@ -62,30 +62,28 @@ class Mec_Lily_Model_Observer{
 			);
 			
 			$query_params = json_encode($query_params);
-			$post_data .= "&transactions=[{$query_params}]";  
+			$post_data .= "&transactions=[{$query_params}]";
+			Mage::log("Post Data: ");
+			Mage::log($post_data);
 			
 			// Mage::log($post_data);
 			$header = Mage::helper('lily')->FormatHeader($post_url, $post_data);
-			// $result = Mage::helper('lily')->PostDataToErp($erp_url, $post_data, $header);
+			$result = Mage::helper('lily')->PostDataToErp($erp_url, $post_data, $header);
 			
-			// Mage::log($result);
+			Mage::log($result);
 			
-			// if($result != ""){
-				// $result = json_decode($result);
-				// if($result[0]->code == 0){
-					// $card_vailate = $readConnection->fetchOne("SELECT `valid_date` FROM `lily_vip_card` WHERE `vip_card` = '{$lily_vip_card}'");
-					// $writeConnection->query("UPDATE `lily_vip_card` SET `customer_id` = {$customer_id} WHERE `vip_card` = '{$lily_vip_card}' ");
-					// $customer->setCardValidity($card_vailate);
-					// $customer->setVipCard($lily_vip_card);
-					// $customer->save();
-				// }
-			
-			// }
+			if($result != "") {
+				$result = json_decode($result);
+				if($result[0]->code == 0){
+					$card_vailate = $readConnection->fetchOne("SELECT `valid_date` FROM `lily_vip_card` WHERE `vip_card` = '{$lily_vip_card}'");
+					$writeConnection->query("UPDATE `lily_vip_card` SET `customer_id` = {$customer_id} WHERE `vip_card` = '{$lily_vip_card}' ");
+					$customer->setCardValidity($card_vailate);
+					$customer->setVipCard($lily_vip_card);
+					$customer->save();
+				}
+			}
 			
 		}
-		
-		
-		
 		
 	}	
 
