@@ -271,11 +271,14 @@ class Mec_Lily_ErpController extends Mage_Adminhtml_Controller_Action{
 			);
 			
 			$query_params = json_encode($query_params);
-			$post_data .= "&transactions=[{$query_params}]";  
+			$post_data .= "&transactions=[{$query_params}]"; 
+			Mage::log($post_data);
 			
 			
 			$header = Mage::helper('lily')->FormatHeader($post_url, $post_data);
 			$result = Mage::helper('lily')->PostDataToErp($erp_url, $post_data, $header);
+
+			Mage::log($result);
 			
 			if($result != ""){
 				$result = json_decode($result);

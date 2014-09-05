@@ -111,6 +111,7 @@ class Mec_Lily_Customer_AccountController extends Mage_Customer_AccountControlle
                     $errors = array_merge($customerErrors, $errors);
                 } else {
                     $customerForm->compactData($customerData);
+                    Mage::log(print_r($customerData, TRUE));
                     $customer->setPassword($this->getRequest()->getPost('password'));
                     $customer->setConfirmation($this->getRequest()->getPost('confirmation'));
                     $customerErrors = $customer->validate();
@@ -331,12 +332,6 @@ class Mec_Lily_Customer_AccountController extends Mage_Customer_AccountControlle
         $this->_redirect('*/*/edit');
     }
 	
-	
-	
-	
-	
-	
-	
 	public function pointAction()
 	{
 		$this->loadLayout();
@@ -395,7 +390,7 @@ class Mec_Lily_Customer_AccountController extends Mage_Customer_AccountControlle
 			$erp_ponts_ecoupon = Mage::helper('lily')->QueryPointsAmount($erp_id);
 			$erp_ponts_ecoupon = json_decode($erp_ponts_ecoupon);
 
-			if($erp_ponts_ecoupon[0]->code == 0){
+			if($erp_ponts_ecoupon[0]->code == 0) {
 				$points_data = $erp_ponts_ecoupon[0]->rows;
 				$coupon_amount = $points_data[0][0];
 				$points_amount = $points_data[0][1];

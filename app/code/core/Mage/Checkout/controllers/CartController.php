@@ -120,6 +120,13 @@ class Mage_Checkout_CartController extends Mage_Core_Controller_Front_Action
      */
     public function indexAction()
     {
+        $month_day = Mage::helper('points')->getthemonth(date('Y-m-d')); 
+        $already_has_gift_order = Mage::helper('points')->PostErpGetCanPlaceInMonth($month_day);
+
+        if ($already_has_gift_order) {
+            Mage::getSingleton('checkout/session')->addError($this->__('You Have Already Exchange Product In This Month'));
+        }
+
         $cart = $this->_getCart();
         if ($cart->getQuote()->getItemsCount()) {
             $cart->init();

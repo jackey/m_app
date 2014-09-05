@@ -179,4 +179,11 @@ class Mage_Checkout_Block_Cart extends Mage_Checkout_Block_Cart_Abstract
 
         return parent::getItems();
     }
+
+    public function checkedInOneMonth() {
+        $month_day = Mage::helper('points')->getthemonth(date('Y-m-d')); 
+        $already_has_gift_order = Mage::helper('points')->PostErpGetCanPlaceInMonth($month_day);
+
+        return $already_has_gift_order;
+    }
 }
