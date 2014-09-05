@@ -120,6 +120,7 @@
                 $(strongEl).html(input);
             });
             $(".club_meminfolist1 > li span.edit").click(function () {
+                $(this).addClass("hideme");
                 var self = $(this).parent();
                 if ($("button[name='update-data-name']", $(self)).size()) {
                     return;

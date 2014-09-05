@@ -77,7 +77,7 @@
 .club_ecoupon_center{padding: 10px 0 0 0;width:1105px;margin:0 auto;}
 .club_ecoupon_nav{width:240px;float: left;font-size:18px;line-height: 150%;}
 .club_welcome{font-weight: bold;}
-.club_logout{width: 122px;height: 48px;background:#000;color:#fff;display: block;line-height: 48px;text-align: center;font-weight: bold;margin: 15px 0 30px 0;}
+.club_logout{width: 122px;height: 48px;background:#000;color:#fff;display: block;line-height: 48px;text-align: center;font-weight: bold;margin: 15px 0 90px 0;}
 .club_navlist a{height: 35px;display: block;}
 .club_navlist .on{text-decoration: underline;}
 .club_ecoupon_com{float: left;width: 800px;}
@@ -92,6 +92,10 @@
 .club_giftcardtable{width: 100%;}
 .club_giftcardtable th{background:#d9c7c6;padding: 10px 20px;font-weight: normal;text-transform:uppercase;}
 .club_giftcardtable td{border-bottom:1px solid #040000;text-align: center;padding: 20px}
+.club_giftcardtable tfoot td {border:none;}
+#shopping-cart-table.club_giftcardtable td {padding:10px;}
+.club_giftcardtable .product-title {text-align: left;vertical-align: middle;}
+.club_giftcardtable .product-name a {font-size:14px;text-decoration: none;}
 .club_giftcardtable .product-imgs img {margin:0 5px;-webkit-box-shadow: 5px 5px 0 0 #d9c6c5;box-shadow: 5px 5px 0 0 #d9c6c5;}
 .club_giftcardtable a{text-decoration: underline;}
 .club_giftcardtable .product-image {float:left;}
@@ -100,6 +104,12 @@
 .club_giftcardtable .remove-text img {vertical-align: middle;}
 .club_giftcardcheckout{width: 152px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;float: right;margin: 80px 40px}
 .club_giftcardimg2{padding-right: 200px}
+.cart-table .btn-continue,.cart-table .btn-continue span {border:none;text-align:left;padding:0;}
+button.btn-checkout {border:none;float:right;}
+button.btn-checkout span {border:none;background:#000;color:#fff;height: auto;line-height: auto;}
+button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
+.cart-table .btn-continue {border-bottom:2px solid #000;padding:0 0 5px 0;}
+.cart .cart-collaterals {padding:0;margin:0 0 0 23px;font-size:12px;}
 /**/
 .club_giftcardtable .club_memtr1{padding-right: 180px}
 /**/
@@ -120,7 +130,7 @@
 .club_meminpwform .club_meminpwsub{width: 134px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;display: block;margin: 30px 0;cursor: pointer;font-size: 14px}
 /**/
 .club_navlist_gogift{width: 185px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;display: block;margin: 20px 0;}
-.club_opening_time {margin-top:40px;}
+.club_opening_time {margin-top:200px;font-size:14px;}
 /**/
 .club_point{width: 860px;}
 .club_pointexnav{border-bottom: #000 solid 1px;padding:12px 10px 12px 28px;}
@@ -153,6 +163,11 @@
 .club_pointintro{font-size: 14px;padding:20px 0 0;line-height: 30px}
 .club_pointintro h3{font-size: 18px;padding:50px 0 0;height: 42px;text-transform:uppercase;}
 
+.form-before li {font-size:24px;width:215px;height:65px;line-height:65px;background:#dac8c7;}
+.form-before li span {font-size:18px;}
+.form-before li.step1 {background:url('../images/step1.gif') no-repeat left;}
+.form-before li.step4 {background:url('../images/step4.gif') no-repeat right;}
+.checkout-cart-index .form-before li.step2 {background:url('../images/step_actived.gif') no-repeat;}
 
 .club_img{display: block;width: 140px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
 .club_img img {-webkit-box-shadow: 5px 5px 0 0 #d9c6c5;box-shadow: 5px 5px 0 0 #d9c6c5;}

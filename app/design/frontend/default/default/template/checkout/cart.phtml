@@ -54,7 +54,7 @@
 	
     <form action="<?php echo $this->getUrl('checkout/cart/updatePost') ?>" method="post">
         <fieldset>
-            <table id="shopping-cart-table" class="data-table cart-table">
+            <table id="shopping-cart-table" class="club_giftcardtable cart-table">
             
                 <col />
                 
@@ -62,7 +62,7 @@
               
                 <col width="170px" />
                 <col width="160px" />
-                <col width="1" />
+                <col width="100px" />
 
             <?php $mergedCells = ($this->helper('tax')->displayCartBothPrices() ? 2 : 1); ?>
                 <thead>
@@ -98,21 +98,6 @@
             <?php //echo $this->getChildHtml('totals'); ?>
 			
 				合计：<?php echo Mage::helper('points')->getTotalPoints(); ?>分
-            <?php if(!$this->hasError()): ?>
-            <ul class="checkout-types">
-            <?php if ($this->checkedInOneMonth()): ?>
-                <li>
-                    <button type="button" class="button btn-proceed-checkout btn-checkout" onclick="javascript:void(0)"><span><span><?php echo $this->__("Confirm")?></span></span></button>
-                </li>
-            <?php else: ?>
-                <?php foreach ($this->getMethods('methods') as $method): ?>
-                    <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
-                    <li><?php echo $methodHtml; ?></li>
-                    <?php endif; ?>
-                <?php endforeach; ?>
-            <?php endif;?>
-            </ul>
-            <?php endif; ?>
         </div>
                         </td>
                     </tr>
@@ -152,9 +137,24 @@
 		}
 	
 	</script>
+        <div class="cart-collaterals">
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('warm-tip')->toHtml(); ?>
+        </div>
+        <?php if(!$this->hasError()): ?>
+            <ul class="checkout-types">
+                <?php if ($this->checkedInOneMonth()): ?>
+                    <li>
+                        <button type="button" class="button btn-proceed-checkout btn-checkout" onclick="javascript:void(0)"><span><span><?php echo $this->__("Confirm")?></span></span></button>
+                    </li>
+                <?php else: ?>
+                    <?php foreach ($this->getMethods('methods') as $method): ?>
+                        <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
+                            <li><?php echo $methodHtml; ?></li>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                <?php endif;?>
+            </ul>
+        <?php endif; ?>
     </form>
-    <div class="cart-collaterals">
-        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('warm-tip')->toHtml(); ?>
-    </div>
 </div>
 </div>

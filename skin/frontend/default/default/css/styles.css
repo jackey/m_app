@@ -381,19 +381,20 @@ span.title{display:none;}
 #shopping-cart-table.data-table tfoot {border:1px solid #000; }
 #shopping-cart-table .product-image{float:left;margin-right:10px;}
 
-#shopping-cart-table  tbody  button{    background: none repeat scroll 0 0 #9B9A98;
+#shopping-cart-table  tbody  button{    background: none repeat scroll 0 0 #d1c6c5;
     border: medium none;
 	cursor:pointer;
-    color: #FFFFFF;
+    color: #333;
     font-family: 'Lucida Grande';
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
-    height: 20px;
-    line-height: 16px;
-    width: 20px;
+    height: 14px;
+    line-height: 10px;
+    width: 14px;
 	-webkit-border-radius: 100%;
 -moz-border-radius: 100%;
 border-radius: 100%;
+    text-indent:-2px;
 	
 	}
 
@@ -501,7 +502,7 @@ tr.summary-details-excluded { font-style:italic; }
 .link-rss { background:url(../images/i_rss.gif) 0 2px no-repeat; padding-left:18px; line-height:14px; white-space:nowrap; }
 .btn-remove  { display:block; width:19px; height:19px; font-size:0; line-height:0; background:url("../images/btn_trash.gif") no-repeat scroll 0 0 transparent; text-indent:-999em; overflow:hidden; }
 .btn-previous  { display:block; width:11px; height:11px; font-size:0; line-height:0; background:url(../images/btn_previous.gif) 0 0 no-repeat; text-indent:-999em; overflow:hidden; }
-.btn-remove2 { display:block; padding-left:20px;width:100px; height:20px; font-size:17px; line-height:16px; background:url(../images/btn_trash.gif) 0 0 no-repeat; text-indent:0; overflow:hidden; }
+.btn-remove2 { display:block; padding-left:20px;width:100px; height:20px; font-size:17px; line-height:16px;text-indent:0; overflow:hidden; }
 .btn-edit    { display:block; width:11px; height:11px; font-size:0; line-height:0; background:url(../images/btn_edit.gif) 0 0 no-repeat; text-indent:-999em; overflow:hidden; }
 
 .cards-list dt { margin:5px 0 0; }
@@ -1950,7 +1951,7 @@ color:#fff;
 .cart .totals .checkout-types .paypal-or { clear:both; display:block; padding:8px 55px 0 0; line-height:1.0; font-size:11px; }
 
 
-.form-before {border-bottom:1px solid #000;padding:0 0 15px 0;}
+.form-before {padding:0 0 80px 0;}
 .form-before li {
     float: left;
 	color:#444;
@@ -1969,26 +1970,15 @@ color:#fff;
 .points-checkout-pfailure .step4,
 .checkout-cart-index .step2,
 .points-checkout-index .step3
-{background:url(../images/active_border.gif) no-repeat scroll 46px bottom;}
+{}
 .points-checkout-psucceed .form-before .step4 span ,
 .points-checkout-psuccess .form-before .step4 span ,
 .points-checkout-pfailure  .form-before .step4 span ,
 .checkout-cart-index .form-before .step2 span ,
-.points-checkout-index .form-before .step3 span {
-	background: #000; /* Old browsers */
-}
+.points-checkout-index .form-before .step3 span {}
 
 .form-before span {
-    background: none repeat scroll 0 0 #9A9997;
-    display: inline-block;
-    height: 18px;
-    line-height: 18px;
-    width: 18px;
-	-webkit-border-radius: 100%;
--moz-border-radius: 100%;
-border-radius: 100%;
-color:#fff;
-	margin-right:6px
+    margin:0 5px 0 0;
 }
 .express_addition .wide label{display:none;}
 #points_checkout_form{    display: block;  }

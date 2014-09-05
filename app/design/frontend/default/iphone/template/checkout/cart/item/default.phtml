@@ -45,7 +45,7 @@ $_options = $this->getOptionList();
     <td>
 
         <?php if ($this->hasProductUrl()):?>
-            <a href="<?php echo $this->getProductUrl() ?>" title="<?php echo $this->escapeHtml($this->getProductName()) ?>" class="product-image"><?php endif;?><img src="<?php echo $this->getProductThumbnail()->resize(114); ?>" width="57" height="57" alt="<?php echo $this->escapeHtml($this->getProductName()) ?>" /><?php if ($this->hasProductUrl()):?></a>
+            <a href="<?php echo $this->getProductUrl() ?>" title="<?php echo $this->escapeHtml($this->getProductName()) ?>" class="product-image product-imgs"><?php endif;?><img src="<?php echo $this->getProductThumbnail()->resize(114); ?>" width="57" height="57" alt="<?php echo $this->escapeHtml($this->getProductName()) ?>" /><?php if ($this->hasProductUrl()):?></a>
         <?php endif;?>
 
         <?php if ($isVisibleProduct && $this->getOptionList()): ?>
