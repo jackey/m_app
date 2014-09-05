@@ -100,7 +100,7 @@
 				合计：<?php echo Mage::helper('points')->getTotalPoints(); ?>分
             <?php if(!$this->hasError()): ?>
             <ul class="checkout-types">
-            <?php if ($this->checkedInOneMonth()): ?>
+            <?php if ($this->checkedInOneMonth() && FALSE): ?>
                 <li>
                     <button type="button" class="button btn-proceed-checkout btn-checkout" onclick="javascript:void(0)"><span><span><?php echo $this->__("Confirm")?></span></span></button>
                 </li>
