@@ -42,16 +42,16 @@
 .club_member_form{width: 530px;margin: 100px auto}
 .club_member_form .validation-advice {display: none;}
 .club_member_sub{cursor:pointer;width: 308px;height: 48px;border:#000 solid 1px;color:#fff;background: #000;display: inline;margin: 30px auto;display: block;}
-.club_member_sub2 {margin:0;width:auto;padding:0 10px;height:42px;}
+.club_member_sub2 {margin:0;width:auto;padding:0;height:32px;background: none;border:none;border-bottom:2px solid #000;color:#000;}
 .club_member_sub:hover {opacity:0.8}
 .club_memberreg{width: 800px;margin: 30px auto 0 auto}
 .club_memberreg_fi{margin: 0 0 10px }
-.club_memberreg_fi label {float:left;width:120px;margin:4px 10px 0 0;color:#000;text-align:right;}
+.club_memberreg_fi label {float:left;width:120px;margin:4px 15px 0 0;color:#000;text-align:right;}
 .club_memberreg_edm {padding:0 0 0 131px;}
 .club_memberreg_fi .club_login_ipt{margin:0 auto;display:inline-block;float:none;}
 .club_memberreg_fi .club_login_ipt_short {width:80px;}
 .club_memberreg_fi{position: relative;}
-.club_memberreg_tips{position: absolute;left:350px;line-height: 48px;top:0;width:300px}
+.club_memberreg_tips{position: absolute;left:350px;line-height: 48px;top:0;width:300px;color:#000;}
 .club_memberreg_seltxt{width: 200px;height: 46px;border:#000 solid 1px;padding:0 16px;margin: 0 auto;color:#000;font-family:arial;background: #f3dedd;line-height: 46px;background: url('../images/club_memberreg_sel.png') no-repeat 94% 50%;}
 .club_memberreg_sel{position: absolute;width: 232px;height: 46px;display: block;top: 1px;left:38px;opacity: 0;filter:alpha(opacity=0);cursor: pointer;}
 .club_member_forget{width: 308px;margin: 0 auto 0 auto;text-align:center;}
@@ -164,11 +164,26 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .club_pointintro{font-size: 14px;padding:20px 0 0;line-height: 30px}
 .club_pointintro h3{font-size: 18px;padding:50px 0 0;height: 42px;text-transform:uppercase;}
 
-.form-before li {font-size:24px;width:215px;height:65px;line-height:65px;background:#dac8c7;}
+.form-before {width:861px;margin:0 auto;}
+.form-before li {font-size:24px;width:215px;height:65px;line-height:65px;color:#000;background:#dac8c7;}
 .form-before li span {font-size:18px;}
 .form-before li.step1 {background:url('../images/step1.gif') no-repeat left;}
 .form-before li.step4 {background:url('../images/step4.gif') no-repeat right;}
 .checkout-cart-index .form-before li.step2 {background:url('../images/step_actived.gif') no-repeat;}
+.points-checkout-index .form-before li.step3 {background:url('../images/step_actived.gif') no-repeat;}
+#points_checkout_form .content {margin:40px 0;font-size:14px;}
+#points_checkout_form .form-list li label {font-size:14px;color:#000;font-weight: normal;}
+#points_checkout_form .form-list li label em {display:none;}
+#points_checkout_form h2 {font-size:14px;margin-bottom:15px;}
+#billing-new-address-form textarea {border:1px solid #000;background:none;resize:none;}
+#checkout-points-review {margin:0 0 40px 0;}
+.blank_table_header {background: #d1beba;height:40px;}
+.points-checkout-index .points-summary {float:right;font-size:12px;}
+.points-checkout-index .back-to-cart {float:left;border-bottom:2px solid #000;}
+.points-checkout-index .back-to-cart button.button span {padding:0;border:none;font-size:12px;}
+.content-wrapper.exchange-list {border:none;}
+.points-checkout-index .button-set {clear: both;}
+.order-info-box dd {margin:0;}
 
 .club_img{display: block;width: 140px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
 .club_img img {-webkit-box-shadow: 5px 5px 0 0 #d9c6c5;box-shadow: 5px 5px 0 0 #d9c6c5;}
@@ -181,8 +196,8 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .product-shop .product-attr-name,.product-shop .attribute-title {float:left;width:140px;}
 .product-shop .product-attr-val {font-weight: bold;}
 
-#query_status {background:#000;}
-#query_status span {color:#fff;padding:0;font-size:14px;line-height:100%;margin:0 0 0 10px;padding:5px 10px;}
+#query_status {background:#000;margin:0 0 0 10px;}
+#query_status span {color:#fff;padding:0;font-size:14px;line-height:100%;padding:5px 10px;}
 
 .club_article_center {width:1000px;margin:0 auto;}
 

@@ -28,15 +28,9 @@
 <?php $_order = $this->getOrder() ?>
 <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
 
-
-<div><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>customer/account/logout/" id="logout_link"><?php echo $this->__('Log Out')?></a>
-</div>
-<div class="clear"></div>
-<br/>
-
 <div class="order-info-box">
 	<h2><?php echo $this->__('Order #%s', $_order->getRealOrderId()) ?>
-	<?php echo $this->__('Status'); ?>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $this->__('Status'); ?>
 	<span id="status_result">
 		<?php if($_order->getErpStatus()): ?>
 			<?php echo $this->__($_order->getErpStatus()); ?>

@@ -2016,13 +2016,7 @@ color:#fff;
     width: 100px;}
 .cart-table .btn-update { margin-left:10px; }
 .back-to-cart button.button{float:right;}
-.points-checkout-index .button.btn-proceed-checkout.btn-checkout{    bottom: -100px;
-    left: 50%;
-    margin-left: -50px;
-    position: relative;
-    width: 140px;}
-	.points-summary{position:absolute;right:320px;    bottom: 14px;}
-.button-set.back-to-cart{float:right;margin-top:20px;}	
+.points-checkout-index .button.btn-proceed-checkout.btn-checkout{}
 
 /* Shopping Cart Collateral boxes */
 .cart .cart-collaterals { padding:25px 0 0;margin-top:10px }
