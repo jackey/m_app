@@ -87,7 +87,7 @@
                 <tfoot>
                     <tr>
                         <td colspan="50" class="a-right">
-                            <?php if ($this->checkedInOneMonth() && FALSE): ?>
+                            <?php if ($this->checkedInOneMonth() ): ?>
                                 <button type="button" title="<?php echo $this->__('Continue Exchange') ?>" class="button btn-continue" onclick="javascript:void(0)"><span><span style="coloe:#eee"><?php echo $this->__('Continue Exchange') ?></span></span></button>
                             <?php else: ?>
                                 <?php if($this->getContinueShoppingUrl()): ?>
@@ -142,7 +142,7 @@
         </div>
         <?php if(!$this->hasError()): ?>
             <ul class="checkout-types">
-                <?php if ($this->checkedInOneMonth()): ?>
+                <?php if ($this->checkedInOneMonth() && FALSE): ?>
                     <li>
                         <button type="button" class="button btn-proceed-checkout btn-checkout" onclick="javascript:void(0)"><span><span><?php echo $this->__("Confirm")?></span></span></button>
                     </li>
