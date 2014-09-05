@@ -43,7 +43,7 @@
 
                         <?php $_gender = $this->getLayout()->createBlock('customer/widget_gender') ?>
                         <li><span><?php echo $this->__("Gender")?></span><strong data-name="gender"><?php echo $_gender->setGender($this->getCustomer()->getGender())->toHtml() ?></strong><span class="edit"><?php echo $this->__("Edit")?></span></li>
-                        <li><span><?php echo $this->__("Address")?></span><strong data-name="customerAddress"><?php echo $this->htmlEscape($this->getCustomer()->getCustomerAddress()) ?></strong><span class="edit"><?php echo $this->__("Edit")?></span>/li>
+                        <li><span><?php echo $this->__("Address")?></span><strong data-name="customerAddress"><?php echo $this->htmlEscape($this->getCustomer()->getCustomerAddress()) ?></strong><span class="edit"><?php echo $this->__("Edit")?></span></li>
                         <li><span><?php echo $this->__("Zip/Post code")?></span><strong data-name="customerZip"><?php echo $this->htmlEscape($this->getCustomer()->getCustomerZip()) ?></strong><span class="edit"><?php echo $this->__("Edit")?></span></li>
                     </ul>
                     <ul class="club_meminfolist2">

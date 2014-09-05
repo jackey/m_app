@@ -13,10 +13,10 @@
     </div>
     <a class="club_logout" href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>customer/account/logout/"><?php echo $this->__("LOGOUT")?></a>
     <div class="club_navlist">
-        <a href="<?php echo $this->getUrl("customer/account/edit/")?>"><?php echo $this->__("My Account")?></a>
-        <a href="<?php echo $this->getUrl("wishlist")?>"><?php echo $this->__("My wishlist")?></a>
-        <a href="<?php echo $this->getUrl("giftproducts.html")?>"><?php echo $this->__("Gift Exchange")?></a>
-        <a href="<?php echo $this->getUrl("checkout/cart")?>"><?php echo $this->__("Giftcard")?> <span class="num">(<?php echo count($items)?>)</span></a>
+        <a class="<?php echo Mage::helper('core/url')->getCurrentUrl() ==  $this->getUrl("customer/account/edit/") ? "active": "" ?>" href="<?php echo $this->getUrl("customer/account/edit/")?>"><?php echo $this->__("My Account")?></a>
+        <a class="<?php echo Mage::helper('core/url')->getCurrentUrl() ==  $this->getUrl("wishlist") ? "active": "" ?>" href="<?php echo $this->getUrl("wishlist")?>"><?php echo $this->__("My wishlist")?></a>
+        <a class="<?php echo Mage::helper('core/url')->getCurrentUrl() ==  $this->getUrl("giftproducts.html") ? "active": "" ?>" href="<?php echo $this->getUrl("giftproducts.html")?>"><?php echo $this->__("Gift Exchange")?></a>
+        <a class="<?php echo Mage::helper('core/url')->getCurrentUrl() ==  $this->getUrl("checkout/cart") ? "active": "" ?>" href="<?php echo $this->getUrl("checkout/cart")?>"><?php echo $this->__("Giftcard")?> <span class="num">(<?php echo count($items)?>)</span></a>
     </div>
     <div class="club_opening_time">
         会员热线：4008-91-9135<br />
