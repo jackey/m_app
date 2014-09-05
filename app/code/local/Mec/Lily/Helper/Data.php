@@ -216,6 +216,7 @@ class Mec_Lily_Helper_Data extends Mage_Core_Helper_Abstract
 							'DESCRIPTION',
 							'AMT_ACTUAL',
 							'INTEGRAL',
+							'DOCNO',
 								),
 				'params' => array(
 					"column"=>"C_VIP_ID",
@@ -227,7 +228,7 @@ class Mec_Lily_Helper_Data extends Mage_Core_Helper_Abstract
 					'column' => 'CREATIONDATE',
 					'desc' => true,
 				),
-			),	
+			),
 		);
 		
 		
