@@ -37,14 +37,14 @@
             <div class="club_ecoupon_com club_meminfo">
                 <div class="club_meminfolist cs-clear" >
                     <ul class="club_meminfolist1">
-                        <li><span><?php echo $this->__("Name")?></span><strong data-name="firstname"><?php echo $this->getCustomer()->getFirstname(); ?></strong></li>
-                        <li><span><?php echo $this->__("E-mail")?></span><strong data-name="email"><?php echo $this->htmlEscape($this->getCustomer()->getEmail()) ?></strong></li>
-                        <li><span><?php echo $this->__("Birthday")?></span><strong data-name="dob"><?php echo date('Y/m/d', strtotime($this->getCustomer()->getDob())); ?></strong></li>
+                        <li><span><?php echo $this->__("Name")?></span><strong data-name="firstname"><?php echo $this->getCustomer()->getFirstname(); ?></strong><span class="edit"><?php echo $this->__("Edit")?></span></li>
+                        <li><span><?php echo $this->__("E-mail")?></span><strong data-name="email"><?php echo $this->htmlEscape($this->getCustomer()->getEmail()) ?></strong><span class="edit"><?php echo $this->__("Edit")?></span></li>
+                        <li><span><?php echo $this->__("Birthday")?></span><strong data-name="dob"><?php echo date('Y/m/d', strtotime($this->getCustomer()->getDob())); ?></strong><span class="edit"><?php echo $this->__("Edit")?></span></li>
 
                         <?php $_gender = $this->getLayout()->createBlock('customer/widget_gender') ?>
-                        <li><span><?php echo $this->__("Gender")?></span><strong data-name="gender"><?php echo $_gender->setGender($this->getCustomer()->getGender())->toHtml() ?></strong></li>
-                        <li><span><?php echo $this->__("Address")?></span><strong data-name="customerAddress"><?php echo $this->htmlEscape($this->getCustomer()->getCustomerAddress()) ?></strong></li>
-                        <li><span><?php echo $this->__("Zip/Post code")?></span><strong data-name="customerZip"><?php echo $this->htmlEscape($this->getCustomer()->getCustomerZip()) ?></strong></li>
+                        <li><span><?php echo $this->__("Gender")?></span><strong data-name="gender"><?php echo $_gender->setGender($this->getCustomer()->getGender())->toHtml() ?></strong><span class="edit"><?php echo $this->__("Edit")?></span></li>
+                        <li><span><?php echo $this->__("Address")?></span><strong data-name="customerAddress"><?php echo $this->htmlEscape($this->getCustomer()->getCustomerAddress()) ?></strong><span class="edit"><?php echo $this->__("Edit")?></span>/li>
+                        <li><span><?php echo $this->__("Zip/Post code")?></span><strong data-name="customerZip"><?php echo $this->htmlEscape($this->getCustomer()->getCustomerZip()) ?></strong><span class="edit"><?php echo $this->__("Edit")?></span></li>
                     </ul>
                     <ul class="club_meminfolist2">
                         <li><span><?php echo $this->__("VIP Card")?></span><strong><?php echo $this->htmlEscape($this->getCustomer()->getVipCard()) ?></strong></li>
@@ -115,6 +115,16 @@
                     return;
                 }
                 var strongEl = $("strong[data-name!='']", $(this));
+                var strong = strongEl.html();
+                var input = "<input type='text' value='"+strong+"' name='"+$(strongEl).attr("data-name")+"' /> <button name='update-data-name' type='button' ><?php echo $this->__("Submit")?></button>";
+                $(strongEl).html(input);
+            });
+            $(".club_meminfolist1 > li span.edit").click(function () {
+                var self = $(this).parent();
+                if ($("button[name='update-data-name']", $(self)).size()) {
+                    return;
+                }
+                var strongEl = $("strong[data-name!='']", $(self));
                 var strong = strongEl.html();
                 var input = "<input type='text' value='"+strong+"' name='"+$(strongEl).attr("data-name")+"' /> <button name='update-data-name' type='button' ><?php echo $this->__("Submit")?></button>";
                 $(strongEl).html(input);
