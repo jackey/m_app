@@ -120,7 +120,8 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .club_meminfolist1 li{width: 420px;overflow: hidden;float: left;padding-bottom: 30px}
 .club_meminfolist2 li{width: 300px;overflow: hidden;float: left;padding-bottom: 30px}
 .club_meminfolist li span{float: left;width: 150px;}
-.club_meminfolist li strong{float: left;width: 210px;}
+.club_meminfolist li strong{float: left;width: 198px;}
+.club_meminfolist li span.edit {width:60px;}
 .club_meminfolist input {background:none;border:1px solid #000;padding:4px;}
 .club_meminfolist button {background:#000;color:#fff;border:none;padding:4px;}
 .club_meminfolist2 li strong{float: left;width: 130px;}
