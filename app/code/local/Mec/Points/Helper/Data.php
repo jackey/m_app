@@ -183,12 +183,15 @@ class Mec_Points_Helper_Data extends Mage_Core_Helper_Abstract
 		
 		$query_datas_params = json_encode($query_datas_params);
 		$post_datas = $post_data . "&transactions=[{$query_datas_params}]"; 
+
+		Mage::log($post_datas);
 		
 		$header = Mage::helper('lily')->FormatHeader($post_url, $post_datas);
 		$result = Mage::helper('lily')->PostDataToErp($erp_url, $post_datas, $header);
+		Mage::log($result);
 		
 		$result = json_decode($result);
-		if($result[0]->code == 0){
+		if($result[0]->code == 0) {
 			$erp_datas = $result[0]->rows;
 			$erp_datas = $erp_datas[0];
 			$datas['ver_code'] = $erp_datas[0];

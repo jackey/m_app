@@ -55,10 +55,11 @@ class Mec_Lilysms_Helper_Data extends Mage_Core_Helper_Abstract
 		$content = $_content . $content . '，请接店铺通知后凭验证码到店领取，验证码是您领礼品的唯一凭证，请勿泄露';
 	
 		$client = new Client($Message_api,$Message_username,$Message_password,$Message_password,$proxyhost,$proxyport,$proxyusername,$proxypassword,$connectTimeOut,$readTimeOut);
-		// $statusCode_login = $client->login();
-		// Mage::log($statusCode_login, null, 'newsms.log');
+		$statusCode_login = $client->login();
+		Mage::log($statusCode_login, null, 'newsms.log');
 		$client->setOutgoingEncoding("UTF-8");
 		$statusCode = $client->sendSMS(array($phone), $content);
+		Mage::log($content);
 		Mage::log($statusCode, null, 'newsms.log');
 		if($statusCode == 0){
 			Mage::getModel('lilysmslog/lilysmslog')->setData(array(
