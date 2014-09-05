@@ -161,6 +161,7 @@ class Mec_Lily_Helper_Data extends Mage_Core_Helper_Abstract
 							'DOCNO',
 							'LOSE_DATE',
 							'VIP_PAYAMT',
+							"DESCRIPTION"
 							
 								),
 				'params' => array(
