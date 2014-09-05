@@ -87,7 +87,7 @@ Default layout, loads most of the pages
                 </block>
 
                 <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml" />
-
+                <block type="core/template" name="lily_product_nav_block" as="lily_product_nav" template="page/html/lily_product_nav.phtml" />
 
                 <block type="core/text_list" name="checkout.cart.methods" as="methods" translate="label">
                     <label>Payment Methods After Checkout Button</label>
