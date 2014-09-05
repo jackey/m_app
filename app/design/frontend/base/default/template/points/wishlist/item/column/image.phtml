@@ -28,12 +28,12 @@
 $item = $this->getItem();
 $product = $item->getProduct();
 ?>
-<a class="product-image" href="<?php echo $this->getProductUrl($item) ?>" title="<?php echo $this->escapeHtml($product->getName()) ?>">
-    <img src="<?php echo $this->helper('catalog/image')->init($product, 'small_image')->resize(80, 80); ?>" width="80" height="80" alt="<?php echo $this->escapeHtml($product->getName()) ?>" />
+<a class="product-image product-imgs" href="<?php echo $this->getProductUrl($item) ?>" title="<?php echo $this->escapeHtml($product->getName()) ?>">
+    <img src="<?php echo $this->helper('catalog/image')->init($product, 'small_image')->resize(50, 50); ?>" width="50" height="50" alt="<?php echo $this->escapeHtml($product->getName()) ?>" />
 </a>
 <div class="wishlist-content">
-	<span><?php echo $product->getName(); ?></span>
-	<br />
-	<span><?php echo $product->getSku(); ?></span>
+    <span><?php echo $product->getName(); ?></span>
+    <br />
+    <span><?php echo $product->getSku(); ?></span>
 </div>
 
