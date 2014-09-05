@@ -332,12 +332,6 @@ class Mec_Lily_Customer_AccountController extends Mage_Customer_AccountControlle
         $this->_redirect('*/*/edit');
     }
 	
-	
-	
-	
-	
-	
-	
 	public function pointAction()
 	{
 		$this->loadLayout();

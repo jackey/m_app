@@ -52,7 +52,6 @@
 	</div>
 	
 	
-	
     <form action="<?php echo $this->getUrl('checkout/cart/updatePost') ?>" method="post">
         <fieldset>
             <table id="shopping-cart-table" class="data-table cart-table">
@@ -88,20 +87,30 @@
                 <tfoot>
                     <tr>
                         <td colspan="50" class="a-right">
-                            <?php if($this->getContinueShoppingUrl()): ?>
-                                <button type="button" title="<?php echo $this->__('Continue Exchange') ?>" class="button btn-continue" onclick="setLocation('<?php echo $this->getContinueShoppingUrl() ?>')"><span><span><?php echo $this->__('Continue Exchange') ?></span></span></button>
-                            <?php endif; ?>
+                            <?php if ($this->checkedInOneMonth()): ?>
+                                <button type="button" title="<?php echo $this->__('Continue Exchange') ?>" class="button btn-continue" onclick="javascript:void(0)"><span><span style="coloe:#eee"><?php echo $this->__('Continue Exchange') ?></span></span></button>
+                            <?php else: ?>
+                                <?php if($this->getContinueShoppingUrl()): ?>
+                                    <button type="button" title="<?php echo $this->__('Continue Exchange') ?>" class="button btn-continue" onclick="setLocation('<?php echo $this->getContinueShoppingUrl() ?>')"><span><span><?php echo $this->__('Continue Exchange') ?></span></span></button>
+                                <?php endif; ?>
+                            <?php endif;?>
                           <div class="totals">
             <?php //echo $this->getChildHtml('totals'); ?>
 			
 				合计：<?php echo Mage::helper('points')->getTotalPoints(); ?>分
             <?php if(!$this->hasError()): ?>
             <ul class="checkout-types">
-            <?php foreach ($this->getMethods('methods') as $method): ?>
-                <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
-                <li><?php echo $methodHtml; ?></li>
-                <?php endif; ?>
-            <?php endforeach; ?>
+            <?php if ($this->checkedInOneMonth()): ?>
+                <li>
+                    <button type="button" class="button btn-proceed-checkout btn-checkout" onclick="javascript:void(0)"><span><span><?php echo $this->__("Confirm")?></span></span></button>
+                </li>
+            <?php else: ?>
+                <?php foreach ($this->getMethods('methods') as $method): ?>
+                    <?php if ($methodHtml = $this->getMethodHtml($method)): ?>
+                    <li><?php echo $methodHtml; ?></li>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            <?php endif;?>
             </ul>
             <?php endif; ?>
         </div>
