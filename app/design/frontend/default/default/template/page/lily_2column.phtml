@@ -22,7 +22,7 @@
 		<div class="left-bar">
 	        <div class="club_ecoupon_nav">
 	            <div class="club_welcome">
-	                <?php echo $this->__("Hi")?> <?php echo Mage::getSingleton('customer/session')->getCustomer()->getFirstname();?>,<br/> <?php echo $this->__("Welcome to Lily Club")?> <br /> <?php echo $this->__("Your remaining points")?> <br /><?php echo $this->__("are %s point(s)", Mage::getSingleton('customer/session')->getCustomer()->getUsePoints())  ?>
+	                <?php echo Mage::getSingleton('customer/session')->getCustomer()->getFirstname();?>, <?php echo $this->__("Hi")?><br/> <?php echo $this->__("Welcome to Lily Club")?> <br /> <?php echo $this->__("Your remaining points")?> <br /><?php echo $this->__("are %s point(s)", Mage::getSingleton('customer/session')->getCustomer()->getUsePoints())  ?>
 	            </div>
 	            <a class="club_logout" href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>customer/account/logout/"><?php echo $this->__("LOGOUT")?></a>
 	            <div class="club_navlist">

@@ -366,7 +366,7 @@ color:#fff;
 
 /* Toolbar */
 .toolbar {}
-.toolbar .pager { padding:3px 8px; border-bottom:1px solid #fff; }
+.toolbar .pager { padding:3px 8px;  }
 .toolbar .sorter { border-bottom:1px solid #fff; }
 .toolbar-bottom {margin-top:20px;}
 

@@ -37,21 +37,15 @@
             <?php $_orders = $this->getOrders(); ?>
             <?php //echo $this->getPagerHtml(); ?>
             <?php if($_orders->getSize()): ?>
-            <table class="data-table" id="my-orders-table">
-                <col width="1" />
-                <col width="1" />
-                <col width="1" />
-                <col />
-                <col width="1" />
-                <col width="1" />
+            <table class="club_giftcardtable" id="my-orders-table">
                 <thead>
                     <tr>
-                        <th><?php echo $this->__('Order Type') ?></th>
-                        <th><?php echo $this->__('Order Num') ?></th>
-                        <th><?php echo $this->__('Order Date') ?></th>
+                        <th width="12%"><?php echo $this->__('Order Type') ?></th>
+                        <th width="12%"><?php echo $this->__('Order Num') ?></th>
+                        <th width="12%"><?php echo $this->__('Order Date') ?></th>
                         <th><span class="nobr"><?php echo $this->__('Gift Of Order') ?></span></th>
-                        <th><span class="nobr"><?php echo $this->__('Order Status') ?></span></th>
-                        <th><?php echo $this->__('Operation') ?></th>
+                        <th width="12%"><span class="nobr"><?php echo $this->__('Order Status') ?></span></th>
+                        <th width="12%"><?php echo $this->__('Operation') ?></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -61,7 +55,7 @@
                         <td><span class="title"><?php echo $this->__('Order Type') ?></span><?php echo $this->__('Exchange From Webstore'); ?></td>
                         <td><span class="title"><?php echo $this->__('Order Num') ?></span><?php echo $_order->getRealOrderId() ?></td>
                         <td><span class="title"><?php echo $this->__('Order Date') ?></span><span class="nobr"><?php echo $this->formatDate($_order->getCreatedAtStoreDate()) ?></span></td>
-                        <td><span class="title"><?php echo $this->__('Gift Of Order') ?></span><?php echo $this->getOrderItemsImg($_order); ?></td>
+                        <td class="product-imgs"><span class="title"><?php echo $this->__('Gift Of Order') ?></span><?php echo $this->getOrderItemsImg($_order); ?></td>
                         <td>
                             <span class="title"><?php echo $this->__('Order Status') ?></span>
                             <em>

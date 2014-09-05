@@ -9,7 +9,7 @@
 .page_club input {background:none;border:1px solid #000;}
 .page_club>div {opacity:0;}
 .page_club a:hover {text-decoration: underline;}
-.club_tit,.page-title h1{font-size: 80px;line-height:88px;text-transform:uppercase;text-align: center;padding:0 0 50px;font-family:arial;}
+.club_tit,.page-title h1{font-size: 60px;line-height:68px;text-transform:uppercase;text-align: center;padding:0 0 50px;}
 .club_tit .small {font-size:40px;}
 .club_bottom_nav {text-align: center;margin-top:50px;}
 .club_bottom_nav li {display: inline-block;margin:0 10px;}
@@ -60,38 +60,44 @@
 .club-rule-content .club_login_txt {width:500px;margin:0 auto;text-align: center;}
 /**/
 .club_member_rule{text-align: center;margin: 0 auto;width: 860px}
-.club_member_rule h4{text-transform:uppercase;margin: 80px 0 40px}
+.club_member_rule h4{text-transform:uppercase;margin: 80px 0 40px;font-size:24px;}
 .club_member_table{width: 100%;margin:0 0 80px;}
-.club_member_table th{text-transform:uppercase;text-align: center;}
+.club_member_table th{text-transform:uppercase;text-align: center;background:#dac7c7;}
 .club_member_tableline{border-bottom:#000 solid 1px;}
 .club_member_table td,
 .club_member_table th{padding: 18px}
 .club_member_table2{width:430px;display: block;margin: 0 auto;}
-.club_member_rulelink{border:none;display: block;width: 320px;height: 48px;background: #000;text-align: center;line-height: 48px;color:#fff;margin: 80px auto 20px}
+.club_member_rulelink{border:none;display: block;width: 320px;height: 48px;background: #000;text-align: center;font-size:18px;line-height: 48px;color:#fff;margin: 80px auto 20px}
 /**/
 .club_QA_txt{width: 830px;margin: 0 auto;text-align: center;line-height: 36px;font-family:"Microsoft Yahei",arial,SimHei,sans-serif}
 .club_QA_txt p{margin: 0 0 50px;}
 /**/
 
-.club_ecoupon_txt{text-align: center;}
+.club_ecoupon_txt{text-align: center;margin:0 0 15px 0;}
 .club_ecoupon_center{padding: 10px 0 0 0;width:1105px;margin:0 auto;}
-.club_ecoupon_nav{width:240px;float: left;}
+.club_ecoupon_nav{width:240px;float: left;font-size:18px;line-height: 150%;}
 .club_welcome{font-weight: bold;}
-.club_logout{width: 122px;height: 48px;border:#000 solid 1px;display: block;line-height: 48px;text-align: center;font-weight: bold;margin: 30px 0;}
+.club_logout{width: 122px;height: 48px;background:#000;color:#fff;display: block;line-height: 48px;text-align: center;font-weight: bold;margin: 15px 0 30px 0;}
 .club_navlist a{height: 35px;display: block;}
 .club_navlist .on{text-decoration: underline;}
 .club_ecoupon_com{float: left;width: 800px;}
 .club_ecoupontable{width: 100%;margin-top: 150px;}
 .club_ecoupontable th{border-bottom: #000 solid 1px;}
 .club_ecoupontable th,.club_ecoupontable td{text-align: center;line-height: 48px;}
+.back-link {display: none;}
 /**/
 .club_giftcards{padding:150px 0 0 55px;text-align: center;width: 600px}
 .club_giftcardsbtn{margin: 50px auto;display: block;color:#fff;background: #000;width: 308px;height: 48px;line-height: 48px}
 .club_giftcard{width: 860px;padding:0}
 .club_giftcardtable{width: 100%;}
-.club_giftcardtable th{border-bottom: #000 solid 1px;padding: 0 20px 20px;font-weight: normal;text-transform:uppercase;}
-.club_giftcardtable td{text-align: center;padding: 20px 20px 0}
+.club_giftcardtable th{background:#d9c7c6;padding: 10px 20px;font-weight: normal;text-transform:uppercase;}
+.club_giftcardtable td{border-bottom:1px solid #040000;text-align: center;padding: 20px}
+.club_giftcardtable .product-imgs img {margin:0 5px;-webkit-box-shadow: 5px 5px 0 0 #d9c6c5;box-shadow: 5px 5px 0 0 #d9c6c5;}
 .club_giftcardtable a{text-decoration: underline;}
+.club_giftcardtable .product-image {float:left;}
+.club_giftcardtable .wishlist-content {float:left;text-align:left;margin:0 0 0 10px;}
+.club_giftcardtable .remove-text {font-size:18px;text-decoration:none;}
+.club_giftcardtable .remove-text img {vertical-align: middle;}
 .club_giftcardcheckout{width: 152px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;float: right;margin: 80px 40px}
 .club_giftcardimg2{padding-right: 200px}
 /**/
@@ -125,7 +131,7 @@
 .club_pointexselbox span{background: url('../images/club_memberreg_sel.png') no-repeat 80% 50%;display: block;width: 100px;padding:0 0 0 10px;}
 .club_pointexselbox select{width: 100px;position: absolute;top: 0;left:24px;opacity: 0;filter:alpha(opacity=0);cursor: pointer;}
 .club_pointimglist{padding-left:4px;}
-.club_pointimglist li{float: left;display:inline;margin: 18px 0 0 24px;height:150px;}
+.club_pointimglist li{float: left;display:inline;margin: 18px 0 0 24px;height:186px;}
 .club_pointimglist .product-name {font-size:0.9em;line-height: 100%;margin:5px 0 0;}
 .club_pointimglist .product-attr {font-size:0.9em;}
 .club_club_pointproimg{float: left;width: 540px;}
@@ -133,8 +139,8 @@
 .club_club_pointprolist{padding:20px 0 0;}
 .club_club_pointprolist .club_img{float: left;display: inline;margin: 0 20px 0 0}
 .club_img img {
-	width:109px;
-	height:109px;
+	width:135px;
+	height:135px;
 }
 .club_club_pointproinfo{}
 .club_club_pointproinfo li{width: 320px;float: left;padding:0 0 30px;}
@@ -148,7 +154,8 @@
 .club_pointintro h3{font-size: 18px;padding:50px 0 0;height: 42px;text-transform:uppercase;}
 
 
-.club_img{display: block;background: url('../images/club_phobg.gif') no-repeat;width: 140px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
+.club_img{display: block;width: 140px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
+.club_img img {-webkit-box-shadow: 5px 5px 0 0 #d9c6c5;box-shadow: 5px 5px 0 0 #d9c6c5;}
 .club_imgtxt{text-align: center;;width: 140px;top:30px;left:0;position: absolute;}
 .club_img2{display: block;background: url('../images/club_phobg2.gif') no-repeat;width: 469px;height: 340px;padding:3px 0 0 3px;position: relative;margin: 0}
 .club_img2 img{width:446px;height: 319px }
