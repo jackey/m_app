@@ -30,5 +30,5 @@ $item = $this->getItem();
 $product = $item->getProduct();
 ?>
 <div class="cart-cell">
-	<?php echo $item->getAddedAt(); ?>
+	<?php echo date("Y-m-d", strtotime($item->getAddedAt())); ?>
 </div>
