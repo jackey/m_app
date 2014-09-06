@@ -38,7 +38,7 @@
                 <div class="club_tit  club_login_tit">
                     <h2>
                         <span class="small"><?php echo $this->__("Welcome to")?></span><br/>
-                        <?php echo $this->__("LILY CLUB")?>
+                        <span class="club_login_tit_small"><?php echo $this->__("LILY club")?></span>
                     </h2>
                 </div>
 
@@ -50,7 +50,7 @@
                             <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
                             <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="login-form">
                                 <div class="cs-clear">
-                                    <input class="club_login_ipt" type="text" value="<?php echo $this->htmlEscape($this->getUsername()) ?>" name="login[telphone]" placeholder="<?php echo $this->__("Cell phone")?>" />
+                                    <input class="club_login_ipt" type="text" value="<?php echo $this->htmlEscape($this->getUsername()) ?>" name="login[telphone]" placeholder="<?php echo $this->__("Mobile")?>" />
                                     <input class="club_login_ipt" type="password" name="login[password]" id="pass" placeholder="<?php echo $this->__("Password")?>" />
 
                                 </div>

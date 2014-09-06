@@ -16,9 +16,10 @@ jQuery(document).ready(function($){
     });
 
     $('.club_welcome_m').click(function(){
-        console.log(1);
         $('.club_navlist_m').toggleClass('open');
     });
+
+    $(".express_addition select,.pager select").selectOrDie();
 
 // $('.open-share').click(function(){
 	// $(this).parent().toggleClass('active')

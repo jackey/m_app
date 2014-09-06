@@ -672,14 +672,21 @@ div:selected {
     display: inline-block;
     position: relative;
     line-height: 1;
-
+    background: #edd9d8;
     width: 200px;
     padding: 15px 10px;
     border: 1px solid #000;
     color: #000;
-    font-size: 16px;
-    line-height: 16px;
 }
+.express_addition .sod_select {width:700px;}
+.express_addition .sod_select .sod_list {width:700px;}
+
+.express_addition #billing-new-address-form .sod_select {width:230px;}
+.express_addition #billing-new-address-form .sod_select .sod_list {width:230px;}
+
+
+.pager .sod_select {width:auto;padding-right:40px;}
+.pager .sod_select .sod_list {width:auto;padding-right:40px;}
 
 
 /* Up/Down arrows */
@@ -719,6 +726,7 @@ div:selected {
 /* Options list wrapper */
 .sod_select .sod_list
 {
+    background: #edd9d8;
     position: absolute;
     top: 100%;
     left: 0;
