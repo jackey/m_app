@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
         $('.club_navlist_m').toggleClass('open');
     });
 
-    $(".express_addition select,.pager select").selectOrDie();
+    //$(".express_addition select,.pager select").selectOrDie();
 
 // $('.open-share').click(function(){
 	// $(this).parent().toggleClass('active')

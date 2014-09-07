@@ -2,27 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="900c1c39-134c-4714-b1f5-f4718f57967c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Page140110.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Page140110.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery/jquery-custom-all.js" afterPath="$PROJECT_DIR$/js/jquery/jquery-custom-all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_customer_nav.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_customer_nav.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/persistent/customer/form/mini-login.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/persistent/customer/form/mini-login.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/layout/page.xml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/layout/page.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/point.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/point.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/sales/order/recent.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/sales/order/recent.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/wishlist/view.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/wishlist/view.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409920850136" ignored="false" />
     <file path="/js.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407848073851" ignored="false" />
-    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409963781704" ignored="false" />
+    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410068105631" ignored="false" />
     <file path="/a.dummy" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409962365246" ignored="false" />
     <file path="/style.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409960947152" ignored="false" />
     <file path="/Mage_Cms.csv" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409963635670" ignored="false" />
@@ -141,7 +129,7 @@
       <file leaf-file-name="jquery-custom-all.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jquery/jquery-custom-all.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="45" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
+            <state line="21" column="6" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -201,7 +189,7 @@
       <file leaf-file-name="club.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="17" selection-start="547" selection-end="547" vertical-scroll-proportion="0.44117647">
+            <state line="191" column="64" selection-start="12002" selection-end="12002" vertical-scroll-proportion="0.38235295">
               <folding />
             </state>
           </provider>
@@ -243,12 +231,12 @@
         <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml" />
-        <option value="$PROJECT_DIR$/js/jquery/jquery-custom-all.js" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/persistent/customer/form/mini-login.phtml" />
         <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Page140110.csv" />
         <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml" />
+        <option value="$PROJECT_DIR$/js/jquery/jquery-custom-all.js" />
         <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
       </list>
     </option>
@@ -1006,23 +994,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery/jquery-custom-all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="45" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="28" selection-start="1230" selection-end="1230" vertical-scroll-proportion="-2.1785715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="687" column="6" selection-start="29380" selection-end="29385" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1068,9 +1042,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery/jquery-custom-all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="6" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="687" column="6" selection-start="29380" selection-end="29385" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="17" selection-start="547" selection-end="547" vertical-scroll-proportion="0.44117647">
+        <state line="191" column="64" selection-start="12002" selection-end="12002" vertical-scroll-proportion="0.38235295">
           <folding />
         </state>
       </provider>
