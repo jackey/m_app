@@ -1,9 +1,29 @@
 <?php $shipping_province = $this->getShippingProvince();?>
 <?php  ?>
-<div class="content-wrapper address-list">
+
+		<?php  ?>
+		<div class="content-wrapper shipping-method">
 <div class="content">
 	
-	
+	<h2><?php echo $this->__('Shipping Method') ?></h2>
+	<ul class="form-list">
+		<li>	
+			<div class="input-box">
+				<label for="shop_mentioning"><?php //echo $this->__('Shop Mentioning') ?><?php echo $this->__('Store Picking Up, Free!')?></label>
+				<input type="radio" name="shipping_method" value="shop_mentioning" id="shop_mentioning" class="input-text" title="店铺自取，免运费<?php //echo $this->__('Shop Mentioning') ?>" />
+			</div>
+		</li>
+		<?php ?>
+		<li>	
+			<div class="input-box">
+				<label for="express"><?php //echo $this->__('Express') ?>直接快递，运费需花1500积分</label>
+				<input type="radio" name="shipping_method" value="express" id="express" class="input-text" title="<?php //echo $this->__('Express') ?>直接快递，运费需花1500积分" />
+			</div>
+		</li>
+		<?php  ?>
+	</ul>
+<div class="content-wrapper address-list hideme">
+	<div class="content">
 	<div class="express_addition">
 			<h2><?php echo $this->__('Receiver Info') ?></h2>
 			<ul class="form-list">
@@ -45,7 +65,7 @@
 								<select name="ship_area" id="ship_area" class="required-entry">
 									<option value=""><?php echo $this->__('Please Select Area'); ?></option>
 								</select>
-								<textarea name="ship_address" rows="6" cols="5"></textarea>
+								<textarea name="ship_address" class="required-entry" rows="6" cols="5"></textarea>
 								
 							</li>
 							<li>
@@ -62,29 +82,8 @@
 				 </li>
 			</ul>
 		</div>
-		</div>
-		</div>
-		<?php  ?>
-		<div class="content-wrapper shipping-method">
-<div class="content">
-	
-	<h2><?php echo $this->__('Shipping Method') ?></h2>
-	<ul class="form-list">
-		<li>	
-			<div class="input-box">
-				<label for="shop_mentioning"><?php //echo $this->__('Shop Mentioning') ?><?php echo $this->__('Store Picking Up, Free!')?></label>
-				<input type="radio" name="shipping_method" value="shop_mentioning" id="shop_mentioning" class="input-text" title="店铺自取，免运费<?php //echo $this->__('Shop Mentioning') ?>" />
-			</div>
-		</li>
-		<?php ?>
-		<li>	
-			<div class="input-box">
-				<label for="express"><?php //echo $this->__('Express') ?>直接快递，运费需花1500积分</label>
-				<input type="radio" name="shipping_method" value="express" id="express" class="input-text" title="<?php //echo $this->__('Express') ?>直接快递，运费需花1500积分" />
-			</div>
-		</li>
-		<?php  ?>
-	</ul>
+	</div>
+</div>
 	<div class="shipping_addition" style="display:none;">
 		<div class="mentioning_shops">
 			<ul class="form-list">
@@ -120,13 +119,13 @@
 	jQuery(document).ready(function($){
 	
 		$('input[type="radio"][name="shipping_method"]').click(function(){
-			// alert($(this).val());
 			if($(this).val() == "shop_mentioning"){
 				$('.shipping_addition').show();
-			}else{
+				$(".address-list").addClass("hideme");
+			}else {
 				$('.shipping_addition').hide();
+				$(".address-list").removeClass("hideme");
 			}
-			
 		});
 	
 	
