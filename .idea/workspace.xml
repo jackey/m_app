@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="900c1c39-134c-4714-b1f5-f4718f57967c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_product_nav.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_product_nav.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410135248217" ignored="false" />
     <file path="/js.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1407848073851" ignored="false" />
-    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410166579209" ignored="false" />
+    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410167291573" ignored="false" />
     <file path="/a.dummy" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409962365246" ignored="false" />
     <file path="/style.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409960947152" ignored="false" />
     <file path="/Mage_Cms.csv" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409963635670" ignored="false" />
@@ -180,7 +179,7 @@
       <file leaf-file-name="club.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="328" column="51" selection-start="19115" selection-end="19115" vertical-scroll-proportion="0.7647059">
+            <state line="195" column="23" selection-start="12340" selection-end="12340" vertical-scroll-proportion="0.8235294">
               <folding />
             </state>
           </provider>
@@ -1058,7 +1057,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="328" column="51" selection-start="19115" selection-end="19115" vertical-scroll-proportion="0.7647059">
+        <state line="195" column="23" selection-start="12340" selection-end="12340" vertical-scroll-proportion="0.8235294">
           <folding />
         </state>
       </provider>

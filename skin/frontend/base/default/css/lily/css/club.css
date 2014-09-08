@@ -190,6 +190,10 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .points-checkout-index .button-set {clear: both;}
 .order-info-box dd {margin:0;}
 .express_addition select {border:1px solid #000;background:none;}
+#points_checkout_form .shipping-method .form-list #billing-new-address-form li {float:none;}
+#points_checkout_form .shipping-method .form-list #billing-new-address-form li label {float:left;width:75px;}
+#points_checkout_form .shipping-method .form-list #billing-new-address-form li input {float:none;width:auto;}
+#points_checkout_form .address-list {padding:0 0 20px 0;}
 
 .club_img{display: block;width: 140px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
 .club_img img {-webkit-box-shadow: 5px 5px 0 0 #d9c6c5;box-shadow: 5px 5px 0 0 #d9c6c5;}
