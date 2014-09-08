@@ -144,6 +144,7 @@
                     url: "<?php echo $this->getUrl("customer/account/editajaxPost")?>",
                     data: {name: input.attr("name"), value: input.val()},
                     success: function () {
+                        $(self).parent().siblings(".edit").removeClass("hideme");
                         $(self).parent().html(input.val());
                         $(self).removeClass("clicked");
                     }

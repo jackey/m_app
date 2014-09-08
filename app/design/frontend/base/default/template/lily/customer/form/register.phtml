@@ -31,9 +31,11 @@
  * @var $this Mage_Customer_Block_Form_Register
  */
 ?>
+<?php  $messages = $this->getMessagesBlock()->getMessageCollection()?>
+<?php $show_rule = $messages->count() == 0; ?>
 <div class="page page_club">
     <div class="club_member_formte">
-            <div class="club_member_rule">
+            <div class="club_member_rule <?php if (!$show_rule) echo "hide"?>">
                 <div class="club_tit  club_login_tit">
                     <h2><?php echo $this->__('VIP CARD TERMS') ?></h2>
                 </div>
@@ -44,7 +46,7 @@
                 <button id="register-button" class="club_member_rulelink" title="<?php echo $this->__('Agree to the terms and sign up')?>" type="button"><span><span><?php echo $this->__('Agree to the terms and sign up.')?></span></span></button>
             </div>
 
-            <div class="club-rule-content hide">
+            <div class="club-rule-content <?php if ($show_rule) echo "hide" ?> ">
 
                 <div class="club_tit  club_login_tit register_tit">
                     <h2><?php echo $this->__('Welcome be lily fans') ?></h2>
