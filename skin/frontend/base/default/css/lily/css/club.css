@@ -225,10 +225,11 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .dis_mobile { display: none }
 .club_ecoupon_nav_m {display:none;}
 @media screen and (max-width:640px) {
+    body,html {background: #f3dedd}
 	.dis_mobile { display: block }
     .wrap {margin:0!important;}
 	.footer{display: none}
-	.page{margin-bottom:0;}
+	.page{margin-bottom:0;padding-top:140px;}
     .page_club {font-size:18px;}
     .club_tit{font-size: 72px;line-height: 72px}
     .club_exchange_txt,
@@ -283,7 +284,7 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
     .club_point{width: 580px}
     .club_pointexnav{display: none;}
     .club_ecoupon_center{padding: 0}
-    .club_point table span.title {width:250px;}
+    .club_point table span.title {width:auto;}
     .club_point table td {padding:5px;}
 
     .club_meminfolist ul{float: none}
@@ -295,11 +296,13 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
     .club_login_regbtn {margin:20px 0 0 0;}
 
     .product-view .product-img-box {width:90%;margin:0 0 20px 5%;float:none;}
-    .product-view .product-shop {float:none;width:auto;clear:both;padding:20px 0 0;}
-
+    .product-view .product-shop {float:none;width:auto;clear:both;padding:20px 0 0;margin-left:5%;}
+    .product-intro {margin-left:5%;}
+    .product-name h1 {font-size:24px;margin-bottom:40px;}
+    .product-view .link-wishlist {font-size:20px;}
 
     .header {height:0!important;}
-    .club_ecoupon_nav_m {display:block;position: fixed;top:12px;left:20%;width:70%;font-size:20px;}
+    .club_ecoupon_nav_m {display:block;z-index:100;position: fixed;top:12px;left:20%;width:70%;font-size:20px;}
     .club_welcome_m {background:#000;color:#fff;font-weight:bold;height:100px;line-height:100px;padding:0 40px;}
     .club_navlist_m {display:none;background:#fff;padding:20px 0 20px 40px;color:#000;}
     .club_navlist_m.open {display:block;}
@@ -310,4 +313,19 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
     .club_memberreg_fi_code .club_login_ipt {width:200px;}
     .club_memberreg_fi_code .club_member_sub {width:184px;}
     .club_memberreg_fi .club_login_ipt_address {margin:10px 0 0 130px;}
+    .club_giftcardtable {font-size:13px;}
+    .add-to-links li {font-size:20px;}
+
+    button.button span {font-size:20px;}
+    .button.btn-cart span {background:none!important;border:none;}
+    .error-msg, .success-msg, .note-msg, .notice-msg {font-size:14px;}
+    .club_giftcardtable .remove-text {font-size:14px;}
+    .form-before {padding:0;transform:scale(0.68);-moz-transform:scale(0.68);-webkit-transform:scale(0.68);-o-transform:scale(0.68);
+        transform-origin:0 0;-moz-transform-origin:0 0;-webkit-transform-origin:0 0;-o-transform-origin:0 0;}
+
+    .page_club .cart, .page_club .points_checkout {width:580px;float:none;}
+    .cart .cart-collaterals {font-size:14px;}
+    button.button.btn-continue span {font-size:14px;}
+    #points_checkout_form .content {font-size:14px;}
+
 }
