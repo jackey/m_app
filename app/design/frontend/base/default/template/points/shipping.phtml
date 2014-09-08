@@ -180,16 +180,14 @@
 			}
 			
 		});
-	
-		
-		$('#points-address-select').change(function(){
-			if($(this).val() != ""){
-				$('#billing-new-address-form').hide();
-			}else{
-				$('#billing-new-address-form').show();
-			}
-		
-		});
+
+        $('#points-address-select').live('change',function(){
+            if($(this).val() != ""){
+                $('#billing-new-address-form').hide();
+            }else{
+                $('#billing-new-address-form').show();
+            }
+        });
 	
 	});
 	function PostAjax(elm, city, area)

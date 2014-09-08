@@ -45,7 +45,7 @@ address {font-style: normal;}
 /**/
 .club_member_form{width: 530px;margin: 100px auto}
 .club_member_form .validation-advice {display: none;}
-.club_member_sub{cursor:pointer;width: 308px;height: 48px;border:#000 solid 1px;color:#fff;background: #000;display: inline;margin: 30px auto;display: block;}
+.club_member_sub{font-size:18px;cursor:pointer;width: 131px;height: 35px;border:#000 solid 1px;color:#fff;background: #000;display: inline;margin: 30px auto;display: block;}
 .club_member_sub2 {margin:0;width:auto;padding:0;height:32px;background: none;border:none;border-bottom:2px solid #000;color:#000;}
 .club_member_sub:hover {opacity:0.8}
 .club_memberreg{width: 800px;margin: 30px auto 0 auto}
@@ -115,6 +115,9 @@ button.btn-checkout span {border:none;background:#000;color:#fff;height: auto;li
 button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .cart-table .btn-continue {border-bottom:2px solid #000;padding:0 0 5px 0;}
 .cart .cart-collaterals {padding:0;margin:0 0 0 23px;font-size:12px;}
+.add-to-cart button.button span span {width:201px;}
+
+.product-name h1 {font-size:24px;margin-top:20px;margin-bottom:40px;}
 /**/
 .club_giftcardtable .club_memtr1{padding-right: 180px}
 /**/
@@ -124,7 +127,7 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .club_meminfolist .club_meminfolist2{width: 300px}
 .club_meminfolist1 li{width: 420px;overflow: hidden;float: left;padding-bottom: 30px}
 .club_meminfolist2 li{width: 300px;overflow: hidden;float: left;padding-bottom: 30px}
-.club_meminfolist li span{float: left;width: 150px;}
+.club_meminfolist li span{float: left;width: 120px;}
 .club_meminfolist li strong{float: left;width: 198px;}
 .club_meminfolist li span.edit {width:auto;border-bottom:2px solid #000;font-weight: bold;}
 .club_meminfolist input {background:none;border:1px solid #000;padding:4px;}
@@ -188,6 +191,7 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .points-checkout-index .back-to-cart button.button span {padding:0;border:none;font-size:12px;}
 .content-wrapper.exchange-list {border:none;}
 .points-checkout-index .button-set {clear: both;}
+#billing-new-address-form {float:none;}
 .order-info-box dd {margin:0;}
 .express_addition select {border:1px solid #000;background:none;}
 #points_checkout_form .shipping-method .form-list #billing-new-address-form li {float:none;}
@@ -224,6 +228,9 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .club_getactivate .buttons-set p.required {display:none;text-align:left;}
 
 .product-image #wrap {display:block;width:480px;height:480px;min-height:0;overflow:hidden;}
+.cms-points h2 {font-size:24px;margin-bottom:40px;}
+.club_article_center h4 {font-size:24px;margin-top:30px;margin-bottom:20px;}
+.club_article_center p {margin:0;}
 /* Mobile Used
 ================================================================================================= */
 .dis_mobile { display: none }
@@ -302,6 +309,7 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
     .product-view .product-img-box {width:90%;margin:0 0 20px 5%;float:none;}
     .product-view .product-shop {float:none;width:auto;clear:both;padding:20px 0 0;margin-left:5%;}
     .product-intro {margin-left:5%;}
+    .product-intro p {margin:0;}
     .product-name h1 {font-size:24px;margin-bottom:40px;}
     .product-view .link-wishlist {font-size:20px;}
 

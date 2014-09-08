@@ -752,6 +752,10 @@ if ((typeof Range != "undefined") && !Range.prototype.createContextualFragment)
                 'width': '90%'
             }, 200, function(){
                 $('.page_club>div').animate({opacity:1});
+                dLeft.fadeOut();
+                dBottom.fadeOut();
+                dRight.fadeOut();
+                dTop.fadeOut();
             });
     });
 })(jQuery);
