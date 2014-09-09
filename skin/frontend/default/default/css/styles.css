@@ -655,13 +655,12 @@ padding-top:0;
 	border-bottom:1px solid;
 }
 .fieldset.step-2.disable .form-list label{
-	color: #aaa;
+
 }
 .fieldset.step-2.disable .form-list input.input-text,
 .fieldset.step-2.disable .form-list select
 {border-color: #aaa;}
 .fieldset.step-2.disable {
-    color: #aaa;
 }
 
 

@@ -25,6 +25,9 @@
  */
 ?>
 
+    <div class="club_tit ">
+        <h2><?php echo $this->__("Point<br />History")?></h2>
+    </div>
     <div class="club_ecoupon_center cs-clear">
         
         <?php echo $this->getChildHtml("lily_customer_nav");?>
@@ -39,8 +42,8 @@
                     <tr>
                         <th width="12%"><?php echo $this->__('Order Type') ?></th>
                         <th width="12%"><?php echo $this->__('Order Num') ?></th>
-                        <th width="12%"><?php echo $this->__('Order Date') ?></th>
                         <th><span class="nobr"><?php echo $this->__('Gift Of Order') ?></span></th>
+                        <th width="12%"><?php echo $this->__('Order Date') ?></th>
                         <th width="12%"><span class="nobr"><?php echo $this->__('Order Status') ?></span></th>
                         <th width="12%"><?php echo $this->__('Operation') ?></th>
                     </tr>
@@ -51,8 +54,8 @@
                     <tr>
                         <td><span class="title"><?php echo $this->__('Order Type') ?></span><?php echo $this->__('Exchange From Webstore'); ?></td>
                         <td><span class="title"><?php echo $this->__('Order Num') ?></span><?php echo $_order->getRealOrderId() ?></td>
-                        <td><span class="title"><?php echo $this->__('Order Date') ?></span><span class="nobr"><?php echo $this->formatDate($_order->getCreatedAtStoreDate()) ?></span></td>
                         <td class="product-imgs"><span class="title"><?php echo $this->__('Gift Of Order') ?></span><?php echo $this->getOrderItemsImg($_order); ?></td>
+                        <td><span class="title"><?php echo $this->__('Order Date') ?></span><span class="nobr"><?php echo $this->formatDate($_order->getCreatedAtStoreDate()) ?></span></td>
                         <td>
                             <span class="title"><?php echo $this->__('Order Status') ?></span>
                             <em>

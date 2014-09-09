@@ -67,13 +67,13 @@
                     <input type="hidden" name="error_url" value="<?php echo $this->getErrorUrl() ?>" />
 
                         <div class="club_memberreg_fi club_memberreg_fi_code cs-clear">
-                            <label><?php echo $this->__('Mobile') ?></label>
+                            <label><?php echo $this->__('Mobile') ?>: </label>
                             <input class="club_login_ipt required-entry" required-entry" name="telephone" id="telephone" value="<?php echo $this->escapeHtml($this->getFormData()->getTelephone()) ?>" title="<?php echo $this->__('Mobile') ?>"  />
                             <span class="club_memberreg_tips"><button type="button" title="<?php //echo $this->__('Get Code') ?><?php echo $this->__('Get a verifying code') ?>" class="club_member_sub club_member_sub2" id="get_code"><span><span><?php //echo $this->__('Get Code') ?><?php echo $this->__('Get a verifying code') ?></span></span></button></span>
                         </div>
 
                         <div class="club_memberreg_fi club_memberreg_fi_code cs-clear">
-                            <label><?php echo $this->__('Verifying code') ?></label>
+                            <label><?php echo $this->__('Verifying code') ?>: </label>
                             <input class="club_login_ipt required-entry" id="verify_code" name="verify_code"  title="<?php echo $this->__('Verifying code') ?>"   />
                             <span class="club_memberreg_tips"><button type="button" title="<?php echo $this->__('Verify Code') ?>" class="club_member_sub club_member_sub2" id="verfir"><span><span><?php echo $this->__('Verify Code') ?></span></span></button></span>
                         </div>
@@ -83,14 +83,14 @@
 
 
                         <div class="club_memberreg_fi cs-clear">
-                            <label><?php echo $this->__('Name') ?></label>
+                            <label><?php echo $this->__('Name') ?>: </label>
                             <input type="text" name="firstname" id="firstname" value="" title="<?php echo $this->__('Name') ?>" class="club_login_ipt required-entry" />
                             <span class="club_memberreg_tips"></span>
                         </div>
 
 
                     <div class="club_memberreg_fi cs-clear">
-                        <label><?php echo $this->__('Gender') ?></label>
+                        <label><?php echo $this->__('Gender') ?>: </label>
                         <input type="text" name="gender" id="gender" value="" title="<?php echo $this->__('Gender') ?>" class="club_login_ipt required-entry" />
 
                         <span class="club_memberreg_tips"></span>
@@ -98,43 +98,43 @@
 
 
                     <div class="club_memberreg_fi cs-clear">
-                            <label><?php echo $this->__('Birthday') ?></label>
+                            <label><?php echo $this->__('Birthday') ?>: </label>
                             <input type="text" name="dob" id="birth" value="" title="<?php echo $this->__('Birthday') ?>" class="club_login_ipt required-entry" />
                             <span class="club_memberreg_tips"><?php echo $this->__('e.g: 19850101')?></span>
                         </div>
 
 
                     <div class="club_memberreg_fi cs-clear">
-                        <label><?php echo $this->__('Email Address') ?></label>
+                        <label><?php echo $this->__('Email Address') ?>: </label>
                         <input type="text" name="email" id="email_address" value="<?php echo $this->escapeHtml($this->getFormData()->getEmail()) ?>" title="<?php echo $this->__('Email Address') ?>" class="club_login_ipt validate-email required-entry" />
                         <span class="club_memberreg_tips"><?php echo $this->__('e.g: ABC@QQ.COM')?></span>
                     </div>
 
 
-                    <div class="club_memberreg_fi cs-clear">
-                            <label><?php echo $this->__('Address') ?></label>
+                    <div class="club_memberreg_fi club_memberreg_fi_address cs-clear">
+                            <label><?php echo $this->__('Address') ?>: </label>
                             <input type="hidden" name="customer_address" id="customer_address" value="" title="<?php echo $this->__('Address') ?>" class="club_login_ipt required-entry" />
-                            <input type="text" name="province" class="club_login_ipt club_login_ipt_short required-entry" /> 省
+                            <input type="text" name="province" class="club_login_ipt  required-entry" /> 省
                             <input type="text" name="city" class="club_login_ipt club_login_ipt_short required-entry" /> 市
                             <input type="text" name="district" class="club_login_ipt club_login_ipt_short required-entry" /> 区
-                            <input type="text" name="extra" class="club_login_ipt club_login_ipt_address required-entry" />
+                            <input type="text" name="extra" class="club_login_ipt club_login_ipt_short required-entry" />
 
                         </div>
 
                         <div class="club_memberreg_fi cs-clear">
-                            <label><?php echo $this->__('ZIP/Post Code') ?></label>
+                            <label><?php echo $this->__('ZIP/Post Code') ?>: </label>
                             <input type="text" name="customer_zip" id="customer_zip" value="" title="<?php echo $this->__('ZIP/Post Code') ?>" class="club_login_ipt required-entry" />
                             <span class="club_memberreg_tips"></span>
                         </div>
 
                         <div class="club_memberreg_fi cs-clear">
-                            <label><?php echo $this->__('Password') ?></label>
+                            <label><?php echo $this->__('Password') ?>: </label>
                             <input type="password" name="password" id="password" title="<?php echo $this->__('Password') ?>" class="club_login_ipt required-entry validate-password" />
                             <span class="club_memberreg_tips club_memberreg_tips_password"><?php echo $this->__('Please enter password')?></span>
                         </div>
 
                         <div class="club_memberreg_fi cs-clear">
-                            <label><?php echo $this->__('Confirm Password') ?></label>
+                            <label><?php echo $this->__('Confirm Password') ?>: </label>
                             <input type="password" name="confirmation" id="confirmation" title="<?php echo $this->__('Confirm Password') ?>" class="club_login_ipt required-entry validate-cpassword" />
                             <span class="club_memberreg_tips"></span>
                         </div>
