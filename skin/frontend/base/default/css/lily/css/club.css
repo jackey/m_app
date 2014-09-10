@@ -14,6 +14,7 @@ address {font-style: normal;}
 .club_tit .small {font-size:40px;}
 .register_tit {padding:0;}
 .register_tit h2 {font-size:30px;}
+.language a {float:right;}
 .club_bottom_nav {text-align: center;margin-top:50px;}
 .club_bottom_nav li {display: inline-block;margin:0 10px;}
 .club_login{}
@@ -21,12 +22,12 @@ address {font-style: normal;}
 .club_login_tit_small {text-transform: none;}
 .club_login_txt{}
 .club_login_txt p{font-size: 24px;text-transform:uppercase;line-height: 50px}
-.club_login_regbtn{display: block;background: #000;color:#fff;width: 194px;height: 48px;line-height: 48px;margin:60px auto 20px;text-align: center;}
+.club_login_regbtn{display: block;background: #000;color:#fff;width: 194px;height: 48px;line-height: 48px;margin:72px auto 20px;text-align: center;}
 .club_login_regtxt{text-align: center;}
 .club_login_form{}
 .club_login_ipt{float: left;width: 150px;height: 25px;border:#000 solid 1px;padding:0 16px;display: inline;margin: 0 20px 0 0;font-size: 14px;color:#000;font-family:arial;background: #f3dedd}
 .club_login_sub{width: 130px;height: 48px;border:#000 solid 1px;color:#fff;background: #000!important;display: block;margin: 20px 0 0 120px;font-size: 14px;}
-.club_login_formlink{width: 148px;float: left;display: inline;margin: 10px 0 0 42px}
+.club_login_formlink{width: 205px;float: left;display: inline;margin: 10px 0 0 0}
 .club_login_wrap {width:1000px;margin:0 auto;}
 .club_login_title {font-size:24px;font-weight:bold;margin-bottom:15px;}
 .club_login_offline {margin:0 0 15px 0;}
@@ -110,6 +111,7 @@ address {font-style: normal;}
 .club_giftcardtable .wishlist-content {float:left;text-align:left;margin:0 0 0 10px;}
 .club_giftcardtable .remove-text {font-size:18px;text-decoration:none;}
 .club_giftcardtable .remove-text img {vertical-align: middle;}
+.club_giftcardtable#my-orders-table tfoot td {margin:0;padding:5px 0;}
 .club_giftcardcheckout{width: 152px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;float: right;margin: 80px 40px}
 .club_giftcardimg2{padding-right: 200px}
 .cart-table .btn-continue,.cart-table .btn-continue span {border:none;text-align:left;padding:0;}
@@ -194,7 +196,7 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .points-checkout-index .back-to-cart button.button span {padding:0;border:none;font-size:12px;}
 .content-wrapper.exchange-list {border:none;}
 .points-checkout-index .button-set {clear: both;}
-#billing-new-address-form {float:none;}
+#points_checkout_form .shipping-method .form-list li#billing-new-address-form {float:none;}
 .order-info-box dd {margin:0;}
 .express_addition select {border:1px solid #000;background:none;}
 #points_checkout_form .shipping-method .form-list #billing-new-address-form li {float:none;}

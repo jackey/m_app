@@ -41,9 +41,7 @@
     </thead>
     <tfoot>
         <?php //echo $this->getChildHtml('order_totals') ?>
-		<?php if($this->getShippingFee() != 0):?>
-		<tr><td colspan="4" class="last a-right">运费:<?php echo $this->getShippingFee(); ?>积分</td></tr>
-		<?php endif; ?>
+        <tr><td colspan="4" class="last a-right">运费:<?php echo $this->getShippingFee(); ?>积分</td></tr>
 		<tr><td colspan="4" class="last a-right">数量合计:<?php echo $this->getTotalQty(); ?> &nbsp;&nbsp;&nbsp;&nbsp;积分合计:<?php echo $this->getTotalPoints(); ?></td></tr>
     </tfoot>
 	<tbody>

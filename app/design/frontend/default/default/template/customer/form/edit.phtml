@@ -47,8 +47,8 @@
                         <li><span><?php echo $this->__("Zip/Post code")?></span><strong data-name="customerZip"><?php echo $this->htmlEscape($this->getCustomer()->getCustomerZip()) ?></strong><span class="edit"><?php echo $this->__("Edit")?></span></li>
                     </ul>
                     <ul class="club_meminfolist2">
-                        <li><span><?php echo $this->__("VIP Card")?></span><strong><?php echo $this->htmlEscape($this->getCustomer()->getVipCard()) ?></strong></li>
-                        <li><span><?php echo $this->__("VIP level")?></span><strong><?php echo $this->htmlEscape($this->getCustomer()->getVipLevel()) ?></strong></li>
+                        <li><span><?php echo $this->__("My Card")?></span><strong><?php echo $this->htmlEscape($this->getCustomer()->getVipCard()) ?></strong></li>
+                        <li><span><?php echo $this->__("Level")?></span><strong><?php echo $this->htmlEscape($this->getCustomer()->getVipLevel()) ?></strong></li>
                         <li><span><?php echo $this->__("Join date")?></span><strong>
                             <?php if ($this->getCustomer()->getCardValidity() <= 0) : ?>
                                 <?php echo $this->__("No Actived")?>

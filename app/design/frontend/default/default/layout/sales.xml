@@ -114,7 +114,7 @@ Customer account home dashboard layout
                         <block type="tax/sales_order_tax" name="tax" template="tax/order/tax.phtml" />
                     </block>
                 </block>
-                <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml">
+                <block type="core/template" name="lily_product_nav_block" as="lily_product_nav" template="page/html/lily_product_nav.phtml">
                     
                 </block>
             </block>
@@ -147,7 +147,7 @@ Customer account home dashboard layout
                         <block type="tax/sales_order_tax" name="tax" template="tax/order/tax.phtml" />
                     </block>
                 </block>
-                <block type="core/template" name="lily_customer_nav_block" as="lily_customer_nav" template="page/html/lily_customer_nav.phtml">
+                <block type="core/template" name="lily_product_nav_block" as="lily_product_nav" template="page/html/lily_product_nav.phtml">
                     
                 </block>
 
