@@ -116,9 +116,31 @@ class Mec_Points_Block_Shipping extends Mage_Core_Block_Template{
         }
         return '';
     }
-	
-	
-	
-	
+
+    // 返回购物车所需得所有积分和
+    public function getTotalPoints() {
+        $items = Mage::getSingleton('checkout/type_onepage')->getQuote()->getAllItems();
+        $total_qty = 0;
+        foreach($items as $item){
+            if($item->getParentItemId()){
+                continue;
+            }else{
+                $total_qty += $item->getQty();
+            }
+        }
+        
+        return $total_qty ;
+    }
+
+    public function canUseExpressShipping() {
+        $userTotalPoints = Mage::getSingleton('customer/session')->getCustomer()->getUsePoints();
+        $totalItemsPoints = $this->getTotalPoints();
+
+        // 运费积分需要 1500
+        if ($userTotalPoints < $totalItemsPoints + 1500) {
+            return FALSE;
+        }
+        return TRUE;
+    }
 	
 }	

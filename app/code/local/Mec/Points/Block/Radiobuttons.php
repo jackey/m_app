@@ -72,7 +72,7 @@ class Mec_Points_Block_Radiobuttons extends Mage_Core_Block_Html_Select {
             }
         }
 
-        return sprintf('<input type="radio" class="%s" id="%s" name="%s" value="%s"%s %s>%s</option>',
+        return sprintf('<div class="options"><input type="radio" class="%s" id="%s" name="%s" value="%s"%s %s /><span>%s</span></div>',
 			$this->getClass(),
 			$this->getId(),
         	$this->getName(),

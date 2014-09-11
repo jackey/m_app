@@ -12,14 +12,21 @@
 				<input type="radio" name="shipping_method" value="shop_mentioning" id="shop_mentioning" class="input-text" title="店铺自取，免运费<?php //echo $this->__('Shop Mentioning') ?>" />
 			</div>
 		</li>
-		<?php ?>
+		<?php if ($this->canUseExpressShipping()): ?>
 		<li>	
 			<div class="input-box">
-				<label for="express"><?php //echo $this->__('Express') ?>直接快递，运费需花1500积分</label>
+				<label for="express"><?php echo $this->__('Express with 1500 points') ?></label>
 				<input type="radio" name="shipping_method" value="express" id="express" class="input-text" title="<?php //echo $this->__('Express') ?>直接快递，运费需花1500积分" />
 			</div>
 		</li>
-		<?php  ?>
+		<?php else:?>
+		<li>
+			<div class="input-box">
+				<label for="express"><?php echo $this->__('Express with 1500 points') ?></label>
+				<span class="err"><?php echo $this->__("Sorry, Point limition")?></span>
+			</div>
+		</li>
+		<?php  endif;?>
 	</ul>
 
 	<div id="custom_address_con">
