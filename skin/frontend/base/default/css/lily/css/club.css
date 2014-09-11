@@ -196,7 +196,8 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .points-checkout-index .back-to-cart button.button span {padding:0;border:none;font-size:12px;}
 .content-wrapper.exchange-list {border:none;}
 .points-checkout-index .button-set {clear: both;}
-#points_checkout_form .shipping-method .form-list li#billing-new-address-form {float:none;}
+#points_checkout_form .shipping-method .form-list li#billing-new-address-form {float:none;clear:both;}
+#points_checkout_form .validation-advice {display:none;}
 .order-info-box dd {margin:0;}
 .express_addition select {border:1px solid #000;background:none;}
 #points_checkout_form .shipping-method .form-list #billing-new-address-form li {float:none;}

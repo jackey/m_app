@@ -2,43 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="900c1c39-134c-4714-b1f5-f4718f57967c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Adminhtml.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Adminhtml.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Adminhtml.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Adminhtml.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Adminhtml1128.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Adminhtml1128.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Adminhtml1128.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Adminhtml1128.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Catalog.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Catalog.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Catalog.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Catalog.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Catalog1128.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Catalog1128.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Catalog1128.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Catalog1128.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Core.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Core.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Core.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Core.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Customer.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Customer.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Customer.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Customer.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Customer1128.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Customer1128.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Customer1128.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN2014-1-2/Mage_Customer1128.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Page.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Page.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Page140110.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Page140110.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Sales.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Sales.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/items.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/items.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_product_nav.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_product_nav.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/layout/points.xml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/layout/points.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/layout/sales.xml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/layout/sales.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/default/default/css/styles.css" afterPath="$PROJECT_DIR$/skin/frontend/default/default/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/view.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/sales/order/view.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/sales/order/view.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410347318208" ignored="false" />
     <file path="/js.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410175229643" ignored="false" />
-    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410358637871" ignored="false" />
-    <file path="/a.dummy" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410359419400" ignored="false" />
+    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410405764286" ignored="false" />
+    <file path="/a.dummy" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410404379075" ignored="false" />
     <file path="/style.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409960947152" ignored="false" />
     <file path="/Mage_Cms.csv" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410359005562" ignored="false" />
     <file path="/view.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410353758509" ignored="false" />
@@ -148,82 +119,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="61" selection-start="3408" selection-end="3413" vertical-scroll-proportion="-9.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mage_Cms.csv" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="25" selection-start="2916" selection-end="2916" vertical-scroll-proportion="-9.259259">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mage_Page.csv" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Page.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="16" selection-start="5413" selection-end="5413" vertical-scroll-proportion="-5.037037">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mage_Sales.csv" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Sales.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="280" column="16" selection-start="8965" selection-end="8965" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mage_Page140110.csv" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Page140110.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="14" selection-start="5151" selection-end="5151" vertical-scroll-proportion="-5.037037">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/iphone/template/sales/order/history.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="34" selection-start="1345" selection-end="1345" vertical-scroll-proportion="-8.142858">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history.phtml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="26" selection-start="4609" selection-end="4609" vertical-scroll-proportion="0.5052083">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="orders.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/customer/orders.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="34" column="38" selection-start="1171" selection-end="1171" vertical-scroll-proportion="-6.928571">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="club.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="199" column="55" selection-start="12518" selection-end="12518" vertical-scroll-proportion="0.41609195">
               <folding />
             </state>
           </provider>
@@ -247,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Adminhtml.csv" />
         <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Core.csv" />
         <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Adminhtml1128.csv" />
         <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Catalog.csv" />
@@ -263,6 +170,7 @@
         <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Sales.csv" />
         <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Page140110.csv" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml" />
+        <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
       </list>
     </option>
   </component>
@@ -507,60 +415,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locale" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locale" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zh_CN" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -690,43 +544,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Customer1128.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="284" column="0" selection-start="9171" selection-end="9171" vertical-scroll-proportion="0.33246753">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Customer.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="284" column="0" selection-start="9170" selection-end="9170" vertical-scroll-proportion="0.33246753">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Core.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="10" selection-start="8172" selection-end="8172" vertical-scroll-proportion="0.3137255">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Adminhtml.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="748" column="10" selection-start="26329" selection-end="26329" vertical-scroll-proportion="0.31494254">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Adminhtml1128.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state line="748" column="0" selection-start="26319" selection-end="26319" vertical-scroll-proportion="0.31494254">
@@ -761,19 +578,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/sales/order/history.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="25" selection-start="2916" selection-end="2916" vertical-scroll-proportion="-9.259259">
+        <state line="87" column="51" selection-start="4371" selection-end="4371" vertical-scroll-proportion="3.1666667">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Page.csv">
+    <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Page140110.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="16" selection-start="5413" selection-end="5413" vertical-scroll-proportion="-5.037037">
+        <state line="130" column="14" selection-start="5151" selection-end="5151" vertical-scroll-proportion="0.35324675">
           <folding />
         </state>
       </provider>
@@ -783,7 +597,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Sales.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="280" column="16" selection-start="8965" selection-end="8965" vertical-scroll-proportion="0.0">
+        <state line="280" column="16" selection-start="8965" selection-end="8965" vertical-scroll-proportion="0.35194173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Page.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="16" selection-start="5413" selection-end="5413" vertical-scroll-proportion="0.35324675">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="22" selection-start="2968" selection-end="2968" vertical-scroll-proportion="0.23376623">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/iphone/template/sales/order/history.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="34" selection-start="1345" selection-end="1345" vertical-scroll-proportion="0.5601966">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="32" selection-start="3792" selection-end="3792" vertical-scroll-proportion="0.49140048">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/wishlist/view.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="18" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.19656019">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/wishlist/view.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="26" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.52334154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/iphone/template/wishlist/view.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="46" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.42997542">
           <folding />
         </state>
       </provider>
@@ -795,33 +664,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/iphone/template/sales/order/history.phtml">
+    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="34" selection-start="1345" selection-end="1345" vertical-scroll-proportion="-8.142858">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/sales/order/history.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="51" selection-start="4371" selection-end="4371" vertical-scroll-proportion="3.1666667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Page140110.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="14" selection-start="5151" selection-end="5151" vertical-scroll-proportion="-5.037037">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="26" selection-start="4609" selection-end="4609" vertical-scroll-proportion="0.5052083">
+        <state line="199" column="55" selection-start="12518" selection-end="12518" vertical-scroll-proportion="0.41609195">
           <folding />
         </state>
       </provider>
