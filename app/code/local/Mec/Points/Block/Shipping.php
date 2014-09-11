@@ -102,7 +102,7 @@ class Mec_Points_Block_Shipping extends Mage_Core_Block_Template{
                 }
             }
 
-            $select = $this->getLayout()->createBlock('core/html_select')
+            $select = $this->getLayout()->createBlock('points/radiobuttons')
                 ->setName($type.'_address_id')
                 ->setId($type.'-address-select')
                 ->setClass('address-select')

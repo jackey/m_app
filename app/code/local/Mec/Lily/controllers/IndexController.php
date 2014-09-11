@@ -90,6 +90,8 @@ class Mec_Lily_IndexController extends Mage_Core_Controller_Front_Action{
 				$response['success'] = true;
 			}
 		}
+
+		//$response["code"] = $verify_code;
 		
 		$this->getResponse()->setBody(Zend_Json::encode($response));
 	}
