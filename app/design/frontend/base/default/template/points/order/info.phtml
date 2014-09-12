@@ -37,7 +37,6 @@
 		<?php endif; ?>
 	</span>
 	
-	
 	<button type="button" id="query_status"  class="button"><span><span><?php echo $this->__('Query Status');?></span></span></button>
 	</h2>
 </div>
@@ -103,10 +102,11 @@ jQuery(document).ready(function($){
 			success:function(data) {    
 				if(data.status != ""){
 					// $('#query_status').append(data.status);
+					$('#status_result').html(data.status);
 					if(typeof data.ship_note != "undefined"){
-						$('#status_result').html(data.status + '&nbsp;<?php echo $this->__('快递信息：'); ?>&nbsp' + data.ship_note);
+						//$('#status_result').html(data.status + '&nbsp;<?php echo $this->__('快递信息：'); ?>&nbsp' + data.ship_note);
 					}else{
-						$('#status_result').html(data.status + '&nbsp;<?php echo $this->__('快递信息：'); ?>' + " &nbsp; " + "无") ;
+						//$('#status_result').html(data.status + '&nbsp;<?php echo $this->__('快递信息：'); ?>' + " &nbsp; " + "无") ;
 					}
 				}
 			},
