@@ -80,11 +80,11 @@
                 <div class="club_meminpw">
                     <p><?php echo $this->__("Change password")?></p>
                     <div class="club_meminpwform">
-                        <form action="<?php echo $this->getUrl('customer/account/editPost') ?>" method="post" id="form-validate">
+                        <form action="<?php echo $this->getUrl('customer/account/editPost') ?>" method="post" class="customer-password-form" id="form-validate">
                             <div class="cs-clear">
-                                <input type="password" name="current_password" id="current_password"  placeholder="<?php echo $this->__("Current password*")?>" />
-                                <input type="password" name="password" id="password" placeholder="<?php echo $this->__("New password*")?>" />
-                                <input type="password" name="confirmation" id="confirmation"  placeholder="<?php echo $this->__("Confirm new password*")?>" />
+                                <input type="password" class="required-entry" name="current_password" id="current_password"  placeholder="<?php echo $this->__("Current password*")?>" />
+                                <input type="password" class="required-entry" name="password" id="password" placeholder="<?php echo $this->__("New password*")?>" />
+                                <input type="password" class="required-entry" name="confirmation" id="confirmation"  placeholder="<?php echo $this->__("Confirm new password*")?>" />
                             </div>
                             <input type="submit" value="<?php echo $this->__("Save")?>" class="club_meminpwsub" />
                         </form>
