@@ -236,7 +236,6 @@ class Mec_Lily_Customer_AccountController extends Mage_Customer_AccountControlle
 	
 	  public function editPostAction()
     {
-		
         if (!$this->_validateFormKey()) {
             return $this->_redirect('*/*/edit');
         }
@@ -254,7 +253,7 @@ class Mec_Lily_Customer_AccountController extends Mage_Customer_AccountControlle
 			$_post = $this->getRequest()->getPost();
 			$firstname = $this->getRequest()->getPost('firstname');
 			$_post['lastname'] = $firstname;
-			$this->getRequest()->setPost($_post); 
+			$this->getRequest()->setPost($_post);
 			
 			
             $customerData = $customerForm->extractData($this->getRequest());
@@ -302,7 +301,7 @@ class Mec_Lily_Customer_AccountController extends Mage_Customer_AccountControlle
                     $errors = array_merge($errors, $customerErrors);
                 }
             }
-
+            
             if (!empty($errors)) {
                 $this->_getSession()->setCustomerFormData($this->getRequest()->getPost());
                 foreach ($errors as $message) {
