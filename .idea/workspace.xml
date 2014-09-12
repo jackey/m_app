@@ -10,7 +10,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410415471188" ignored="false" />
     <file path="/js.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410175229643" ignored="false" />
-    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410418469130" ignored="false" />
+    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410494634562" ignored="false" />
     <file path="/a.dummy" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410404379075" ignored="false" />
     <file path="/style.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410494031064" ignored="false" />
     <file path="/Mage_Cms.csv" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410359005562" ignored="false" />
@@ -131,10 +131,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="club.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="club.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
+            <state line="28" column="31" selection-start="1311" selection-end="1311" vertical-scroll-proportion="0.34080717">
               <folding />
             </state>
           </provider>
@@ -143,7 +143,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="410" column="42" selection-start="23190" selection-end="23190" vertical-scroll-proportion="0.0">
+            <state line="88" column="27" selection-start="4257" selection-end="4257" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -158,10 +158,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="js.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/varien/js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="749" column="6" selection-start="38702" selection-end="39013" vertical-scroll-proportion="0.6591928">
+            <state line="749" column="6" selection-start="38702" selection-end="39013" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -200,9 +200,9 @@
         <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Sales.csv" />
         <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Page140110.csv" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/points/order/history.phtml" />
-        <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
-        <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css" />
         <option value="$PROJECT_DIR$/js/varien/js.js" />
+        <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css" />
+        <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
       </list>
     </option>
   </component>
@@ -708,26 +708,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/varien/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="749" column="6" selection-start="38702" selection-end="39013" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="410" column="42" selection-start="23190" selection-end="23190" vertical-scroll-proportion="0.0">
+        <state line="88" column="27" selection-start="4257" selection-end="4257" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
+        <state line="28" column="31" selection-start="1311" selection-end="1311" vertical-scroll-proportion="0.34080717">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/varien/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="749" column="6" selection-start="38702" selection-end="39013" vertical-scroll-proportion="0.6591928">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

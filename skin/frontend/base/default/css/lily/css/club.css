@@ -26,7 +26,7 @@ address {font-style: normal;}
 .club_login_regtxt{text-align: center;}
 .club_login_form{}
 .club_login_ipt{float: left;width: 150px;height: 25px;border:#000 solid 1px;padding:0 16px;display: inline;margin: 0 20px 0 0;font-size: 14px;color:#000;font-family:arial;background: #f3dedd}
-.club_login_sub{width: 130px;height: 48px;border:#000 solid 1px;color:#fff;background: #000!important;display: block;margin: 20px 0 0 120px;font-size: 14px;}
+.club_login_sub{cursor:pointer;width: 130px;height: 48px;border:#000 solid 1px;color:#fff;background: #000!important;display: block;margin: 20px 0 0 120px;font-size: 14px;}
 .club_login_formlink{width: 205px;float: left;display: inline;margin: 10px 0 0 0}
 .club_login_wrap {width:1000px;margin:0 auto;}
 .club_login_title {font-size:24px;font-weight:bold;margin-bottom:15px;}
