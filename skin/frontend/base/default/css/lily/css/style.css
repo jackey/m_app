@@ -404,11 +404,11 @@ body.club,body.club .page{background-color:#fff1f4;}
 .loading.top,
 .loading.bottom{height:10px;max-width:90%;}
 .loading.left,
-.loading.right{width:10px;}
+.loading.right{width:10px;height:0;}
 .loading.top{top:100px;left:5%;}
 .loading.bottom{right:5%;bottom:70px;}
 .loading.right{right:5%;top:100px;}
-.loading.left{bottom:70px;left:5%;top:100px;}
+.loading.left{bottom:70px;left:5%;top:auto;}
 /* map */
 #map{width:100%;}
 .index #map{height:410px;}
