@@ -16,14 +16,13 @@
 		<li>	
 			<div class="input-box">
 				<label for="express"><?php echo $this->__('Express with 1500 points') ?></label>
-				<input type="radio" name="shipping_method" value="express" id="express" class="input-text" title="<?php //echo $this->__('Express') ?>直接快递，运费需花1500积分" />
+				<input type="radio" name="shipping_method" value="express" id="express" class="input-text" title="<?php echo $this->__('Express with 1500 points') ?>" />
 			</div>
 		</li>
 		<?php else:?>
 		<li>
 			<div class="input-box">
-				<label for="express"><?php echo $this->__('Express with 1500 points') ?></label>
-				<span class="err"><?php echo $this->__("Sorry, Point limition")?></span>
+				<label for="express"><?php echo $this->__('Express with 1500 points') ?>(<?php echo $this->__("Not enough points")?>)</label>
 			</div>
 		</li>
 		<?php  endif;?>
@@ -99,9 +98,6 @@
 								</select>
 								<select name="ship_city" id="ship_city" class="required-entry">
 									<option value=""><?php echo $this->__('Please Select City'); ?></option>
-								</select>
-								<select name="ship_area" id="ship_area" class="required-entry">
-									<option value=""><?php echo $this->__('Please Select Area'); ?></option>
 								</select>
 								<textarea name="ship_address" class="required-entry" rows="6" cols="5"></textarea>
 								

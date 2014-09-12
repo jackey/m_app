@@ -44,21 +44,23 @@ class Mec_Lily_Model_Observer{
 			$sercert = md5($erp_user.$time.md5($erp_password));
 			$post_data = "sip_appkey={$erp_user}&sip_timestamp={$time}&sip_sign={$sercert}";
 			
-			$query_params = array(
-				'id' => 1,
-				'command' => 'ObjectModify',
-				'params' => array(
-					'table' => 'C_VIP',
-					'partial_update' => true,
-					'ak' => "{$lily_vip_card}",
-					'VIPNAME' => "{$customer_name}",
-					'POST' => "{$customer_zip}",
-					'ADDRESS' => "{$customer_address}",
-					'MOBIL' => "{$customer_telephone}",
-					'EMAIL' => "{$customer_email}",
-					'BIRTHDAY' => "{$customer_birth}",
-					'SEX' => "{$customer_gender}",
-				)
+			$query_points = array(
+					'id' => 1,
+					'command' => 'ObjectModify',
+					'params' => array(
+						'table' => 'FA_VIPACC',
+						'columns' => array(
+									'AMOUNT',
+									'INTEGRAL',
+										),
+						'params' => array(
+									"column"=>"C_VIP_ID",
+									"condition" => "{$id}",
+						
+									),
+									
+						'range' => 10000,
+					),
 			);
 			
 			$query_params = json_encode($query_params);
@@ -82,12 +84,8 @@ class Mec_Lily_Model_Observer{
 					$customer->save();
 				}
 			}
-			
 		}
-		
-	}	
-
-	
+	}
 	
 	public function addMassaction($observer)
 	{

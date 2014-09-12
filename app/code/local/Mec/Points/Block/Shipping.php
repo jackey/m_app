@@ -117,19 +117,21 @@ class Mec_Points_Block_Shipping extends Mage_Core_Block_Template{
         return '';
     }
 
-    // 返回购物车所需得所有积分和
+    // 返回购物车所需得所有积分总和
     public function getTotalPoints() {
         $items = Mage::getSingleton('checkout/type_onepage')->getQuote()->getAllItems();
-        $total_qty = 0;
-        foreach($items as $item){
+        $total_points = 0;
+        $custmer_for_catalog_code = Mage::helper('points')->CustomerTypeCode(Mage::getSingleton('customer/session')->getCustomer()->getVipLevel());
+        foreach($items as $item) {
             if($item->getParentItemId()){
                 continue;
-            }else{
-                $total_qty += $item->getQty();
+            }else {
+                $_product = Mage::getModel('catalog/product')->loadByAttribute('sku', $item->getSku());
+                $total_points += $_product->getData($custmer_for_catalog_code) * $item->getQty();
             }
         }
         
-        return $total_qty ;
+        return $total_points;
     }
 
     public function canUseExpressShipping() {

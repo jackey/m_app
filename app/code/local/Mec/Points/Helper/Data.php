@@ -355,11 +355,47 @@ class Mec_Points_Helper_Data extends Mage_Core_Helper_Abstract
 		 }
 		
 		return $flag;
-	
-	
+	}
+
+	public function getModel() {
+		$resource = Mage::getSingleton('core/resource');
+		$readConnection = $resource->getConnection('core_read');
+		return $readConnection;
 	}
 	
-	
+	public function getProvinces(){
+		$table = "lily_points_province";
+		$province_query = "SELECT * FROM {$table}";
+		$_province = $this->getModel()->fetchAll($province_query);
+		
+		return $_province;
+	}
+
+	public function getCitys() {
+		$city_query = "SELECT * FROM `lily_points_city` ";
+		$citys = $this->getModel()->fetchAll($city_query);
+		
+		return $citys;
+	}
+
+	public function getProvinceName($province_id) {
+		$provinces = $this->getProvinces();
+
+		foreach ($provinces as $province) {
+			if ($province_id == $province["province_id"]) {
+				return $province["province"];
+			}
+		}
+	}
+
+	public function getCityName($city_id) {
+		$citys = $this->getCitys();
+		foreach ($citys as $city) {
+			if ($city_id == $city["id"]) {
+				return $city["city"];
+			}
+		}
+	}
 	
 }
 	 

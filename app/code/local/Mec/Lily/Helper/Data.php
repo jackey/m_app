@@ -29,7 +29,7 @@ class Mec_Lily_Helper_Data extends Mage_Core_Helper_Abstract
 		 );
 
 		 return $header;
-	} 
+	}
 	
 	
 	
@@ -124,20 +124,92 @@ class Mec_Lily_Helper_Data extends Mage_Core_Helper_Abstract
 					'range' => 10000,
 				),
 
-			);
+		);
 			
 			
-			$query_points = json_encode($query_points);
-			$post_data .= "&transactions=[{$query_points}]"; 
-			
-			$header_p = $this->FormatHeader($post_url, $post_data);
-			$result = Mage::helper('lily')->PostDataToErp($erp_url, $post_data, $header_p);
-			
-			
-			return $result;
-	
+		$query_points = json_encode($query_points);
+		$post_data .= "&transactions=[{$query_points}]"; 
+		
+		$header_p = $this->FormatHeader($post_url, $post_data);
+		$result = Mage::helper('lily')->PostDataToErp($erp_url, $post_data, $header_p);
+		
+		
+		return $result;
 	}
 	
+	// 发货减去1500 积分
+	public function cutPointsWhenExpressShipping($lily_vip_card, $num = -1500) {
+		// 第一步 查询 ERP 里面的 VIP 卡号
+		$v_id = "";
+		$id_result = Mage::helper('lily')->QueryIdByVipCard($lily_vip_card);
+		if($id_result != "") {
+			$id_result = json_decode($id_result);
+
+			
+			if($id_result[0]->code == 0) {
+				$v_id = $id_result[0]->rows;
+				$v_id = $v_id[0][0];
+			}
+		}
+		if (!$v_id) {
+			return FALSE;
+		}
+
+		// 开始生成一个 ERP 查询
+		$erp_user = $this->erpUser();
+		$erp_password = $this->erpPassword();
+		$erp_url = $this->erpUrl();
+		
+		$post_url = Mage::getBaseUrl();
+		date_default_timezone_set('Asia/Shanghai');
+		$time = date('Y-m-d H:i:s').'.000';
+		$sercert = md5($erp_user.$time.md5($erp_password));
+		$post_data = "sip_appkey={$erp_user}&sip_timestamp={$time}&sip_sign={$sercert}";
+
+		//
+		// 第二种方法
+
+		$date = date("Ymd");
+		$params = array(
+			"submit" => "true",
+			"masterobj" => array(
+				"table" => "C_VIPINTEGRALADJ",
+				"ID" => "-1",
+				"BILLDATE" => "{$date}",
+				"ADJTYPE" => "3"
+			),
+			"detailobjs" => array(
+				"tables" => array("C_VIPINTEGRALADJITEM"),
+				"refobjs" => array(
+					array(
+						"table" => "C_VIPINTEGRALADJITEM",
+						"addList" => array(
+							array(
+									"C_VIP_ID__CARDNO" => "{$lily_vip_card}",
+									"INTEGRALADJ" => "$num",
+									"DESCRIPTION" => "物流发货积分扣除",
+								)
+						)
+					)
+				),
+			),
+		);
+
+		Mage::log(json_encode($params));
+
+		$query_params = array(
+			"id" => 1,
+			"command" => "ProcessOrder",
+			"params" => $params,
+		);
+		$query_params = json_encode($query_params);
+		$post_data .= "&transactions=[{$query_params}]"; 
+		Mage::log($post_data);
+		
+		$header_p = $this->FormatHeader($post_url, $post_data);
+		$result = Mage::helper('lily')->PostDataToErp($erp_url, $post_data, $header_p);
+		
+	}
 	
 	public function QueryEcouponById($v_id)
 	{
@@ -206,7 +278,6 @@ class Mec_Lily_Helper_Data extends Mage_Core_Helper_Abstract
 		$sercert = md5($erp_user.$time.md5($erp_password));
 		$post_data = "sip_appkey={$erp_user}&sip_timestamp={$time}&sip_sign={$sercert}";
 		
-		
 		$query_points = array(
 			'id' => 1,
 			'command' => 'Query',
@@ -231,15 +302,13 @@ class Mec_Lily_Helper_Data extends Mage_Core_Helper_Abstract
 				),
 			),
 		);
-		
-		
+
 		$query_points = json_encode($query_points);
-		$post_data .= "&transactions=[{$query_points}]"; 
+		$post_data .= "&transactions=[{$query_points}]";
 		
 		$header = $this->FormatHeader($post_url, $post_data);
 		$result = Mage::helper('lily')->PostDataToErp($erp_url, $post_data, $header);
-		
-		Mage::log($result);
+
 		return $result;
 	
 	}
