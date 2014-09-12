@@ -4081,4 +4081,8 @@ span.big{font-size:25px;font-weight:bold;}
 
 #edit-container .input-box select#gender {
     width: 100%;
+    background-color: #f3dedd;
+    border: none;
+    border-radius: 0px;
+    outline: none;
 }
