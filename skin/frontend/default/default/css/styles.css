@@ -114,7 +114,7 @@ select.multiselect option:last-child { border-bottom:0; }
 textarea { overflow:auto; }
 input.radio { margin-right:3px; }
 input.checkbox { margin-right:3px; }
-input.qty { width:2.5em !important; }
+input.qty { width:21px !important; }
 button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
 button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
 button.button { overflow:visible; width:auto; border:0; padding:0; margin:0; background:transparent; cursor:pointer; }
@@ -297,7 +297,7 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 .error-msg,
 .success-msg,
 .note-msg,
-.notice-msg { border-style:solid !important; border-width:1px !important; background-position:10px 9px !important; background-repeat:no-repeat !important; min-height:24px !important; padding:8px 8px 8px 32px !important; font-size:11px !important; font-weight:bold !important; }
+.notice-msg { border-style:solid !important; border-width:1px !important; background-position:10px 9px !important; background-repeat:no-repeat !important; min-height:24px !important; padding:8px 8px 8px 32px !important; font-size:12px !important; font-weight:bold !important; }
 .error-msg { background:none; color:#000 }
 .success-msg { border-color:#000;color:#000; }
 .note-msg,
@@ -1673,12 +1673,12 @@ color:#fff;
 
 /* Add to Cart */
 .add-to-cart label { float:left; font-size:17px;margin-right:0; font-weight:bold; width:100px}
-.add-to-cart .qty { background:none;float:left; margin:5px; border:none;box-shadow:none; }
+.add-to-cart .qty {font-size:15px; background:none;float:left; margin:5px; border:none;box-shadow:none; }
 .qty-wrapper{    border: 1px solid;width:80px;
     float: left;}
 .qty-wrapper span{ display: block;
     float: right;cursor:pointer;
-    margin: 3px 4px;}
+    padding: 6px 4px;font-size:18px;}
 .add-to-cart button.button {margin-top:20px;height: 48px;background: #000;color:#fff;text-align: center;display: block;cursor: pointer;font-size: 14px}
 .add-to-cart button.button span {color:#fff;}
 .button.btn-cart {background:#000;color:#fff;padding:10px;border:none;margin-right:10px;}
@@ -1963,7 +1963,7 @@ color:#fff;
 
 .ponts_checkout_fail,
 .ponts_checkout_sucessed
-{min-height:300px; text-align:center; font-size:21px; margin:40px auto; }
+{min-height:200px; text-align:center; font-size:21px; margin:40px auto; }
 
 .points-checkout-psucceed .step4,
 .points-checkout-psuccess .step4,
@@ -2107,7 +2107,7 @@ color:#fff;
     margin-left: -70px;
     position: absolute;
     top: 0;
-    width: 140px;}
+    width: 140px;font-size:12px;}
 .please-wait img { vertical-align:middle; }
 .cvv-what-is-this { font-size:11px; cursor:help; margin-left:10px; }
 
@@ -2376,7 +2376,8 @@ body.customer-account-index{background:#CBF3DF}
     width: 900px;
 }
 /* General Box */
-.box-account {margin-top:40px; }
+.box-account {margin-top:0px; }
+.box-account a {border-bottom:2px solid #000;}
 .box-account .box-title {margin-top:20px;}
 .box-account .box-content {margin-top:20px;}
 .block-account .block-content li {

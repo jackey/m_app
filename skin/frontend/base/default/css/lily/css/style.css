@@ -86,7 +86,7 @@ a:hover {opacity:0.8;}
 /* PAGE Used
 ================================================================================================= */
 .page {position: relative;z-index:2;padding-top:120px;}
-.wrap {margin-bottom: 496px;}
+.wrap {margin-bottom: 542px;}
 .ipad .page {margin-bottom:50px;}
 .page_event{padding:170px 0}
 .page_contact{background:url('../images/contact_bg.jpg') no-repeat center top;padding:290px 0}
