@@ -4087,3 +4087,7 @@ span.big{font-size:25px;font-weight:bold;}
     border-radius: 0px;
     outline: none;
 }
+
+.pager .jspages {
+    margin: 0 auto;
+}
