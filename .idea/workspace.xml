@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="900c1c39-134c-4714-b1f5-f4718f57967c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -134,7 +132,7 @@
       <file leaf-file-name="club.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="31" selection-start="1311" selection-end="1311" vertical-scroll-proportion="0.34080717">
+            <state line="8" column="0" selection-start="347" selection-end="347" vertical-scroll-proportion="0.22720478">
               <folding />
             </state>
           </provider>
@@ -618,11 +616,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/sales/order/history.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="51" selection-start="4371" selection-end="4371" vertical-scroll-proportion="3.1666667" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Page140110.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state line="130" column="14" selection-start="5151" selection-end="5151" vertical-scroll-proportion="0.35324675">
@@ -724,9 +717,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../lemans_p1/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="1096" selection-end="1361" vertical-scroll-proportion="0.59641254">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="31" selection-start="1311" selection-end="1311" vertical-scroll-proportion="0.34080717">
+        <state line="8" column="0" selection-start="347" selection-end="347" vertical-scroll-proportion="0.22720478">
           <folding />
         </state>
       </provider>
