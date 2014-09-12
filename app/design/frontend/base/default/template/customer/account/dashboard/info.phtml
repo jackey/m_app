@@ -33,7 +33,7 @@
             </div>
             <div class="box-content">
                 <p>
-                    <?php echo $this->htmlEscape($this->getCustomer()->getName()) ?><br />
+                    <?php echo $this->htmlEscape($this->getCustomer()->getFirstname()) ?><br />
                     <?php echo $this->htmlEscape($this->getCustomer()->getEmail()) ?><br />
                     <a href="<?php echo $this->getChangePasswordUrl() ?>"><?php echo $this->__('Change Password') ?></a>
                 </p>
