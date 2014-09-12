@@ -4073,3 +4073,8 @@ span.big{font-size:25px;font-weight:bold;}
 }
 
 .customer-password-form .validation-advice {display:none;}
+
+#edit-container .input-box {
+    float: left;
+    width: 47%;
+}
