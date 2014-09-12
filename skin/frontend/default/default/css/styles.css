@@ -4076,5 +4076,9 @@ span.big{font-size:25px;font-weight:bold;}
 
 #edit-container .input-box {
     float: left;
-    width: 47%;
+    width: 145px;
+}
+
+#edit-container .input-box select#gender {
+    width: 100%;
 }
