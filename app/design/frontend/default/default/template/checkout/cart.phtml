@@ -88,7 +88,7 @@
                     <tr>
                         <td colspan="50" class="a-right">
                             <?php if ($this->checkedInOneMonth() ): ?>
-                                <button type="button" title="<?php echo $this->__('Continue Exchange') ?>" class="button btn-continue" onclick="javascript:void(0)"><span><span style="coloe:#eee"><?php echo $this->__('Continue Exchange') ?></span></span></button>
+                                <a href="<?php echo $this->getUrl("giftproducts.html")?>" title="<?php echo $this->__('Continue Exchange') ?>" class="button btn-continue"><?php echo $this->__('Continue Exchange') ?></a>
                             <?php else: ?>
                                 <?php if($this->getContinueShoppingUrl()): ?>
                                     <button type="button" title="<?php echo $this->__('Continue Exchange') ?>" class="button btn-continue" onclick="setLocation('<?php echo $this->getContinueShoppingUrl() ?>')"><span><span><?php echo $this->__('Continue Exchange') ?></span></span></button>

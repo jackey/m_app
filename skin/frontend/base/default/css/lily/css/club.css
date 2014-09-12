@@ -121,7 +121,6 @@ address {font-style: normal;}
 button.btn-checkout {border:none;float:right;}
 button.btn-checkout span {border:none;background:#000;color:#fff;height: auto;line-height: auto;}
 button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
-.cart-table .btn-continue {border-bottom:2px solid #000;padding:0 0 5px 0;}
 .cart .cart-collaterals {padding:0;margin:0 0 0 23px;font-size:12px;}
 .add-to-cart button.button span span {width:201px;}
 
@@ -137,9 +136,9 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .club_meminfolist2 li{width: 300px;overflow: hidden;float: left;padding-bottom: 30px}
 .club_meminfolist li span{float: left;width: 120px;}
 .club_meminfolist li strong{float: left;width: 198px;word-break:break-all;word-wrap:break-word;}
-.club_meminfolist li span.edit {width:auto;border-bottom:2px solid #000;font-weight: bold;}
+.club_meminfolist li span.edit {cursor:pointer;width:auto;border-bottom:2px solid #000;font-weight: bold;}
 .club_meminfolist input {background:none;border:1px solid #000;padding:4px;}
-.club_meminfolist button {background:#000;color:#fff;border:none;padding:4px;}
+.club_meminfolist button {cursor:pointer;background:#000;color:#fff;border:none;padding:4px;}
 .club_meminfolist2 li strong{float: left;width: 130px;}
 .club_meminpw{padding:20px 0 0 30px;}
 .club_meminpwform{margin: 30px 0;}
@@ -245,6 +244,8 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .club_article_center h4 {font-size:24px;margin-top:30px;margin-bottom:20px;}
 .club_article_center p {margin:0;}
 .jiathis_style .jtico {background:none!important;}
+.attributes_choose ul li{cursor: pointer;}
+.attributes_choose ul li img {display: block;}
 /* Mobile Used
 ================================================================================================= */
 .dis_mobile { display: none }

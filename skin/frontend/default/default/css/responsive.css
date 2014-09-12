@@ -81,12 +81,7 @@
 }
 	.iosSlider{height:670px !important}
 	#video video{height:auto;}
-	#video video,
-	.header-container,
-	.header,
-	.main,
-	.footer{width:960px;}
-	.footer{overflow:hidden;}
+
 	#kv{height:670px;}
 	#timeline{overflow:hidden;}
 	.window {
