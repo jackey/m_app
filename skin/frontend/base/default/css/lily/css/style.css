@@ -86,7 +86,7 @@ a:hover {opacity:0.8;}
 /* PAGE Used
 ================================================================================================= */
 .page {position: relative;z-index:2;padding-top:120px;}
-.wrap {margin-bottom: 542px;}
+.wrap {margin-bottom: 496px;}
 .ipad .page {margin-bottom:50px;}
 .page_event{padding:170px 0}
 .page_contact{background:url('../images/contact_bg.jpg') no-repeat center top;padding:290px 0}
@@ -404,11 +404,11 @@ body.club,body.club .page{background-color:#fff1f4;}
 .loading.top,
 .loading.bottom{height:10px;max-width:90%;}
 .loading.left,
-.loading.right{width:10px;}
+.loading.right{width:10px;height:0;}
 .loading.top{top:100px;left:5%;}
 .loading.bottom{right:5%;bottom:70px;}
 .loading.right{right:5%;top:100px;}
-.loading.left{bottom:70px;left:5%;top:100px;}
+.loading.left{bottom:70px;left:5%;top:auto;}
 /* map */
 #map{width:100%;}
 .index #map{height:410px;}

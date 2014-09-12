@@ -4,6 +4,9 @@
 
 /**/
 * {max-height: 5000em;}
+* {outline: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+textarea,input {-webkit-user-select: text;-khtml-user-select: text;-moz-user-select: text;-ms-user-select: text;user-select: text;}
+
 address {font-style: normal;}
 .club{background: #f3dedd;}
 .page_club{padding: 120px 0 50px 0;background: #f3dedd;font-size:14px;}
@@ -26,7 +29,7 @@ address {font-style: normal;}
 .club_login_regtxt{text-align: center;}
 .club_login_form{}
 .club_login_ipt{float: left;width: 150px;height: 25px;border:#000 solid 1px;padding:0 16px;display: inline;margin: 0 20px 0 0;font-size: 14px;color:#000;font-family:arial;background: #f3dedd}
-.club_login_sub{width: 130px;height: 48px;border:#000 solid 1px;color:#fff;background: #000!important;display: block;margin: 20px 0 0 120px;font-size: 14px;}
+.club_login_sub{cursor:pointer;width: 130px;height: 48px;border:#000 solid 1px;color:#fff;background: #000!important;display: block;margin: 20px 0 0 120px;font-size: 14px;}
 .club_login_formlink{width: 205px;float: left;display: inline;margin: 10px 0 0 0}
 .club_login_wrap {width:1000px;margin:0 auto;}
 .club_login_title {font-size:24px;font-weight:bold;margin-bottom:15px;}
@@ -204,6 +207,10 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 #points_checkout_form .shipping-method .form-list #billing-new-address-form li label {float:left;width:75px;}
 #points_checkout_form .shipping-method .form-list #billing-new-address-form li input {float:none;width:auto;}
 #points_checkout_form .address-list {padding:0 0 20px 0;}
+#points_checkout_form .shipping-method .form-list .input-box {width:auto;padding:0 0 15px 0;}
+#custom_address_con .content-wrapper {border:none;}
+#points_checkout_form .shipping-method .form-list li input {margin:8px 6px 0 0;}
+#points_checkout_form .shipping-method .form-list li label {margin-top:6px;}
 
 .club_img{display: block;width: 140px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
 .club_img img {-webkit-box-shadow: 5px 5px 0 0 #d9c6c5;box-shadow: 5px 5px 0 0 #d9c6c5;}
