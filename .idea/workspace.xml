@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="900c1c39-134c-4714-b1f5-f4718f57967c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css" />
-    </list>
+    <list default="true" id="900c1c39-134c-4714-b1f5-f4718f57967c" name="Default" comment="" />
     <ignored path="m_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410415471188" ignored="false" />
@@ -206,7 +204,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="27" selection-start="4257" selection-end="4257" vertical-scroll-proportion="0.50728154">
+            <state line="88" column="29" selection-start="4259" selection-end="4259" vertical-scroll-proportion="0.50728154">
               <folding />
             </state>
           </provider>
@@ -1052,7 +1050,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="27" selection-start="4257" selection-end="4257" vertical-scroll-proportion="0.50728154">
+        <state line="88" column="29" selection-start="4259" selection-end="4259" vertical-scroll-proportion="0.50728154">
           <folding />
         </state>
       </provider>
