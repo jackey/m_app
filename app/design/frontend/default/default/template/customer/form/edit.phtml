@@ -42,7 +42,23 @@
                         <li><span><?php echo $this->__("Birthday")?></span><strong data-name="dob"><?php echo date('Y/m/d', strtotime($this->getCustomer()->getDob())); ?></strong><span class="edit"><?php echo $this->__("Edit")?></span></li>
 
                         <?php $_gender = $this->getLayout()->createBlock('customer/widget_gender') ?>
-                        <li><span><?php echo $this->__("Gender")?></span><strong data-name="gender"><?php echo $_gender->setGender($this->getCustomer()->getGender())->toHtml() ?></strong><span class="edit"><?php echo $this->__("Edit")?></span></li>
+                        <?php 
+                            // 返回Gender 得 内容 
+                            $options = Mage::getResourceSingleton('customer/customer')->getAttribute('gender')->getSource()->getAllOptions();
+                            $value = $this->getCustomer()->getGender();
+                        ?>
+                        <li><span><?php echo $this->__("Gender")?></span><strong data-name="gender">
+                            <?php 
+                            foreach ($options as $option):
+                                 if ($option['value'] == $value) echo $this->__($option["label"]);
+                            endforeach;
+                            ?></strong>
+
+                            <span class="edit"><?php echo $this->__("Edit")?></span>
+                            <div id="edit-container" class="hideme">
+                                <?php echo $_gender->setGender($value)->toHtml() ?>
+                            </div>
+                        </li>
                         <li><span><?php echo $this->__("Address")?></span><strong data-name="customerAddress"><?php echo $this->htmlEscape($this->getCustomer()->getCustomerAddress()) ?></strong><span class="edit"><?php echo $this->__("Edit")?></span></li>
                         <li><span><?php echo $this->__("Zip/Post code")?></span><strong data-name="customerZip"><?php echo $this->htmlEscape($this->getCustomer()->getCustomerZip()) ?></strong><span class="edit"><?php echo $this->__("Edit")?></span></li>
                     </ul>
@@ -127,8 +143,16 @@
                 }
                 var strongEl = $("strong[data-name!='']", $(self));
                 var strong = strongEl.html();
-                var input = "<input type='text' value='"+strong+"' name='"+$(strongEl).attr("data-name")+"' /> <button name='update-data-name' type='button' ><?php echo $this->__("Submit")?></button>";
-                $(strongEl).html(input);
+                // 先检查是否有 #edit-container 元素，如果有 则不要生成一个input 直接使用 #edit-container
+                if ($("#edit-container", self).size()) {
+                    var saveBtn = $("<button name='update-data-name' type='button' ><?php echo $this->__("Submit")?></button>");
+                    $("#edit-container", self).removeClass("hideme").append(saveBtn);
+                    strongEl.hide();
+                }
+                else {
+                    var input = "<input type='text' value='"+strong+"' name='"+$(strongEl).attr("data-name")+"' /> <button name='update-data-name' type='button' ><?php echo $this->__("Submit")?></button>";
+                    $(strongEl).html(input);
+                }
             });
 
             $(".club_meminfolist1 button[name='update-data-name']").live("click", function () {
@@ -138,17 +162,34 @@
                 }
                 $(this).addClass("clicked");
                 var input = $(this).siblings("input[type='text']");
+                if (input.size()) {
+                    $.ajax({
+                        type: "POST",
+                        url: "<?php echo $this->getUrl("customer/account/editajaxPost")?>",
+                        data: {name: input.attr("name"), value: input.val()},
+                        success: function () {
+                            $(self).parent().siblings(".edit").removeClass("hideme");
+                            $(self).parent().html(input.val());
+                            $(self).removeClass("clicked");
+                        }
+                    });
+                }
+                else {
+                    var input = $(this).siblings(".input-box").find("select");
+                    $.ajax({
+                        type: "POST",
+                        url: "<?php echo $this->getUrl("customer/account/editajaxPost")?>",
+                        data: {name: input.attr("name"), value: input.val()},
+                        success: function () {
+                            $(self).parent().siblings(".edit").removeClass("hideme");
+                            $(self).parent().siblings("strong[data-name!='']").show().html(input.find("option:selected").text());
+                            $(self).parent().addClass("hideme");
+                            $(self).removeClass("clicked");
+                            $(self).remove();
+                        }
+                    });
+                }
 
-                $.ajax({
-                    type: "POST",
-                    url: "<?php echo $this->getUrl("customer/account/editajaxPost")?>",
-                    data: {name: input.attr("name"), value: input.val()},
-                    success: function () {
-                        $(self).parent().siblings(".edit").removeClass("hideme");
-                        $(self).parent().html(input.val());
-                        $(self).removeClass("clicked");
-                    }
-                });
             });
         });
     })(jQuery);
