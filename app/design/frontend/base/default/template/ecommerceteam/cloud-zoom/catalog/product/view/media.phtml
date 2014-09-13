@@ -60,9 +60,9 @@ if ($zoomHeight) {
 ?>
 <?php if ($product->getImage() != 'no_selection' && $product->getImage()): ?>
 <p class="product-image">
-    <a href='<?php echo $this->helper('catalog/image')->init($product, 'image')->resize($bigImageWidth, $bigImageHeight);?>' class = 'cloud-zoom' id='zoom1' rel="<?php echo implode($config, ',');?>">
-        <img src="<?php echo $this->helper('catalog/image')->init($product, 'image')->resize(500, 500);?>" alt='' title="<?php echo $this->htmlEscape($this->getImageLabel());?>" />
-    </a>
+
+        <img class="cloudzoom" data-cloudzoom = "zoomImage: '<?php echo $this->helper('catalog/image')->init($product, 'image')->resize($bigImageWidth, $bigImageHeight);?>'" src="<?php echo $this->helper('catalog/image')->init($product, 'image')->resize(500, 500);?>" alt="<?php echo $this->htmlEscape($this->getImageLabel());?>" />
+
 </p>
 <?php else: ?>
 <p class="product-image">
@@ -93,6 +93,8 @@ if ($zoomHeight) {
 
 jQuery.noConflict();
 jQuery(document).ready(function($){
+
+    $('.cloudzoom').CloudZoom({innerZoom:true});
 $('#gallery-carousel').jcarousel({
         // Configuration goes here
 		visible:4,

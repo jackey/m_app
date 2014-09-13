@@ -246,6 +246,8 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .jiathis_style .jtico {background:none!important;}
 .attributes_choose ul li{cursor: pointer;}
 .attributes_choose ul li img {display: block;}
+.toolbar-bottom {width:860px;}
+.toolbar-bottom li {margin:0 3px;}
 /* Mobile Used
 ================================================================================================= */
 .dis_mobile { display: none }

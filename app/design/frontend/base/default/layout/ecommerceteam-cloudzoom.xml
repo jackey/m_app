@@ -15,9 +15,9 @@
 		<reference name="head">
             <action method="addItem">
                 <type>skin_css</type>
-                <name>css/ecommerceteam/cloud-zoom.css</name>
+                <name>css/ecommerceteam/cloudzoom.css</name>
             </action>
-            <action method="addJs"><script>ecommerceteam/cloud-zoom.1.0.2.min.js</script></action>
+            <action method="addJs"><script>ecommerceteam/cloudzoom.js</script></action>
         </reference>
 	
 	
