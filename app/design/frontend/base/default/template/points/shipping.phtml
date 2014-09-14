@@ -127,10 +127,21 @@
 			if($(this).val() == "shop_mentioning"){
 				$('.shipping_addition').show();
 				$("#custom_address_con").html("");
+				// 更新points
+				if ($(".points-total").hasClass("added")) {
+					var total = parseInt($(".points-total").html())  - 1500;
+					$(".points-total").html(total);
+					$(".points-total").removeClass("added")
+				}
 			}else {
 				$('.shipping_addition').hide();
 				$(".address-list").removeClass("hideme");
 				$("#custom_address_con").append($("#tpl_custom_address").html());
+
+				// 更新points
+				var total = parseInt($(".points-total").html()) + 1500;
+				$(".points-total").html(total);
+				$(".points-total").addClass("added");
 			}
 		});
 	
