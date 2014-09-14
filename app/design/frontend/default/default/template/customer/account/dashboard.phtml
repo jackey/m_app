@@ -29,6 +29,7 @@
         Mage::app()->getFrontController()->getResponse()->setRedirect(Mage::getUrl("customer/account/login"));
     }
 ?>
+<div class="page page_club">
     <!--  -->
         <div class="club_tit ">
             <h2><?php echo $this->__("Member<br />Information")?></h2>
@@ -37,7 +38,7 @@
         <div class="club_ecoupon_center cs-clear">
     
 
-            <?php echo $this->getChildHtml("lily_product_nav")?>
+            <?php echo $this->getChildHtml("lily_customer_nav")?>
 
             <div class="club_ecoupon_com club_meminfo">
                 <div class="club_meminfolist cs-clear" >
@@ -57,3 +58,4 @@
                 </div>
             </div>
         </div>
+</div>

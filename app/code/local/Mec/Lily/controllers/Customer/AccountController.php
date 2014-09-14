@@ -179,7 +179,7 @@ class Mec_Lily_Customer_AccountController extends Mage_Customer_AccountControlle
 	public function loginPostAction()
     {
         if ($this->_getSession()->isLoggedIn()) {
-            $this->_redirect('*/*/edit');
+            $this->_redirect('*/*/');
             return;
         }
 		
@@ -221,7 +221,7 @@ class Mec_Lily_Customer_AccountController extends Mage_Customer_AccountControlle
                 } catch (Exception $e) {
                     // Mage::logException($e); // PA DSS violation: this exception log can disclose customer password
                 }
-			    $this->_redirect('*/*/edit');
+			    $this->_redirect('*/*/');
 				return;
             } else {
                 $session->addError($this->__('Telphone and password are required.'));
@@ -301,7 +301,7 @@ class Mec_Lily_Customer_AccountController extends Mage_Customer_AccountControlle
                     $errors = array_merge($errors, $customerErrors);
                 }
             }
-            
+
             if (!empty($errors)) {
                 $this->_getSession()->setCustomerFormData($this->getRequest()->getPost());
                 foreach ($errors as $message) {
