@@ -54,7 +54,7 @@ address {font-style: normal;}
 .club_member_sub{font-size:18px;cursor:pointer;width: 131px;height: 35px;border:#000 solid 1px;color:#fff;background: #000;display: inline;margin: 30px auto;display: block;}
 .club_member_sub2 {font-size:14px;margin:0;width:auto;padding:0;height:32px;background: none;border:none;border-bottom:2px solid #000;color:#000;}
 .club_member_sub:hover {opacity:0.8}
-.club_memberreg{width: 800px;margin: 30px auto 0 auto}
+.club_memberreg{width: 800px;margin: 30px auto 0 auto;position: relative;}
 .club_memberreg_fi{margin: 0 0 30px }
 .club_memberreg_fi label {float:left;width:120px;margin:0 15px 0 0;font-size:18px;color:#000;text-align:right;}
 .club_memberreg_edm {padding:0 0 0 131px;}
@@ -158,7 +158,7 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .club_pointexselbox span{background: url('../images/club_memberreg_sel.png') no-repeat 80% 50%;display: block;width: 100px;padding:0 0 0 10px;}
 .club_pointexselbox select{width: 100px;position: absolute;top: 0;left:24px;opacity: 0;filter:alpha(opacity=0);cursor: pointer;}
 .club_pointimglist{padding-left:4px;}
-.club_pointimglist li{float: left;display:inline;margin: 18px 0 0 24px;height:186px;}
+.club_pointimglist li{float: left;display:inline;margin: 18px 0 0 24px;height:200px;}
 .club_pointimglist .product-name {font-size:0.9em;line-height: 100%;margin:5px 0 0;}
 .club_pointimglist .product-attr {font-size:0.9em;}
 .club_club_pointproimg{float: left;width: 540px;}
@@ -259,6 +259,7 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .search_btn {cursor: pointer;}
 .password-titles {display: none;}
 .password-title {float:left;width:260px;}
+.reg-disable-layout {background:#f3dedd;width:890px;height:470px;position:absolute;top:126px;opacity:0.7;filter:alpha(opacity=70); }
 /* Mobile Used
 ================================================================================================= */
 .dis_mobile { display: none }

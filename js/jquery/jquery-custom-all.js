@@ -6,6 +6,14 @@ jQuery(document).ready(function($){
         $('.password-titles').show();
     }
 
+    $('.more-views a').click(function(e){
+        e.preventDefault();
+        var link = $(this).attr('href');
+        $('.product-image img').attr('href',link);
+        $('.product-image img').attr('src',link);
+        $('.cloudzoom').CloudZoom({innerZoom:true});
+    });
+
     $('.search').click(function(){
         $('.popup_overlay').fadeIn();
         $('.search_popup').fadeIn();
