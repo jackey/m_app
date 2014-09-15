@@ -56,8 +56,9 @@
 
     #nav li.item {width:118px;}
     .language {top:23px;}
-    .search {top:23px;}
+    .search {top:28px;}
     .club_login_wrap {width:900px;}
+    .club_article_center {width:900px;}
     .club_navlist_gogift {width:120px;}
     .club_ecoupon_nav {font-size:14px;}
     .club_ecoupon_center {width:900px;}
@@ -77,6 +78,8 @@
     .form-before {padding:0;transform:scale(0.88);-moz-transform:scale(0.88);-webkit-transform:scale(0.88);-o-transform:scale(0.88);
         transform-origin:0 0;-moz-transform-origin:0 0;-webkit-transform-origin:0 0;-o-transform-origin:0 0;}
 
+
+    .password-title {float:left;width:232px;}
     /*.product-view .product-img-box {width:410px;}*/
     /*.product-img-box .product-image img {width:300px;height:300px;}*/
     /*.jcarousel-skin-tango .jcarousel-container-horizontal {padding:20px 22px;}*/

@@ -241,7 +241,7 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .club_getactivate .buttons-set p.required {display:none;text-align:left;}
 
 .product-image #wrap {display:block;width:480px;height:480px;min-height:0;overflow:hidden;}
-.cms-points h2 {font-size:24px;margin-bottom:40px;}
+.cms-points .std h2 {font-size:24px;margin-bottom:40px;}
 .club_article_center h4 {font-size:24px;margin-top:30px;margin-bottom:20px;}
 .club_article_center p {margin:0;}
 .jiathis_style .jtico {background:none!important;}
@@ -256,6 +256,9 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .addresses-list li.item {background: none;border:none;}
 .qty-wrapper span {font-family: verdana;}
 .attributes_choose .validation-advice{margin:0px 0 10px 137px;}
+.search_btn {cursor: pointer;}
+.password-titles {display: none;}
+.password-title {float:left;width:260px;}
 /* Mobile Used
 ================================================================================================= */
 .dis_mobile { display: none }
