@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="900c1c39-134c-4714-b1f5-f4718f57967c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/account/dashboard.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/account/dashboard.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/response.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/response.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -110,7 +108,7 @@
     <file path="/index.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410608820546" ignored="false" />
     <file path="/media.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410612687481" ignored="false" />
     <file path="/dashboard.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410701364656" ignored="false" />
-    <file path="/response.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410752161839" ignored="false" />
+    <file path="/response.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410754648049" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,16 +131,7 @@
       <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skin/frontend/default/default/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2406" column="1" selection-start="105307" selection-end="105307" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fail.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout/fail.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="-9.642858">
+            <state line="2406" column="1" selection-start="105326" selection-end="105326" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -169,7 +158,16 @@
       <file leaf-file-name="response.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/response.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="35" selection-start="2401" selection-end="2401" vertical-scroll-proportion="0.9117647">
+            <state line="76" column="129" selection-start="2831" selection-end="2831" vertical-scroll-proportion="0.88235295">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="club.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="362" column="0" selection-start="21033" selection-end="21272" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1035,20 +1033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/default/default/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2406" column="1" selection-start="105307" selection-end="105307" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="239" column="18" selection-start="15180" selection-end="15180" vertical-scroll-proportion="0.23529412">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/layout/ecommerceteam-cloudzoom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="45" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
@@ -1063,9 +1047,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/default/default/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2406" column="1" selection-start="105326" selection-end="105326" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="362" column="0" selection-start="21033" selection-end="21272" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/response.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="35" selection-start="2401" selection-end="2401" vertical-scroll-proportion="0.9117647">
+        <state line="76" column="129" selection-start="2831" selection-end="2831" vertical-scroll-proportion="0.88235295">
           <folding />
         </state>
       </provider>

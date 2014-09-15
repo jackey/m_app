@@ -69,6 +69,17 @@
     .club_meminfolist li strong {width:180px;}
     .club_point {width:740px;}
     .club_ecoupon_com {width:740px;}
+    .toolbar-bottom {width:740px;}
+    .product-view .product-shop {width:208px;}
+    .product-shop .product-attr-name, .product-shop .attribute-title {width:100px;}
+    .attributes_choose .validation-advice {margin:0px 0 10px 97px;}
+    .page_club .cart, .page_club .points_checkout {width:740px;}
+    .form-before {padding:0;transform:scale(0.88);-moz-transform:scale(0.88);-webkit-transform:scale(0.88);-o-transform:scale(0.88);
+        transform-origin:0 0;-moz-transform-origin:0 0;-webkit-transform-origin:0 0;-o-transform-origin:0 0;}
+
+    /*.product-view .product-img-box {width:410px;}*/
+    /*.product-img-box .product-image img {width:300px;height:300px;}*/
+    /*.jcarousel-skin-tango .jcarousel-container-horizontal {padding:20px 22px;}*/
 }
 
 
