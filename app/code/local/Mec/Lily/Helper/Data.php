@@ -138,7 +138,7 @@ class Mec_Lily_Helper_Data extends Mage_Core_Helper_Abstract
 	}
 	
 	// 发货减去1500 积分
-	public function cutPointsWhenExpressShipping($lily_vip_card, $num = -1500) {
+	public function cutPointsWhenExpressShipping($lily_vip_card, $num = -1500, $desc = "物流发货积分扣除") {
 		// 第一步 查询 ERP 里面的 VIP 卡号
 		$v_id = "";
 		$id_result = Mage::helper('lily')->QueryIdByVipCard($lily_vip_card);
@@ -187,7 +187,7 @@ class Mec_Lily_Helper_Data extends Mage_Core_Helper_Abstract
 							array(
 									"C_VIP_ID__CARDNO" => "{$lily_vip_card}",
 									"INTEGRALADJ" => "$num",
-									"DESCRIPTION" => "物流发货积分扣除",
+									"DESCRIPTION" => "{$desc}",
 								)
 						)
 					)

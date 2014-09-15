@@ -82,7 +82,7 @@ class Mec_Lily_Model_Observer{
 					$customer->save();
 
                     // 加200积分
-                    Mage::helper("lily")->cutPointsWhenExpressShipping($lily_vip_card, 200);
+                    Mage::helper("lily")->cutPointsWhenExpressShipping($lily_vip_card, 200, "注册送积分");
 				}
 			}
 			
