@@ -1,6 +1,31 @@
 jQuery.noConflict();
 jQuery(document).ready(function($){
 
+    if(navigator.userAgent.indexOf("MSIE 8.0")>0)
+    {
+        $('.password-titles').show();
+    }
+
+    $('.search').click(function(){
+        $('.popup_overlay').fadeIn();
+        $('.search_popup').fadeIn();
+    });
+
+    $('.popup_close,.popup_overlay').click(function(){
+        $('.search_popup').fadeOut();
+        $('.popup_overlay').fadeOut();
+    });
+
+    $('.search_btn').click(function(){
+        window.location.href = "http://www.lily-collection.com/search?keyword="+$('.search_input').val();
+    });
+
+    $('.search_input').keydown(function(e){
+        if(e.keyCode == 13) {
+            $('.search_btn').trigger('click');
+        }
+    });
+
     if($(window).width() <= 640) {
         $('body').addClass('mobile');
     }
