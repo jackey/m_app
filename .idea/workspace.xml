@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="900c1c39-134c-4714-b1f5-f4718f57967c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/footer.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/footer.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/header.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/header.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery/jquery-custom-all.js" afterPath="$PROJECT_DIR$/js/jquery/jquery-custom-all.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_member_rule.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_member_rule.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/ecommerceteam/cloud-zoom/catalog/product/view/media.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/ecommerceteam/cloud-zoom/catalog/product/view/media.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="m_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410608602390" ignored="false" />
     <file path="/js.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410175229643" ignored="false" />
-    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410756947808" ignored="false" />
-    <file path="/a.dummy" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410756738030" ignored="false" />
+    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410775303998" ignored="false" />
+    <file path="/a.dummy" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410774933082" ignored="false" />
     <file path="/style.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410494031064" ignored="false" />
     <file path="/Mage_Cms.csv" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410759328740" ignored="false" />
     <file path="/view.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410353758509" ignored="false" />
@@ -43,7 +46,7 @@
     <file path="/2columns-left_jobs-center.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408152257799" ignored="false" />
     <file path="$PROJECT_DIR$/../rungiswines/wp-content/themes/wine/page.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408597270895" ignored="false" />
     <file path="/page.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1408597270176" ignored="false" />
-    <file path="/register.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410250091084" ignored="false" />
+    <file path="/register.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410775422128" ignored="false" />
     <file path="$PROJECT_DIR$/../upstudios/index_en.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410525285057" ignored="false" />
     <file path="/index_en.php" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410524810468" ignored="false" />
     <file path="$PROJECT_DIR$/../upstudios/css/global.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410525299044" ignored="false" />
@@ -86,7 +89,7 @@
     <file path="/items.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409927924913" ignored="false" />
     <file path="/page.xml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409958829450" ignored="false" />
     <file path="/recent.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409959394205" ignored="false" />
-    <file path="/jquery-custom-all.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410757094973" ignored="false" />
+    <file path="/jquery-custom-all.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410761600916" ignored="false" />
     <file path="/mini-login.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1409962116702" ignored="false" />
     <file path="/Mage_Page140110.csv" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410181325082" ignored="false" />
     <file path="/shipping.phtml" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410169682098" ignored="false" />
@@ -130,96 +133,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/default/default/css/styles.css">
+      <file leaf-file-name="forgotpassword.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/customer/form/forgotpassword.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="631" column="16" selection-start="27148" selection-end="27148" vertical-scroll-proportion="0.0">
+            <state line="52" column="10" selection-start="2454" selection-end="2454" vertical-scroll-proportion="-11.464286">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsive.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/default/default/css/responsive.css">
+      <file leaf-file-name="register.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="30" selection-start="3908" selection-end="3908" vertical-scroll-proportion="0.0">
+            <state line="234" column="62" selection-start="12880" selection-end="12898" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="response.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/response.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="19" selection-start="3006" selection-end="3006" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="club.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="club.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="259" column="0" selection-start="16143" selection-end="16143" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="16" selection-start="4945" selection-end="4945" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.phtml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/footer.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="94" selection-start="2837" selection-end="2837" vertical-scroll-proportion="1.0922331">
-              <folding>
-                <marker date="1410759406000" expanded="true" signature="8964:9065" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mage_Cms.csv" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="32" selection-start="3346" selection-end="3346" vertical-scroll-proportion="-2.5185184">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/header.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="79" selection-start="3251" selection-end="3262" vertical-scroll-proportion="-8.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-custom-all.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery/jquery-custom-all.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="37" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="58" selection-start="5712" selection-end="5726" vertical-scroll-proportion="-7.607143">
+            <state line="258" column="30" selection-start="16162" selection-end="16162" vertical-scroll-proportion="0.30326593">
               <folding />
             </state>
           </provider>
@@ -243,22 +178,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout/success.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/points/checkout/fail.phtml" />
         <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/style.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/layout/ecommerceteam-cloudzoom.xml" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/catalog/product/view.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/ecommerceteam/cloud-zoom/catalog/product/view/media.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/account/dashboard.phtml" />
         <option value="$PROJECT_DIR$/skin/frontend/default/default/css/styles.css" />
         <option value="$PROJECT_DIR$/skin/frontend/base/default/css/ecommerceteam/cloudzoom.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml" />
         <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/response.css" />
-        <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
-        <option value="$PROJECT_DIR$/js/jquery/jquery-custom-all.js" />
         <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/header.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/footer.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_member_rule.phtml" />
+        <option value="$PROJECT_DIR$/js/jquery/jquery-custom-all.js" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/ecommerceteam/cloud-zoom/catalog/product/view/media.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml" />
+        <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
       </list>
     </option>
   </component>
@@ -322,7 +257,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="skin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,29 +271,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
+              <option name="myItemId" value="skin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -380,11 +293,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
+              <option name="myItemId" value="skin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -392,121 +301,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m_app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
+              <option name="myItemId" value="base" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -524,15 +319,95 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
+              <option name="myItemId" value="skin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="m_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="skin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lily" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -591,7 +466,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21305595" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2998565" sideWeight="0.67042255" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -666,48 +541,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_customer_nav.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="23" selection-start="2048" selection-end="2048" vertical-scroll-proportion="-13.571428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_product_nav.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.32142857">
-          <folding>
-            <marker date="1410355153000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410355153000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410355153000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410355153000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410355153000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410355153000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410355153000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410355153000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410355153000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410355153000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410355153000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410355153000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1410355153000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/customer/account/dashboard.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="57" selection-start="1573" selection-end="1573" vertical-scroll-proportion="-5.9814816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/layout/ecommerceteam-cloudzoom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="45" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skin/frontend/default/default/css/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="30" selection-start="3908" selection-end="3908" vertical-scroll-proportion="0.0">
@@ -729,27 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/default/default/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="631" column="16" selection-start="27148" selection-end="27148" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/response.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="19" selection-start="3006" selection-end="3006" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="259" column="0" selection-start="16143" selection-end="16143" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/varien/js.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -761,14 +573,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery/jquery-custom-all.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="37" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+        <state line="12" column="49" selection-start="370" selection-end="370" vertical-scroll-proportion="0.3529412">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/ecommerceteam/cloud-zoom/catalog/product/view/media.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="58" selection-start="5712" selection-end="5726" vertical-scroll-proportion="-7.607143">
+        <state line="13" column="36" selection-start="395" selection-end="395" vertical-scroll-proportion="0.18446602">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/header.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="79" selection-start="3251" selection-end="3262" vertical-scroll-proportion="0.38511327">
           <folding />
         </state>
       </provider>
@@ -778,24 +597,66 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="32" selection-start="3346" selection-end="3346" vertical-scroll-proportion="-2.5185184">
+        <state line="130" column="32" selection-start="3346" selection-end="3346" vertical-scroll-proportion="0.1098546">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/header.phtml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_member_rule.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="79" selection-start="3251" selection-end="3262" vertical-scroll-proportion="-8.5">
+        <state line="2" column="36" selection-start="171" selection-end="171" vertical-scroll-proportion="0.05928237">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/footer.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="94" selection-start="2837" selection-end="2837" vertical-scroll-proportion="1.0922331">
+        <state line="59" column="94" selection-start="2837" selection-end="2837" vertical-scroll-proportion="1.0530422">
           <folding>
-            <marker date="1410759406000" expanded="true" signature="8964:9065" placeholder="..." />
+            <marker date="1410759406000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/response.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="19" selection-start="3006" selection-end="3006" vertical-scroll-proportion="0.68161434">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/default/default/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="631" column="16" selection-start="27148" selection-end="27148" vertical-scroll-proportion="0.34678626">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/customer/form/edit.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="58" selection-start="5712" selection-end="5726" vertical-scroll-proportion="0.3322933">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/customer/form/forgotpassword.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="10" selection-start="2454" selection-end="2454" vertical-scroll-proportion="-11.464286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="234" column="62" selection-start="12880" selection-end="12898" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="258" column="30" selection-start="16162" selection-end="16162" vertical-scroll-proportion="0.30326593">
+          <folding />
         </state>
       </provider>
     </entry>

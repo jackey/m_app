@@ -136,6 +136,10 @@
                             <span class="club_memberreg_tips"></span>
                         </div>
 
+                    <div class="reg-disable-layout">
+
+                    </div>
+
 
                 </div>
 
@@ -225,6 +229,7 @@
                                     if(data.success == false){
                                         alert('<?php echo $this->__('Verify Code Wrong.'); ?>');
                                     }else{
+                                        $('.reg-disable-layout').fadeOut();
                                         $('.step-2').removeClass('disable');
                                         $(".fieldset input[type='password']").each(function(){
                                             $(this).removeAttr('disabled');
