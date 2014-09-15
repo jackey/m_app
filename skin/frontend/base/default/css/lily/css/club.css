@@ -6,6 +6,7 @@
 * {max-height: 5000em;}
 * {outline: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 textarea,input {-webkit-user-select: text;-khtml-user-select: text;-moz-user-select: text;-ms-user-select: text;user-select: text;}
+input.input-text {line-height: 24px;}
 
 address {font-style: normal;}
 .club{background: #f3dedd;}
@@ -28,7 +29,7 @@ address {font-style: normal;}
 .club_login_regbtn{display: block;background: #000;color:#fff;width: 194px;height: 48px;line-height: 48px;margin:72px auto 20px;text-align: center;}
 .club_login_regtxt{text-align: center;}
 .club_login_form{}
-.club_login_ipt{float: left;width: 150px;height: 25px;border:#000 solid 1px;padding:0 16px;display: inline;margin: 0 20px 0 0;font-size: 14px;color:#000;font-family:arial;background: #f3dedd}
+.club_login_ipt{float: left;width: 150px;height: 25px;line-height:25px;border:#000 solid 1px;padding:0 16px;display: inline;margin: 0 20px 0 0;font-size: 14px;color:#000;font-family:arial;background: #f3dedd}
 .club_login_sub{cursor:pointer;width: 130px;height: 48px;border:#000 solid 1px;color:#fff;background: #000!important;display: block;margin: 20px 0 0 120px;font-size: 14px;}
 .club_login_formlink{width: 205px;float: left;display: inline;margin: 10px 0 0 0}
 .club_login_wrap {width:1000px;margin:0 auto;}
@@ -248,15 +249,23 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .attributes_choose ul li img {display: block;}
 .toolbar-bottom {width:860px;}
 .toolbar-bottom li {margin:0 3px;}
+.box-recent {margin:0 0 30px 0;}
+.newsletter-manage-index .buttons-set button.button {float:left}
+.newsletter-manage-index .fieldset {margin:0;padding:0;}
+.addresses-list h2 {color:#000;}
+.addresses-list li.item {background: none;border:none;}
+.qty-wrapper span {font-family: verdana;}
+.attributes_choose .validation-advice{margin:0px 0 10px 137px;}
 /* Mobile Used
 ================================================================================================= */
 .dis_mobile { display: none }
 .club_ecoupon_nav_m {display:none;}
 @media screen and (max-width:640px) {
-    body,html {background: #f3dedd}
+    body,html {background: #f3dedd!important;}
 	.dis_mobile { display: block }
     .wrap {margin:0!important;}
-	.footer{display: none}
+	.footer{}
+    .footer .ft_list li {display:block;margin:0 auto;}
 	.page{margin-bottom:0;padding-top:140px;}
     .page_club {font-size:18px;}
     .club_tit{font-size: 72px;line-height: 72px}
@@ -356,5 +365,7 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
     .cart .cart-collaterals {font-size:14px;}
     button.button.btn-continue span {font-size:14px;}
     #points_checkout_form .content {font-size:14px;}
+
+    .club_bottom_nav {margin:30px 0;}
 
 }

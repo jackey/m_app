@@ -53,7 +53,24 @@
     #wrap .page .limit.event_list {width:840px;}
     #wrap .page .limit.job_list {width:910px;margin:0 auto;}
     .ss_row3 .left {margin-left:-15.5%;}
+
+    #nav li.item {width:118px;}
+    .language {top:23px;}
+    .search {top:23px;}
+    .club_login_wrap {width:900px;}
+    .club_navlist_gogift {width:120px;}
+    .club_ecoupon_nav {font-size:14px;}
+    .club_ecoupon_center {width:900px;}
+    .club_ecoupon_nav {width:160px;}
+    .club_meminfo {width:740px;}
+    .club_meminpwform input {width:169px;}
+    .club_meminfolist ul {width:360px;}
+    .club_meminfolist1 li {width:360px;}
+    .club_meminfolist li strong {width:180px;}
+    .club_point {width:740px;}
+    .club_ecoupon_com {width:740px;}
 }
+
 
 @media only screen and (max-width:900px){
     .ss_row1 .streetshot_right,.ss_row1 .lookbook_right {margin-right:-13%;}
