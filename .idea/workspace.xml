@@ -3,15 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="900c1c39-134c-4714-b1f5-f4718f57967c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery/jquery-custom-all.js" afterPath="$PROJECT_DIR$/js/jquery/jquery-custom-all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/ecommerceteam/cloud-zoom/catalog/product/view/media.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/ecommerceteam/cloud-zoom/catalog/product/view/media.phtml" />
     </list>
     <ignored path="m_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410784042799" ignored="false" />
     <file path="/js.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410175229643" ignored="false" />
-    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410779558448" ignored="false" />
+    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410850370445" ignored="false" />
     <file path="/a.dummy" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410842256854" ignored="false" />
     <file path="/style.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410494031064" ignored="false" />
     <file path="/Mage_Cms.csv" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410759328740" ignored="false" />
@@ -162,10 +159,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="club.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="club.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="263" column="99" selection-start="16546" selection-end="16546" vertical-scroll-proportion="-11.153846">
+            <state line="376" column="85" selection-start="22128" selection-end="22128" vertical-scroll-proportion="0.907767">
               <folding />
             </state>
           </provider>
@@ -198,10 +195,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="media.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/ecommerceteam/cloud-zoom/catalog/product/view/media.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="57" selection-start="3069" selection-end="3069" vertical-scroll-proportion="0.5546875">
+            <state line="79" column="57" selection-start="3069" selection-end="3069" vertical-scroll-proportion="-7.607143">
               <folding />
             </state>
           </provider>
@@ -237,10 +234,10 @@
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/footer.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/page/html/lily_member_rule.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/form/register.phtml" />
-        <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml" />
         <option value="$PROJECT_DIR$/js/jquery/jquery-custom-all.js" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/ecommerceteam/cloud-zoom/catalog/product/view/media.phtml" />
+        <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
       </list>
     </option>
   </component>
@@ -553,13 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="263" column="99" selection-start="16546" selection-end="16546" vertical-scroll-proportion="-11.153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="114" column="119" selection-start="6440" selection-end="6440" vertical-scroll-proportion="-7.892857">
@@ -583,7 +573,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/ecommerceteam/cloud-zoom/catalog/product/view/media.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="57" selection-start="3069" selection-end="3069" vertical-scroll-proportion="0.5546875">
+        <state line="79" column="57" selection-start="3069" selection-end="3069" vertical-scroll-proportion="-7.607143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="376" column="85" selection-start="22128" selection-end="22128" vertical-scroll-proportion="0.907767">
           <folding />
         </state>
       </provider>
