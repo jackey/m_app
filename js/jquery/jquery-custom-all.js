@@ -21,8 +21,13 @@ jQuery(document).ready(function($){
         $('.search_popup').fadeIn();
     });
 
+    $('.ft_share3').click(function(){
+        $('.popup_overlay').fadeIn();
+        $('.weixin_popup').fadeIn();
+    });
+
     $('.popup_close,.popup_overlay').click(function(){
-        $('.search_popup').fadeOut();
+        $('.popup').fadeOut();
         $('.popup_overlay').fadeOut();
     });
 

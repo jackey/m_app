@@ -265,6 +265,9 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .note-msg, .notice-msg {background:none;color:#000;border:1px solid #000;}
 .catalogsearch-result-index .page-title h1, .category-giftproducts .category-title h1 {border:none;}
 .catalogsearch-result-index .page-title {display: none;}
+#points_checkout_form .shipping-method .form-list li label {width:305px;}
+.weixin_popup {width:400px;height:400px;margin:-200px 0 0 -200px;text-align: center;}
+.weixinwrap {padding:60px 0 0;}
 .language {display: none;}
 /* Mobile Used
 ================================================================================================= */
