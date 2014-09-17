@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="900c1c39-134c-4714-b1f5-f4718f57967c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Page.csv" afterPath="$PROJECT_DIR$/app/locale/zh_CN/Mage_Page.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" afterPath="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/ecoupon.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/ecoupon.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/persistent/customer/form/mini-login.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/persistent/customer/form/mini-login.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/point.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/point.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/base/default/template/catalogsearch/result.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/base/default/template/catalogsearch/result.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/searchproducts.phtml" afterPath="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/searchproducts.phtml" />
     </list>
     <ignored path="m_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410868733217" ignored="false" />
     <file path="/js.js" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410175229643" ignored="false" />
-    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410853184500" ignored="false" />
+    <file path="/club.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410948366801" ignored="false" />
     <file path="/a.dummy" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410943491640" ignored="false" />
     <file path="/style.css" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410494031064" ignored="false" />
     <file path="/Mage_Cms.csv" changelist="900c1c39-134c-4714-b1f5-f4718f57967c" time="1410942313180" ignored="false" />
@@ -146,10 +138,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="club.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="club.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="261" column="29" selection-start="16295" selection-end="16295" vertical-scroll-proportion="0.0">
+            <state line="267" column="25" selection-start="16735" selection-end="16735" vertical-scroll-proportion="0.46116504">
               <folding />
             </state>
           </provider>
@@ -194,13 +186,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mage_Page.csv" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Mage_Page.csv" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/locale/zh_CN/Mage_Page.csv">
           <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="16" selection-start="5413" selection-end="5413" vertical-scroll-proportion="0.33246753">
+            <state line="138" column="16" selection-start="5413" selection-end="5413" vertical-scroll-proportion="-4.740741">
               <folding />
             </state>
           </provider>
@@ -266,12 +258,12 @@
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/persistent/customer/form/mini-login.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/list.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/default/default/template/catalog/product/searchproducts.phtml" />
-        <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/catalogsearch/result.phtml" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/point.phtml" />
         <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Cms.csv" />
         <option value="$PROJECT_DIR$/app/design/frontend/base/default/template/lily/customer/ecoupon.phtml" />
         <option value="$PROJECT_DIR$/app/locale/zh_CN/Mage_Page.csv" />
+        <option value="$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css" />
       </list>
     </option>
   </component>
@@ -625,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="261" column="29" selection-start="16295" selection-end="16295" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/catalogsearch/result.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="1071" selection-end="1071" vertical-scroll-proportion="-5.785714">
@@ -670,7 +655,14 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="16" selection-start="5413" selection-end="5413" vertical-scroll-proportion="0.33246753">
+        <state line="138" column="16" selection-start="5413" selection-end="5413" vertical-scroll-proportion="-4.740741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/base/default/css/lily/css/club.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="267" column="25" selection-start="16735" selection-end="16735" vertical-scroll-proportion="0.46116504">
           <folding />
         </state>
       </provider>
