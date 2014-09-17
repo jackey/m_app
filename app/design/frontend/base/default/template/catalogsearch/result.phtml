@@ -27,12 +27,9 @@
 
 <?php if($this->getResultCount()): ?>
 <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
-<div class="page-title">
-    <?php if ($this->helper('rss/catalog')->getTagFeedUrl()): ?>
-        <a href="<?php echo $this->helper('rss/catalog')->getTagFeedUrl() ?>" class="nobr link-rss"><?php echo $this->__('Subscribe to Feed') ?></a>
-    <?php endif; ?>
-    <h1><?php echo ($this->getHeaderText() || $this->getHeaderText() === false) ? $this->getHeaderText() : $this->__("Search results for '%s'", $this->helper('catalogsearch')->getEscapedQueryText()) ?></h1>
-</div>
+
+
+
 
     <?php if ($messages = $this->getNoteMessages()):?>
     <p class="note-msg">
@@ -48,12 +45,72 @@
     </div>
 
 <?php else: ?>
-<div class="page-title">
-    <h1><?php echo ($this->getHeaderText() || $this->getHeaderText() === false) ? $this->getHeaderText() : $this->__("Search results for '%s'", $this->helper('catalogsearch')->getEscapedQueryText()) ?></h1>
+<div class="club_tit ">
+    <h2><?php echo $this->__("Point<br />Exchange")?></h2>
 </div>
 <div class="club_ecoupon_center cs-clear">
 <?php echo $this->getChildHtml("lily_customer_nav")?>
 <div class="club_ecoupon_com club_point">
+    <div class="club_pointexnav cs-clear">
+        <?php echo $this->__("Gift Catalog")?>
+        <div class="club_pointexfilter">
+            <p class="club_pointexfiltertit"><?php echo $this->__("FILTER")?>:</p>
+            <p class="club_pointexselbox">
+                <span><?php echo $this->__("Point")?></span>
+                <?php $attributeModel = Mage::getModel('eav/entity_attribute')->loadByCode('catalog_product', 'vip_navigation_points');?>
+                <select name="points_level" id="points_level">
+                    <?php
+                    foreach ( $attributeModel->getSource()->getAllOptions(true, true) as $option):?>
+                        <?php if($option['value'] != ""): ?>
+                            <option value="<?php echo $option['value']; ?>"><?php echo $option['label']; ?></option>
+                        <?php else:?>
+                            <option value="<?php echo $option['value']; ?>"><?php echo $this->__('Please Select Point Level'); ?></option>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </select>
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+                        $('#points_level').change(function(){
+                            if($(this).val() != ""){
+                                setLocation('<?php echo $this->getUrl('catalogsearch/result'); ?>' + '?q=lily&vip_navigation_points=' + $(this).val());
+                            }
+                        });
+                    });
+                </script>
+            </p>
+            <p class="club_pointexselbox">
+                <span><?php echo $this->__("Type"); ?></span>
+                <?php
+                $layer = Mage::getModel("catalog/layer");
+                $category = Mage::getModel("catalog/category")->load(43);
+                $layer->setCurrentCategory($category);
+                $attributes = $layer->getFilterableAttributes();
+                foreach ($attributes as $attribute):
+                    $name = $attribute->getName();
+                    if ($name == "product_type"):
+                        $options = $attribute->getSource()->getAllOptions(false);
+                        break;
+                    endif;
+                endforeach;
+                ?>
+                <select name="product_type">
+                    <?php foreach ($options as $option): ?>
+                        <option value="<?php echo $option["value"]?>"><?php echo $option["label"]?></option>
+                    <?php endforeach;?>
+                </select>
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+                        $('select[name="product_type"]').change(function(){
+                            if($(this).val() != ""){
+                                setLocation('<?php echo $this->getUrl('catalogsearch/result'); ?>' + '?q=lily&product_type=' + $(this).val());
+                            }
+                        });
+                    });
+                </script>
+            </p>
+        </div>
+    </div>
+
     <p class="note-msg">
         <?php echo ($this->getNoResultText()) ? $this->getNoResultText() : $this->__('Your search returns no results.') ?>
         <?php if ($messages = $this->getNoteMessages()):?>
