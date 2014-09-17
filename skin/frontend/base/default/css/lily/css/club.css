@@ -26,7 +26,7 @@ address {font-style: normal;}
 .club_login_tit_small {text-transform: none;}
 .club_login_txt{}
 .club_login_txt p{font-size: 24px;text-transform:uppercase;line-height: 50px}
-.club_login_regbtn{display: block;background: #000;color:#fff;width: 194px;height: 48px;line-height: 48px;margin:72px auto 20px;text-align: center;}
+.club_login_regbtn{display: block;background: #000;color:#fff;width: 194px;height: 48px;line-height: 48px;margin:98px auto 20px;text-align: center;}
 .club_login_regtxt{text-align: center;}
 .club_login_form{}
 .club_login_ipt{float: left;width: 150px;height: 25px;line-height:25px;border:#000 solid 1px;padding:0 16px;display: inline;margin: 0 20px 0 0;font-size: 14px;color:#000;font-family:arial;background: #f3dedd}
@@ -211,6 +211,7 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 #custom_address_con .content-wrapper {border:none;}
 #points_checkout_form .shipping-method .form-list li input {margin:8px 6px 0 0;}
 #points_checkout_form .shipping-method .form-list li label {margin-top:6px;}
+#points_checkout_form .shipping-method {padding:0 0 20px 0;}
 
 .club_img{display: block;width: 140px;padding:3px 0 0 3px;position: relative;margin: 0 auto}
 .club_img img {-webkit-box-shadow: 5px 5px 0 0 #d9c6c5;box-shadow: 5px 5px 0 0 #d9c6c5;}
@@ -257,9 +258,13 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .qty-wrapper span {font-family: verdana;}
 .attributes_choose .validation-advice{margin:0px 0 10px 137px;}
 .search_btn {cursor: pointer;}
-.password-titles {display: none;}
 .password-title {float:left;width:260px;}
+.club_login_labels {height:28px;}
+.club_login_label {float:left;width:205px;}
 .reg-disable-layout {background:#f3dedd;width:890px;height:470px;position:absolute;top:126px;opacity:0.7;filter:alpha(opacity=70); }
+.note-msg, .notice-msg {background:none;color:#000;border:1px solid #000;}
+.catalogsearch-result-index .page-title h1, .category-giftproducts .category-title h1 {border:none;}
+.catalogsearch-result-index .page-title {display: none;}
 /* Mobile Used
 ================================================================================================= */
 .dis_mobile { display: none }
@@ -371,5 +376,5 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
     #points_checkout_form .content {font-size:14px;}
 
     .club_bottom_nav {margin:30px 0;}
-
+    .club_welcome_m {background:#000 url('../images/m_nav_arrow.png') no-repeat 380px center;}
 }

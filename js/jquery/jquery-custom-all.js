@@ -9,8 +9,10 @@ jQuery(document).ready(function($){
     $('.more-views a').click(function(e){
         e.preventDefault();
         var link = $(this).attr('href');
+        var zoom = $(this).data('zoom');
         $('.product-image img').attr('href',link);
         $('.product-image img').attr('src',link);
+        $('.product-image img').attr('data-cloudzoom',"zoomImage: '"+zoom+"'");
         $('.cloudzoom').CloudZoom({innerZoom:true});
     });
 

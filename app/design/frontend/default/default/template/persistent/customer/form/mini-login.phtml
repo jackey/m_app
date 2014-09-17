@@ -50,6 +50,10 @@
                             <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
                             <form action="<?php echo $this->getPostActionUrl() ?>" method="post" id="login-form">
                                 <div class="cs-clear">
+                                    <div class="club_login_labels">
+                                        <div class="club_login_label"><?php echo $this->__("Mobile")?>:</div>
+                                        <div class="club_login_label"><?php echo $this->__("Password")?>:</div>
+                                    </div>
                                     <input class="club_login_ipt" type="text" value="<?php echo $this->htmlEscape($this->getUsername()) ?>" name="login[telphone]" placeholder="<?php echo $this->__("Mobile")?>" />
                                     <input class="club_login_ipt" type="password" name="login[password]" id="pass" placeholder="<?php echo $this->__("Password")?>" />
 
