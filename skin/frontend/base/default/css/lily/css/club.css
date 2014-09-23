@@ -14,7 +14,7 @@ address {font-style: normal;}
 .page_club input {background:none;border:1px solid #000;}
 .page_club>div {opacity:0;}
 .page_club a:hover {text-decoration: underline;}
-.club_tit,.page-title h1{font-size: 60px;line-height:68px;text-transform:uppercase;text-align: center;padding:0 0 50px;}
+.club_tit,.page-title h1{font-size: 60px;line-height:68px;text-align: center;padding:0 0 50px;}
 .club_tit .small {font-size:40px;}
 .register_tit {padding:0;}
 .register_tit h2 {font-size:30px;}
@@ -35,10 +35,13 @@ address {font-style: normal;}
 .club_login_wrap {width:1000px;margin:0 auto;}
 .club_login_title {font-size:24px;font-weight:bold;margin-bottom:15px;}
 .club_login_offline {margin:0 0 15px 0;}
+.club_login_offline a {text-decoration: underline;}
 .club_login_left {float:left;}
 .club_login_right {float:right;width:370px;}
+.club_login_left .messages li {width:346px;}
 .product-essential {padding:0!important;}
 .validation-advice {margin:3px 0 0 130px;}
+.club_member_rule .messages {width:600px;margin-top:20px!important;}
 
 .page_club .cart,.page_club .points_checkout {float:left;width:861px;}
 
