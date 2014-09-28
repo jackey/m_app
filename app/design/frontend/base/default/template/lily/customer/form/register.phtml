@@ -111,11 +111,13 @@
                     <div class="club_memberreg_fi club_memberreg_fi_address cs-clear">
                             <label><?php echo $this->__('Address') ?>: </label>
                             <input type="hidden" name="customer_address" id="customer_address" value="" title="<?php echo $this->__('Address') ?>" class="club_login_ipt required-entry" />
-                            <input type="text" name="province" class="club_login_ipt  required-entry" /> 省
-                            <input type="text" name="city" class="club_login_ipt club_login_ipt_short required-entry" /> 市
-                            <input type="text" name="district" class="club_login_ipt club_login_ipt_short required-entry" /> 区
-                            <input type="text" name="extra" class="club_login_ipt club_login_ipt_short required-entry" />
-
+                            <input type="text" name="province" class="club_login_ipt  required-entry" />
+                            <div class="customer_address_mobile_wrap">
+                                省
+                                <input type="text" name="city" class="club_login_ipt club_login_ipt_short required-entry" /> 市
+                                <input type="text" name="district" class="club_login_ipt club_login_ipt_short required-entry" /> 区
+                                <input type="text" name="extra" class="club_login_ipt club_login_ipt_short required-entry" />
+                            </div>
                         </div>
 
                         <div class="club_memberreg_fi cs-clear">
