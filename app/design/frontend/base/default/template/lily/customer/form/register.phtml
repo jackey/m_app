@@ -111,13 +111,11 @@
                     <div class="club_memberreg_fi club_memberreg_fi_address cs-clear">
                             <label><?php echo $this->__('Address') ?>: </label>
                             <input type="hidden" name="customer_address" id="customer_address" value="" title="<?php echo $this->__('Address') ?>" class="club_login_ipt required-entry" />
-                            <input type="text" name="province" class="club_login_ipt  required-entry" />
-                            <div class="customer_address_mobile_wrap">
-                                省
-                                <input type="text" name="city" class="club_login_ipt club_login_ipt_short required-entry" /> 市
-                                <input type="text" name="district" class="club_login_ipt club_login_ipt_short required-entry" /> 区
-                                <input type="text" name="extra" class="club_login_ipt club_login_ipt_short required-entry" />
-                            </div>
+                            <input type="text" name="province" class="club_login_ipt  required-entry" /> 省
+                            <div class="customer_address_mobile_wrap"><input type="text" name="city" class="club_login_ipt club_login_ipt_short required-entry" /> 市</div>
+                            <div class="customer_address_mobile_wrap"><input type="text" name="district" class="club_login_ipt club_login_ipt_short required-entry" /> 区</div>
+                            <div class="customer_address_mobile_wrap"><input type="text" name="extra" class="club_login_ipt club_login_ipt_short required-entry" /></div>
+
                         </div>
 
                         <div class="club_memberreg_fi cs-clear">
@@ -135,6 +133,11 @@
                         <div class="club_memberreg_fi cs-clear">
                             <label><?php echo $this->__('Confirm Password') ?>: </label>
                             <input type="password" name="confirmation" id="confirmation" title="<?php echo $this->__('Confirm Password') ?>" class="club_login_ipt required-entry validate-cpassword" />
+                            <span class="club_memberreg_tips"></span>
+                        </div>
+
+                        <div class="club_memberreg_fi cs-clear">
+                            <input class="agree_term" type="checkbox" /> 我同意 <a target="_blank" href="<?php echo getClubSiteURl("member-rule")?>">会员卡章程</a>
                             <span class="club_memberreg_tips"></span>
                         </div>
 

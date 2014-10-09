@@ -75,6 +75,8 @@ address {font-style: normal;}
 .club_memberreg_fi_address .validation-advice {display:none;}
 .customer_address_mobile_wrap {display: inline-block;}
 .club-rule-content .club_login_txt {width:500px;margin:0 auto;text-align: center;}
+.agree_term {margin:0 0 0 133px;}
+.cms-exchange-flow h1 {display: block;}
 /**/
 .club_member_rule{text-align: center;margin: 0 auto;width: 860px}
 .club_member_rule h4{text-transform:uppercase;margin: 80px 0 40px;font-size:24px;}
@@ -148,7 +150,7 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .club_meminpw{padding:20px 0 0 30px;}
 .club_meminpwform{margin: 30px 0;}
 .club_meminpwform input{background:none;width: 200px;padding: 0 15px;border:#000 solid 1px;line-height: 48px;height: 48px;float: left;display: inline;margin-right:30px; }
-.club_meminpwform .club_meminpwsub{width: 134px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;display: block;margin: 30px 0;cursor: pointer;font-size: 14px}
+.club_meminpwform .club_meminpwsub{width: 210px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;display: block;margin: 30px 0;cursor: pointer;font-size: 14px}
 /**/
 .club_navlist_gogift{width: 185px;height: 48px;background: #000;color:#fff;text-align: center;line-height: 48px;display: block;margin: 20px 0;}
 .club_opening_time {margin-top:200px;font-size:14px;}
@@ -197,7 +199,7 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 #points_checkout_form h2 {font-size:14px;margin-bottom:15px;}
 #billing-new-address-form textarea {border:1px solid #000;background:none;resize:none;width:344px;}
 #checkout-points-review {margin:0 0 40px 0;}
-.blank_table_header {background: #d1beba;height:40px;}
+.blank_table_header {background: #d1beba;height:40px;line-height:40px;padding-left:20px;}
 .points-checkout-index .points-summary {float:right;font-size:12px;}
 .points-checkout-index .back-to-cart {float:left;border-bottom:2px solid #000;}
 .points-checkout-index .back-to-cart button.button span {padding:0;border:none;font-size:12px;}
@@ -265,7 +267,7 @@ button.btn-checkout span span {padding:5px 25px 5px 25px;display:block;}
 .password-title {float:left;width:260px;}
 .club_login_labels {height:28px;}
 .club_login_label {float:left;width:205px;}
-.reg-disable-layout {background:#f3dedd;width:890px;height:470px;position:absolute;top:126px;opacity:0.7;filter:alpha(opacity=70); }
+.reg-disable-layout {background:#f3dedd;width:890px;height:550px;position:absolute;top:126px;opacity:0.7;filter:alpha(opacity=70); }
 .note-msg, .notice-msg {background:none;color:#000;border:1px solid #000;}
 .catalogsearch-result-index .page-title h1, .category-giftproducts .category-title h1 {border:none;}
 .catalogsearch-result-index .page-title {display: none;}
